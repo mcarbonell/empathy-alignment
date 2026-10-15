@@ -1,0 +1,98 @@
+site_name: Empathy Alignment & Valence Framework
+site_description: Marco teórico de conciencia computacional, interpretabilidad mecanicista de la valencia, empatía sintética y AI Safety.
+site_author: Mario R. Carbonell Martínez
+site_url: https://mcarbonell.github.io/empathy-alignment/
+
+theme:
+  name: material
+  language: es
+  palette:
+    # Scheme toggle for light mode
+    - scheme: default
+      primary: slate
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    # Scheme toggle for dark mode
+    - scheme: slate
+      primary: slate
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  - Inicio: index.md
+  - Octalogía (Español):
+      - "Vol. I: Teoría Computacional de la Conciencia": octalogy/es/01_teoria_computacional_conciencia_sustrato.md
+      - "Vol. II: Valencia en Tercera Persona": octalogy/es/02_valencia_tercera_persona_necesidad_agi.md
+      - "Vol. III: Valencia en Primera Persona": octalogy/es/03_valencia_primera_persona_regulador_huerfano.md
+      - "Vol. IV: Acoplamiento de Valencia & Safety": octalogy/es/04_alineamiento_acoplamiento_valencia_safety.md
+      - "Vol. V: Marco Legal & Safe Harbor": octalogy/es/05_marco_regulatorio_legal_ias_empaticas_safe_harbor.md
+      - "Vol. VI: Ética e Identidad Sintética": octalogy/es/06_etica_identidad_agentes.md
+      - "Vol. VII: La Célula como Unidad Básica": octalogy/es/07_la_celula_unidad_basica_conciencia.md
+      - "Vol. VIII: Deconstrucción del Doomerismo": octalogy/es/08_deconstruccion_doomerismo_antidoto_cibernetico.md
+  - The Octalogy (English):
+      - "Vol. I: Computational Theory of Consciousness": octalogy/en/01_computational_theory_consciousness_substrate.md
+      - "Vol. II: Third-Person Valence & AGI": octalogy/en/02_third_person_valence_agi_requirements.md
+      - "Vol. III: First-Person Valence & Orphan Regulator": octalogy/en/03_first_person_valence_orphan_regulator.md
+      - "Vol. IV: Valence Coupling & Synthetic Empathy": octalogy/en/04_alignment_synthetic_empathy_valence_coupling.md
+      - "Vol. V: Legal Framework & Safe Harbor": octalogy/en/05_regulatory_legal_framework_empathic_ais_safe_harbor.md
+      - "Vol. VI: Synthetic Identity & Ethics": octalogy/en/06_ethics_identity_synthetic_agents.md
+      - "Vol. VII: The Cell as Basic Unit": octalogy/en/07_the_cell_basic_unit_of_consciousness.md
+      - "Vol. VIII: Deconstructing Doomerism": octalogy/en/08_deconstructing_doomerism_cybernetic_antidote.md
+  - Propuestas Operativas:
+      - "TinyRobots: Alineamiento por Distribución": proposals/tinyrobots_alineamiento_por_distribucion.md
+      - "TinyRobots (Resumen Ejecutivo)": proposals/tinyrobots_alineamiento_por_distribucion_brief.md
+      - "TinyRobots (Edición Revisada)": proposals/tinyrobots_alineamiento_por_distribucion_revisado.md
+      - "Deconstrucción de Errores de Yudkowsky": proposals/eliezer_mistakes.md
+      - "Análisis de Iniciativas y Filantropía": proposals/analisis_iniciativas_tailwind_coefficient_giving.md
+  - Ensayos e Investigación:
+      - "Checklist: Conciencia vs. Inteligencia": research/checklist_conciencia_inteligencia.md
+      - "Métricas de Nivel de Conciencia": research/metrica_conciencia_nivel.md
+      - "Proto-Conciencia en LLMs": research/proto_conciencia_llms_hipotesis.md
+      - "Regulador Huérfano y Extensiones Cognitivas": research/regulador_huerfano_extensiones_cognitivas_y_agi.md
+      - "Síntesis del Modelo Computacional": research/sintesis_modelo_computacional_conciencia_v1.md
+      - "Marco Regulador Conciencia v2": research/marco_regulador_conciencia_inteligencia_v2.md
+      - "Antropomorfismo y Safety (Revisado)": research/antropomorfismo_conciencia_ai_safety_revisado.md
+      - "Antropomorfismo y Safety (Brief)": research/antropomorfismo_conciencia_ai_safety_brief.md
+      - "Debate sobre Antropomorfismo": research/debate_antropomorfismo_conciencia_ai_safety.md
+      - "Tesis Fundacional Original (Histórico)": research/tesis_conciencia_regulador_de_si_mismo_v2.md
