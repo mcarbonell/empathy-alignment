@@ -1,0 +1,44 @@
+:root {
+  --md-primary-fg-color: #1e293b;
+  --md-primary-fg-color--light: #334155;
+  --md-primary-fg-color--dark: #0f172a;
+  --md-accent-fg-color: #6366f1;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b0f17;
+  --md-default-bg-color--light: #111827;
+  --md-default-bg-color--lighter: #1f2937;
+  --md-primary-fg-color: #0f172a;
+  --md-accent-fg-color: #818cf8;
+}
+
+/* Beautiful Math styling */
+.arithmatex {
+  font-family: 'KaTeX_Main', 'Cambria Math', 'Times New Roman', serif;
+  font-size: 1.05em;
+}
+
+/* Enhancements for volume badges */
+.volume-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: rgba(99, 102, 241, 0.12);
+  color: #6366f1;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  margin-right: 0.5rem;
+}
+
+/* Card layout on index */
+.grid.cards > ul > li {
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}

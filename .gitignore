@@ -1,0 +1,21 @@
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# MkDocs build output
+site/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
