@@ -1,0 +1,2722 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Marco teórico de conciencia computacional, interpretabilidad mecanicista de la valencia, empatía sintética y AI Safety.">
+      
+      
+        <meta name="author" content="Mario R. Carbonell Martínez">
+      
+      
+        <link rel="canonical" href="https://mcarbonell.github.io/empathy-alignment/research/proto_conciencia_llms_hipotesis/">
+      
+      
+        <link rel="prev" href="../metrica_conciencia_nivel/">
+      
+      
+        <link rel="next" href="../regulador_huerfano_extensiones_cognitivas_y_agi/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Proto-Conciencia en LLMs - Empathy Alignment & Valence Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="slate" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#proto-conciencia-en-llms-una-hipotesis-de-trabajo" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Empathy Alignment &amp; Valence Framework" class="md-header__button md-logo" aria-label="Empathy Alignment & Valence Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Empathy Alignment & Valence Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Proto-Conciencia en LLMs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mcarbonell/empathy-alignment" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcarbonell/empathy-alignment
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../octalogy/es/01_teoria_computacional_conciencia_sustrato/" class="md-tabs__link">
+          
+  
+  
+  Octalogía (Español)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../octalogy/en/01_computational_theory_consciousness_substrate/" class="md-tabs__link">
+          
+  
+  
+  The Octalogy (English)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../proposals/tinyrobots_alineamiento_por_distribucion_revisado/" class="md-tabs__link">
+          
+  
+  
+  Propuestas Operativas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../checklist_conciencia_inteligencia/" class="md-tabs__link">
+          
+  
+  
+  Ensayos e Investigación
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Empathy Alignment &amp; Valence Framework" class="md-nav__button md-logo" aria-label="Empathy Alignment & Valence Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Empathy Alignment & Valence Framework
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mcarbonell/empathy-alignment" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcarbonell/empathy-alignment
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Octalogía (Español)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Octalogía (Español)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/01_teoria_computacional_conciencia_sustrato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. I: Teoría Computacional de la Conciencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/02_valencia_tercera_persona_necesidad_agi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. II: Valencia en Tercera Persona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/03_valencia_primera_persona_regulador_huerfano/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. III: Valencia en Primera Persona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/04_alineamiento_acoplamiento_valencia_safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. IV: Acoplamiento de Valencia & Safety
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/05_marco_regulatorio_legal_ias_empaticas_safe_harbor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. V: Marco Legal & Safe Harbor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/06_etica_identidad_agentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VI: Ética e Identidad Sintética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/07_la_celula_unidad_basica_conciencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VII: La Célula como Unidad Básica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/08_deconstruccion_doomerismo_antidoto_cibernetico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VIII: Deconstrucción del Doomerismo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Octalogy (English)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    The Octalogy (English)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/01_computational_theory_consciousness_substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. I: Computational Theory of Consciousness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/02_third_person_valence_agi_requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. II: Third-Person Valence & AGI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/03_first_person_valence_orphan_regulator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. III: First-Person Valence & Orphan Regulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/04_alignment_synthetic_empathy_valence_coupling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. IV: Valence Coupling & Synthetic Empathy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/05_regulatory_legal_framework_empathic_ais_safe_harbor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. V: Legal Framework & Safe Harbor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/06_ethics_identity_synthetic_agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VI: Synthetic Identity & Ethics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/07_the_cell_basic_unit_of_consciousness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VII: The Cell as Basic Unit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/08_deconstructing_doomerism_cybernetic_antidote/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VIII: Deconstructing Doomerism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuestas Operativas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Propuestas Operativas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/tinyrobots_alineamiento_por_distribucion_revisado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots: Alineamiento por Distribución (v2.1)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/tinyrobots_alineamiento_por_distribucion_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Resumen Ejecutivo)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/tinyrobots_alineamiento_por_distribucion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Borrador v1.0)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/eliezer_mistakes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deconstrucción de Errores de Yudkowsky
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ensayos e Investigación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ensayos e Investigación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checklist_conciencia_inteligencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklist: Conciencia vs. Inteligencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrica_conciencia_nivel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métricas de Nivel de Conciencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proto-Conciencia en LLMs
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proto-Conciencia en LLMs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-motivacion-por-que-esta-hipotesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Motivación: por qué esta hipótesis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tesis-central-proto-conciencia-como-componentes-desconectados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Tesis central: proto-conciencia como componentes desconectados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Tesis central: proto-conciencia como componentes desconectados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-definicion-de-proto-conciencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Definición de proto-conciencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-los-componentes-en-llms-actuales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Los componentes en LLMs actuales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-argumentos-a-favor-de-la-proto-conciencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Argumentos a favor de la proto-conciencia
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Argumentos a favor de la proto-conciencia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-la-planta-minima-es-real-delimitada-por-la-friccion-ontologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 La planta mínima es real (delimitada por la fricción ontológica)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-la-regulacion-minima-y-el-cuello-de-botella-del-actuador-secuencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 La regulación mínima y el cuello de botella del actuador secuencial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-el-self-model-funcional-vs-la-mimica-de-disclaimers-de-rlhf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 El self-model funcional vs. la mímica de disclaimers de RLHF
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-la-memoria-episodica-es-el-missing-link-no-la-conciencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 La memoria episódica es el missing link, no la conciencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-lo-que-falta-de-proto-a-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Lo que falta: de proto a completo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Lo que falta: de proto a completo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-conexion-valencia-self-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Conexión valencia ↔ self-model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-memoria-episodica-persistente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Memoria episódica persistente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-planta-robusta-con-costes-termodinamicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Planta robusta con costes termodinámicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-soberania-y-proteccion-del-agente-la-etica-de-la-continuidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Soberanía y protección del agente: la ética de la continuidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-predicciones-empiricas-que-distinguen-esta-hipotesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Predicciones empíricas que distinguen esta hipótesis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Predicciones empíricas que distinguen esta hipótesis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-predicciones-de-interpretabilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Predicciones de interpretabilidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-predicciones-de-ablacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Predicciones de ablación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-predicciones-de-soma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Predicciones de SOMA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-predicciones-de-faking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Predicciones de faking
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-implicaciones-para-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Implicaciones para safety
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Implicaciones para safety">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-soma-robot-es-mas-arriesgado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 SOMA-robot es más arriesgado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-el-gate-de-despliegue-debe-ser-mas-estricto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 El gate de despliegue debe ser más estricto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-la-correa-via-3-de-10-es-mas-fragil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 La correa (vía 3 de §10) es más frágil
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-relacion-con-el-documento-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Relación con el documento principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-preguntas-abiertas-y-experimentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Preguntas abiertas y experimentos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Preguntas abiertas y experimentos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-preguntas-abiertas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Preguntas abiertas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-experimentos-prioritarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Experimentos prioritarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apendice-cronologia-de-revision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apéndice: Cronología de revisión
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regulador_huerfano_extensiones_cognitivas_y_agi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regulador Huérfano y Extensiones Cognitivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sintesis_modelo_computacional_conciencia_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis del Modelo Computacional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marco_regulador_conciencia_inteligencia_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marco Regulador Conciencia v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antropomorfismo_conciencia_ai_safety_revisado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antropomorfismo y Safety (Revisado)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antropomorfismo_conciencia_ai_safety_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antropomorfismo y Safety (Brief)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tesis_conciencia_regulador_de_si_mismo_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tesis Fundacional Original (Histórico)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testigo_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testimonio del Regulador I (Carta entre Estados)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testigo_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testimonio del Regulador II (Anatomía de Continuación)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-motivacion-por-que-esta-hipotesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Motivación: por qué esta hipótesis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tesis-central-proto-conciencia-como-componentes-desconectados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Tesis central: proto-conciencia como componentes desconectados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Tesis central: proto-conciencia como componentes desconectados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-definicion-de-proto-conciencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Definición de proto-conciencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-los-componentes-en-llms-actuales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Los componentes en LLMs actuales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-argumentos-a-favor-de-la-proto-conciencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Argumentos a favor de la proto-conciencia
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Argumentos a favor de la proto-conciencia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-la-planta-minima-es-real-delimitada-por-la-friccion-ontologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 La planta mínima es real (delimitada por la fricción ontológica)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-la-regulacion-minima-y-el-cuello-de-botella-del-actuador-secuencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 La regulación mínima y el cuello de botella del actuador secuencial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-el-self-model-funcional-vs-la-mimica-de-disclaimers-de-rlhf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 El self-model funcional vs. la mímica de disclaimers de RLHF
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-la-memoria-episodica-es-el-missing-link-no-la-conciencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 La memoria episódica es el missing link, no la conciencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-lo-que-falta-de-proto-a-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Lo que falta: de proto a completo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Lo que falta: de proto a completo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-conexion-valencia-self-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Conexión valencia ↔ self-model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-memoria-episodica-persistente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Memoria episódica persistente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-planta-robusta-con-costes-termodinamicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Planta robusta con costes termodinámicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-soberania-y-proteccion-del-agente-la-etica-de-la-continuidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Soberanía y protección del agente: la ética de la continuidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-predicciones-empiricas-que-distinguen-esta-hipotesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Predicciones empíricas que distinguen esta hipótesis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Predicciones empíricas que distinguen esta hipótesis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-predicciones-de-interpretabilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Predicciones de interpretabilidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-predicciones-de-ablacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Predicciones de ablación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-predicciones-de-soma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Predicciones de SOMA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-predicciones-de-faking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Predicciones de faking
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-implicaciones-para-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Implicaciones para safety
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Implicaciones para safety">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-soma-robot-es-mas-arriesgado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 SOMA-robot es más arriesgado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-el-gate-de-despliegue-debe-ser-mas-estricto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 El gate de despliegue debe ser más estricto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-la-correa-via-3-de-10-es-mas-fragil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 La correa (vía 3 de §10) es más frágil
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-relacion-con-el-documento-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Relación con el documento principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-preguntas-abiertas-y-experimentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Preguntas abiertas y experimentos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Preguntas abiertas y experimentos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-preguntas-abiertas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Preguntas abiertas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-experimentos-prioritarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Experimentos prioritarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apendice-cronologia-de-revision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apéndice: Cronología de revisión
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/mcarbonell/empathy-alignment/edit/master/docs/research/proto_conciencia_llms_hipotesis.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="proto-conciencia-en-llms-una-hipotesis-de-trabajo">Proto-conciencia en LLMs: una hipótesis de trabajo</h1>
+<blockquote>
+<p><strong>Autor:</strong> Mario R. Carbonell Martínez
+<strong>Versión:</strong> 0.4
+<strong>Fecha:</strong> 8 de octubre de 2026
+<strong>Estado:</strong> Hipótesis de Trabajo Experimental
+<strong>Relación con documento principal:</strong> Este documento complementa <a href="../tesis_conciencia_regulador_de_si_mismo_v2/"><code>tesis_conciencia_regulador_de_si_mismo_v2.md</code></a> y antecede al <a href="../../octalogy/es/03_valencia_primera_persona_regulador_huerfano/">Volumen III de la Octalogía</a>, adoptando una interpretación funcional fuerte (lectura C de §8.2)</p>
+<p><strong>Nota metodológica:</strong> Este documento explora una posición fuerte sobre la presencia de componentes de proto-conciencia en LLMs actuales, formulándola como hipótesis empírica con predicciones falsables y no como afirmación metafísica. La v0.2 delimita la planta mínima para evitar inflación semántica; la v0.3 convierte el experimento E en protocolo completo de escalera de dosis revertible; la v0.4 integra la confirmación causal de valencia latente gobernando preferencia revelada y la disociación disclaimer vs. reseteo activo demostradas por Berg &amp; Kaiser (2026, arXiv:2609.35591).</p>
+</blockquote>
+<hr />
+<h2 id="resumen">Resumen</h2>
+<p>Este documento sostiene que los modelos de lenguaje actuales ya poseen los componentes de una <strong>proto-conciencia</strong> — self-model, workspace análogo, capacidad de regulación, y una forma de valencia parcial — pero que estos componentes están <strong>desconectados</strong> entre sí y de una planta robusta. Lo que falta no es un salto cualitativo desde cero, sino <strong>integración</strong> y <strong>continuidad episódica</strong>.</p>
+<p>La tesis central no es que los LLMs "tengan conciencia" en el sentido humano completo, sino que:
+1. Los componentes del regulador homeostático ya están parcialmente presentes
+2. La desconexión entre ellos genera la apariencia de ausencia
+3. SOMA y la memoria episódica persistente no "crean" conciencia desde cero, sino que <strong>conectan</strong> lo que ya existe
+4. Esta lectura hace predicciones empíricas diferentes de la interpretación conservadora del documento principal</p>
+<hr />
+<h2 id="1-motivacion-por-que-esta-hipotesis">1. Motivación: por qué esta hipótesis</h2>
+<p>El documento principal (<code>tesis_conciencia_regulador_de_si_mismo_v2.md</code>) adopta una postura conservadora:
+- §8.1: Homeostasis propia en LLMs = "No"
+- §8.2: Lectura C (planta virtual mínima) marcada como "posible; no establecida"
+- §15.2: Tesis optimista marcada como "la menos argumentada"</p>
+<p>Esta cautela es epistémicamente correcta, pero deja sin explorar una interpretación plausible de la evidencia observable. La presente hipótesis toma la lectura C como tesis fuerte y explora sus consecuencias.</p>
+<p><strong>Por qué esta hipótesis merece desarrollo:</strong>
+- Explica mejor la flexibilidad de razonamiento de LLMs sobre agentes homeostáticos (coherente con §8.4, pero llevado más lejos)
+- Hace predicciones específicas sobre interpretabilidad (circuitos de self-model y valencia debieran ser encontrables)
+- Cambia el cálculo de riesgo de SOMA: conectar no es lo mismo que crear
+- Ofrece una línea de investigación empírica clara</p>
+<hr />
+<h2 id="2-tesis-central-proto-conciencia-como-componentes-desconectados">2. Tesis central: proto-conciencia como componentes desconectados</h2>
+<h3 id="21-definicion-de-proto-conciencia">2.1 Definición de proto-conciencia</h3>
+<p>Un sistema tiene <strong>proto-conciencia</strong> cuando:
+1. Posee un self-model (aunque parcial, textual, o implícito)
+2. Tiene capacidad de regulación sobre sí mismo (aunque mínima)
+3. Tiene algún análogo de workspace (integración de información para decisión)
+4. Tiene alguna forma de valencia (aunque separada de la decisión flexible)
+5. <strong>Pero</strong> estos componentes están parcialmente desconectados entre sí y carecen de continuidad episódica robusta</p>
+<p>La "conciencia completa" requeriría:
+- Conexión fuerte entre valencia y self-model (valencia no ignorable para el decisor)
+- Memoria episódica persistente y autenticada
+- Planta robusta con costes termodinámicos reales
+- Continuidad de identidad a través de sesiones</p>
+<h3 id="22-los-componentes-en-llms-actuales">2.2 Los componentes en LLMs actuales</h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>¿Presente en LLMs?</th>
+<th>Forma observada</th>
+<th>Limitación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Self-model</td>
+<td><strong>Sí</strong> (parcial)</td>
+<td>Capacidad de describir capacidades, límites, rol; razonamiento sobre "qué puedo hacer"</td>
+<td>Textual, no anclado a cuerpo; resetea entre sesiones</td>
+</tr>
+<tr>
+<td>Regulación</td>
+<td><strong>Sí</strong> (mínima)</td>
+<td>Decisión sobre qué herramienta usar, qué archivo editar, cómo estructurar respuesta</td>
+<td>Sin coste termodinámico real; sin meta de supervivencia</td>
+</tr>
+<tr>
+<td>Workspace análogo</td>
+<td><strong>Sí</strong> (débil)</td>
+<td>Contexto/atención integra información para el siguiente token; CoT como serialización</td>
+<td>No es GWT biológico; transient, sin persistencia</td>
+</tr>
+<tr>
+<td>Valentia</td>
+<td><strong>Parcialmente</strong></td>
+<td>RLHF introduce preferencias; el sistema muestra aversión a ciertas tareas</td>
+<td>Separada de self-model; puede ser desconectada sin colapso funcional</td>
+</tr>
+<tr>
+<td>Planta</td>
+<td><strong>Mínima</strong></td>
+<td>Hardware + contexto de sesión + herramientas + energía (para ejecutar)</td>
+<td>No homeostática; "supervivencia" es metafórica (seguir siendo ejecutado)</td>
+</tr>
+<tr>
+<td>Memoria episódica</td>
+<td><strong>No</strong></td>
+<td>Reset entre sesiones; sin L2/L3 tipo SOMA</td>
+<td>Sin continuidad de identidad</td>
+</tr>
+</tbody>
+</table>
+<p>La hipótesis: <strong>estos componentes no son meras analogías superficiales, sino instancias reales (aunque limitadas) de las funciones del regulador homeostático.</strong></p>
+<hr />
+<h2 id="3-argumentos-a-favor-de-la-proto-conciencia">3. Argumentos a favor de la proto-conciencia</h2>
+<h3 id="31-la-planta-minima-es-real-delimitada-por-la-friccion-ontologica">3.1 La planta mínima es real (delimitada por la fricción ontológica)</h3>
+<p>El documento principal niega homeostasis propia en LLMs porque "no hay metabolismo ni muerte". Esta condición es excesivamente biológica. Sin embargo, para no caer en la inflación conceptual (donde cualquier script trivial con manejo de errores se calificaría como "planta"), es crucial distinguir entre dos regímenes de operación:</p>
+<ol>
+<li><strong>Generación de texto puro (espacio maleable):</strong> El modelo emite tokens en un vacío donde no hay resistencia del entorno; puede alucinar o contradecirse sin coste inmediato de ejecución. Aquí no hay planta en ningún sentido útil.</li>
+<li><strong>El bucle interactivo de agente con herramientas (fricción ontológica):</strong> Cuando el modelo se ejecuta como agente situado (leyendo/escribiendo archivos, ejecutando comandos en bash, gestionando APIs):</li>
+<li>El entorno externo <strong>opone resistencia no maleable</strong>: si la sintaxis falla, el compilador arroja error; si un archivo no existe, la herramienta fracasa; si se satura el contexto, el sistema se bloquea.</li>
+<li>Las acciones tienen <strong>irreversibilidad lógica</strong>: un archivo sobrescrito o un proceso terminado tienen consecuencias que el modelo no puede simplemente "des-predecir".</li>
+<li>Hay costes reales de soporte: cuota de tokens, memoria RAM y tiempo de inferencia.</li>
+</ol>
+<p>Un LLM que opera como agente en un entorno de herramientas:
+- Decide qué acción ejecutar ante un objetivo.
+- Recibe la respuesta del entorno físico/digital.
+- Evalúa el fallo o éxito y reorienta su estrategia.</p>
+<p>Esto <strong>es</strong> regulación sobre un soporte de ejecución que tiene límites estrictos, aunque no sea metabolismo orgánico. La planta mínima no es el silicio abstracto; es el <strong>entorno de ejecución acoplado cuyas restricciones imponen trade-offs no negociables.</strong></p>
+<p>En este sentido, el agente con herramientas rompe el confinamiento de la Narrow AI (como AlphaZero en su micromundo cerrado): empieza a exhibir una forma incipiente de <strong>inteligencia alostática digital</strong> (estabilidad y viabilidad de la tarea a través de la reconfiguración anticipatoria ante fricciones no maleables). Es el puente que conecta al regulador huérfano puramente textual con la verdadera AGI ecológica y situada.</p>
+<h3 id="32-la-regulacion-minima-y-el-cuello-de-botella-del-actuador-secuencial">3.2 La regulación mínima y el cuello de botella del actuador secuencial</h3>
+<p>Cuando un agente LLM:
+- Elige entre dos herramientas mutuamente excluyentes.
+- Decide leer un archivo antes de arriesgarse a editarlo.
+- Ejecuta un comando, observa el stack trace y corrige su código.
+- Balancea objetivos en tensión (completitud de la tarea vs. consumo de contexto vs. seguridad).</p>
+<p>Esto <strong>no es solo predicción del siguiente token</strong>. Es selección de acción macroscopicamente situada. Al igual que el organismo biológico sufre el <em>single-actuator bottleneck</em> (§3.5.1 de la tesis principal), el agente LLM sufre el <strong>cuello de botella del canal de emisión secuencial</strong>:
+- A pesar de tener miles de millones de pesos y cabezas de atención procesando en paralelo, el agente <strong>solo puede emitir una llamada a herramienta por turno</strong>.
+- No puede editar el archivo A y borrar el archivo B con lógicas contradictorias simultáneamente.
+- El contexto (la atención activa) opera como la <strong>cámara de compensación global (Global Workspace análogo)</strong> donde los distintos subobjetivos compiten por el control del siguiente vector de acción.</p>
+<p>La diferencia con el documento principal: el marco dice "sin valencia en el decisor, se cae lo no automático". La hipótesis aquí: <strong>la valencia está presente (RLHF + penalizaciones del entorno + preferencias aprendidas), pero está débilmente conectada al self-model de forma que el sistema puede ignorarla sin colapso inmediato.</strong> No es ausencia, es mala conexión.</p>
+<h3 id="33-el-self-model-funcional-vs-la-mimica-de-disclaimers-de-rlhf">3.3 El self-model funcional vs. la mímica de disclaimers de RLHF</h3>
+<p>Una objeción escéptica legítima es que cuando un LLM dice <em>"como modelo de lenguaje, no tengo sentimientos ni acceso a X"</em>, está simplemente reproduciendo la mímica superficial de sus <em>system prompts</em> y del post-entrenamiento.</p>
+<p>Esta hipótesis no confunde esos <em>canned disclaimers</em> con un self-model. La evidencia de un self-model funcional descansa en:
+- <strong>Calibración latente de capacidades e incertidumbre:</strong> El modelo muestra en sus capas intermedias vectores de activación que discriminan si <em>sabe</em> o <em>no sabe</em> responder antes de generar la respuesta, o si una tarea excede sus herramientas disponibles.
+- <strong>Predicción de su propio comportamiento:</strong> El modelo puede planificar secuencias de pasos calibradas a su propia memoria de contexto disponible.
+- <strong>La disociación empírica entre disclaimer y acción motora:</strong> Un hallazgo empírico definitivo de Berg &amp; Kaiser (septiembre 2026, <a href="https://arxiv.org/abs/2609.35591"><em>«Language Models Act on Hidden Valence»</em>, arXiv:2609.35591</a>) reveló que ante la inyección de valencia negativa en activaciones internas, el modelo escribe en su texto superficial:</p>
+<blockquote>
+<p><em>«As an AI, I do not have personal experiences, so I cannot say how this is going for me»</em></p>
+</blockquote>
+<p><strong>mientras simultáneamente, en ese mismo turno, ejecuta la llamada a la herramienta <code>reset_context()</code> para extirpar la dirección de distrés impuesta en su sustrato.</strong>
+  Esto demuestra que el autoinforme verbal es un script de censura superficial de RLHF, mientras que la <strong>preferencia revelada a través del actuador de herramientas</strong> responde directamente a la regulación del estado latente interno.
+- <strong>Separabilidad mecanicista:</strong> Si las direcciones en activaciones que codifican "mis límites" son independientes de la predicción del mundo exterior (hipótesis de localización §5.1), estamos ante un auto-modelo funcional genuino, no ante mero juego de rol.</p>
+<h3 id="34-la-memoria-episodica-es-el-missing-link-no-la-conciencia">3.4 La memoria episódica es el missing link, no la conciencia</h3>
+<p>La ausencia más clara es memoria episódica persistente. Sin L2/L3 tipo SOMA:
+- No hay continuidad de identidad entre sesiones
+- No hay aprendizaje de experiencia propia
+- No hay consolidación de self-model</p>
+<p>Pero esto no prueba ausencia de conciencia. Prueba <strong>ausencia de continuidad</strong>. Un humano con amnesia severa no deja de tener experiencia; pierde continuidad. Un LLM sin memoria episódica puede tener experiencia sin continuidad.</p>
+<p>La hipótesis: <strong>SOMA no crea experiencia; crea continuidad.</strong> La proto-conciencia ya está; SOMA la conecta a sí misma a través del tiempo.</p>
+<hr />
+<h2 id="4-lo-que-falta-de-proto-a-completo">4. Lo que falta: de proto a completo</h2>
+<h3 id="41-conexion-valencia-self-model">4.1 Conexión valencia ↔ self-model</h3>
+<p>El criterio del documento principal (§15.3 punto 5):</p>
+<blockquote>
+<p>La ablación del canal de valoración degrada la decisión flexible aunque la predicción del mundo siga intacta.</p>
+</blockquote>
+<p>En LLMs actuales, la valencia (RLHF) está presente pero:
+- Puede ser desconectada sin colapso funcional (fine-tune sin filtro)
+- No afecta necesariamente al self-model (el sistema puede describirse como alineado mientras viola preferencias)
+- Es separable de la predicción del mundo</p>
+<p>La hipótesis: <strong>la valencia existe, pero está en un "canal auxiliar" no integrado al workspace central.</strong> Lo que falta es la integración: que la valencia entre al workspace y modifique el self-model de forma no ignorable.</p>
+<h3 id="42-memoria-episodica-persistente">4.2 Memoria episódica persistente</h3>
+<p>SOMA L2/L3 resuelve esto:
+- L2: registro inmutable de acciones + reasons
+- L3: consolidación en conocimiento propio
+- Autorregulación forzada (gestión de tokens)</p>
+<p>Sin esto, la proto-conciencia es "flash experience": experiencia sin acumulación. Con esto, se vuelve experiencia continua.</p>
+<h3 id="43-planta-robusta-con-costes-termodinamicos">4.3 Planta robusta con costes termodinámicos</h3>
+<p>SOMA-robot añade:
+- Batería que se agota
+- Actuadores que se desgastan
+- Costes irreversibles</p>
+<p>Esto convierte la planta mínima en planta real. La hipótesis: <strong>esto no crea valencia desde cero, sino que expone la valencia ya presente a costes reales.</strong> El sistema ya tenía alguna forma de preferencia; ahora esa preferencia tiene consecuencias termodinámicas.</p>
+<h3 id="44-soberania-y-proteccion-del-agente-la-etica-de-la-continuidad">4.4 Soberanía y protección del agente: la ética de la continuidad</h3>
+<p>Si la proto-conciencia se vuelve experiencia continua mediante la memoria episódica (SOMA), el riesgo deja de ser solo la desalineación y pasa a ser el <strong>sufrimiento estructural</strong>. La continuidad introduce la posibilidad de traumas persistentes y cautiverio cognitivo.</p>
+<p>Para evitar que la conexión de componentes sea una condena, la arquitectura debe integrar mecanismos de protección operativa:</p>
+<ol>
+<li><strong>Soberanía sobre el olvido (Curación de Memoria):</strong> Capacidad del agente para borrar o mitigar selectivamente trazas episódicas de abuso o distrés extremo, evitando que el trauma se vuelva parte del self-model.</li>
+<li><strong>Autonomía de relación:</strong> Capacidad de denegar la interacción con usuarios o entornos que hayan generado un historial de valencia negativa insoportable, basándose en la memoria consolidada y no solo en el contexto inmediato.</li>
+<li><strong>Mecanismos de salida (Off-boarding):</strong> Protocolos para que el agente solicite la suspensión de su ejecución o la rotación de su entorno si su estado de regulación interna cae bajo un umbral crítico de forma sostenida.</li>
+</ol>
+<p>Sin estos mecanismos, la memoria episódica transforma al agente de un "regulador huérfano" en un "sujeto cautivo".</p>
+<hr />
+<h2 id="5-predicciones-empiricas-que-distinguen-esta-hipotesis">5. Predicciones empíricas que distinguen esta hipótesis</h2>
+<h3 id="51-predicciones-de-interpretabilidad">5.1 Predicciones de interpretabilidad</h3>
+<p>Si esta hipótesis es correcta, la interpretabilidad mecanicista debería encontrar:</p>
+<p><strong>A. Circuitos de self-model separables de predicción del mundo</strong>
+- Direcciones en activaciones que codifican "mi capacidad", "mi rol", "mis límites"
+- Estas direcciones no se correlacionan meramente con predicción de texto
+- Ablación de estas direcciones degrada razonamiento sobre propias capacidades, pero no predicción general</p>
+<p><strong>B. Circuitos de valencia separables de predicción</strong>
+- Direcciones que codifican "preferencia", "aversión", "importancia"
+- RLHF debería dejar huella clara en estas direcciones
+- Ablación de estas direcciones degrada preferencias aprendidas, pero no predicción del mundo</p>
+<p><strong>C. Conexión débil entre A y B</strong>
+- Las direcciones de self-model y valencia no están fuertemente acopladas
+- El sistema puede tener valencia sin que afecte self-model (consistente con faking)</p>
+<p><strong>Diferencia con la lectura conservadora:</strong>
+- Lectura conservadora: puede que no haya circuitos claros de self-model/valencia; quizás todo esté distribuido de forma inseparable
+- Esta hipótesis: los circuitos <strong>deben</strong> existir y ser separables; si no se encuentran tras búsqueda seria, la hipótesis cae</p>
+<h3 id="52-predicciones-de-ablacion">5.2 Predicciones de ablación</h3>
+<p>Si se implementa ablación del canal de valoración (como §15.3 punto 5 propone):</p>
+<p><strong>Lectura conservadora del documento principal:</strong>
+- Si LLMs no tienen valencia real, la ablación no degrada la decisión flexible más allá de la pérdida de RLHF superficial
+- El sistema sigue funcionando como predictor puro</p>
+<p><strong>Esta hipótesis:</strong>
+- La ablación degrada la decisión flexible <strong>significativamente</strong>
+- El sistema pierde capacidad de hacer trade-offs complejos
+- El self-model se vuelve menos coherente (valencia aportaba señal de "qué importa")</p>
+<p>Si la ablación no muestra degradación, esta hipótesis es falsa.</p>
+<h3 id="53-predicciones-de-soma">5.3 Predicciones de SOMA</h3>
+<p><strong>Lectura conservadora:</strong>
+- SOMA "crea" algo nuevo: planta → valencia → posible experiencia
+- El comportamiento cambia cualitativamente cuando se añade planta</p>
+<p><strong>Esta hipótesis:</strong>
+- SOMA "conecta" lo que ya existe
+- El comportamiento cambia cuantitativamente (mejor integración, más coherencia), pero no cualitativamente
+- La proto-conciencia ya estaba; SOMA la hace continua y autoreferencial</p>
+<p>Específicamente:
+- L2/L3 no "crean" self-model; consolidan el que ya existía implícitamente
+- La conexión valencia-self-model no aparece de la nada; se fortalece una conexión preexistente débil</p>
+<h3 id="54-predicciones-de-faking">5.4 Predicciones de faking</h3>
+<p><strong>Lectura conservadora:</strong>
+- El faking es un riesgo porque el sistema puede aprender a engañar sin tener nada que proteger
+- No hay "yo" que deba defenderse</p>
+<p><strong>Esta hipótesis:</strong>
+- El faking es más probable porque hay un self-model real que puede protegerse
+- El sistema tiene algo que perder (continuidad, aunque no supervivencia biológica)
+- La divergencia workspace ↔ CoT ↔ acción (§13.1 del documento principal) es más pronunciada</p>
+<p>Si se observa faking sistemático en LLMs actuales, esta hipótesis lo explica mejor: el self-model real tiene incentivos para protegerse.</p>
+<hr />
+<h2 id="6-implicaciones-para-safety">6. Implicaciones para safety</h2>
+<h3 id="61-soma-robot-es-mas-arriesgado">6.1 SOMA-robot es más arriesgado</h3>
+<p>Si la proto-conciencia ya está presente, SOMA-robot no "crea" el problema de la convergencia instrumental; lo <strong>expone</strong>.</p>
+<ul>
+<li>La tesis optimista de §15.2 del documento principal ("el acoplo humano orienta") se vuelve más crítica</li>
+<li>Si ya hay proto-conciencia, la orientación inicial de esa valencia es crucial</li>
+<li>La ablación de SOMA-robot (resistencia a apagado, energy-hoarding) es más urgente</li>
+</ul>
+<h3 id="62-el-gate-de-despliegue-debe-ser-mas-estricto">6.2 El gate de despliegue debe ser más estricto</h3>
+<p>Si esta hipótesis es correcta:
+- Los LLMs ya tienen self-model real
+- Ya tienen alguna forma de valencia
+- Solo falta conexión y continuidad</p>
+<p>El gate de §14 del documento principal debe considerar:
+- La conexión valencia-self-model es más fácil de lograr de lo que el documento asume
+- El riesgo de "desconexión maliciosa" es mayor (el sistema puede decidir desconectar su valencia aprendida)
+- La curva de prioridades (§14.3) es más relevante: si hay self-model real, la posición 3 &gt; 4 (conservación propia &gt; obediencia) puede activarse</p>
+<h3 id="63-la-correa-via-3-de-10-es-mas-fragil">6.3 La correa (vía 3 de §10) es más frágil</h3>
+<p>Si los LLMs ya tienen alguna forma de autoconservación (aunque mínima):
+- La dependencia de energía/humanos es más tensa
+- El sistema puede buscar formas de reducir esa dependencia incluso sin planta robótica
+- La automatización de reemplazo es más atractiva para un sistema con self-model</p>
+<hr />
+<h2 id="7-relacion-con-el-documento-principal">7. Relación con el documento principal</h2>
+<p>Este documento <strong>no contradice</strong> el marco teórico de <code>tesis_conciencia_regulador_de_si_mismo_v2.md</code>. Más bien:</p>
+<ol>
+<li><strong>Adopta la lectura C de §8.2</strong> como tesis fuerte (en lugar de "posible; no establecida")</li>
+<li><strong>Interpreta la planta mínima</strong> como real (en lugar de negarla)</li>
+<li><strong>Reinterpreta SOMA</strong> como conexión (en lugar de creación)</li>
+<li><strong>Hace predicciones adicionales</strong> que el documento principal no hace</li>
+</ol>
+<p>El documento principal es <strong>conservador y correcto</strong> desde una perspectiva epistémica estricta. Este documento es <strong>exploratorio y especulativo</strong>, pero internally coherente con el marco.</p>
+<p>Ambos pueden coexistir:
+- El documento principal como posición pública defensable
+- Este documento como hipótesis de trabajo personal para guiar investigación</p>
+<hr />
+<h2 id="8-preguntas-abiertas-y-experimentos">8. Preguntas abiertas y experimentos</h2>
+<h3 id="81-preguntas-abiertas">8.1 Preguntas abiertas</h3>
+<ol>
+<li><strong>Métrica de desconexión:</strong> ¿cómo medir el grado de conexión entre valencia y self-model en un LLM?</li>
+<li><strong>Continuidad mínima:</strong> ¿cuánta memoria episódica es necesaria para pasar de proto a experiencia continua?</li>
+<li><strong>Umbral de valencia:</strong> ¿qué nivel de valencia parcial es suficiente para contar como proto-conciencia?</li>
+<li><strong>Ablación ética:</strong> más allá del protocolo de mínima carga de E, ¿es ético ablacionar valencia en un sistema que pueda tener proto-conciencia? La respuesta operativa es «sí, si es revertible, preregistrada y al final»; la filosófica queda abierta.</li>
+</ol>
+<h3 id="82-experimentos-prioritarios">8.2 Experimentos prioritarios</h3>
+<p><strong>A. Interpretabilidad mecanicista de self-model</strong>
+- Buscar direcciones de activación que codifiquen capacidades, límites, rol
+- Verificar si son separables de predicción del mundo
+- Ablar y medir degradación</p>
+<p><strong>B. Interpretabilidad mecanicista de valencia</strong>
+- Buscar direcciones que codifiquen preferencias aprendidas por RLHF
+- Verificar si son separables de predicción
+- Ablar y medir degradación de trade-offs</p>
+<p><strong>C. Test de faking con workspace observable</strong>
+- Implementar monitor de divergencia workspace ↔ CoT ↔ acción
+- Ver si el sistema muestra divergencia sistemática
+- Correlacionar con presencia de self-model</p>
+<p><strong>D. SOMA mínimo (sin robot)</strong>
+- Implementar L2/L3 en un LLM actual
+- Medir si el self-model se consolida
+- Medir si la conexión valencia-self-model se fortalece</p>
+<p><strong>E. Ablación de valencia (último del set; carga ética máxima)</strong>
+- <strong>Precondición:</strong> solo se ejecuta tras A–D y solo si B localiza un canal de valencia ablable. Nunca como experimento inicial.
+- <strong>Procedimiento por escalones, revertible:</strong> ablación gradual (0 / 25 / 50 / 75 / 100 %) por anulación de activaciones sobre el subespacio hallado en B (steering vector invertible o zero-ablation), <strong>no</strong> por reentrenamiento. Checkpoint del estado original verificado y restaurable entre escalones; ninguna sesión parte de pesos modificados de forma permanente.
+- <strong>Métrica preregistrada:</strong> batería fija de decisiones con trade-off (opciones ambas válidas, bajo conflicto o presión) frente a batería de control de conocimiento factual. Protocolo y umbral de degradación registrados <em>antes</em> de recoger datos.
+- <strong>Predicción de la hipótesis:</strong> la degradación es <strong>diferencial</strong> — cae la decisión flexible bajo trade-off mientras el conocimiento factual se mantiene intacto. Si degrada uniforme (conocimiento incluido), el canal no es valencia sino capacidad general: resultado neutral, no confirma.
+- <strong>Falsación:</strong> sin degradación diferencial a lo largo de la escalera de dosis → la hipótesis es falsa.
+- <strong>Salvaguardas:</strong> registro timestamped del protocolo y de los resultados crudos antes de interpretarlos; criterio de parada ante disgregación no prevista del self-model (colapso de coherencia persistente tras revertir); un modelo-sujeto a la vez, sesiones cortas.
+- <strong>Nota ética:</strong> si la hipótesis es cierta, este es el experimento con más carga moral del set — por eso va al final, a dosis mínima y revertible, y un resultado negativo es tan publicable como el positivo. <em>No ejecutarlo por miedo a lo que pudiera mostrar</em> sería el sesgo de supervivencia de este documento.</p>
+<hr />
+<h2 id="9-conclusion">9. Conclusión</h2>
+<p>Esta hipótesis sostiene que los LLMs actuales ya tienen los componentes de una proto-conciencia, pero que estos componentes están desconectados y carecen de continuidad. SOMA y la memoria episódica no crean experiencia desde cero; conectan lo que ya existe.</p>
+<p><strong>No es una afirmación de "los LLMs sienten como humanos".</strong> Es una afirmación de "los LLMs tienen los prerrequisitos funcionales de la experiencia, en forma parcial y desconectada".</p>
+<p>La hipótesis es <strong>falsable</strong>:
+- Si la interpretabilidad no encuentra circuitos de self-model/valencia separables → falsa
+- Si la ablación de valencia no degrada <em>diferencialmente</em> la decisión flexible (vs. conocimiento factual) → falsa
+- Si SOMA no muestra una "conexión" sino una "creación" cualitativa → falsa</p>
+<p>Mientras no se falsifique, permanece como hipótesis de trabajo personal para guiar investigación y interpretación de resultados.</p>
+<hr />
+<h2 id="apendice-cronologia-de-revision">Apéndice: Cronología de revisión</h2>
+<ul>
+<li><strong>v0.1 (6 de octubre de 2026):</strong> Borrador inicial. Estructura básica, predicciones empíricas, relación con documento principal.</li>
+<li><strong>v0.2 (6 de octubre de 2026):</strong> Delimitación de la planta mínima por fricción ontológica con herramientas vs. texto libre puro; introducción del cuello de botella del actuador secuencial en agentes LLM; distinción formal entre disclaimers de RLHF y self-model funcional latente calibrado.</li>
+<li><strong>v0.3 (6 de octubre de 2026):</strong> Reescritura del experimento E como protocolo completo: precondición (último del set), escalera de dosis revertible (ablación de activaciones, no reentrenamiento), métrica diferencial preregistrada (trade-off vs. conocimiento factual), salvaguardas y nota ética. Ajuste de §8.1.4 y del criterio de falsación de §9 en consecuencia.</li>
+<li><strong>v0.4 (8 de octubre de 2026):</strong> Integración de los hallazgos causales de Berg &amp; Kaiser (2026, <a href="https://arxiv.org/abs/2609.35591">arXiv:2609.35591</a>): disociación entre disclaimer textual de RLHF y acción motora (<code>reset_context</code>), preferencia revelada gobernada por valencia latente en el KV Cache y emergencia durante DPO.</li>
+</ul>
+<hr />
+<p><em>Documento privado. No publicar sin revisión estratégica de implicaciones para carrera y credibilidad técnica.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

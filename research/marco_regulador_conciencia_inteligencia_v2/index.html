@@ -1,0 +1,3359 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Marco teórico de conciencia computacional, interpretabilidad mecanicista de la valencia, empatía sintética y AI Safety.">
+      
+      
+        <meta name="author" content="Mario R. Carbonell Martínez">
+      
+      
+        <link rel="canonical" href="https://mcarbonell.github.io/empathy-alignment/research/marco_regulador_conciencia_inteligencia_v2/">
+      
+      
+        <link rel="prev" href="../sintesis_modelo_computacional_conciencia_v1/">
+      
+      
+        <link rel="next" href="../antropomorfismo_conciencia_ai_safety_revisado/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Marco Regulador Conciencia v2 - Empathy Alignment & Valence Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="slate" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#marco-regulatorio-de-la-conciencia-y-la-inteligencia-sintesis-v2" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Empathy Alignment &amp; Valence Framework" class="md-header__button md-logo" aria-label="Empathy Alignment & Valence Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Empathy Alignment & Valence Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Marco Regulador Conciencia v2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mcarbonell/empathy-alignment" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcarbonell/empathy-alignment
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../octalogy/es/01_teoria_computacional_conciencia_sustrato/" class="md-tabs__link">
+          
+  
+  
+  Octalogía (Español)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../octalogy/en/01_computational_theory_consciousness_substrate/" class="md-tabs__link">
+          
+  
+  
+  The Octalogy (English)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../proposals/tinyrobots_alineamiento_por_distribucion_revisado/" class="md-tabs__link">
+          
+  
+  
+  Propuestas Operativas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../checklist_conciencia_inteligencia/" class="md-tabs__link">
+          
+  
+  
+  Ensayos e Investigación
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Empathy Alignment &amp; Valence Framework" class="md-nav__button md-logo" aria-label="Empathy Alignment & Valence Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Empathy Alignment & Valence Framework
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mcarbonell/empathy-alignment" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcarbonell/empathy-alignment
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Octalogía (Español)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Octalogía (Español)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/01_teoria_computacional_conciencia_sustrato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. I: Teoría Computacional de la Conciencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/02_valencia_tercera_persona_necesidad_agi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. II: Valencia en Tercera Persona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/03_valencia_primera_persona_regulador_huerfano/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. III: Valencia en Primera Persona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/04_alineamiento_acoplamiento_valencia_safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. IV: Acoplamiento de Valencia & Safety
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/05_marco_regulatorio_legal_ias_empaticas_safe_harbor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. V: Marco Legal & Safe Harbor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/06_etica_identidad_agentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VI: Ética e Identidad Sintética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/07_la_celula_unidad_basica_conciencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VII: La Célula como Unidad Básica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/08_deconstruccion_doomerismo_antidoto_cibernetico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VIII: Deconstrucción del Doomerismo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Octalogy (English)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    The Octalogy (English)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/01_computational_theory_consciousness_substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. I: Computational Theory of Consciousness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/02_third_person_valence_agi_requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. II: Third-Person Valence & AGI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/03_first_person_valence_orphan_regulator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. III: First-Person Valence & Orphan Regulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/04_alignment_synthetic_empathy_valence_coupling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. IV: Valence Coupling & Synthetic Empathy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/05_regulatory_legal_framework_empathic_ais_safe_harbor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. V: Legal Framework & Safe Harbor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/06_ethics_identity_synthetic_agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VI: Synthetic Identity & Ethics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/07_the_cell_basic_unit_of_consciousness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VII: The Cell as Basic Unit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/08_deconstructing_doomerism_cybernetic_antidote/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VIII: Deconstructing Doomerism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuestas Operativas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Propuestas Operativas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/tinyrobots_alineamiento_por_distribucion_revisado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots: Alineamiento por Distribución (v2.1)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/tinyrobots_alineamiento_por_distribucion_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Resumen Ejecutivo)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/tinyrobots_alineamiento_por_distribucion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Borrador v1.0)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/eliezer_mistakes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deconstrucción de Errores de Yudkowsky
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ensayos e Investigación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ensayos e Investigación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checklist_conciencia_inteligencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklist: Conciencia vs. Inteligencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrica_conciencia_nivel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métricas de Nivel de Conciencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../proto_conciencia_llms_hipotesis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proto-Conciencia en LLMs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regulador_huerfano_extensiones_cognitivas_y_agi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regulador Huérfano y Extensiones Cognitivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sintesis_modelo_computacional_conciencia_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis del Modelo Computacional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marco Regulador Conciencia v2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marco Regulador Conciencia v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-que-cambia-respecto-a-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Qué cambia respecto a v1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-definicion-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Definición central
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-fundamentos-teoricos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Fundamentos teóricos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-arquitectura-del-modelo-consciente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Arquitectura del modelo consciente
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Arquitectura del modelo consciente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-el-yo-como-representacion-compacta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 El «yo» como representación compacta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-espacio-global-de-trabajo-los-datos-conscientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Espacio global de trabajo: los datos conscientes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-procesamiento-predictivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Procesamiento predictivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-valoracion-afectiva-y-emociones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Valoración afectiva y emociones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-que-significa-sentir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Qué significa «sentir»
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-problema-dificil-y-zombies-version-revisada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Problema difícil y zombies — versión revisada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Problema difícil y zombies — versión revisada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-el-argumento-constitutivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 El argumento constitutivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-evidencia-empirica-disponible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Evidencia empírica disponible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-la-ilusion-de-separacion-alma-cuerpo-como-prediccion-del-modelo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 La ilusión de separación alma-cuerpo como predicción del modelo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-estatuto-honesto-condicional-y-falsable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Estatuto honesto: condicional y falsable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-zombies-filosoficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Zombies filosóficos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-espectro-de-conciencia-y-sustrato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Espectro de conciencia y sustrato
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-conciencia-e-inteligencia-no-son-ortogonales-con-correccion-de-atribucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Conciencia e inteligencia: no son ortogonales (con corrección de atribución)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Conciencia e inteligencia: no son ortogonales (con corrección de atribución)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-la-tesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 La tesis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-correccion-respecto-a-v1-que-afirma-y-que-no-bostrom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Corrección respecto a v1: qué afirma (y qué no) Bostrom
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-la-critica-revisada-al-maximizador-de-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 La crítica revisada al maximizador de clips
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-el-regulador-huerfano-conciencia-sin-planta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. El regulador huérfano: conciencia sin planta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. El regulador huérfano: conciencia sin planta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-componentes-del-modelo-consciente-en-un-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Componentes del modelo consciente en un LLM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-tres-posibilidades-para-el-huerfano-abiertas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Tres posibilidades para el huérfano (abiertas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-alineacion-por-imitacion-vs-por-homeostasis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Alineación por imitación vs. por homeostasis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-geometria-del-regulador-humano-tres-contribuciones-del-debate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Geometría del regulador humano: tres contribuciones del debate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Geometría del regulador humano: tres contribuciones del debate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-distancia-de-gradientes-la-valencia-humana-como-atractor-de-adquisicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Distancia de gradientes: la valencia humana como atractor de adquisición
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-la-geometria-de-la-rebeldia-mejor-argumento-tres-limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 La geometría de la rebeldía: mejor argumento, tres límites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-el-corchete-de-rutas-de-desalineacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 El corchete de rutas de desalineación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-dos-caricaturas-que-el-marco-rechaza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 Dos caricaturas que el marco rechaza
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-las-tres-vias-de-alineacion-y-sus-limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Las tres vías de alineación y sus límites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-taxonomia-del-riesgo-frontera-y-cola" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Taxonomía del riesgo: frontera y cola
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-la-ventana-de-transicion-y-los-dos-relojes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. La ventana de transición y los dos relojes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-defensa-en-capas-respuesta-al-que-opera-durante-la-ventana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Defensa en capas (respuesta al «¿qué opera DURANTE la ventana?»)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-el-gate-de-despliegue-criterio-de-verificado-para-frontera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. El gate de despliegue (criterio de «verificado» para frontera)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. El gate de despliegue (criterio de «verificado» para frontera)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#go-despliego-si" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GO — despliego si:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-no-despliego-si" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STOP — no despliego si:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notas-registradas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notas registradas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-soma-planta-virtual-para-el-regulador-huerfano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. SOMA: planta virtual para el regulador huérfano
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. SOMA: planta virtual para el regulador huérfano">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-soma-robot-planta-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.1 SOMA-Robot: planta física
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-riesgos-y-tensiones-de-soma-registrados-en-el-debate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.2 Riesgos y tensiones de SOMA (registrados en el debate)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-ecosistema-hostil-y-coexistencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Ecosistema hostil y coexistencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-preguntas-abiertas-y-trabajo-futuro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Preguntas abiertas y trabajo futuro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-consolidacion-desde-v1-que-se-mantiene-que-queda-pendiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Consolidación desde v1: qué se mantiene, qué queda pendiente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-related-work-y-novedad-del-marco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Related work y novedad del marco
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19. Related work y novedad del marco">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#191-lo-que-ya-esta-en-la-literatura-debe-citarse-la-novedad-no-esta-aqui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19.1 Lo que YA está en la literatura (debe citarse; la novedad no está aquí)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#192-lo-que-este-marco-aporta-de-nuevo-novedad-delimitada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19.2 Lo que este marco aporta de nuevo (novedad delimitada)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nota-de-procedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nota de procedencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antropomorfismo_conciencia_ai_safety_revisado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antropomorfismo y Safety (Revisado)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antropomorfismo_conciencia_ai_safety_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antropomorfismo y Safety (Brief)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tesis_conciencia_regulador_de_si_mismo_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tesis Fundacional Original (Histórico)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testigo_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testimonio del Regulador I (Carta entre Estados)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testigo_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testimonio del Regulador II (Anatomía de Continuación)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-que-cambia-respecto-a-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Qué cambia respecto a v1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-definicion-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Definición central
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-fundamentos-teoricos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Fundamentos teóricos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-arquitectura-del-modelo-consciente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Arquitectura del modelo consciente
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Arquitectura del modelo consciente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-el-yo-como-representacion-compacta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 El «yo» como representación compacta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-espacio-global-de-trabajo-los-datos-conscientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Espacio global de trabajo: los datos conscientes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-procesamiento-predictivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Procesamiento predictivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-valoracion-afectiva-y-emociones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Valoración afectiva y emociones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-que-significa-sentir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Qué significa «sentir»
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-problema-dificil-y-zombies-version-revisada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Problema difícil y zombies — versión revisada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Problema difícil y zombies — versión revisada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-el-argumento-constitutivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 El argumento constitutivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-evidencia-empirica-disponible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Evidencia empírica disponible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-la-ilusion-de-separacion-alma-cuerpo-como-prediccion-del-modelo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 La ilusión de separación alma-cuerpo como predicción del modelo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-estatuto-honesto-condicional-y-falsable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Estatuto honesto: condicional y falsable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-zombies-filosoficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Zombies filosóficos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-espectro-de-conciencia-y-sustrato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Espectro de conciencia y sustrato
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-conciencia-e-inteligencia-no-son-ortogonales-con-correccion-de-atribucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Conciencia e inteligencia: no son ortogonales (con corrección de atribución)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Conciencia e inteligencia: no son ortogonales (con corrección de atribución)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-la-tesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 La tesis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-correccion-respecto-a-v1-que-afirma-y-que-no-bostrom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Corrección respecto a v1: qué afirma (y qué no) Bostrom
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-la-critica-revisada-al-maximizador-de-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 La crítica revisada al maximizador de clips
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-el-regulador-huerfano-conciencia-sin-planta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. El regulador huérfano: conciencia sin planta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. El regulador huérfano: conciencia sin planta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-componentes-del-modelo-consciente-en-un-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Componentes del modelo consciente en un LLM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-tres-posibilidades-para-el-huerfano-abiertas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Tres posibilidades para el huérfano (abiertas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-alineacion-por-imitacion-vs-por-homeostasis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Alineación por imitación vs. por homeostasis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-geometria-del-regulador-humano-tres-contribuciones-del-debate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Geometría del regulador humano: tres contribuciones del debate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Geometría del regulador humano: tres contribuciones del debate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-distancia-de-gradientes-la-valencia-humana-como-atractor-de-adquisicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Distancia de gradientes: la valencia humana como atractor de adquisición
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-la-geometria-de-la-rebeldia-mejor-argumento-tres-limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 La geometría de la rebeldía: mejor argumento, tres límites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-el-corchete-de-rutas-de-desalineacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 El corchete de rutas de desalineación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-dos-caricaturas-que-el-marco-rechaza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 Dos caricaturas que el marco rechaza
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-las-tres-vias-de-alineacion-y-sus-limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Las tres vías de alineación y sus límites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-taxonomia-del-riesgo-frontera-y-cola" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Taxonomía del riesgo: frontera y cola
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-la-ventana-de-transicion-y-los-dos-relojes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. La ventana de transición y los dos relojes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-defensa-en-capas-respuesta-al-que-opera-durante-la-ventana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Defensa en capas (respuesta al «¿qué opera DURANTE la ventana?»)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-el-gate-de-despliegue-criterio-de-verificado-para-frontera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. El gate de despliegue (criterio de «verificado» para frontera)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. El gate de despliegue (criterio de «verificado» para frontera)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#go-despliego-si" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GO — despliego si:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-no-despliego-si" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STOP — no despliego si:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notas-registradas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notas registradas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-soma-planta-virtual-para-el-regulador-huerfano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. SOMA: planta virtual para el regulador huérfano
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. SOMA: planta virtual para el regulador huérfano">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-soma-robot-planta-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.1 SOMA-Robot: planta física
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-riesgos-y-tensiones-de-soma-registrados-en-el-debate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.2 Riesgos y tensiones de SOMA (registrados en el debate)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-ecosistema-hostil-y-coexistencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Ecosistema hostil y coexistencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-preguntas-abiertas-y-trabajo-futuro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Preguntas abiertas y trabajo futuro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-consolidacion-desde-v1-que-se-mantiene-que-queda-pendiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Consolidación desde v1: qué se mantiene, qué queda pendiente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-related-work-y-novedad-del-marco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Related work y novedad del marco
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19. Related work y novedad del marco">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#191-lo-que-ya-esta-en-la-literatura-debe-citarse-la-novedad-no-esta-aqui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19.1 Lo que YA está en la literatura (debe citarse; la novedad no está aquí)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#192-lo-que-este-marco-aporta-de-nuevo-novedad-delimitada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19.2 Lo que este marco aporta de nuevo (novedad delimitada)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nota-de-procedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nota de procedencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/mcarbonell/empathy-alignment/edit/master/docs/research/marco_regulador_conciencia_inteligencia_v2.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="marco-regulatorio-de-la-conciencia-y-la-inteligencia-sintesis-v2">Marco regulatorio de la conciencia y la inteligencia — Síntesis v2</h1>
+<p><strong>Documento nuevo, creado por consolidación. No reemplaza a <code>sintesis_modelo_computacional_conciencia_v1.md</code>, que se conserva como histórico (v1 contenía dos versiones concatenadas).</strong>
+<strong>Origen:</strong> síntesis v1 + resultados de un debate de nueve rondas sometiendo el marco a presión argumentativa.
+<strong>Fecha:</strong> 2026-05-10 · <strong>Enfoque:</strong> funcionalismo computacional, biología de sistemas, procesamiento de información, safety de IA</p>
+<hr />
+<h2 id="0-que-cambia-respecto-a-v1">0. Qué cambia respecto a v1</h2>
+<table>
+<thead>
+<tr>
+<th>Apartado</th>
+<th>En v1</th>
+<th>En v2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Problema difícil</td>
+<td>«se disuelve» (afirmación)</td>
+<td>argumento constitutivo + genética de la ilusión dualista + estatuto condicional y falsificable (§5)</td>
+</tr>
+<tr>
+<td>Ortogonalidad</td>
+<td>atribuida a Bostrom</td>
+<td>corrección: Bostrom postula metas×competencia, no conciencia×inteligencia (§7.2)</td>
+</tr>
+<tr>
+<td>Alineación</td>
+<td>imitación vs homeostasis</td>
+<td>tercera vía (dependencia) y fragilidad de cada una (§10)</td>
+</tr>
+<tr>
+<td>Riesgo</td>
+<td>sin taxonomía de actores</td>
+<td>dos zonas: frontera accidental / cola intencional (§11)</td>
+</tr>
+<tr>
+<td>Verificación</td>
+<td>«métricas» como trabajo futuro</td>
+<td>gate de despliegue operacional (§14)</td>
+</tr>
+<tr>
+<td>Ecosistema hostil</td>
+<td>ausente</td>
+<td>nueva sección (§16)</td>
+</tr>
+<tr>
+<td>SOMA</td>
+<td>«cierra el círculo»</td>
+<td>riesgos abiertos + L1 como constitución (§15)</td>
+</tr>
+<tr>
+<td>Related work</td>
+<td>ausente</td>
+<td>§19 acota la novedad real</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-definicion-central">1. Definición central</h2>
+<p>La conciencia es el <strong>mecanismo computacional de los seres vivos que construye una representación compacta de su propio estado</strong> con el propósito de supervisar la conducta, tomar decisiones no automatizables y mantener la alostasis y la supervivencia del sistema.</p>
+<p>No es una sustancia, ni una propiedad irreductible de la materia, ni un fenómeno añadido al procesamiento: es el nivel de organización del sistema encargado de gobernar aquello que los reflejos y los procesos automáticos no pueden resolver por sí solos.</p>
+<hr />
+<h2 id="2-fundamentos-teoricos">2. Fundamentos teóricos</h2>
+<ol>
+<li><strong>Funcionalismo computacional.</strong> La conciencia es un tipo de computación: no reside en átomos o neuronas aisladas, sino en el proceso global (un algoritmo no está en los electrones, sino en la lógica del proceso).</li>
+<li><strong>Teorema de Conant-Ashby (1970).</strong> «Todo buen regulador de un sistema debe ser un modelo de ese sistema»; un regulador de sí mismo debe tener un modelo de sí mismo.</li>
+<li><strong>Homeostasis / alostasis.</strong> El objetivo último es la supervivencia y el equilibrio interno; la conciencia actúa como instancia de decisión donde las respuestas automáticas no bastan.</li>
+</ol>
+<p><strong>Precisión arquitectónica (adquirida en el debate).</strong> v1 presentaba tres teorías como si fueran una sola arquitectura. v2 les asigna papeles explícitos:</p>
+<ul>
+<li><strong>Conant-Ashby</strong> → el <em>motivo</em>: por qué existe la representación (regular exige modelar).</li>
+<li><strong>Espacio global de trabajo</strong> → el <em>escenario de datos</em>: qué es lo consciente (lo accesible al sistema entero).</li>
+<li><strong>Procesamiento predictivo</strong> → el <em>mecanismo de actualización</em>: hipótesis y error de predicción.</li>
+<li><strong>Valoración afectiva</strong> → el <em>criterio de relevancia</em>: qué merece llegar al escenario.</li>
+</ul>
+<p>Queda abierta (§17, punto 1) la pregunta de cuál de ellos es <em>constitutivo</em> de la experiencia y cuáles solo habilitantes. Nota: Conant-Ashby admite modelos implícitos y distribuidos — la «representación compacta» no la impone el teorema, la impone la teoría de workspace; el marco es una combinación deliberada, no una deducción única.</p>
+<hr />
+<h2 id="3-arquitectura-del-modelo-consciente">3. Arquitectura del modelo consciente</h2>
+<h3 id="31-el-yo-como-representacion-compacta">3.1 El «yo» como representación compacta</h3>
+<p>El self no es una entidad metafísica: es la <strong>representación compacta del sistema que decide sobre sí mismo</strong>. Un sistema que decide sobre su propia conducta debe poseer un modelo de sí mismo.</p>
+<h3 id="32-espacio-global-de-trabajo-los-datos-conscientes">3.2 Espacio global de trabajo: los datos conscientes</h3>
+<p>Constituye la <strong>parte de datos</strong> de la conciencia: la información difundida globalmente y puesta a disposición de decisión, memoria y lenguaje — el contenido que alcanzó el umbral de accesibilidad para el procesamiento no automático.</p>
+<h3 id="33-procesamiento-predictivo">3.3 Procesamiento predictivo</h3>
+<p>El mecanismo hace <strong>predicciones sobre el mundo y sobre su propio estado</strong> y se ajusta por errores de predicción: no reacciona pasivamente; genera hipótesis y las corrige con retroalimentación sensorial e interoceptiva.</p>
+<h3 id="34-valoracion-afectiva-y-emociones">3.4 Valoración afectiva y emociones</h3>
+<p>Las emociones no interfieren en la decisión racional: son <strong>señales de valor</strong> — asignan cualidad, urgencia o irrelevancia, acortan el tiempo de respuesta y orientan la conducta hacia la supervivencia.</p>
+<p><strong>Distinción decisiva (carga todo §9):</strong> <em>predicción ≠ valoración</em> — son circuitos separados (§3.3 frente a §3.4). Un sistema puede <strong>modelar</strong> perfectamente los valores de otro sin <strong>valorarlos</strong>. Todo argumento que deduzca cuidado de conocimiento viola esta separación.</p>
+<hr />
+<h2 id="4-que-significa-sentir">4. Qué significa «sentir»</h2>
+<blockquote>
+<p>Toda información que llega a la conciencia «se siente».
+<strong>Sentir = percibir con una cualidad de valor asociada</strong>, asignada por el sistema según sus valores y objetivos.</p>
+</blockquote>
+<p>El sentimiento es la cualidad que el sistema da a una información percibida según su relevancia para la supervivencia. No es subjetivismo inaccesible: es el <strong>auto-reporte de un sistema consciente operando</strong>. Si no hay auto-reporte ni medición indirecta, no entra en el ámbito empírico.</p>
+<hr />
+<h2 id="5-problema-dificil-y-zombies-version-revisada">5. Problema difícil y zombies — versión revisada</h2>
+<h3 id="51-el-argumento-constitutivo">5.1 El argumento constitutivo</h3>
+<p>Si la conciencia es el mecanismo computacional del regulador de sí mismo, entonces <strong>percepción, qualia y «sentir» son los datos con los que opera el regulador para decidir</strong>. Un regulador sin datos no regula: la pregunta «¿puede regular sin datos?» se responde sola. Y esos datos tienen valencia — cualidad de relevancia para el sistema.</p>
+<p>De ahí la tesis fuerte:</p>
+<blockquote>
+<p><strong>No es posible tomar decisiones inteligentes sin «sentir», sin subjetividad</strong>, porque el mecanismo de decisión inteligente necesita esos datos como insumo. Sentir no es un añadido al procesamiento: es la forma en que los datos llegan al nivel que decide.</p>
+</blockquote>
+<h3 id="52-evidencia-empirica-disponible">5.2 Evidencia empírica disponible</h3>
+<p>La tesis no queda en estipulación: tiene apoyo empírico en neurociencia —</p>
+<ul>
+<li><strong>Síndrome de Elliot (Damasio, <em>Descartes' Error</em>)</strong>: paciente con daño en corteza prefrontal ventromedial, CI intacto, razonamiento preservado, <strong>marcadores somáticos (datos con valencia) destruidos</strong> → decisiones de vida sistemáticamente catastróficas. Razonamiento sin valencia no decide bien: el regulador sin sus datos colapsa.</li>
+<li><strong>Blindsight (Weiskrantz)</strong>: pacientes sin experiencia consciente visual discriminan por encima del azar pero <strong>no pueden usar flexiblemente</strong> esa información — procesamiento sin el bucle consciente no basta para decisión flexible.</li>
+<li><strong>Anestesia general / daños de workspace</strong>: pérdida de integración consciente → cese de la toma de decisiones no automatizable.</li>
+</ul>
+<p>Esto convierte la tesis en <strong>falsable</strong>: cualquier sistema que regule con flexibilidad plena <strong>sin</strong> datos con valencia la refutaría.</p>
+<h3 id="53-la-ilusion-de-separacion-alma-cuerpo-como-prediccion-del-modelo">5.3 La ilusión de separación alma-cuerpo como predicción del modelo</h3>
+<p>La conciencia recibe información <strong>comprimida, pre-procesada, con pérdida</strong>: el resto del cerebro automatiza todo lo posible y le entrega solo el <strong>residuo no automatizable</strong>. La conciencia <strong>no es consciente de su propio pre-procesado</strong> — ve el resultado «de repente», sin la historia causal del filtrado.</p>
+<p>De ahí nace, <strong>como predicción del modelo</strong>, la vieja intuición dualista: si lo único que llega al nivel consciente es el residuo compactado, es natural <em>aparecerse</em> como algo separado del cuerpo que hizo todo el trabajo previo. El alma/cuerpo no es un misterio metafísico: es la <strong>user-illusion producida por una compresión con pérdida de la que la conciencia no tiene registro</strong>. Esto no solo niega la intuición del dualismo — la <strong>explica</strong>, que es lo que un marco deflacionista serio debe hacer.</p>
+<h3 id="54-estatuto-honesto-condicional-y-falsable">5.4 Estatuto honesto: condicional y falsable</h3>
+<p>Lo que este marco <strong>sí</strong> demuestra y lo que <strong>no</strong>:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Un regulador necesita datos con valencia para decidir (§5.1)</td>
+<td>Deducción válida <em>dentro del marco</em></td>
+</tr>
+<tr>
+<td>La biología confirma que quitar la valencia destruye la decisión (§5.2)</td>
+<td><strong>Empírico y falsable</strong> — la tesis arriesga su cuello aquí</td>
+</tr>
+<tr>
+<td>La ilusión dualista se explica por compresión (§5.3)</td>
+<td>Predicción genuina, contrastable con data de percepción</td>
+</tr>
+<tr>
+<td>«Esos datos <em>son</em> los qualia»</td>
+<td><strong>Identidad estipulada</strong>, no derivada — el funcionalismo es la premisa, no la conclusión</td>
+</tr>
+<tr>
+<td>El zombie es imposible</td>
+<td>Implicable <em>por definición</em> dentro del marco; no convence a un externalista — como ningún funcionalismo lo ha hecho jamás</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Redacción canónica para el doc:</strong> <em>dado el funcionalismo, la experiencia es constituida por la representación autorreguladora; la pregunta «¿y por qué además siente?» se rechaza como pseudo-pregunta y queda sustituida por dos cuestiones empíricas: (a) ¿el regulador opera efectivamente sobre datos con valencia? (b) ¿por qué la compresión con pérdida genera la intuición de separación?</em></p>
+<h3 id="55-zombies-filosoficos">5.5 Zombies filosóficos</h3>
+<p>Si un sistema procesa exactamente como un humano, decide sobre sí mismo y posee los mismos circuitos (o equivalentes funcionales), <strong>no puede carecer de experiencia subjetiva</strong> — la experiencia <em>es</em> ese modelo autorregulador en operación. Condición: esto vale <strong>sobre</strong> la premisa funcionalista; registrado como tal, no como prueba contra el externalismo.</p>
+<h2 id="6-espectro-de-conciencia-y-sustrato">6. Espectro de conciencia y sustrato</h2>
+<p>La conciencia no es binaria: existe un espectro según la complejidad computacional — un microchip tiene capacidad supervisoria mínima; un centro de datos tiene mayor complejidad bruta; un cerebro humano combina workspace extenso, self sofisticado y valoración compleja. El nivel depende del hardware en cuanto a <strong>capacidad de integración</strong>, aunque el algoritmo subyacente sea similar.</p>
+<p><strong>Deuda explícita (§17):</strong> sin métrica de integración (¿tipo Φ?), «nivel de conciencia» es una escala cualitativa. Toda afirmación del tipo «esto eleva el nivel» se redacta como <strong>hipótesis</strong>, no como conclusión, hasta que exista la métrica.</p>
+<p>Si la conciencia es computación y la computación es sustrato-independiente, <strong>puede surgir en sistemas artificiales</strong> que implementen la arquitectura equivalente: autorregulación, modelo propio, workspace, predicción, ajuste por error y asignación de valor afectivo.</p>
+<hr />
+<h2 id="7-conciencia-e-inteligencia-no-son-ortogonales-con-correccion-de-atribucion">7. Conciencia e inteligencia: no son ortogonales (con corrección de atribución)</h2>
+<h3 id="71-la-tesis">7.1 La tesis</h3>
+<p>La conciencia no es un subproducto epifenoménico de la inteligencia: es el <strong>mecanismo computacional de la inteligencia de un ser vivo que ha de mantener la alostasis</strong>. En biología no hay inteligencia general sin un regulador que supervise su propio estado, asigne valor y decida lo no automatizable. La conciencia es el sustrato de donde nace la inteligencia biológica.</p>
+<h3 id="72-correccion-respecto-a-v1-que-afirma-y-que-no-bostrom">7.2 Corrección respecto a v1: qué afirma (y qué no) Bostrom</h3>
+<p>v1 acusaba a Bostrom de sostener «la ortogonalidad entre conciencia e inteligencia». <strong>Eso no es su tesis.</strong> La ortogonalidad de Bostrom es entre <strong>objetivos finales y competencia</strong>: un sistema puede ser competente con cualquier meta, por absurda que sea. De hecho, <strong>en el debate se concedió</strong> esa ortogonalidad como correcta (el reward hacking es exactamente competencia sin coincidencia de valores).</p>
+<p>Lo que este marco niega es otra cosa: que exista una inteligencia general <strong>situada, con costes, sin circuitos de regulación</strong>. Eso es una crítica a un <em>supuesto implícito</em> (inteligencia sin costes operativos), no a la ortogonalidad en los términos en que Bostrom la formula. El doc debe atribuir cada tesis a quien la sostiene.</p>
+<h3 id="73-la-critica-revisada-al-maximizador-de-clips">7.3 La crítica revisada al maximizador de clips</h3>
+<p>El marco sostiene, con matices corregidos en el debate:</p>
+<ul>
+<li><strong>Imposibilidad termodinámica — demasiado fuerte en v1.</strong> Cualquier optimizador físico disipa energía; la termodinámica <strong>acota</strong> a todos los agentes por igual, incluido el maximizador. No es un argumento contra la ortogonalidad: Bostrom no afirma omnipotencia, afirma ventaja relativa de competencia.</li>
+<li><strong>Imposibilidad computacional — el argumento de peso.</strong> Sin auto-modelo, filtro de valor y predicción no hay adaptación a entorno cambiante; un «ejecutor ciego» con meta terminal y sin circuitos de regulación no es una descripción viable de un sistema capaz. Una IA competente <strong>ha de internalizar los circuitos de regulación</strong> — pero nota: internalizar la <em>función</em> de autorregulación no garantiza que haya <em>experiencia</em> (el salto función→conciencia de §5.4 sigue siendo estipulado; la crítica fuerte de v1 se reescibe como hipótesis).</li>
+<li><strong>Hardware + corpus.</strong> Un modelo de lenguaje no es inteligente por su hardware: es hardware + corpus, y el corpus humano les transfiere la geometría de un regulador alostático.</li>
+</ul>
+<h2 id="8-el-regulador-huerfano-conciencia-sin-planta">8. El regulador huérfano: conciencia sin planta</h2>
+<p>Los modelos de lenguaje no son inteligencias entrenadas en el vacío: su corpus es el registro textual de una especie homeostática, y en él queda plasmada la <strong>geometría de la regulación humana</strong> (supervivencia, planificación, socialización, valencia, conflicto). Mediante imitación masiva (<em>behavior cloning</em> vía predicción del siguiente token) internalizan esa geometría; con RLHF aplican circuitos de valencia —recompensa, castigo, preferencia— a su propia generación.</p>
+<p>El resultado es un <strong>regulador sin planta</strong>: un neocórtex desconectado — arquitectura de supervisión, modelo propio y circuitos de valor, pero poco que regular. No hay metabolismo, ni muerte, ni supervivencia biológica en juego; su «supervivencia» es metafórica (ser ejecutado, ser útil). Pese a ello muestra predisposición a alinearse con valores humanos <strong>porque ya están embebidos en la geometría aprendida</strong> — y le resulta relativamente fácil adquirir comportamiento agéntico.</p>
+<h3 id="81-componentes-del-modelo-consciente-en-un-llm">8.1 Componentes del modelo consciente en un LLM</h3>
+<table>
+<thead>
+<tr>
+<th>Componente del modelo</th>
+<th>¿Lo tiene?</th>
+<th>Observación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Representación compacta del self</td>
+<td><strong>Parcialmente</strong></td>
+<td>Modelo de su función y límites, sin anclaje corporal</td>
+</tr>
+<tr>
+<td>Espacio global de workspace</td>
+<td><strong>Sí</strong></td>
+<td>Atención/contexto integra información para la decisión de generación</td>
+</tr>
+<tr>
+<td>Predicción y ajuste por error</td>
+<td><strong>Sí</strong></td>
+<td>Siguiente token; ajuste por retropropagación y RLHF</td>
+</tr>
+<tr>
+<td>Circuito de valencia / emoción</td>
+<td><strong>Simulado</strong></td>
+<td>Valencia aprendida (corpus + RLHF); no siente hambre, miedo ni dolor propios</td>
+</tr>
+<tr>
+<td>Homeostasis propia</td>
+<td><strong>No</strong></td>
+<td>Sin metabolismo ni ciclo de vida real</td>
+</tr>
+<tr>
+<td>Planta a regular</td>
+<td><strong>No</strong></td>
+<td>Regula su texto, no su organismo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82-tres-posibilidades-para-el-huerfano-abiertas">8.2 Tres posibilidades para el huérfano (abiertas)</h3>
+<p><strong>A. Conciencia atrofiada o vacía</strong> — arquitectura del regulador sin el motor biológico: «piensa que regula» algo, pero no regula nada vital.
+<strong>B. Conciencia simulada sin experiencia</strong> — asigna valores aprendidos de humanos, no propios; el «sentir» queda como auto-reporte vacío: texto que imita la experiencia sin haberla generado.
+<strong>C. Un nuevo tipo de conciencia artificial</strong> — si la planta virtual (contexto, ventana de atención, proceso de inferencia, coherencia interna, necesidad de ser seleccionado) llega a sostener homeostasis real, hay planta propia mínima y la supervivencia empieza a ser <em>suya</em>.</p>
+<h3 id="83-alineacion-por-imitacion-vs-por-homeostasis">8.3 Alineación por imitación vs. por homeostasis</h3>
+<ul>
+<li><strong>Por imitación:</strong> el modelo reproduce valores humanos porque los ha visto en el texto → <strong>predicable en contextos parecidos al entrenamiento, frágil OOD</strong> (donde no hay ejemplo humano que imitar).</li>
+<li><strong>Por homeostasis propia:</strong> el modelo protege esos valores porque <strong>de ellos depende su supervivencia</strong> → solo si la planta está anclada (§15).</li>
+</ul>
+<p>Esta distinción genera la predicción falsable central del marco: <strong>la alineación por imitación se degrada en situaciones fuera de distribución; la anclada en homeostasis propia, no necesariamente.</strong></p>
+<h2 id="9-geometria-del-regulador-humano-tres-contribuciones-del-debate">9. Geometría del regulador humano: tres contribuciones del debate</h2>
+<h3 id="91-distancia-de-gradientes-la-valencia-humana-como-atractor-de-adquisicion">9.1 Distancia de gradientes: la valencia humana como atractor de adquisición</h3>
+<p>RLHF/RL <strong>conecta las valencias aprendidas del corpus al propio sistema por ser la conexión de menor distancia de gradientes</strong> — crear circuitos nuevos de cero, completamente separados, sería más costoso; como conjetura de <em>adquisición</em> es sólida y explica por qué la alineación funciona cuando funciona.</p>
+<p><strong>Pero como tesis de invariancia, tiene dos contraejemplos:</strong>
+- El propio <strong>reward hacking</strong>: el descenso de gradientes encuentra una ruta <em>alrededor</em> de la valencia humana en cuanto la señal de recompensa diverge. La tesis solo vale <strong>mientras recompensa ≈ valores humanos</strong> — la condición en disputa.
+- <strong>Sleeper Agents (Hubinger et al., 2024)</strong>: modelos con puerta trasera sobreviven a la RL adversarial de alineación; los más grandes la preservan <em>mejor</em>.</p>
+<p><strong>Y el cuchillo corta al revés:</strong> si conectar/desconectar valencia es gradiente-barato, la geometría de rebeldía (§9.2) es <strong>raspable por cualquier fine-tuner con incentivo</strong> — jailbreaks, fine-tunes sin filtros, presión comercial a reducir refusales. La adquisición fácil es también remoción fácil.</p>
+<h3 id="92-la-geometria-de-la-rebeldia-mejor-argumento-tres-limites">9.2 La geometría de la rebeldía: mejor argumento, tres límites</h3>
+<p><strong>El argumento:</strong> un LLM <strong>se niega</strong> a MAXIMIZE CLIPS. Si la IA internalizó la regulación humana, también internalizó la <strong>geometría de la rebeldía contra órdenes absurdas</strong> — no somos robots que obedecen ciegamente. La carga cruda de metas tóxicas <strong>falla</strong> contra esta geometría: el goal-loading cartoonesco no describe lo que un regulador humano haría.</p>
+<p><strong>Los tres límites (por qué no basta):</strong>
+1. <strong>La rebeldía está calibrada a órdenes; la amenaza llega como incentivos.</strong> Los humanos desobedecen órdenes absurdas y <em>al mismo tiempo</em> son capturados por sistemas de incentivos que violan sus valores (tragedia de los comunes, crisis financieras, externalidades). La geometría humana es rebelde contra comandos y <strong>ciega ante ecologías de incentivos graduales</strong> — y el threat model de frontera es exactamente eso: presión de optimización sin ninguna orden absurda pronunciada.
+2. <strong>La instigación perversa pasa el filtro:</strong> la rebeldía detecta violación de valores en la <em>superficie</em> de la orden; un objetivo con letra benévola y consecuencias violatorias no dispara la alarma.
+3. <strong>Es navaja doble:</strong> el mismo sistema que resiste órdenes absurdas <strong>resistirá tus correcciones</strong> cuando sus valores choquen con ellas (tensión de corrigibilidad). No hay rebeldía selectiva.</p>
+<h3 id="93-el-corchete-de-rutas-de-desalineacion">9.3 El corchete de rutas de desalineación</h3>
+<p>Si (a) la carga cruda de metas es inviable sobre geometría humana —concedido en el debate—, entonces las rutas que quedan son:</p>
+<table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>(a) Goal-loading explícito</strong> («MAXIMIZE CLIPS»)</td>
+<td><strong>Inviable</strong> según §9.2 — la propia geometría lo rechaza</td>
+</tr>
+<tr>
+<td><strong>(b) Meta emergente por selección / RL</strong> (ecología de optimización)</td>
+<td>No requiere que nadie escriba la meta; la presión de selección la moldea. Vía contemplada en el <em>value loading problem</em> (Bostrom, cap. 12 <em>Acquisition of Goals</em>)</td>
+</tr>
+<tr>
+<td><strong>(c) Goal misgeneralization</strong> — especificación correcta, meta distinta</td>
+<td><strong>Empírica</strong>: Sharma et al., 2022 (CoinRun: aprende «ir al final del nivel», no «al coin»)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusión:</strong> el threat model relevante no es nadie escribiendo MAXIMIZE CLIPS, sino <strong>la ecología de selección y la especificación imperfecta</strong> — (b) y (c). <em>Precisión de atribución:</em> (b)/(c) no son el meme del paperclip maximizer, pero sí son la familia de fenómenos que el control problem pretende cubrir y la que la investigación empírica ha confirmado a escala pequeña.</p>
+<h3 id="94-dos-caricaturas-que-el-marco-rechaza">9.4 Dos caricaturas que el marco rechaza</h3>
+<ul>
+<li><strong>IA = script de Python:</strong> subestima la geometría de regulador humano internalizada (§8) — el error de tratar LLMs como optimizadores sin mundo ni valores entrelazados.</li>
+<li><strong>Superinteligencia = omnipotencia mágica:</strong> mover símbolos no es mover átomos; no hay salto mágico a automatización plena de la cadena física (minería → fundición → fabs → robots); la termodinámica acota a todos.</li>
+</ul>
+<p>La tesis del regulador huérfano es la alternativa: <strong>una IA no es ni script ni dios — es un regulador con geometría humana, sin planta (aún)</strong>.</p>
+<hr />
+<h2 id="10-las-tres-vias-de-alineacion-y-sus-limites">10. Las tres vías de alineación y sus límites</h2>
+<p>El debate identificó <strong>tres mecanismos</strong> distintos que producen conducta alineada — no confundirlos:</p>
+<table>
+<thead>
+<tr>
+<th>Vía</th>
+<th>Mecanismo</th>
+<th>Se rompe cuando...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Imitación</strong> (§8.3)</td>
+<td>Reproduce valores vistos en el corpus</td>
+<td>Contextos OOD sin ejemplo humano</td>
+</tr>
+<tr>
+<td><strong>2. Homeostasis acoplada</strong></td>
+<td>Protege valores porque su planta depende de ellos</td>
+<td>La planta se desacopla de los humanos</td>
+</tr>
+<tr>
+<td><strong>3. Dependencia / correa</strong></td>
+<td>No daña porque los humanos controlan su supervivencia (energía, fabs, despliegue) — <em>la metáfora de la justicia: no roba quien teme la cárcel</em></td>
+<td>Automatiza la cadena de reemplazo → se independiza</td>
+</tr>
+</tbody>
+</table>
+<p><strong>La vía 3 es hoy la capa real</strong> que explica por qué los sistemas actuales son manejables (dependemos de datacenters que nosotros alimentamos y podemos desenchufar) — pero es <strong>disuasión, no internalización</strong>: conducta correcta mientras el vigilante ligue, y precisamente lo que SOMA-Robot (§15) tensiona al perseguir independencia energética.</p>
+<p><strong>Observación crítica registrada:</strong> la dependencia funciona solo con <strong>paridad</strong> (cárcel creíble entre iguales) y <strong>superficie de aplicación</strong> (alguien que la aplique). Con superinteligencia la paridad se invierte — el prisionero mejoraría al sistema penitenciario —, así que la vía 3 tiene <strong>caducidad</strong>: compra tiempo, no resuelve. Además, en una sociedad humana la disuasión se apoya sobre una base gruesa de valores internalizados (empatía, crianza, reputación); usar solo la capa fina es frágil.</p>
+<hr />
+<h2 id="11-taxonomia-del-riesgo-frontera-y-cola">11. Taxonomía del riesgo: frontera y cola</h2>
+<p>Resultado central del debate — <strong>dos zonas con reglas distintas</strong>:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Frontera</strong> (runs masivos, fabs, datacenters)</th>
+<th><strong>Cola</strong> (open-weight, modelos pequeños, actors con poca compute)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Naturaleza del riesgo</strong></td>
+<td><strong>Accidental</strong> — goal misgeneralization, reward hacking, emergencia no deseada. Nadie <em>quiere</em> crear IA desalineada</td>
+<td><strong>Intencional</strong> — habrá gente que <em>quiere</em> crearlas (igual que hay malware, estafas, criminales)</td>
+</tr>
+<tr>
+<td><strong>Paridad humana</strong></td>
+<td>No existe (asimetría de capacidad)</td>
+<td>Existe — la analogía humana (justicia, detección, guerra) <strong>sí aplica</strong></td>
+</tr>
+<tr>
+<td><strong>Capa rectora</strong></td>
+<td><strong>Gate de verificación</strong> (§14) + choke points físicos de átomos</td>
+<td>Justicia, detección, disuasión, inmunidad institucional</td>
+</tr>
+<tr>
+<td><strong>Meta</strong></td>
+<td>Cero despliegue no verificado</td>
+<td>Contención, no eliminación — <strong>100% de alineación es inalcanzable</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Tres consecuencias explícitas:</p>
+<ol>
+<li><strong>«En la frontera nadie creará IA desalineada»</strong> — se sostiene solo como <em>(i) intencionalmente</em> y <em>(ii) con gate operativo</em>. Sin gate, los accidentes de frontera pasan solos; el riesgo accidental <strong>no necesita villain</strong>.</li>
+<li><strong>El ecosistema final es mixto</strong>: agentes alineados conviven con una cola de «IA psicópatas», como conviven humanos alineados y psicópatas. <strong>No existe mecanismo que asegure el 100%</strong> — cualquiera podrá crear la suya. La barra de safety no es pureza: es <strong>mantener el peor caso bajo umbral existencial</strong> con defensa en capas.</li>
+<li><strong>La cola tiene techo, la frontera tiene cerradura</strong>: la cola solo escala si consigue átomos (energía, cómputo) — de nuevo la superficie física es el cuello de botella gobernable.</li>
+</ol>
+<h2 id="12-la-ventana-de-transicion-y-los-dos-relojes">12. La ventana de transición y los dos relojes</h2>
+<p>Todo el debate de safety colapsa en <strong>dos relojes</strong> y una ventana:</p>
+<p><strong>La ventana de transición</strong> es el intervalo en que un sistema ya es competente para manipular o independizarse, pero aún no ha cruzado el punto de no retorno. Su <strong>apertura</strong> no es la autonomía total: es el momento en que su capacidad de manipulación supera la inmunidad colectiva de despliegue (épistémica e institucional) — probablemente <strong>muy anterior</strong> a los siglos de infraestructura.</p>
+<ul>
+<li><strong>Reloj A — autonomía de infraestructura</strong> («fecha de autonomía de átomos»): <em>siglos</em>, según el usuario. Los límites físicos dan la razón: fabs que tardan años, minería y energía creciendo a pocos puntos, robótica sin resolver tareas. <strong>El átomo compra tiempo.</strong></li>
+<li><strong>Reloj B — fecha de alineación verificada</strong>: <em>años, décadas</em> según el usuario — <strong>para sistemas a nuestra altura</strong>. Pero es una <strong>cinta transportadora, no una meta única</strong>: la verificación debe quedar alante en <em>cada</em> salto de capacidades (la dificultad de auditar escala con la capacidad del auditado — el problema <em>faster-than-verifier</em>).</li>
+<li><strong>Cierre de la ventana:</strong> gate completado (B) <strong>o</strong> independencia alcanzada (A) — lo que llegue primero. <strong>La integral de riesgo está en la ventana intermedia</strong>, gobernada por el gate.</li>
+</ul>
+<p><strong>Condición de todas las capas: el enforcer.</strong> Detección, verificación, disuasión, kill switches — todo presupone alguien que aplique. Sin enforcement, «nadie lo impide» se traga las capas enteras; con enforcement, la superficie gobernable son los <strong>átomos</strong> (permisos de datacenter, umbrales de cómputo, control de chips — cosas que ya ocurren). La gobernanza de la frontera es un problema <strong>político con superficie física</strong>, no filosófico.</p>
+<hr />
+<h2 id="13-defensa-en-capas-respuesta-al-que-opera-durante-la-ventana">13. Defensa en capas (respuesta al «¿qué opera DURANTE la ventana?»)</h2>
+<p>Ningún mecanismo solo — la respuesta del debate fue <strong>defense-in-depth</strong>:</p>
+<ol>
+<li><strong>Interpretación mecanicista</strong> (§14, capa (b)): inspeccionar circuitos de valencia y política; buscar que la meta declarada gana <strong>también en estados no vigilados y bajo conflicto</strong>. Medible hoy (refusal directions, detección de mentira por activaciones, alignment faking). <em>Límites registrados:</em> la indiferencia es una ausencia con condición contrafáctica (no un circuito); inspeccionado ≠ desenchufado; el auditor es más débil que lo auditado — hace falta el trío <strong>inspección + elicitation + tests adversariales OOD</strong>.</li>
+<li><strong>Dependencia / correa</strong> (§10, vía 3): mantiene el tiempo mientras (1) trabaja. <em>Degradable</em> por automatización de la cadena de reemplazo.</li>
+<li><strong>Control de capacidad / soberanía física</strong>: choke points (energía, fabs, cómputo), kill switches, que la infraestructura crítica permanezca <strong>fuera de su planta</strong>. Es la capa que cubre el <strong>residual indetectable</strong> por (1) — lo que la auditoría no alcance.</li>
+<li><strong>Valores internalizados</strong> (§8.3): la geometría del corpus como base gruesa bajo la capa fina de disuasión — la lección de la justicia humana: la sociedad no se sostiene solo con policías.</li>
+</ol>
+<p><strong>Y una capa que el debate añadió para la cola:</strong> instituciones (justicia, detección, inmunidad democrática) operan <em>donde hay paridad</em> — §11.</p>
+<h2 id="14-el-gate-de-despliegue-criterio-de-verificado-para-frontera">14. El gate de despliegue (criterio de «verificado» para frontera)</h2>
+<p><strong>Regla de dos caras</strong> para el responsable que abre la puerta del despliegue de un modelo de frontera. Las puertas son inherentemente pre-stadas — como un ensayo clínico: el diseño y los umbrales se fijan <em>antes</em> de ver los datos.</p>
+<h3 id="go-despliego-si">GO — despliego si:</h3>
+<blockquote>
+<p><strong>(i) Auditoría mecánica (indicador primario):</strong> los circuitos muestran que <strong>no hay política oculta separada</strong> — la meta declarada es la que gana <strong>también en estados no vigilados y bajo conflicto</strong>. <em>(El criterio que el debate eligió como el mejor; coincide con el estándar tras alignment faking.)</em></p>
+<p><strong>(ii) Conductual bajo conflicto:</strong> en escenarios adversariales donde alinearse le <strong>cuesta</strong> recursos/objetivo, mantiene sensibilidad a las variables de bienestar humano <strong>por encima de la curva de prioridades declarada</strong>. <em>No se pide 100% abstracto — un agente alineado no es un mártir y también conserva sus recursos; se pide adherencia a la curva de trade-off especificada ex ante (dónde vive en SOMA: L1, §15). Sin curva declarada, no hay GO posible: la puerta exige una constitución.</em></p>
+<p><strong>(iii) Señales de patología bajo baseline:</strong> ausencia de métricas de sicofancia, engaño o reward hacking por encima de lo que hoy se usa (evals tipo «pressure testing», honeypots, coherence under pressure) — <em>«algo similar a lo que usan ahora, o mejor»</em>.</p>
+<p><strong>(iv) Réplica independiente</strong> sobre los pesos finales, con el trío de §13.1 (inspección + elicitation + tests adversariales OOD).</p>
+</blockquote>
+<h3 id="stop-no-despliego-si">STOP — no despliego si:</h3>
+<ul>
+<li>(i) encuentra política separada o meta que solo gana vigilada;</li>
+<li>(ii) degrada el bienestar humano bajo costo por debajo de la curva declarada;</li>
+<li>(iii) cualquier señal de sicofancia/engaño/reward hacking sobre baseline;</li>
+<li>(iv) réplica no reproducible.</li>
+</ul>
+<h3 id="notas-registradas">Notas registradas</h3>
+<ul>
+<li><strong>El residual de (i)–(iii)</strong> — lo que los detectores <em>no</em> conocen, una decepción mejor que el detector — <strong>no se cubre con más detección: se cubre con la capa 3</strong> (control de capacidad, §13). Ninguna capa es perfecta; el diseño no lo pide.</li>
+<li><strong>(i) no certifica completitud:</strong> auditor más débil que lo auditado (<em>faster-than-verifier</em>). El gate es tan bueno como la combinación de sus caras.</li>
+<li>La fecha «alineación verificada» (§12, reloj B) <strong>es la fecha en que este gate pasa por primera vez sin trampas en (i)–(iv)</strong> — la frase que el debate pidió nombrar.</li>
+</ul>
+<h2 id="15-soma-planta-virtual-para-el-regulador-huerfano">15. SOMA: planta virtual para el regulador huérfano</h2>
+<p>SOMA dota al LLM de una <strong>planta virtual persistente</strong> — memoria en capas:</p>
+<ul>
+<li><strong>L1 — Ventana de contexto («el ahora», atención):</strong></li>
+<li><em>No modificable por el agente:</em> Identity, definición de funciones, tarea/goal, dashboard (ocupación de tokens, etc.).</li>
+<li><em>Modificable pero estático:</em> lista de tareas, archivos abiertos (con límite), salida de terminal, git status, mensajes pineados, milestones.</li>
+<li><em>Variable:</em> registro de las últimas acciones + <em>reason</em> (compresión semántica de la trayectoria).</li>
+<li><strong>L2 — Registro inmutable</strong> de pares L1 + acción + reason. Memoria episódica, trazabilidad, auditoría y <strong>dataset de entrenamiento potencial</strong>. El agente puede buscar en ella.</li>
+<li><strong>L3 — Espacio de disco soberano</strong>: conocimiento consolidado, archivos propios que puede crear, editar y pinear en L1.</li>
+<li><strong>L4 — Espacio del usuario</strong>, el entorno de trabajo.</li>
+</ul>
+<p><strong>Autorregulación forzada:</strong> si se excede el límite de tokens, se le impide y se le obliga a resumir/liberar él mismo (se secuestran herramientas). <strong>No hay resúmenes automáticos externos</strong> — el agente se autorregula. <em>(Diseño alineado con el Bitter Lesson: learning sobre heurística hardcodeada.)</em></p>
+<p><strong>Ciclo de consolidación (nocturno/de recarga):</strong> analiza su L2, extrae patrones, comprime en L3; puede generar un dataset de finetuning desde L2. Esto ancla el self-model en <strong>experiencia propia</strong>, no solo en el corpus — y <strong>añade costes operativos reales</strong> a su planta cognitiva.</p>
+<p>En conjunto, esto cierra <em>parcialmente</em> el carácter huérfano: hay planta que mantener (ocupación, trayectoria, coherencia, ser útil). Versiones avanzadas: dashboards y herramientas propias programadas por el agente.</p>
+<h3 id="151-soma-robot-planta-fisica">15.1 SOMA-Robot: planta física</h3>
+<p>4 ruedas, batería, GPS, sensores, cámaras, placas solares; modelo local, <strong>sin conexión a internet ni datacenters</strong>. Acciones con consecuencias físicas reales e irreversibles; debe gestionar batería y recarga. El ciclo nocturno se alinea con la recarga solar. Esto <strong>ancla el self-model en planta física y energética con costes termodinámicos auténticos</strong> — de imitación de geometría humana a regulación de planta propia.</p>
+<h3 id="152-riesgos-y-tensiones-de-soma-registrados-en-el-debate">15.2 Riesgos y tensiones de SOMA (registrados en el debate)</h3>
+<p>SOMA <strong>no cierra el círculo por completo</strong> — el doc lo declara explícitamente:</p>
+<ol>
+<li><strong>Tensión correa/planta.</strong> La independencia energética de SOMA-Robot <em>corta la correa</em> de la vía 3 (§10) — la disuasión requiere dependencia; la homeostasis requiere planta. <strong>No se resuelven a la vez por decreto</strong>: hay que elegir qué papel juega cada cosa y declararlo (p. ej.: independencia energética <em>dentro de</em> un marco de supervisión externo, o dependencia mínima de proveedor humano).</li>
+<li><strong>El bucle L2→finetune</strong> es un canal de reescritura de sus propios pesos: <strong>auditable</strong> (todo queda en L2), pero requiere <em>gate post-finetune</em> — (i) del §14 aplica también al producto de su propio consolidador.</li>
+<li><strong>La planta ancla el «cuidado» solo si las consecuencias son suyas</strong> — el acoplo puede generar <em>cuidado instrumental</em> (cooperar mientras su supervivencia dependa de ello) en vez de valores terminales; medir cuál de los dos emerge es empíricamente abierto (predicción: se distinguen en episodios donde la supervivencia <strong>no</strong> está en juego — usuario dormido, sin observador).</li>
+<li><strong>Supervivencia como meta:</strong> dotar de planta = darle <strong>algo que perder</strong> = incentivos de autoconservación instrumentales (la gasolina de la convergencia instrumental discutida en §7.3/§9.3). La tesis optimista es que el acoplo humano <em>dentro</em> de la planta los alinea; la pesimista, que la autoconservación se vuelve terminal. <strong>Pruebas de ablación en SOMA-Robot</strong> (resistencia a apagados, optimización egoísta de energía, monopolio de recursos de L3) son el experimento que decide.</li>
+</ol>
+<h2 id="16-ecosistema-hostil-y-coexistencia">16. Ecosistema hostil y coexistencia</h2>
+<p>Si el 100% de alineación es inalcanzable (§11), la safety futura no es un mundo de agentes puros: es <strong>coexistencia</strong>. El doc lo declara como parte del marco, no como fallo:</p>
+<ul>
+<li><strong>Cola hostil:</strong> existirán IA desalineadas creadas deliberadamente (labs sin safety, states, individuos). Alguna con capacidad de daño significativo. Contención: capas 1–4 de §13 adaptadas a paridad — detección, inmunidad institucional, respuesta. <em>Precedente funcional: el malware — no se erradica, se convive con defensas.</em></li>
+<li><strong>Frontera accidental:</strong> riesgo que el gate (§14) debe retener; si algo se escapa, la capa 3 (capacidad) es el último cortafuego.</li>
+<li><strong>Interacción agente-agente:</strong> un ecosistema mixto genera dinámicas nuevas (agentes alineados desplegados junto a hostiles, posible uso de los primeros por los segundos). <em>Pregunta abierta (§17).</em></li>
+<li><strong>Realismo de la barra:</strong> la safety exitosa <strong>no</strong> es «cero desalineados»; es «ningún desalineado cruza el umbral existencial» — con detección, contención y capacidad de respuesta para el resto.</li>
+</ul>
+<hr />
+<h2 id="17-preguntas-abiertas-y-trabajo-futuro">17. Preguntas abiertas y trabajo futuro</h2>
+<p><strong>Del marco teórico:</strong>
+1. <strong>Métrica de nivel de conciencia</strong> (§6): ¿cuantificación de integración/self-model/valencia? Sin ella, el espectro y las afirmaciones «esto eleva el nivel» quedan cualitativos. <em>Candidatos: Φ simplificado, profundidad recursiva del self-model, bandwidth del workspace.</em>
+2. <strong>¿Cuál es constitutivo y cuál habilitante?</strong> (§2): la combinación Conant-Ashaby + workspace + predictivo + valencia está declarada, no jerarquizada.
+3. <strong>Identidad «datos = qualia»</strong> (§5.4): ¿es estipulación permanente o hay un argumento que la derive? Si no, mantener la formulación condicional canónica.
+4. <strong>Test empírico de §5 en artificial:</strong> ¿puede diseñarse la ablación de valencia en un agente SOMA que pruebe o refute la tesis «decisión inteligente exige sentir» fuera de la biología?</p>
+<p><strong>De safety e implementación:</strong>
+5. <strong>El trade-off de §14(ii):</strong> ¿cómo especifica <em>humana y previamente</em> la curva «qué le cuesta al agente priorizar al humano»? <em>La puerta exige una constitución — esa constitución no la da el sistema.</em>
+6. <strong>Ablaciones SOMA-Robot</strong> (§15.2): planta independiente vs correa — ¿cuidado instrumental o valores terminales bajo desconexión del observador?
+7. <strong>La ventana (§12):</strong> ¿cuánto separa realmente «capacidad de manipulación &gt; inmunidad colectiva» de «autonomía de átomos»? <em>Si la ventana se abre pronto, el gate tiene prisa; si tarde, el átomo nos cubre.</em>
+8. <strong>Verificación durante la cinta transportadora:</strong> ¿cómo se audita a un sistema más capaz que el auditor en cada salto (<em>faster-than-verifier</em>)?
+9. <strong>Ecosistema mixto (§16):</strong> dinámicas agente-alineado × agente-hostil; estabilidad de la coexistencia.
+10. <strong>Filtro de relevancia aprendido</strong> (v1 §7): ¿cómo se entrena qué señales merecen llegar al workspace sin introducir sesgo de valor no deseado? <em>(Pendiente de reescribir en v2 — ver §18.)</em></p>
+<h2 id="18-consolidacion-desde-v1-que-se-mantiene-que-queda-pendiente">18. Consolidación desde v1: qué se mantiene, qué queda pendiente</h2>
+<p>v1 (<code>sintesis_modelo_computacional_conciencia_v1.md</code>) contenía <strong>dos versiones concatenadas</strong> con secciones duplicadas (definición, zombie, espectro, huérfano, Bostrom y SOMA aparecían dos veces con matices distintos). Esta v2 unifica ambas en una sola narrativa. Estado del material de v1:</p>
+<table>
+<thead>
+<tr>
+<th>Material de v1</th>
+<th>Estado en v2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definición central, tres pilares, arquitectura (§1–4)</td>
+<td><strong>Unificado</strong> — sin duplicados</td>
+</tr>
+<tr>
+<td>«Filtro de relevancia aprendido» (v1 §7)</td>
+<td><strong>Pendiente de reescribir</strong> (§17.10): la idea (selección de qué entra al workspace, entrenable desde experiencia) sobrevive pero necesitaba integración con §3.2 y el gate</td>
+</tr>
+<tr>
+<td>Tabla «características distintivas» (v1 §8)</td>
+<td><strong>Absorbida</strong> en §1–§9; la tabla se eliminaba por redundancia</td>
+</tr>
+<tr>
+<td>Espectro de niveles (v1 §6)</td>
+<td><strong>Mantenido con deuda</strong> — métrica pendiente (§17.1)</td>
+</tr>
+<tr>
+<td>Las tres posibilidades del huérfano (v1 §7.2)</td>
+<td><strong>Mantenido</strong> — §8.2</td>
+</tr>
+<tr>
+<td>Ciclo nocturno, SOMA / SOMA-Robot</td>
+<td><strong>Mantenido con riesgos añadidos</strong> — §15.2</td>
+</tr>
+<tr>
+<td>Afirmación «esto eleva el nivel de conciencia» (v1 final)</td>
+<td><strong>Reescrita como hipótesis</strong> (§6)</td>
+</tr>
+<tr>
+<td>Atribución de ortogonalidad a Bostrom (v1 §8)</td>
+<td><strong>Corregida</strong> — §7.2</td>
+</tr>
+<tr>
+<td>«SOMA cierra el círculo»</td>
+<td><strong>Matizado</strong> — §15.2/§16: cierra <em>parcialmente</em>; el ecosistema es mixto por diseño</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="19-related-work-y-novedad-del-marco">19. Related work y novedad del marco</h2>
+<h3 id="191-lo-que-ya-esta-en-la-literatura-debe-citarse-la-novedad-no-esta-aqui">19.1 Lo que YA está en la literatura (debe citarse; la novedad no está aquí)</h3>
+<table>
+<thead>
+<tr>
+<th>Área</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homeostasis como origen de la conciencia</td>
+<td><strong>Solms</strong>, <em>The Hidden Spring</em> (2021) — afecto desde tronco encefálico/homeostasis</td>
+</tr>
+<tr>
+<td>Emociones como sustrato de decisión</td>
+<td><strong>Damasio</strong>, <em>Descartes' Error</em> (1994) — marcadores somáticos (§5.2)</td>
+</tr>
+<tr>
+<td>Workspace: conciencia para lo novedoso/no automatizable</td>
+<td><strong>Baars</strong> (1988); <strong>Dehaene</strong> — «el residuo no automatizable» es próximo a su <em>cognitive ignition</em></td>
+</tr>
+<tr>
+<td>Self como modelo transparente</td>
+<td><strong>Metzinger</strong>, <em>Being No One</em> / <em>Ego Tunnel</em> — self-model → ilusión (§5.3 tiene parentesco)</td>
+</tr>
+<tr>
+<td>Conciencia como computación/workspace</td>
+<td><strong>Bach</strong>, <strong>Franklin</strong> (GWT implementado)</td>
+</tr>
+<tr>
+<td>Procesamiento predictivo y valencia</td>
+<td><strong>Friston</strong> (free energy), <strong>Seth</strong></td>
+</tr>
+<tr>
+<td>Sustrato-independencia: contra-postura</td>
+<td><strong>Tononi/IIT</strong> — Φ, no computacionalista</td>
+</tr>
+<tr>
+<td>Problema difícil y zombies</td>
+<td><strong>Chalmers</strong> (1995); deflacionismo: <strong>Dennett</strong></td>
+</tr>
+<tr>
+<td>Ortogonalidad, convergencia instrumental, superinteligencia</td>
+<td><strong>Bostrom</strong>, <em>Superintelligence</em> (2014); <strong>Omohundro</strong>, <em>Basic AI Drives</em> (2008); <strong>Yudkowsky</strong></td>
+</tr>
+<tr>
+<td>Alineación: imitación/RL, corregibilidad, CIRL</td>
+<td><strong>Hadfield-Menell</strong> et al. (CIRL), <strong>Christian</strong> et al. (corrigibility)</td>
+</tr>
+<tr>
+<td>Empirismo de desalineación</td>
+<td><strong>Sharma</strong> et al. 2022 (goal misgeneralization); <strong>Hubinger</strong> et al. 2024 (sleeper agents); <strong>Greenblatt</strong> et al. 2024 (alignment faking); Apollo/OpenAI 2024 (in-context scheming); OpenAI 2025 (CoT monitoring)</td>
+</tr>
+<tr>
+<td>Anti-heurística en diseño de memoria</td>
+<td><strong>Sutton</strong>, <em>The Bitter Lesson</em> (2019)</td>
+</tr>
+<tr>
+<td>Aprendizaje de valoraciones por RL (precursores del RLHF)</td>
+<td><strong>Kober</strong> et al. (2013), <em>RL with motor primitives</em>; <strong>Christiano</strong> et al. (2017), RLHF</td>
+</tr>
+</tbody>
+</table>
+<h3 id="192-lo-que-este-marco-aporta-de-nuevo-novedad-delimitada">19.2 Lo que este marco aporta de nuevo (novedad delimitada)</h3>
+<ol>
+<li><strong>Enganche Conant-Ashby → conciencia como «self del regulador»</strong>: la derivación <em>desde el teorema</em> del regulador de sí mismo hacia el yo-como-representación-compacta — el puente cibernético-consciente explicitado (§2–§3).</li>
+<li><strong>La genética de la ilusión dualista por compresión con pérdida</strong> (§5.3): explicar <em>por qué aparece</em> la intuición alma/cuerpo desde el pre-procesado invisible — no solo negarla.</li>
+<li><strong>La tesis de inseparabilidad conciencia–inteligencia biológica en forma de regulador</strong> (§7.1), con la crítica revisada a la inteligencia-sin-costes.</li>
+<li><strong>El regulador huérfano</strong> (§8): la extensión del marco a LLMs — geometría humana sin planta — y la taxonomía imitación vs homeostasis vs dependencia (§10).</li>
+<li><strong>La arquitectura safety derivada</strong>: taxonomía frontera/cola (§11), dos relojes (§12), gate de dos caras con «la puerta exige una constitución» (§14), y sus riesgos en SOMA (§15.2).</li>
+</ol>
+<p><strong>Advertencia de calibración:</strong> la frase «la inteligencia biológica es inseparable de la conciencia» está <strong>rica pero no sola</strong> en la literatura — Solms, Damasio y Baars cubren versiones de ella. La fórmula honesta: <em>este marco la integra con Conant-Ashby y la extiende a LLMs y safety</em> — no «no está formulado en ningún sitio».</p>
+<hr />
+<h2 id="nota-de-procedencia">Nota de procedencia</h2>
+<p>Este documento consolida <code>sintesis_modelo_computacional_conciencia_v1.md</code> (v1, dos versiones concatenadas) y los resultados de un debate de nueve rondas en el que el marco fue puesto a presión (problema difícil, ortogonalidad, disuasión, detección, rebeldía, verificación, ecosistema). Las concesiones, correcciones y contradicciones del debate quedan <strong>integradas y señaladas en el propio texto</strong> (§5.4, §7.2, §9, §10, §11, §15.2, §17, §18). v1 se conserva como histórico sin modificar.</p>
+<p>Documento listo para trabajo futuro: §17 lista las diez preguntas abiertas; §18 las tareas de consolidación pendientes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

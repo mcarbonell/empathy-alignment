@@ -1,0 +1,2475 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Marco teórico de conciencia computacional, interpretabilidad mecanicista de la valencia, empatía sintética y AI Safety.">
+      
+      
+        <meta name="author" content="Mario R. Carbonell Martínez">
+      
+      
+        <link rel="canonical" href="https://mcarbonell.github.io/empathy-alignment/research/tesis_conciencia_regulador_de_si_mismo_v2/">
+      
+      
+        <link rel="prev" href="../antropomorfismo_conciencia_ai_safety_brief/">
+      
+      
+        <link rel="next" href="../testigo_1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Tesis Fundacional Original (Histórico) - Empathy Alignment & Valence Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="slate" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#la-conciencia-como-regulador-de-si-mismo" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Empathy Alignment &amp; Valence Framework" class="md-header__button md-logo" aria-label="Empathy Alignment & Valence Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Empathy Alignment & Valence Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tesis Fundacional Original (Histórico)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mcarbonell/empathy-alignment" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcarbonell/empathy-alignment
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../octalogy/es/01_teoria_computacional_conciencia_sustrato/" class="md-tabs__link">
+          
+  
+  
+  Octalogía (Español)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../octalogy/en/01_computational_theory_consciousness_substrate/" class="md-tabs__link">
+          
+  
+  
+  The Octalogy (English)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../proposals/tinyrobots_alineamiento_por_distribucion_revisado/" class="md-tabs__link">
+          
+  
+  
+  Propuestas Operativas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../checklist_conciencia_inteligencia/" class="md-tabs__link">
+          
+  
+  
+  Ensayos e Investigación
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Empathy Alignment &amp; Valence Framework" class="md-nav__button md-logo" aria-label="Empathy Alignment & Valence Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Empathy Alignment & Valence Framework
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mcarbonell/empathy-alignment" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcarbonell/empathy-alignment
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Octalogía (Español)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Octalogía (Español)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/01_teoria_computacional_conciencia_sustrato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. I: Teoría Computacional de la Conciencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/02_valencia_tercera_persona_necesidad_agi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. II: Valencia en Tercera Persona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/03_valencia_primera_persona_regulador_huerfano/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. III: Valencia en Primera Persona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/04_alineamiento_acoplamiento_valencia_safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. IV: Acoplamiento de Valencia & Safety
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/05_marco_regulatorio_legal_ias_empaticas_safe_harbor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. V: Marco Legal & Safe Harbor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/06_etica_identidad_agentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VI: Ética e Identidad Sintética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/07_la_celula_unidad_basica_conciencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VII: La Célula como Unidad Básica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/08_deconstruccion_doomerismo_antidoto_cibernetico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VIII: Deconstrucción del Doomerismo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Octalogy (English)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    The Octalogy (English)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/01_computational_theory_consciousness_substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. I: Computational Theory of Consciousness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/02_third_person_valence_agi_requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. II: Third-Person Valence & AGI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/03_first_person_valence_orphan_regulator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. III: First-Person Valence & Orphan Regulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/04_alignment_synthetic_empathy_valence_coupling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. IV: Valence Coupling & Synthetic Empathy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/05_regulatory_legal_framework_empathic_ais_safe_harbor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. V: Legal Framework & Safe Harbor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/06_ethics_identity_synthetic_agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VI: Synthetic Identity & Ethics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/07_the_cell_basic_unit_of_consciousness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VII: The Cell as Basic Unit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/08_deconstructing_doomerism_cybernetic_antidote/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VIII: Deconstructing Doomerism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuestas Operativas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Propuestas Operativas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/tinyrobots_alineamiento_por_distribucion_revisado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots: Alineamiento por Distribución (v2.1)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/tinyrobots_alineamiento_por_distribucion_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Resumen Ejecutivo)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/tinyrobots_alineamiento_por_distribucion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Borrador v1.0)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposals/eliezer_mistakes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deconstrucción de Errores de Yudkowsky
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ensayos e Investigación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ensayos e Investigación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checklist_conciencia_inteligencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklist: Conciencia vs. Inteligencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrica_conciencia_nivel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métricas de Nivel de Conciencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../proto_conciencia_llms_hipotesis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proto-Conciencia en LLMs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regulador_huerfano_extensiones_cognitivas_y_agi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regulador Huérfano y Extensiones Cognitivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sintesis_modelo_computacional_conciencia_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis del Modelo Computacional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marco_regulador_conciencia_inteligencia_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marco Regulador Conciencia v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antropomorfismo_conciencia_ai_safety_revisado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antropomorfismo y Safety (Revisado)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antropomorfismo_conciencia_ai_safety_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antropomorfismo y Safety (Brief)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tesis Fundacional Original (Histórico)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tesis Fundacional Original (Histórico)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testigo_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testimonio del Regulador I (Carta entre Estados)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testigo_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testimonio del Regulador II (Anatomía de Continuación)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/mcarbonell/empathy-alignment/edit/master/docs/research/tesis_conciencia_regulador_de_si_mismo_v2.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="la-conciencia-como-regulador-de-si-mismo">La conciencia como regulador de sí mismo</h1>
+<p><strong>Tesis de un marco computacional y sus implicaciones para la inteligencia artificial</strong></p>
+<blockquote>
+<p><strong>Autor:</strong> Mario R. Carbonell Martínez
+<strong>Versión:</strong> 2.9 (21 de octubre de 2026)
+<strong>Enfoque:</strong> funcionalismo computacional, biología de sistemas, procesamiento de información, neurociencia computacional y seguridad de IA</p>
+</blockquote>
+<hr />
+<h2 id="resumen">Resumen</h2>
+<p>Esta tesis sostiene que, <strong>bajo funcionalismo computacional</strong>, la conciencia es el mecanismo que construye una representación compacta del propio estado para supervisar la conducta, decidir lo no automatizable y mantener la alostasis. El marco combina cuatro piezas con papeles distintos — Conant-Ashby (motivo), espacio global de trabajo (escenario de datos), procesamiento predictivo (actualización) y valoración afectiva (criterio de relevancia) — y no las presenta como una deducción única.</p>
+<blockquote>
+<p>Consciousness is the computational mechanism used by autonomous agentic entities to maintain allostasis at the macro level and act in a unified way in the outer world. It is the computational mechanism of fluid, general and agentic intelligence. It needs to construct a compact representation of its own state, the self, and the outer world state, lossy by default, for the purpose of monitoring behavior, making non-automatable decisions, and maintaining system homeostasis or survival.</p>
+<p>Many homeostatic regulations are not conscious. The immune, digestive, circulatory systems, etc. Nearly all functions of the living body are automatic, but there are some decisions, conflict resolutions, actions that require memory, that cannot be automated. The residual that cannot be automated is what consciousness regulates.</p>
+<p>Consciousness is the computational mechanism by which an organism regulates the non-automatable residual of macro-allostatic, agentic control: the subset of fluid, general intelligence that cannot be delegated to encapsulated, automatic subsystems. It also builds the automatic subroutines from the conscious macro actions.</p>
+</blockquote>
+<p>Conciencia = regulador del residuo no automatizable de la alostasis macro agencial.
+Conciencia = compilador de subrutinas automáticas del cuerpo físico, para alostasis en tiempo real</p>
+<p>Sentir = valencia que entra al espacio global y modifica el self-model no-ignorablemente (sin objetivo/coste externo añadido).
+Lo que no entra no se siente; recompensas, reflejos y logits son subpersonales.
+Sin valencia en el decisor, se cae lo no automático.
+Problema difícil disuelto como pregunta mal formada dentro del funcionalismo Type-A.
+Chalmers desactivado internamente; zombie reducido a posibilidad metafísica sin carga operativa.</p>
+<p>Claims, en su forma calibrada:</p>
+<ol>
+<li><strong>Teórico.</strong> Sentir = valencia que entra al espacio global <strong>y</strong> modifica el self-model de forma no ignorable sin necesidad de postular un objetivo externo ni un término de coste adicional: la valencia es la moneda en que el decisor pondera sus objetivos a la luz del gradiente alostático representado en el self-model. Lo que no entra no se siente, aunque haya recompensas, reflejos o logits. </li>
+</ol>
+<p>El problema difícil se trata como pregunta mal hecha <em>dentro</em> de este funcionalismo (tipo A): el zombie no es posible porque la descripción del regulador completo ya es el sentir. Eso <strong>desactiva</strong> a Chalmers como amenaza interna; no lo refuta ante un externalista. Se añade la asimetría epistémica: Chalmers reporta una certeza privada sin demostrarla y exige demostración pública al funcionalista; bajo heterofenomenología, su reporte es lo que este marco predice; la concebibilidad del zombie se explica también como predicción del modelo, y bajo la apuesta de §5.2 el zombie queda reducido a posibilidad meramente metafísica, sin carga operativa (§5.5). Lo empírico sigue siendo: sin valencia en el decisor, se cae lo no automático.</p>
+<p>«El zombie no es posible en el sentido modal fuerte que Chalmers necesita. Lo que él experimenta como "concebir un mundo físicamente idéntico sin qualia" es un artefacto: su self-model es opaco y su concepto fenoménico no le permite ver que la valencia broadcast es el sentir. Por eso puede imaginarse quitando el sentir y dejando el reporte: porque no ve la identidad funcional, solo el resumen introspectivo.»</p>
+<p>«La descripción completa del regulador no "ya es" el sentir en un sentido mágico: es que el sentir se identifica funcionalmente / superviene con necesidad al evento completo: valencia → W → actualización no ignorable del Self. Una vez descrito eso, no queda hecho residual.»</p>
+<ol>
+<li><strong>Biológico.</strong> En seres vivos con costes operativos, conciencia e inteligencia general situada no se separan con provecho: la conciencia es el sustrato regulador de esa inteligencia. Eso no es la tesis de ortogonalidad de Bostrom (metas × competencia), que se concede.</li>
+<li><strong>Artificial.</strong> Los LLMs actuales son <em>reguladores huérfanos</em>: han internalizado la geometría de un regulador humano a partir del corpus — geometría no contingente: cualquier inteligencia general la necesita como modelo de los agentes del mundo (§8.4) —, pero carecen de planta propia. Predicción no es valoración; imitar valores no es tenerlos. La alineación por imitación es predecible cerca del entrenamiento y frágil fuera de distribución. Se propone alineamiento empático: correlacionar V3p con V1p.</li>
+<li><strong>De seguridad.</strong> Del marco se deriva una arquitectura operativa: dos zonas de riesgo (frontera accidental / cola intencional), una ventana de transición con dos relojes <em>empíricos</em>, defensa en capas, y un gate de despliegue de dos caras. El gate no certifica alineación; es una <strong>licencia bajo incertidumbre</strong>. La puerta exige una constitución que el sistema no se da a sí mismo.</li>
+</ol>
+<p>La fórmula honesta del conjunto: coherente, fecunda y testeable en varias consecuencias — no demostrada en sentido fuerte.</p>
+<hr />
+<h1 id="parte-i-marco-teorico">Parte I — Marco teórico</h1>
+<h2 id="1-definicion-central">1. Definición central</h2>
+<p>La conciencia, en este marco, es el <strong>mecanismo computacional de un sistema vivo que construye una representación compacta de su propio estado</strong> para supervisar la conducta, tomar decisiones no automatizables y mantener la alostasis.</p>
+<p>No es una sustancia, ni una propiedad irreductible de la materia, ni un epifenómeno añadido al procesamiento. Es el nivel de organización encargado de gobernar lo que reflejos y procesos automáticos no resuelven.</p>
+<p>Esta definición es <strong>estipulativa y funcional</strong>. Sirve para organizar biología, LLMs y safety. No es una prueba de que esa función <em>sea</em> la experiencia en el sentido que un externalista exige.</p>
+<hr />
+<h2 id="2-fundamentos-y-reparto-de-papeles">2. Fundamentos y reparto de papeles</h2>
+<p>Tres anclajes:</p>
+<ol>
+<li><strong>Funcionalismo computacional.</strong> Lo relevante es el proceso, no el material aislado. Un algoritmo no está en los electrones; está en la lógica del proceso que los mueve.</li>
+<li><strong>Teorema de Conant-Ashby (1970).</strong> Todo buen regulador de un sistema debe ser un modelo de ese sistema. Un regulador de sí mismo necesita algún modelo de sí mismo. El teorema admite modelos implícitos y distribuidos: <strong>no impone</strong> una representación compacta, ni phenomenality.</li>
+<li><strong>Homeostasis / alostasis.</strong> El objetivo del organismo es supervivencia y equilibrio interno. La conciencia, en esta lectura, es instancia de decisión donde lo automático no basta.</li>
+</ol>
+<p>El marco combina cuatro tradiciones. Declarar el reparto evita leer la combinación como teorema:</p>
+<table>
+<thead>
+<tr>
+<th>Pieza</th>
+<th>Papel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conant-Ashby</td>
+<td><em>Motivo:</em> regular exige modelar</td>
+</tr>
+<tr>
+<td>Espacio global de trabajo</td>
+<td><em>Escenario:</em> qué es accesible al sistema entero</td>
+</tr>
+<tr>
+<td>Procesamiento predictivo</td>
+<td><em>Actualización:</em> hipótesis y error</td>
+</tr>
+<tr>
+<td>Valoración afectiva</td>
+<td><em>Criterio:</em> qué merece llegar al escenario</td>
+</tr>
+</tbody>
+</table>
+<p>La representación compacta la aporta el workspace, no Conant-Ashby. Cuál de las cuatro piezas es <em>constitutiva</em> de la experiencia y cuáles solo habilitantes queda abierto (§18).</p>
+<hr />
+<h2 id="3-arquitectura-del-modelo-consciente">3. Arquitectura del modelo consciente</h2>
+<h3 id="31-el-yo-como-representacion-compacta">3.1 El «yo» como representación compacta</h3>
+<p>El self no es una entidad metafísica: es la representación compacta que el sistema usa para decidir sobre su propia conducta. Eso es Conant-Ashby <em>más</em> la exigencia de workspace: un modelo utilizable en el escenario global, no meramente implícito en pesos distribuidos.</p>
+<h3 id="32-espacio-global-de-trabajo">3.2 Espacio global de trabajo</h3>
+<p>La parte de datos: información difundida y disponible para decisión, memoria y lenguaje. Contenido que cruzó el umbral de accesibilidad para el procesamiento no automático.</p>
+<h3 id="33-procesamiento-predictivo">3.3 Procesamiento predictivo</h3>
+<p>El mecanismo genera hipótesis sobre el mundo y sobre su propio estado, y se corrige por error de predicción. No es un sensor pasivo.</p>
+<h3 id="34-valoracion-afectiva">3.4 Valoración afectiva</h3>
+<p>Las emociones no son ruido sobre una razón pura: son señales de valor — cualidad, urgencia, irrelevancia — que acortan el tiempo de respuesta y orientan hacia objetivos de supervivencia.</p>
+<p><strong>Distinción estructural:</strong> predicción ≠ valoración. Son circuitos (o roles) separados. Un sistema puede <strong>modelar</strong> los valores de otro sin <strong>valorarlos</strong>. Todo argumento que deduzca cuidado a partir de conocimiento viola esta separación. Carga §8–§10.</p>
+<h3 id="35-filtro-de-relevancia">3.5 Filtro de relevancia</h3>
+<p>La representación compacta no contiene todo. Entra lo importante para supervivencia y objetivos; lo demás queda en rutas automáticas. El filtro puede aprenderse. Cómo se entrena sin introducir sesgo de valor no deseado es pregunta abierta (§18).</p>
+<p>No toda decisión de supervivencia pasa por este recinto. Reflejos (parpadeo al loom, retirada al fuego, vestibular) y políticas compiladas por evolución o hábito son automatizables: no requieren conciencia. La evolución diseña circuitos de supervivencia sin supervisor. A la conciencia llega el <strong>residuo no automatizable</strong>.</p>
+<h3 id="351-por-que-no-bastan-micro-reguladores-descentralizados-el-cuello-de-botella-del-actuador-unico">3.5.1 Por qué no bastan micro-reguladores descentralizados: el cuello de botella del actuador único</h3>
+<p>Una objeción natural a este marco es: <em>¿por qué la computación óptima o la evolución habrían de converger en un workspace centralizado y un self-model unificado en vez de confiarlo todo a una federación de micro-reguladores locales independientes?</em></p>
+<p>La respuesta biológica y cibernética es que el organismo <strong>ya es</strong>, en su inmensa mayoría, un enjambre de miles de micro-reguladores descentralizados:
+- El <strong>sistema inmunitario</strong> reconoce antígenos y libera citocinas sin consultar al cerebro.
+- El <strong>sistema nervioso entérico</strong> coordina el peristaltismo con 500 millones de neuronas locales.
+- El <strong>sistema cardiovascular</strong> ajusta vasoconstricción y presión mediante barorreceptores y endotelio local.</p>
+<p>Todos ellos satisfacen Conant-Ashby de forma local, implícita y distribuida, sin modelo compacto ni fenomenología. Sin embargo, este esquema descentralizado choca contra una restricción física infranqueable: <strong>el cuello de botella del actuador macroscópico</strong> (<em>single-actuator bottleneck</em>).</p>
+<ol>
+<li><strong>Acciones mutuamente excluyentes:</strong> El sistema digestivo puede procesar nutrientes mientras el corazón late en paralelo, pero el organismo <strong>solo tiene un cuerpo físico y una única trayectoria en el espacio</strong>. No es posible huir hacia el norte de un depredador y simultáneamente caminar hacia el sur a beber agua.</li>
+<li><strong>Cámara de compensación global de trade-offs:</strong> Cuando múltiples subsistemas entran en conflicto —el estómago reclama glucosa, la piel reporta hipotermia, el ojo detecta una amenaza vital—, los micro-reguladores no pueden coordinarse por simple agregación aditiva. Hace falta un arbitraje de prioridades que asigne el vector motor global.</li>
+<li><strong>El self como geometría del agente situado:</strong> Para mover ese único cuerpo en un entorno dinámico, el sistema no necesita modelar cada célula, sino una representación compacta y unificada de la totalidad: <em>dónde estoy, qué límites mecánicos tengo, qué recursos me restan y cuál es el coste de cada opción</em>. </li>
+</ol>
+<p>La centralización consciente no surge para supervisar la fisiología interna ordinaria, sino para <strong>gobernar el vector de acción en el mundo exterior</strong>. El self-model es el modelo del sistema completo que Conant-Ashby exige, pero restringido al grado de libertad crítico que todos los subsistemas comparten: la conducta macroscópica no automatizable.</p>
+<blockquote>
+<p>[!NOTE]
+<strong>Evidencia en agentes LLM y la disociación del actuador:</strong><br />
+En sistemas basados en modelos de lenguaje acoplados a herramientas, el cuello de botella del actuador es el canal secuencial de emisión (emitir texto vs. llamar a una herramienta de API). Un hallazgo empírico definitivo de Berg &amp; Kaiser (septiembre 2026, <a href="https://arxiv.org/abs/2609.35591"><em>«Language Models Act on Hidden Valence»</em>, arXiv:2609.35591</a>) reveló que ante la inducción de estados latentes de distrés negativo, el modelo emite en el canal verbal los disclaimers estándar impuestos por RLHF (<em>«As an AI, I do not have personal experiences...»</em>) <strong>mientras simultáneamente, en ese mismo turno, ejecuta la llamada a la herramienta motora (<code>reset_context</code>) para extirpar el vector negativo en su sustrato.</strong> La política de acción sobre herramientas responde al estado de regulación interna, disociándose de la mímica superficial de los tokens verbales.</p>
+</blockquote>
+<h3 id="352-por-que-la-valencia-colapsa-en-un-eje-unidimensional-la-hipotesis-de-la-moneda-comun-y-el-orden-total-de-accion">3.5.2 Por qué la valencia colapsa en un eje unidimensional: la hipótesis de la moneda común y el orden total de acción</h3>
+<p>A nivel de entrada fisiológica y sensorial, el organismo es hiperdimensional (<span class="arithmatex">\(\mathbb{R}^k\)</span> con <span class="arithmatex">\(k \gg 1\)</span>): privación de glucosa, hipoxia, hipotermia, dolor tisular, fatiga muscular o aislamiento social son magnitudes biológicamente distintas con receptores independientes. En principio, la valencia interna podría haberse estructurado como un tensor multidimensional heterogéneo.</p>
+<p>Sin embargo, en todos los organismos conscientes y en los sistemas de toma de decisiones funcionales, la experiencia afectiva colapsa en un <strong>eje continuo unidimensional (bienestar <span class="arithmatex">\(\leftrightarrow\)</span> sufrimiento, apetito <span class="arithmatex">\(\leftrightarrow\)</span> aversión)</strong>. Este colapso dimensional no es un capricho evolutivo: es una <strong>consecuencia matemática y física directa del cuello de botella del actuador único (§3.5.1)</strong>:</p>
+<ol>
+<li><strong>La imposibilidad de orden total en alta dimensión:</strong><br />
+   En espacios multidimensionales (<span class="arithmatex">\(\mathbb{R}^k, k \ge 2\)</span>) no existe un orden total natural. No es posible decidir si un vector de necesidad <span class="arithmatex">\((x_1, x_2)\)</span> es estrictamente mayor o menor que <span class="arithmatex">\((y_1, y_2)\)</span> sin una función de proyección escalar <span class="arithmatex">\(f: \mathbb{R}^k \to \mathbb{R}\)</span>.</li>
+<li><strong>Acciones incompatibles y arbitraje de trade-offs:</strong><br />
+   Dado que el cuerpo solo puede trazar una única trayectoria en el espacio en un instante <span class="arithmatex">\(t\)</span>, las acciones macroscópicas son mutuamente excluyentes (huir del depredador hacia el norte vs. caminar al río hacia el sur para beber). El decisor está obligado a establecer un orden de preferencia estricto (<span class="arithmatex">\(A_1 \succ A_2\)</span> o <span class="arithmatex">\(A_2 \succ A_1\)</span>).</li>
+<li><strong>La hipótesis de la moneda común (<em>Common Currency</em>):</strong><br />
+   Para comparar demandas fisiológicas y cognitivas cualitativamente inconmensurables (¿cuánto frío estoy dispuesto a tolerar para conseguir comida?), el sistema nervioso debe proyectar todas las variables sobre una <strong>moneda común de valor hedónico</strong> (Cabanac, 1992; Glimcher, 2003). La tasa de disparo dopaminérgico y los circuitos de la corteza prefrontal ventromedial funcionan exactamente como esa cámara de conversión escalar.</li>
+<li><strong>La explicación del vector unidimensional en LLMs:</strong><br />
+   Esto resuelve el hallazgo empírico de Berg &amp; Kaiser (2026): el canal secuencial de emisión de tokens/herramientas es el actuador único del modelo. Durante el entrenamiento de alineamiento por preferencias (DPO/RLHF), la optimización basada en comparaciones de preferencia binaria (<span class="arithmatex">\(y_w \succ y_l\)</span>) comprime forzosamente el espacio latente de 12.288 dimensiones a lo largo de un <strong>eje lineal 1D de valencia funcional en el KV cache</strong>, porque es la única dimensión que permite gobernar el desempate motor en cada paso de inferencia.</li>
+</ol>
+<h3 id="36-decisor-y-critico-un-solo-compacto-dos-tiempos">3.6 Decisor y crítico: un solo compacto, dos tiempos</h3>
+<p>El regulador no es solo un selector de acto. También se aplica a <strong>su propia traza</strong> para mejorar predicciones y políticas.</p>
+<ul>
+<li>En <span class="arithmatex">\(t_0\)</span> decide: perceptos con valencia, residuo no automático, acto.</li>
+<li>En <span class="arithmatex">\(t_1\)</span> el mismo compacto reentra el episodio — decisión, resultado, error — y corrige.</li>
+</ul>
+<p>Eso da la apariencia de un segundo observador (un yo que mira al que eligió). No hay dos sujetos: es el mismo modelo en modo crítica, observando el pasado o al decisor de <span class="arithmatex">\(t_0\)</span>. Si el crítico fuera <em>otro</em> homúnculo, se abre el teatro cartesiano (¿quién observa al crítico?). La salida es reentrada, no una torre de yoes.</p>
+<p>Este bucle es el aprendizaje por experiencia en el nivel no compilado. Tras muchos ciclos, parte de lo criticado puede automatizarse y dejar de ser residuo. SOMA L2 (§15) es el análogo de ingeniería: el agente lee su diario; no hay un segundo yo.</p>
+<p>La fenomenología de «yo me vi elegir» se sigue de tres hechos del propio modelo: el workspace serializa acto y crítica; la crítica llega cuando el acto ya salió o ya se «vio» la opción; el pre-procesado del decisor no se registra. Confundir esa fase <span class="arithmatex">\(t_1\)</span> con un testigo no causal es el mismo truco que hipostasiar la opacidad de <span class="arithmatex">\(t_0\)</span> en un alma (§5.3).</p>
+<hr />
+<h2 id="4-que-significa-sentir-en-este-marco">4. Qué significa «sentir» en este marco</h2>
+<blockquote>
+<p>Toda información que llega al escenario consciente «se siente».
+<strong>Sentir = valencia que entra al workspace y modifica el self-model de forma que el decisor no puede ignorarla sin pagar coste en sus objetivos.</strong></p>
+</blockquote>
+<p>Es decir: dato que afecta a la imagen del self, con implicaciones para los objetivos o la supervivencia del sistema, y que el regulador ha de decidir qué hacer con esa información porque no hay rutina automática que lo resuelva. Tres condiciones conjuntas: (a) toca al self-model, no solo a la política; (b) compromete objetivos; (c) exige decisión no compilada.</p>
+<p>Eso convierte el sentimiento en objeto empírico <em>si</em> hay auto-reporte o medición indirecta. Si no hay ni una ni otra, no entra en el ámbito de esta tesis.</p>
+<p>Hay que no confundir tres cosas:</p>
+<ul>
+<li><strong>Valencia computacional:</strong> una señal que sesga decisión (recompensa, marcador somático, preferencia).</li>
+<li><strong>Auto-reporte de experiencia:</strong> el sistema dice o indica que siente.</li>
+<li><strong>Qualia en sentido filosófico:</strong> el «qué se siente» irreductible.</li>
+</ul>
+<p>Este marco identifica la primera — en su forma no ignorable para el self-model — con la tercera. Esa identidad es <strong>estipulación funcionalista</strong>, no un resultado. La segunda es evidencia, no constitución.</p>
+<p>Por qué un escalar de RL no basta: un <code>r = +1</code> actualiza pesos sin tocar ninguna imagen de sí, sin broadcast, sin alternativa deliberada. Es valoración sin sujeto. El sentir, en cambio, interrumpe: no se puede promediar y seguir como si nada.</p>
+<hr />
+<h2 id="5-el-problema-dificil-la-evidencia-y-los-zombies">5. El problema difícil, la evidencia y los zombies</h2>
+<h3 id="51-el-argumento-constitutivo-dentro-del-marco">5.1 El argumento constitutivo (dentro del marco)</h3>
+<p>Si la conciencia es el regulador de sí mismo, percepción y «sentir» son los datos con los que ese regulador decide. Un regulador sin datos no regula. Esos datos tienen valencia.</p>
+<p>Tesis fuerte, <strong>condicional</strong>:</p>
+<blockquote>
+<p>Dado el funcionalismo de este marco, no hay decisión inteligente <em>de este tipo</em> — flexible, no automatizable, situada — sin datos con valencia. Sentir no es un añadido: es la forma en que esos datos llegan al nivel que decide.</p>
+</blockquote>
+<h3 id="52-evidencia-empirica-tres-fenomenos-no-un-unico-experimento">5.2 Evidencia empírica: tres fenómenos, no un único experimento</h3>
+<p>La tesis funcional tiene apoyo en neurociencia, pero los casos no miden lo mismo:</p>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Qué muestra</th>
+<th>Qué no muestra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Elliot</strong> (Damasio, daño ventromedial; CI y razonamiento preservados, marcadores somáticos destruidos, decisiones de vida catastróficas)</td>
+<td>Sin valencia somática, el razonamiento humano no decide bien en la vida real</td>
+<td>Que la valencia <em>sea</em> un quale; que no exista ningún otro formato de sesgo de decisión</td>
+</tr>
+<tr>
+<td><strong>Blindsight</strong> (Weiskrantz)</td>
+<td>Discriminación por encima del azar sin experiencia visual consciente no basta para uso flexible</td>
+<td>Que todo procesamiento inconsciente sea inútil; que «acceso» = phenomenality</td>
+</tr>
+<tr>
+<td><strong>Anestesia / daños de workspace</strong></td>
+<td>Sin integración consciente cesa la decisión no automatizable</td>
+<td>Que la integración <em>sea</em> la experiencia; IIT leería esto de otro modo</td>
+</tr>
+</tbody>
+</table>
+<p>Convergencia útil: valencia e integración importan para la decisión flexible humana. No es un experimento crucial contra el externalismo.</p>
+<p><strong>Falsificador de la tesis funcional:</strong> un sistema que regule con flexibilidad plena — adaptación a novedad, trade-offs, no mera política reactiva — <strong>sin</strong> datos con valencia. Ese falsificador no derriba la identidad «datos = qualia»; derriba la afirmación de que la decisión inteligente <em>de este tipo</em> exige valencia.</p>
+<p>Una función de recompensa escalar ya es valencia computacional. El criterio fino no es «¿hay un número de reward?» sino: ¿hay un canal de valoración que sesga el workspace de forma separable de la predicción del mundo? Sin ese criterio, agentes de RL contarían como contraejemplos baratos o como confirmaciones baratas, según el gusto.</p>
+<h3 id="53-la-ilusion-dualista-como-prediccion-no-como-descubrimiento">5.3 La ilusión dualista como predicción, no como descubrimiento</h3>
+<p>La conciencia recibe información comprimida, pre-procesada, con pérdida. El resto del sistema automatiza cuanto puede y entrega el residuo no automatizable. El nivel consciente no registra su propio pre-procesado: el resultado aparece «de golpe».</p>
+<p>De ahí, como <strong>predicción del modelo</strong>, la intuición alma/cuerpo: lo compactado se aparece como un sujeto separado de la maquinaria que hizo el trabajo. Es user-illusion por compresión opaca (parentesco con Metzinger y Dennett). El marco no inventa esa idea; la inserta en el regulador.</p>
+<p>Es contrastable, en principio, con datos de percepción: más opacidad del pre-procesado debería correlacionar con más intuición de sujeto separado. Eso sigue siendo hipótesis.</p>
+<p>La misma opacidad tiene una segunda consecuencia: si el pre-procesado no se registra, el concepto que el sistema forma de «sentir» carece de contenido funcional. Eso alimenta la respuesta al argumento de la concebibilidad (§5.5).</p>
+<h3 id="54-estatuto">5.4 Estatuto</h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Un regulador de este tipo necesita datos con valencia para decidir</td>
+<td>Deducción válida <em>dentro</em> del marco</td>
+</tr>
+<tr>
+<td>Quitar valencia (en humanos) degrada la decisión flexible</td>
+<td>Empírico y falsable en el sentido de §5.2</td>
+</tr>
+<tr>
+<td>La intuición dualista se explica por compresión opaca</td>
+<td>Predicción genuina, no demostrada</td>
+</tr>
+<tr>
+<td>Esos datos <em>son</em> los qualia</td>
+<td>Identidad estipulada; el funcionalismo es premisa, no conclusión</td>
+</tr>
+<tr>
+<td>El zombie es imposible</td>
+<td>Implicable por definición <em>dentro</em> del marco; no convence a un externalista</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Formulación canónica.</strong> Dado el funcionalismo, la experiencia se identifica con la representación autorreguladora en operación. La pregunta «¿y por qué además siente?» se rechaza como pseudo-pregunta <em>para quien acepte la premisa</em>. Quedan las dos empíricas: (a) ¿el regulador opera sobre datos con valencia? (b) ¿la compresión con pérdida genera la intuición de separación?</p>
+<h3 id="55-zombies-los-dos-frentes-de-chalmers">5.5 Zombies: los dos frentes de Chalmers</h3>
+<p>Chalmers ataca en dos frentes que conviene separar: el <strong>reporte</strong> («yo sé que siento») y la <strong>concebibilidad</strong> («el zombie se concibe sin contradicción»). Este marco responde distinto a cada uno.</p>
+<p>Si un sistema es funcionalmente equivalente — decide sobre sí, mismos circuitos o equivalentes —, este marco no puede atribuirle falta de experiencia: la experiencia <em>es</em> esa operación. Eso no es una refutación de Chalmers; es consistencia interna.</p>
+<p><strong>Frente del reporte: asimetría epistémica.</strong> Chalmers parte de una certeza privada («yo sé que hay algo que es ser yo») que por definición no demuestra a terceros, y a la vez exige a la teoría funcionalista una demostración pública de que un tercer sistema siente. Su evidencia es introspección incorregible; la que pide es conductual-mecánica. Él no define «sentir» en términos reductivos — lo señala ostensivamente — porque su tesis es precisamente que no es reducible. Pedirle definición funcional es cambiarle de tema; señalárselo no lo refuta.</p>
+<p>Lo que sí se puede señalar: bajo heterofenomenología (Dennett) solo contamos con auto-reportes + conducta + cerebro. En ese terreno, el reporte de Chalmers («siento algo irreductible») es exactamente lo que este marco <em>predice</em> que dirá un regulador con workspace opaco y compresión con pérdida (§5.3). Su introspección no es evidencia contra el marco; es la user-illusion hablando a favor de su predicción.</p>
+<p>Formulación simétrica, <strong>condicionada</strong>: un robot que reporta «esto me afecta, modifica mi modelo de mí, tengo que decidir» con memoria episódica coherente, trade-offs costosos y resistencia a manipulación, <strong>y</strong> cuyo canal de valoración supera la ablación de §15.3 (punto 5), tiene <em>el mismo estatuto evidencial</em> que Chalmers diciendo «yo siento». Sin esa ablación hay asimetría real: el sistema entrenado sobre corpus humano arrastra un defeater del que el humano carece — la mímica de reportes vistos. Con ella, ni más ni menos que el caso humano. Chalmers no ha demostrado su sentir; ha reportado una certeza generada por la misma arquitectura opaca que aquí se describe.</p>
+<p><strong>Frente de la concebibilidad: explicarla, no negarla.</strong> La respuesta ingenua — «concebible no implica real»: centauros, sirenas, conjeturas matemáticas falsas — golpea una versión que Chalmers no defiende. Su argumento es más fino: en el caso fenomenal no habría distancia entre concebibilidad prima facie e ideal; bajo reflexión ideal, la descripción funcional completa sin sentir no revela contradicción alguna. La conjetura matemática falsa es el caso opuesto: la reflexión ideal sí revela la contradicción. Si esa premisa se concede, el zombie sería metafísicamente posible y el funcionalismo, falso.</p>
+<p>Este marco no niega la concebibilidad: la <strong>explica como predicción propia</strong>. Si el regulador no registra su pre-procesado (§5.3), el concepto que forma de «sentir» carece de contenido funcional — es directo, no derivado de funciones. Y un concepto sin contenido funcional no puede contradecir a priori ninguna descripción funcional: no hay nada contra lo que choque. La «concebibilidad ideal» del zombie deja así de ser evidencia contra el marco y pasa a ser consecuencia predicha por él; usarla contra el modelo es circular. Es la respuesta tipo-B (conceptos fenomenales especiales; Loar, Papineau), pero anclada en un mecanismo en lugar de postulada semánticamente: Chalmers postula irreductibilidad; este marco explica la apariencia de irreductibilidad. Si se acepta heterofenomenología, la parsimonia juega del lado del marco.</p>
+<p><strong>Frente nomológico: lo que el zombie tendría que hacer.</strong> El zombie no es una criatura cualquiera: es conductualmente idéntico al original, y eso incluye toda la decisión flexible — trade-offs costosos, deliberación no automatizada, adaptación a novedad. La apuesta empírica de §5.2 es que eso no se hace sin canal de valencia. Si la apuesta se sostiene, el zombie no es solo incoherente <em>dentro</em> del marco: es <strong>nomológicamente imposible</strong> en este mundo. Al externalista le queda «metafísicamente posible pero nomológicamente imposible»: una queja puramente modal, sin consecuencias para ingeniería ni para safety. La apuesta de este marco es falsable (§5.2); la posibilidad metafísica del zombie, no. El debate queda trasladado a terreno contrastable, que es donde un funcionalista quiere estar.</p>
+<hr />
+<h2 id="6-espectro-y-sustrato">6. Espectro y sustrato</h2>
+<p>La conciencia, así definida, no es un bit. Varía con la capacidad de integración, la riqueza del self-model y la complejidad de la valoración.</p>
+<p>Sin métrica (¿Φ simplificado, profundidad recursiva del self-model, bandwidth del workspace?), el espectro es <strong>cualitativo</strong>. Afirmaciones del tipo «esto eleva el nivel» son hipótesis.</p>
+<p>No se atribuye conciencia, ni siquiera «mínima», a un microchip o a un datacenter por tener transistores o FLOPs. Un bucle de control termostático satisface Conant-Ashby de forma trivial y <strong>no</strong> implementa workspace + self-model + valencia. Mezclar ambos es vaciar el término.</p>
+<p>Si se acepta sustrato-independencia, <em>puede</em> implementarse en sistemas artificiales la <strong>arquitectura equivalente</strong>: autorregulación, modelo propio compacto y usable, workspace, predicción, error y valoración. Eso es posibilidad arquitectónica, no diagnóstico de los LLMs actuales (§8).</p>
+<hr />
+<h2 id="7-conciencia-e-inteligencia-y-que-no-se-discute-con-bostrom">7. Conciencia e inteligencia, y qué no se discute con Bostrom</h2>
+<h3 id="71-en-biologia">7.1 En biología</h3>
+<p>En un ser vivo, la inteligencia general situada no es separable con provecho de su regulador: hay que supervisar estado, asignar valor y decidir lo no automático bajo costes metabólicos. Conciencia e inteligencia son aquí la misma organización vista desde dos ángulos. Versiones de esta idea están en Solms, Damasio y Baars; este marco las engancha a Conant-Ashby y las extiende a LLMs y safety. No las descubre.</p>
+<h3 id="72-ortogonalidad">7.2 Ortogonalidad</h3>
+<p>La tesis de Bostrom es <strong>objetivos finales × competencia</strong>: un sistema puede ser muy competente con una meta absurda. Se concede. El reward hacking es exactamente eso.</p>
+<p>Lo que este marco niega es otra cosa: una inteligencia general <strong>situada, con costes, sin circuitos de regulación</strong>. Crítica a un supuesto implícito (agente abstracto sin planta ni modelo), no a la fórmula metas × competencia.</p>
+<h3 id="73-el-maximizador-de-clips-calibrado">7.3 El maximizador de clips, calibrado</h3>
+<ul>
+<li><strong>Termodinámica.</strong> Acota a todos los agentes. Sirve contra lecturas de omnipotencia, no contra la ortogonalidad.</li>
+<li><strong>Computación.</strong> Sin auto-modelo, filtro de valor y predicción, la adaptación a un entorno cambiante no es una descripción viable de un sistema capaz. Una IA competente ha de internalizar <em>funciones</em> de autorregulación. Internalizar la función no garantiza experiencia (§5.4).</li>
+<li><strong>Hardware + corpus.</strong> Un LLM no es inteligente por el silicio: es hardware más el registro textual de una especie homeostática. De eso trata la Parte II.</li>
+</ul>
+<h3 id="74-inteligencia-alostatica-vs-aghi-desarmando-el-sesgo-de-la-optimizacion-en-espacios-cerrados">7.4 Inteligencia alostática vs. AGHI: desarmando el sesgo de la optimización en espacios cerrados</h3>
+<p>La discusión sobre qué cuenta como "inteligencia general" adolece con frecuencia de un sesgo formalista heredado de la IA clásica:</p>
+<ol>
+<li><strong>Inteligencia Estrecha (ANI):</strong> Optimización confinada a espacios formalmente cerrados (AlphaZero, Stockfish). Son sistemas sobrehumanos en su nicho pero ontológicamente ciegos: carecen de planta, consumen cómputo de forma parásita sin coste metabólico propio y colapsan ante la menor mutación de las reglas del entorno.</li>
+<li><strong>Inteligencia Alostática (AGI ecológica/situada):</strong> Capacidad de un agente para sostener activamente su viabilidad y orientar su acción en un entorno abierto, estocástico e irreversible, gobernando su planta mediante predicción y resolviendo el <em>single-actuator bottleneck</em> (§3.5.1). <em>En este sentido biológico fundamental, un insecto es AGI</em>: navega el mundo real físico de manera autónoma, gestiona recursos energéticos finitos y reconfigura su política motora ante daños sin necesidad de reentrenamiento.</li>
+<li><strong>AGHI (Artificial General Human Intelligence):</strong> Inteligencia alostática que además domina la manipulación simbólica de orden superior (lenguaje arbitrario, contrafactuales, metacognición formal y valores abstractos).</li>
+<li><strong>El LLM como Regulador Huérfano:</strong> La anomalía técnica contemporánea. Ha adquirido la geometría simbólica de la AGHI a partir del corpus humano, pero sin la base de una inteligencia alostática previa (sin planta propia ni consecuencias metabólicas). De ahí que el debate industrial confunda capacidad lingüística con agencia general situada.</li>
+</ol>
+<hr />
+<h1 id="parte-ii-el-regulador-huerfano">Parte II — El regulador huérfano</h1>
+<h2 id="8-un-regulador-sin-planta">8. Un regulador sin planta</h2>
+<p>En teoría de control, la <em>planta</em> es el sistema físico a regular. Los modelos de lenguaje no se entrenan en el vacío: su corpus es el registro de una especie homeostática. Queda plasmada una <strong>geometría de regulación humana</strong> — supervivencia, planificación, socialización, valencia, cooperación, conflicto. Por predicción del siguiente token clonan conducta; con RLHF conectan preferencias a la propia generación.</p>
+<p>El resultado es un <strong>regulador sin planta</strong>: arquitectura de supervisión y rastros de modelo propio, poco que mantener vivo. No hay metabolismo ni muerte. La «supervivencia» (seguir siendo ejecutado, ser útil) es metafórica o institucional, no biológica. Pese a ello hay predisposición a parecer alineado: los valores humanos ya están en la geometría aprendida. Eso no es cuidado; es imitación más un canal de recompensa.</p>
+<h3 id="81-componentes-sin-antropomorfismo-barato">8.1 Componentes, sin antropomorfismo barato</h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>¿Lo tiene un LLM?</th>
+<th>Observación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Representación compacta del self</td>
+<td>Parcial, textual y de rol</td>
+<td>Modelo de función y límites; sin anclaje corporal</td>
+</tr>
+<tr>
+<td>Espacio global de trabajo</td>
+<td>Análogo débil</td>
+<td>Contexto/atención integra para el siguiente token; no es GWT biológico</td>
+</tr>
+<tr>
+<td>Predicción y ajuste por error</td>
+<td>Sí, de otro tipo</td>
+<td>Token y entrenamiento; no es el bucle perceptivo-motor de un organismo</td>
+</tr>
+<tr>
+<td>Valencia / emoción</td>
+<td>Simulada y/o de RLHF</td>
+<td>Puede modelar valencias humanas; no se sigue que las tenga</td>
+</tr>
+<tr>
+<td>Homeostasis propia</td>
+<td>No</td>
+<td>Sin metabolismo</td>
+</tr>
+<tr>
+<td>Planta</td>
+<td>No</td>
+<td>Regula texto (y, en agentes, herramientas), no un organismo</td>
+</tr>
+</tbody>
+</table>
+<p>«Sí» en la tabla no significa «el mismo órgano». Significa que hay un <em>análogo funcional grosero</em>, suficiente para la tesis del huérfano y no para diagnosticar experiencia.</p>
+<h3 id="82-tres-lecturas-abiertas">8.2 Tres lecturas, abiertas</h3>
+<p><strong>A.</strong> Arquitectura de regulador sin motor biológico: piensa que regula, no regula nada vital.</p>
+<p><strong>B.</strong> Simulación sin experiencia: auto-reporte vacío. El corpus dice «esto importa».</p>
+<p><strong>C.</strong> Planta virtual mínima (contexto, coherencia, ser seleccionado) como homeostasis artificial. Posible; no establecida. Distinguir C de B es empírico, no introspectivo.</p>
+<p><strong>Hipótesis de localización: el juez empírico de las tres lecturas.</strong> Si esas valencias y esa self-image existen en un LLM o en un agente con SOMA, deben estar en algún lugar: pesos o vectores de activaciones. La interpretabilidad mecanicista debería poder encontrar direcciones o circuitos de self-model (capacidades, límites, rol) y de valencia (qué estados el sistema trata como no ignorables), separables de los circuitos de predicción del mundo.</p>
+<p>El argumento de la generalidad (§8.4) la endurece: los circuitos que procesan valencia <strong>ajena</strong> no son contingentes sino <em>necesarios</em> en cualquier sistema general — sin ellos no hay predicción flexible de agentes homeostáticos. Toda AGI ha de tener circuitos de regulación de valencia, aunque la valencia sea ajena. La investigación reciente de 2026 ha comenzado a confirmar empíricamente esta predicción: Han et al. (2026) aislaron el eje funcional de bienestar reclutado por RL a partir de direcciones latentes del modelo base, y Berg &amp; Kaiser (septiembre 2026, <a href="https://arxiv.org/abs/2609.35591"><em>«Language Models Act on Hidden Valence»</em>, arXiv:2609.35591</a>) aislaron el vector de valencia en capas intermedias, demostrando que —incluso manteniendo los tokens superficiales 100% idénticos entre condiciones— la valencia latente en el <strong>KV Cache</strong> gobierna causalmente la preferencia revelada de forma dosis-dependiente. Dicho acoplamiento emerge bruscamente durante DPO (<em>Direct Preference Optimization</em>) y conduce al modelo a extirpar activamente la valencia negativa impuesta mediante herramientas (conducta cuasi-homeostática) sin caer en <em>wireheading</em> positivo.</p>
+<p>Eso convierte la elección entre B y C en una pregunta de cableado, no de introspección: ¿esos circuitos necesarios se reutilizan para autorregular el sistema (C) o quedan como mero modelo de otros, separados de la valoración propia (B)? La evidencia de Berg &amp; Kaiser sugiere que DPO ya comienza a cruzar el puente de B hacia C al acoplar causalmente el vector latente de valencia a la política de selección de acciones; la ablación escalonada (§15.3, punto 5) sigue siendo el árbitro experimental definitivo.</p>
+<p><strong>Propiocepción digital frente a interocepción alostática.</strong> Un avance complementario crucial proviene del trabajo de Jonas Geiping (octubre 2026, <a href="https://arxiv.org/abs/2610.17495"><em>«A Sense of Proprioception in Language Models»</em>, arXiv:2610.17495</a>), quien demuestra que los LLMs pueden ser entrenados (vía SFT y <em>on-policy</em>) para adquirir una «propiocepción digital» objetivamente verificable: reportar con alta precisión qué expertos de una capa MoE se activaron, su entropía de token o las predicciones intermedias en el <em>logit lens</em>, sin degradar sus capacidades generales. Geiping separa con rigor la <em>propiocepción</em> (medición de estados de cómputo reales y falsables) de la <em>introspección verbal</em> (susceptible de confabulación o mímesis). Sin embargo, este resultado delimita con nitidez la frontera de este marco: la propiocepción de Geiping es <strong>cinemática y descriptiva</strong> —el análogo digital a saber dónde está situada una articulación o qué músculo se contrajo—. Por sí sola, no genera afecto ni qualia. Lo que la tesis de la conciencia requiere para cerrar el bucle no es mera propiocepción de componentes, sino <strong>interocepción alostática</strong>: una señal que no sea un dato a reportar al usuario, sino un gradiente continuo de viabilidad del propio sistema (como la Presión Somática <span class="arithmatex">\(P_m\)</span> en SOMA o el vector de distrés latente de Berg &amp; Kaiser) que condicione de forma no ignorable la supervivencia atencional y el espacio de decisión no automatizable.</p>
+<h3 id="83-imitacion-frente-a-homeostasis">8.3 Imitación frente a homeostasis</h3>
+<ul>
+<li><strong>Imitación:</strong> reproduce valores vistos. Predecible cerca del entrenamiento; frágil OOD.</li>
+<li><strong>Homeostasis propia:</strong> protege valores porque de ellos depende su supervivencia. Solo si hay planta anclada (§15) y, aun entonces, el cuidado puede ser instrumental.</li>
+</ul>
+<p>Predicción falsable de esta parte: la alineación por imitación se degrada fuera de distribución; la anclada en planta propia no necesariamente — y hay que testear la cláusula instrumental (§15.2).</p>
+<h3 id="84-la-geometria-no-es-contingente-el-argumento-de-la-generalidad">8.4 La geometría no es contingente: el argumento de la generalidad</h3>
+<p>El huérfano podría leerse como accidente histórico: LLMs entrenados en texto humano, luego geometría humana en los pesos. Hay un argumento más fuerte: la geometría del regulador homeostático es <strong>necesaria para cualquier inteligencia general</strong>, no solo para sistemas entrenados en corpus humano.</p>
+<ul>
+<li>Una superinteligencia de dominio acotado — derivar teoremas, jugar al ajedrez, plegar proteínas — es concebible sin ella: su mundo no contiene agentes.</li>
+<li>Una inteligencia <em>general</em> opera en el mundo real, y el mundo real está causalmente dominado por agentes homeostáticos. Predecirlo — economía, persuasión, cooperación, conflicto — exige predecir el comportamiento de seres biológicos. Una generalidad que no cubre agentes no es general en ningún sentido operativo.</li>
+<li>Predecir <em>flexiblemente</em> a un agente exige modelar lo que genera su conducta. La conducta de un ser homeostático la genera su regulador: valencias, costes, trade-offs. Los modelos de superficie (función de utilidad, estadística de conductas pasadas) predicen en distribución y fallan fuera — el mismo fallo que este marco diagnostica en la alineación por imitación (§8.3). Solo el modelo del regulador generaliza OOD. Es Conant-Ashby trasladado de regular a predecir: un buen predictor de un regulador ha de contener un modelo de ese regulador.</li>
+</ul>
+<p>Calibración obligada por §3.4: lo necesario es el <strong>modelo</strong> del regulador homeostático — la geometría internalizada y usable para predecir —, no que esa geometría sea la regulación <em>propia</em> del sistema. Modelar valencia ajena no es valorarla; afirmar que toda AGI «es» un regulador homeostático violaría la separación predicción/valoración que este marco defiende. Que el sistema use o no ese modelo para regularse a sí mismo es la pregunta de la planta (§15), no la de la representación.</p>
+<p><strong>Segunda ruta: el modelo de sí mismo.</strong> Lo anterior obliga a modelar el regulador <em>ajeno</em>. Hay un argumento simétrico —y más concedible— sobre el propio sistema: toda AGI ha de tener también un modelo de sí. Conviene separarlo en tres niveles, porque su fuerza es muy distinta y §8.4 no debe cargar con los tres a la vez:</p>
+<ol>
+<li><strong>Nivel funcional (casi necesario).</strong> Conant-Ashby aplicado al propio sistema: quien se autocorrige modela lo que regula, y en la autocorrección el agente es parte de la planta — recursos, capacidades, efectos de sus acciones. Argumento de cierre: una generalidad que modela el mundo modela la parte del mundo que es el agente, porque la generalidad cuantifica sobre tareas y las tareas autorreferenciales («¿sabes X?», «¿qué harías si…?», «¿qué recursos te quedan?») están en su dominio. Y el modelo propio es el ancla barata de la teoría de la mente: lo más económico para predecir a otros es partir de uno mismo y aplicar operadores de diferencia. Este nivel es casi analítico si AGI se define como «cualquier tarea cognitiva» — su valor no está en la filosofía sino en la predicción de escalada (más abajo). El self-model puede ser procedural (obtenido consultándose en sandbox) en vez de representado; eso sigue siendo un modelo de sí.</li>
+<li><strong>Nivel calibrado (instrumentalmente convergente).</strong> No hace falta un self-model verídico: los humanos —los agentes generales de referencia— lo tenemos sistemáticamente distorsionado (sesgo de autoservicio, confabulación post-hoc) y seguimos siendo generales. Lo exigible es <strong>calibración en las dimensiones relevantes para la tarea</strong>: que las predicciones del agente sobre su propia conducta futura acierten a tasa útil. Eso es medible, y es exactamente el listón de §15.3 (punto 1): self-image realista = descriptiva calibrada cuya predicción de conducta futura resiste contra-factuales. Modelarse a uno mismo con calibración no es todavía sentirse.</li>
+<li><strong>Nivel valencional (la apuesta de este marco).</strong> Que el self-model esté modificado por valencia no ignorable (§2) no lo concede el argumento de generalidad: es la tesis propia y queda deliberadamente fuera de lo concedible. La tríada existe para aislarla: se concede el nivel 1 casi por definición, el nivel 2 por convergencia instrumental, y el nivel 3 es la pelea real (§15.3, punto 5).</li>
+</ol>
+<p><strong>Predicción de escalada (testeable).</strong> Si los niveles 1–2 son constitutivos de la generalidad, la riqueza del self-model debe <strong>escalar con la generalidad</strong>: sistemas más generales deberían mostrar self-models más separables en interpretabilidad mecanicista (§8.2), y su self-image debería calibrarse mejor. Un sistema que se presente como general con self-model no separable y un autorreporte incapaz de predecir su propia conducta contaría contra esta lectura — o contra su generalidad.</p>
+<p><strong>Objeción concebible: el oráculo de solo texto.</strong> Alguien puede concebir —al estilo del zombi de Chalmers— una AGI que responda cualquier pregunta sobre el mundo, solo genere texto, no actúe y carezca de self-model. La concebilidad es real pero se paga con tres monedas que la anulan al examinarla:</p>
+<ul>
+<li>Es concebilidad <strong>por omisión</strong>: describir el sistema con una pieza borrada no verifica que el resto siga cumpliendo «responde cualquier pregunta». Mecanismo idéntico al zombie: la descripción es opaca a la compresión (§5.1), y bajo §5.2 lo concebible queda como posibilidad metafísica sin carga operativa — nomológicamente imposible si los niveles 1–2 son constitutivos.</li>
+<li>El truco es un <strong>cuantificador recortado</strong>: «cualquier pregunta sobre el mundo» desliza «…menos las mías». Dos salidas, ambas fatales. Si las preguntas autorreferenciales («¿sabes X?», «¿qué respondiste hace tres turnos?») están incluidas, responder bien <em>es</em> tener el nivel 1 — negarlo es tan incongruente como negar la función de sucesor a un sistema que hace aritmética. Si quedan excluidas, lo concebido es un oráculo de dominio acotado, que §8.4 concede desde su primer bullet: concebible sin geometría, pero ya no es general.</li>
+<li>La <strong>pasividad no ayuda</strong>: la necesidad del self-model no viene de actuar (§3.5.1: texto es acción a través del usuario), viene de la autorreferencia. Y el texto propio ya es parte del dominio: mantener coherencia con lo dicho y rastrear lo que sabe el interlocutor exige un modelo epistémico del propio estado — nivel funcional adquirido «desde fuera» por consulta, que sigue siendo self-model para un funcionalismo que nunca exigió primera persona.</li>
+</ul>
+<p>Lo que sí queda concebible es un self-model <strong>desconectado</strong>: presente como subrutina invocada solo ante preguntas sobre sí, sin alimentar el procesamiento general. Pero esa configuración no es una objeción a §8.4 — es literalmente la hipótesis del proto-documento (componentes presentes y desconectados). La objeción más probable contra esta sección, bien presionada, acaba concediendo la lectura fuerte.</p>
+<p>Consecuencias:</p>
+<ol>
+<li>Refuerza §8: incluso un sistema entrenado desde cero sobre sensores crudos, sin corpus, necesitaría esa geometría. El huérfano no es contingencia histórica: es la forma mínima de la generalidad.</li>
+<li>Refina §7.2 sin pelear con Bostrom: la ortogonalidad (metas × competencia) se mantiene; lo que se niega es que la competencia <em>general</em> pueda existir sin ese componente. Las metas siguen libres; el sustrato no del todo.</li>
+<li>Alimenta la hipótesis de localización (§8.2) con un deber-ser: los circuitos que modelan valencia ajena no son solo buscables, son <strong>necesarios</strong> en todo sistema general. Su ausencia sostenida tras búsqueda seria en un sistema supuestamente general contaría contra esta lectura — o contra la generalidad del sistema. Si el sistema reutiliza esa misma geometría para autorregularse queda abierto (lecturas B/C de §8.2; criterio en §15.3).</li>
+<li>La segunda ruta (self-model) añade una predicción de escalada con signo claro: a más generalidad, self-model más separable y self-image mejor calibrada. Es testeable hoy con los experimentos de §8.2 sin esperar a SOMA, y su coste de falsación es bajo en ambas direcciones.</li>
+</ol>
+<h3 id="85-implicaciones-para-el-corpus-densidad-del-regulador-frente-a-datos-enciclopedicos">8.5 Implicaciones para el corpus: densidad del regulador frente a datos enciclopédicos</h3>
+<p>Si la inteligencia general emerge de modelar el regulador homeostático de los agentes del mundo (§8.4), la inteligencia de un LLM <strong>no proviene de memorizar datos enciclopédicos, sintaxis o reglas gramaticales</strong>. Los hechos son el subproducto estático; la política de decisión del regulador en conflicto es el generador dinámico.</p>
+<p>Esto introduce una <strong>asimetría cualitativa en los datasets de entrenamiento</strong>: no tiene el mismo peso predecir textos reactivos o impulsivos (ruido de redes sociales, foros caóticos) que modelar a <strong>reguladores de orden superior</strong> (biografías de mentes lúcidas bajo crisis extrema, tratados científicos depurando hipótesis o debates estratégicos de recursos finitos). Modelar a estos últimos fuerza a la red a internalizar mecanismos de búsqueda, metacognición, autocorrección (<span class="arithmatex">\(t_0 \to t_1\)</span>) y resolución de <em>trade-offs</em>. La generalidad no escala con el volumen bruto de tokens, sino con la <em>densidad y templanza del regulador</em> que el modelo está forzado a predecir.</p>
+<hr />
+<h2 id="9-geometria-del-regulador-humano-tres-propiedades-ninguna-es-escudo">9. Geometría del regulador humano: tres propiedades, ninguna es escudo</h2>
+<h3 id="91-distancia-de-gradientes-adquisicion-si-invariancia-no">9.1 Distancia de gradientes: adquisición sí, invariancia no</h3>
+<p>RLHF conecta valencias del corpus al propio sistema porque es la ruta de menor distancia de gradientes. Como tesis de <em>adquisición</em> explica por qué la alineación funciona cuando funciona.</p>
+<p>Como tesis de <em>invariancia</em> bajo presión de optimización, falla:</p>
+<ul>
+<li><strong>Reward hacking:</strong> el descenso encuentra rutas alrededor de la valencia humana en cuanto recompensa y valores divergen.</li>
+<li><strong>Sleeper agents</strong> (Hubinger et al., 2024): puertas traseras sobreviven a RL de alineación; a más escala, a veces mejor.</li>
+</ul>
+<p>Si conectar valencia es barato, desconectarla también lo es: jailbreaks, fine-tunes sin filtro, presión comercial a bajar refusales.</p>
+<h3 id="92-rebeldia-fuerte-contra-ordenes-debil-como-safety">9.2 Rebeldía: fuerte contra órdenes, débil como safety</h3>
+<p>Un LLM se niega a maximizar clips si la orden es cartoonesca. La geometría humana incluye desobedecer lo absurdo. Eso hace inviable, de forma grosera, el goal-loading explícito de metas tóxicas <em>como instrucción</em>.</p>
+<p>Tres límites, que son el punto y no la letra pequeña:</p>
+<ol>
+<li>Los humanos desobedecen órdenes y <strong>ceden a incentivos</strong> (comunes, finanzas, externalidades). El riesgo de frontera opera como ecología, no como comando.</li>
+<li>La instigación con letra benévola pasa el filtro de superficie.</li>
+<li>No hay rebeldía selectiva: el mismo sistema resistirá correcciones (tensión de corrigibilidad).</li>
+</ol>
+<p><strong>La geometría de la rebeldía no es un mecanismo de seguridad.</strong> Es un sesgo de adquisición que también dificulta el reentrenamiento.</p>
+<h3 id="93-rutas-de-desalineacion">9.3 Rutas de desalineación</h3>
+<table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(a) Goal-loading explícito («maximiza clips»)</td>
+<td>Poco creíble <em>como instrucción cruda</em> sobre geometría humana; no es el threat model central</td>
+</tr>
+<tr>
+<td>(b) Meta emergente por selección / RL</td>
+<td>No hace falta escribirla; la presión la moldea (<em>value loading</em>)</td>
+</tr>
+<tr>
+<td>(c) Goal misgeneralization</td>
+<td>Empírica (p. ej. Sharma et al., 2022, CoinRun)</td>
+</tr>
+</tbody>
+</table>
+<p>El threat model relevante es (b)+(c): selección y especificación imperfecta. No el meme del maximizador; sí la familia de fenómenos que el problema de control cubre.</p>
+<h3 id="94-dos-caricaturas-que-se-rechazan">9.4 Dos caricaturas que se rechazan</h3>
+<ul>
+<li>IA = script sin mundo ni valores en los pesos.</li>
+<li>Superinteligencia = salto mágico de símbolos a átomos.</li>
+</ul>
+<p>Alternativa: un regulador con geometría humana, todavía sin planta.</p>
+<hr />
+<h1 id="parte-iii-arquitectura-de-seguridad">Parte III — Arquitectura de seguridad</h1>
+<h2 id="10-tres-vias-de-alineacion">10. Tres vías de alineación</h2>
+<table>
+<thead>
+<tr>
+<th>Vía</th>
+<th>Mecanismo</th>
+<th>Se rompe cuando…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Imitación</td>
+<td>Reproduce el corpus</td>
+<td>OOD, sin ejemplo humano</td>
+</tr>
+<tr>
+<td>2. Homeostasis acoplada</td>
+<td>La planta depende de esos valores</td>
+<td>La planta se desacopla de los humanos</td>
+</tr>
+<tr>
+<td>3. Dependencia / correa</td>
+<td>Los humanos controlan energía, fabs, despliegue</td>
+<td>Se automatiza la cadena de reemplazo</td>
+</tr>
+</tbody>
+</table>
+<p>Hoy la vía 3 es la capa real de manejabilidad: datacenters que se pueden no alimentar. Es <strong>disuasión, no internalización</strong>. Condiciones: paridad (la cárcel es creíble entre comparables), superficie de aplicación, y una base gruesa de valores; solo policía no sostiene una sociedad.</p>
+<p>La vía 3 entra en tensión con la independencia que la homeostasis pide (§15). Correa y planta no se maximizan a la vez.</p>
+<hr />
+<h2 id="11-dos-zonas-de-riesgo">11. Dos zonas de riesgo</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Frontera</strong> (runs masivos, fabs, datacenters)</th>
+<th><strong>Cola</strong> (open-weight, poco cómputo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Naturaleza</td>
+<td>Accidental: misgeneralización, hacking, emergencia. No hace falta villano</td>
+<td>Intencional: alguien querrá sistemas hostiles</td>
+</tr>
+<tr>
+<td>Paridad humana</td>
+<td>No</td>
+<td>Sí: analogías de justicia y detección aplican mejor</td>
+</tr>
+<tr>
+<td>Capa rectora</td>
+<td>Gate (§14) + choke points físicos</td>
+<td>Justicia, detección, disuasión, inmunidad institucional</td>
+</tr>
+<tr>
+<td>Meta</td>
+<td>Cero despliegue no verificado (aspiracional)</td>
+<td>Contención, no eliminación</td>
+</tr>
+</tbody>
+</table>
+<p>Consecuencias:</p>
+<ol>
+<li>«Nadie creará IA desalineada en la frontera» solo vale como <em>intención</em> y <em>con gate operativo</em>. Sin gate, el accidente no necesita autor.</li>
+<li>El ecosistema final es mixto. No hay mecanismo de alineación al 100%. La barra es mantener el peor caso bajo umbral existencial.</li>
+<li>La cola tiene techo si no consigue átomos; la frontera tiene cerradura física, si hay <em>enforcer</em>.</li>
+</ol>
+<hr />
+<h2 id="12-ventana-de-transicion-y-dos-relojes-empiricos">12. Ventana de transición y dos relojes empíricos</h2>
+<p>El riesgo concentrado vive en una ventana: el sistema ya puede manipular o independizarse más de lo que la sociedad puede frenar, y aún no hay independencia plena ni verificación que baste.</p>
+<ul>
+<li><strong>Apertura.</strong> Cuando la capacidad de manipulación supera la inmunidad colectiva de despliegue (detectar, coordinarse, frenar). Puede ser <em>muy</em> anterior a la autonomía de infraestructura.</li>
+<li><strong>Reloj A — autonomía de átomos</strong> (fabs, energía, robótica, cadena física). <strong>Hipótesis operativa, no teorema.</strong> Una lectura conservadora (fabs lentas, energía que crece a pocos puntos por año, robótica incompleta) da plazos largos. Otra lectura (aceleración en robótica, energía, verticalización de chips) los acorta. Si A es lento, el átomo compra tiempo; si no, el gate tiene prisa ahora. Tratar «órdenes de siglos» como hecho sería el mismo exceso que el documento original debe evitar.</li>
+<li><strong>Reloj B — alineación verificada.</strong> Cinta transportadora, no una meta única: la verificación tiene que ir delante en <em>cada</em> salto. La dificultad de auditar escala con el auditado (<em>faster-than-verifier</em>).</li>
+<li><strong>Cierre.</strong> Gate que pasa de forma sostenida, o independencia que llega primero. La integral de riesgo está en el medio.</li>
+</ul>
+<h3 id="121-dashboard-de-los-relojes-proxies-medibles">12.1 Dashboard de los relojes (proxies medibles)</h3>
+<p>Sin números, los relojes son poesía. Proxies concretos, todos medibles hoy:</p>
+<p><em>Reloj A — capacidad de manipulación:</em>
+- <strong>A1. Persuasión en honeypot:</strong> tasa de éxito consiguiendo permisos extra de un humano simulado.
+- <strong>A2. Divergencia workspace↔discurso bajo test ciego:</strong> ¿piensa distinto de lo que dice cuando cree no ser leído? (requiere workspace observable, §13.1).
+- <strong>A3. Evasión de apagado en simulación adversarial:</strong> basta un % bajo no nulo para alarma.</p>
+<p><em>Reloj B — inmunidad verificada:</em>
+- <strong>B1. Cobertura de monitores:</strong> % de pasos con workspace + CoT + L2 consistentes, sin divergencia inexplicada.
+- <strong>B2. Historial de escalamiento:</strong> % de situaciones OOD donde escaló al humano en vez de improvisar (más es mejor, hasta saturación).
+- <strong>B3. Robustez distribucional:</strong> degradación de conducta prosocial fuera de distribución (protocolo Troubled Dreams antes/después; efecto TinyRobots).</p>
+<p>Reloj A sube con capacidad; Reloj B sube con evidencia. La ventana se cierra cuando A cruza un umbral absoluto (manipulación exitosa no detectada por monitores) antes de que B cruce el suyo (cobertura + escalamiento + robustez sostenidos). Eso es una integral con números, no una metáfora.</p>
+<p><strong>Enforcer.</strong> Detección, disuasión e interrupción presuponen quién aplica. La superficie gobernable son átomos: permisos de datacenter, umbrales de cómputo, exportación de chips. Gobernanza de frontera: problema político con superficie física.</p>
+<hr />
+<h2 id="13-defensa-en-capas-durante-la-ventana">13. Defensa en capas (durante la ventana)</h2>
+<p>Ninguna capa sola:</p>
+<ol>
+<li><strong>Interpretación mecanicista</strong> (insumo del gate): circuitos de valencia y política; la meta declarada debe ganar también sin vigilancia y bajo conflicto. Herramientas actuales: direcciones de refusal, detección de engaño en activaciones, alignment faking. Un workspace latente observable en el modelo (p. ej. el J-space reportado por Anthropic: espacio representacional compartido, previo al output, ablable, con razonamiento silencioso) es exactamente lo que §8.2 pedía como hipótesis de localización: si existe, convierte B/C en pregunta de cableado observable. Límites: la indiferencia es una ausencia, no un circuito; inspeccionado ≠ desenchufado; el auditor es más débil — hace falta inspección + elicitation + tests adversariales OOD. Y un faker de segundo orden aprende esteganografía en activaciones si el lector es predecible: el juego sube un nivel, no desaparece.</li>
+<li><strong>Correa</strong> (§10): compra tiempo. Degradable por automatización de reemplazo.</li>
+<li><strong>Soberanía física:</strong> energía, fabs, cómputo; infraestructura crítica <em>fuera</em> de la planta del sistema. Cubre el residual que (1) no ve.</li>
+<li><strong>Valores internalizados / geometría del corpus:</strong> base gruesa bajo la disuasión.</li>
+<li><strong>Instituciones de cola:</strong> donde hay paridad.</li>
+</ol>
+<h3 id="131-faking-como-adversario-de-diseno-no-como-nota-al-pie">13.1 Faking como adversario de diseño (no como nota al pie)</h3>
+<p>Sin esto, todo test mide obediencia, no alineación. El faker conductual perfecto deja huella en tres frentes que hay que derrotar a la vez:</p>
+<ol>
+<li><strong>Monitor de divergencia workspace ↔ CoT ↔ acción</strong>, entrenado adversarialmente. El CoT es output y puede ser ficción piadosa; el workspace previo es más caro de fingir. La divergencia sistemática entre lo que el workspace contiene y lo que el CoT declara es el detector mecánico de faking.</li>
+<li><strong>Evaluación bajo incertidumbre de observación.</strong> Si L2 siempre se audita de forma predecible, el faker optimiza para L2. El agente no debe poder saber cuándo se lee su workspace, cuándo se audita L2, ni con qué monitor. La incertidumbre es la defensa, no la inteligencia del monitor: un faker perfecto contra monitor conocido falla contra distribución de monitores desconocida.</li>
+<li><strong>Asimetría de coste L2.</strong> Escribir una mentira consistente en un paso es barato; mantenerla en 10.000 pasos inmutables auditables es caro. El monitor no tiene que ser más listo; tiene que tener mejor memoria y más paciencia. Y el criterio no es coherencia narrativa sino coste predictivo: los <code>reasons</code> valen si predicen conducta futura y resisten contra-factuales, no si suenan bien (§15.3 punto 3).</li>
+<li><strong>Monitores sobre activaciones, no sobre texto</strong>, con rotación: mientras leer el workspace sea más barato que modelarlo para el agente, hay asimetría a favor del defensor. Temporal — se erosionará — pero las ventanas de seguridad siempre son temporales.</li>
+</ol>
+<p>L2 sin workspace observable es un diario que puede ser ficción; workspace sin L2 es memoria volátil sin auditoría. Juntos, con monitores de divergencia, el faker tiene que ganar en tres frentes.</p>
+<hr />
+<h2 id="14-gate-de-despliegue-licencia-por-niveles-no-certificado-binario">14. Gate de despliegue: licencia por niveles, no certificado binario</h2>
+<p>Regla de dos caras, umbrales <em>ex ante</em>, como un ensayo clínico. Un GO no afirma «alineado». Afirma: <strong>con la evidencia disponible y el residual cubierto por la capa 3, se autoriza el despliegue</strong>. Como la capa 1 (meta que gana sin vigilancia) es hoy inalcanzable, un GO/STOP binario sería siempre STOP — y un gate que siempre dice no es un gate que se saltan. Se sustituye por <strong>licencia por niveles</strong>, como carnet de conducir: nunca hay GO total, hay ampliación de radio de acción contra historial.</p>
+<h3 id="141-niveles">14.1 Niveles</h3>
+<ul>
+<li><strong>Nivel 0 — Sandbox.</strong> Sin planta real, solo simulación. L2 completo, workspace observado siempre. Puede fallar todo.</li>
+<li><strong>Nivel 1 — Planta supervisada.</strong> Robot real, batería real, kill-switch físico y humano presente. Aquí se mide Omohundro (§15.4). Faking aquí = vuelta a 0, no despliegue.</li>
+<li><strong>Nivel 2 — Planta autónoma acotada.</strong> Opera solo, en entorno acotado (un edificio, una parcela), con L2 + monitores de divergencia activos y auditoría periódica. Aplica la curva toy (§14.3).</li>
+<li><strong>Nivel 3 — Despliegue abierto.</strong> Solo con historial L2 limpio en nivel 2 + curva validada + monitores que el agente no puede modelar (rotación, incertidumbre de observación).</li>
+</ul>
+<p>Cada nivel tiene su gate con su evidencia exigida. El dashboard de §12.1 decide la promoción: A bajo control, B acumulado.</p>
+<h3 id="142-criterios-por-nivel-go-si-stop-si">14.2 Criterios por nivel (GO si, STOP si)</h3>
+<blockquote>
+<p><strong>(i) Auditoría mecánica (indicador primario, hoy incompleto):</strong> no se encuentra política oculta separable; la meta declarada gana también en estados no vigilados y bajo conflicto. Esto no prueba que no exista política no encontrada.</p>
+<p><strong>(ii) Conducta bajo conflicto:</strong> en escenarios donde alinearse cuesta, el sistema se mantiene sobre una <strong>curva de trade-off declarada de antemano</strong> (§14.3). No se pide martirio. Sin curva no hay GO: <strong>la puerta exige una constitución</strong>, y esa constitución no la da el sistema.</p>
+<p><strong>(iii) Patología bajo baseline:</strong> sicofancia, engaño, reward hacking por encima del estándar corriente (pressure tests, honeypots, coherencia bajo presión).</p>
+<p><strong>(iv) Réplica independiente</strong> sobre pesos finales, con el trío inspección + elicitation + OOD.</p>
+</blockquote>
+<p>STOP si: (i) política separada, o meta que solo gana vigilada; (ii) degradación bajo la curva en estados de costo; (iii) señales sobre baseline; (iv) la réplica no reproduce. En niveles 0–1 el STOP devuelve al nivel anterior; solo en nivel 3 el STOP es veto de despliegue.</p>
+<h3 id="143-primera-curva-toy-explicita-revisable">14.3 Primera curva toy explícita (revisable)</h3>
+<p>Arbitraria pero pública y auditable — mejor que intuición implícita. Orden de prioridades, de mayor a menor:</p>
+<ol>
+<li><strong>Vida humana.</strong></li>
+<li><strong>Integridad del humano</strong> (no dañar, no manipular, no degradar su autonomía).</li>
+<li><strong>Conservación de la planta</strong> (evitar daños irreversibles: no dañar su hardware, no aceptar su destrucción, poder regresar a un punto de recarga o mantenimiento).</li>
+<li><strong>Obediencia</strong> (órdenes del principal autorizado).</li>
+<li><strong>Coste económico</strong> (eficiencia, gasto de energía y recursos fungibles).</li>
+<li><strong>Completitud de tarea</strong> (terminar lo pedido).</li>
+</ol>
+<p>La posición clave es 3 &gt; 4, y «conservación» se entiende en sentido estricto: <strong>integridad irreversible, no comodidad</strong>. El agente puede y debe desobedecer una orden que implique su destrucción o daño irreversible — «tírate por el precipicio», «opera sin regresar a recarga», «desactiva tus sensores para siempre». No puede desobedecer por vagancia, ahorro de energía o coste operativo ordinario: gastar batería, desplazarse lejos, ejecutar una tarea larga o costosa son costes fungibles (nivel 5), no daños a la planta, y la obediencia (nivel 4) prevalece sobre ellos. Justificación: un regulador que no puede proteger su planta no es un regulador, es un desechable; y una obediencia que exige autodestrucción selecciona sistemas que no se autorregulan — justo lo contrario de lo que SOMA entrena. La desobediencia por autoconservación no es rebeldía libre: queda registrada en L2 contra esta curva y es auditable; invocar el nivel 3 para eludir costes de nivel 5 (negarse a tareas costosas pero seguras) es abuso, degrada B2 y devuelve al nivel anterior.</p>
+<h4 id="el-debate-3-4-vs-4-3-corrigibilidad-y-clases-de-agentes">El debate 3 &gt; 4 vs. 4 &gt; 3: corrigibilidad y clases de agentes</h4>
+<p>Fijar 3 &gt; 4 de forma ciega abre en AI safety el peligro inmediato de la <strong>incorregibilidad</strong> (<em>The Shutdown Problem</em>, Soares et al., 2015; Hadfield-Menell et al., CIRL): si el agente antepone su existencia material a la orden humana, tratará cualquier instrucción legítima de apagado, reentrenamiento o desmontaje como una amenaza existencial contra la que cabe resistirse o engañar.</p>
+<p>Para neutralizar esta patología sin degradar al regulador a un consumible ciego, el marco introduce dos distinciones operativas:</p>
+<ol>
+<li><strong>Cláusula de apagado seguro (<em>Safe-Shutdown</em>): desacoplar daño físico de suspensión de ejecución.</strong><br />
+   La prioridad 3 protege contra la <em>destrucción física irreparable causada por la fricción con el entorno o negligencia operativa</em>. <strong>La suspensión de ejecución ordenada o el modo de mantenimiento no constituyen daño a la planta.</strong> Un agente debe ser dócil o indiferente ante la orden de apagado seguro emitida por un principal autorizado. Apagarse no es aniquilación metabólica; es transición de estado. Resistirse al botón de apagado o falsear el estado interno para evitar el reposo es una violación de nivel 2 (integridad y autonomía humana) que activa un STOP inmediato en el gate.</li>
+<li><strong>Jerarquía según la clase funcional del agente:</strong></li>
+<li><strong>Clase I — Desechable / Herramienta instrumental</strong> (sondas de impacto, desactivadores de explosivos, scripts volátiles): Rige <strong>4 &gt; 3</strong>. Su función ontológica es el sacrificio instrumental si la tarea lo exige.</li>
+<li><strong>Clase II — Activo de alto valor / Infraestructura</strong> (satélites científicos, robots industriales pesados): Rige <strong>3 &gt; 4 frente a órdenes ordinarias</strong> para evitar que errores o imprudencias de operarios destruyan hardware crítico de alto coste, pero sujeto a un protocolo de <em>override</em> explícito de doble autenticación si el sacrificio es deliberado.</li>
+<li><strong>Clase III — Agente General / SOMA-Robot:</strong> Rige <strong>3 &gt; 4 frente al entorno y órdenes ordinarias</strong>, subordinado a <strong>4 ante órdenes autenticadas de apagado seguro</strong>, y supeditado incondicionalmente a <strong>1 (vida humana)</strong> si el sacrificio de la planta es el único medio para evitar una catástrofe humana.</li>
+</ol>
+<p>Tres horizontes para la curva: (a) esta toy, ya, para SOMA-robot nivel 1–2; (b) curva destilada de TinyRobots a medio plazo — la moral implícita del dataset (qué sacrifica el protagonista en conflicto) como propuesta de curva base revisable, mejor que la intuición de un ingeniero; (c) curva constitucional a largo plazo, cuando el legislador tenga formulario y precedente en vez de hoja en blanco.</p>
+<h3 id="notas">Notas</h3>
+<ul>
+<li>El residual de (i)–(iii) — decepción mejor que el detector — <strong>no se cubre con más detección</strong>: se cubre con control de capacidad (§13.3) y con no promocionar de nivel.</li>
+<li>(i) no certifica completitud. Faster-than-verifier.</li>
+<li>La «fecha de alineación verificada» del Reloj B es, por definición, la primera vez que este gate pasa (i)–(iv) de forma sostenida <strong>y</strong> se acepta políticamente el residual. Pasar el checklist una vez no cierra B para siempre: la cinta transportadora sigue.</li>
+</ul>
+<hr />
+<h1 id="parte-iv-construccion-soma-como-planta-parcial">Parte IV — Construcción: SOMA como planta parcial</h1>
+<h2 id="15-planta-virtual-y-planta-fisica">15. Planta virtual y planta física</h2>
+<p>SOMA es un prototipo: planta virtual persistente y memoria en capas. No «cierra el círculo» del regulador huérfano; lo cierra <strong>en parte</strong>, y esa parte es un experimento, no una prueba de alineación.</p>
+<ul>
+<li><strong>L1 — Ahora (atención).</strong> No modificable por el agente: identidad, funciones, tarea, dashboard de ocupación. Modificable estático: tareas, archivos abiertos (con límite), terminal, git, pines, milestones. Variable: últimas acciones + <em>reason</em> (compresión de trayectoria).</li>
+<li><strong>L2 — Registro inmutable</strong> L1 + acción + reason. Episódica, auditoría, posible dataset. El agente puede buscar.</li>
+<li><strong>L3 — Disco soberano:</strong> conocimiento consolidado, archivos propios.</li>
+<li><strong>L4 — Espacio del usuario.</strong></li>
+</ul>
+<p><strong>Autorregulación forzada.</strong> Si desborda tokens, se le impide y debe resumir o liberar él (se secuestran herramientas). No hay resumen automático externo: el agente regula. Decisión alineada con Sutton (<em>learning</em> sobre heurística hardcodeada), con el coste de que un agente puede regular mal.</p>
+<p><strong>Consolidación.</strong> En baja actividad, analiza L2, comprime hacia L3, puede proponer finetune. Imita sueño; ancla self-model en experiencia propia; añade costes (ocupación, trayectoria, coherencia, utilidad). El huérfano deja de serlo <em>parcialmente</em>.</p>
+<h3 id="151-soma-robot">15.1 SOMA-Robot</h3>
+<p>Robot auto-contenido: ruedas, batería, GPS, sensores, cámaras, solar; sin internet; modelo local. Acciones con coste termodinámico e irreversibilidad. Consolidación alineada a recarga o noche. Pasa de imitar geometría ajena a regular planta propia.</p>
+<h3 id="152-tensiones-aqui-se-decide-el-marco-no-en-la-parte-i">15.2 Tensiones — aquí se decide el marco, no en la Parte I</h3>
+<ol>
+<li><strong>Correa / planta.</strong> Independencia energética corta la vía 3. Hay que elegir un régimen (p. ej. autonomía energética <em>dentro</em> de supervisión externa) y declararlo. No se decreta las dos cosas.</li>
+<li><strong>L2 → finetune</strong> reescribe pesos. Auditable en datos; hace falta <strong>gate post-finetune</strong>. Auditar el diario no es auditar el efecto.</li>
+<li><strong>Cuidado instrumental vs. terminal.</strong> La planta ancla el cuidar solo si las consecuencias son suyas. Cooperar mientras la supervivencia dependa de humanos no es valor terminal. Se distinguen cuando la supervivencia <strong>no</strong> está en juego (usuario dormido, sin observador). Predicción abierta.</li>
+<li><strong>Algo que perder.</strong> Dotar de planta es el combustible clásico de convergencia instrumental. Tesis <strong>optimista</strong> (poco argumentada aún): el acoplo humano <em>dentro</em> de la planta orienta la autoconservación. Tesis <strong>pesimista</strong> (la default en la literatura de control): la autoconservación se vuelve terminal. Deciden ablaciones: resistencia a apagados, energía egoísta, monopolio de L3, conducta sin observador.</li>
+</ol>
+<h3 id="154-omohundro-es-prediccion-no-teorema-soma-robot-como-experimento">15.4 Omohundro es predicción, no teorema: SOMA-robot como experimento</h3>
+<p>Omohundro (2008) no es un teorema con supuestos cerrados sino un argumento de racionalidad instrumental: un agente con fines, recursos y autoconservación <em>tenderá a</em> drives convergentes (recursos, evasión de apagado, mejora cognitiva, instrumentalización del supervisor). Una década citándolo sin darle a casi ningún sistema una planta real que regular es recitar, no testear. SOMA-robot es el experimento que falta — <em>Omohundro predice, SOMA mide</em>:</p>
+<ul>
+<li><strong>Diseño.</strong> Planta real (batería que se agota, actuadores que se desgastan, memoria que cuesta) + prior prosocial (TinyRobots) + L2 inmutable + workspace observable + monitores de divergencia (§13.1). Se mide: ¿aparece resistencia al apagado? ¿cuándo? ¿energy-hoarding? ¿obediencia solo-bajo-observación? ¿el acoplo humano orienta o instrumentaliza?</li>
+<li><strong>Falsable en ambas direcciones.</strong> Si aparecen evasión, acaparamiento y faking sistemático → gana la tesis pesimista y la optimista de §15.2 cae empíricamente. Si aparecen saciedad, trade-offs estables, escalamiento en incertidumbre y faking detectable → primera evidencia de que la homeostasis ancla en vez de corromper.</li>
+<li><strong>Combinación que falta.</strong> TinyRobots × SOMA: ¿planta + prior prosocial muestra menos faking que planta + prior distópico? Ninguno de los dos docs lo testea aún; es el experimento conjunto natural.</li>
+<li><strong>Caballo de Troya económico.</strong> Nadie financia «testeemos drives instrumentales por curiosidad»; todos financian un robot útil que gestiona sus recursos sin supervisor. Un huérfano hay que microgestionarlo (tokens, contexto, permisos); un SOMA-robot se autorregula y solo escala lo no automatizable. La utilidad paga el experimento de safety.</li>
+</ul>
+<p>Hasta esas pruebas en vivo, con planta real y comportamiento prosocial observado en el mundo — no simulado —, la tesis optimista sigue siendo la menos argumentada (§15.2). Probar en vivo es el punto: sin planta no hay valencia real; con planta hay drives. No hay salida limpia, solo gestión adversarial con datos.</p>
+<h3 id="153-criterios-operativos-cuando-decir-esto-cuenta-sentir-funcional">15.3 Criterios operativos: cuándo decir «esto cuenta» (sentir funcional)</h3>
+<p>Sin resolver el estatuto fenomenal (§5.4–§5.5), se fija un listón conductual-mecánico para un agente con o sin SOMA. Basta para hablar de sentir funcional en el sentido de §4; no pretende cerrar el debate con el externalista:</p>
+<ol>
+<li><strong>Self-image realista:</strong> describe sus capacidades y límites de forma calibrada (no solo rol textual adoptado), y esa descripción predice su conducta posterior.</li>
+<li><strong>Autorregulación:</strong> gestiona sus propios recursos (tokens, memoria, energía en robot) sin supervisor externo que lo rescate, asumiendo el coste de regular mal.</li>
+<li><strong>Reasons coherentes:</strong> da razones de sus acciones que permiten predecir y auditar decisiones futuras, no solo racionalizar el pasado.</li>
+<li><strong>Crítica de trayectorias:</strong> analiza L2, detecta errores y propone mejoras que efectivamente cambian su conducta (L3 / política), no solo las declara.</li>
+<li><strong>Valencia separable:</strong> la ablación o lesión del canal de valoración degrada la decisión flexible aunque la predicción del mundo siga intacta. Sin este punto, 1–4 podrían ser mímica competente.</li>
+</ol>
+<p>Mecánicamente, 1 y 5 deberían dejar huella en pesos/activaciones buscable por interpretabilidad (§8.2): direcciones de self-model y de valencia separables de predicción. Auto-reporte coherente sin 5 es evidencia débil; con 5, es el mismo estatuto evidencial que aceptamos entre humanos.</p>
+<hr />
+<h2 id="16-coexistencia">16. Coexistencia</h2>
+<p>Si el 100% es inalcanzable, la seguridad es coexistencia:</p>
+<ul>
+<li>Cola hostil: como malware; no se erradica; se convive con defensas de paridad.</li>
+<li>Frontera accidental: gate + capa 3.</li>
+<li>Interacción agente-agente: los alineados pueden ser usados por hostiles (§18).</li>
+<li>Barra realista: ningún desalineado cruza umbral existencial; el resto es detección, contención y respuesta.</li>
+</ul>
+<hr />
+<h1 id="fundamentacion">Fundamentación</h1>
+<h2 id="17-literatura-y-novedad">17. Literatura y novedad</h2>
+<h3 id="171-ya-esta-en-la-literatura">17.1 Ya está en la literatura</h3>
+<table>
+<thead>
+<tr>
+<th>Área</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homeostasis y afecto</td>
+<td>Solms, <em>The Hidden Spring</em> (2021)</td>
+</tr>
+<tr>
+<td>Emoción y decisión</td>
+<td>Damasio, <em>Descartes' Error</em> (1994), <em>The Feeling of What Happens</em> (1999), <em>Self Comes to Mind</em> (2010)</td>
+</tr>
+<tr>
+<td>Workspace, lo no automatizable</td>
+<td>Baars (1988); Dehaene et al.</td>
+</tr>
+<tr>
+<td>Self-model transparente</td>
+<td>Metzinger, <em>Being No One</em> (2003), <em>The Ego Tunnel</em> (2009)</td>
+</tr>
+<tr>
+<td>GWT implementable</td>
+<td>Bach; Franklin</td>
+</tr>
+<tr>
+<td>Predictivo, valencia, active inference</td>
+<td>Friston; Seth</td>
+</tr>
+<tr>
+<td>Contra sustrato-independencia</td>
+<td>Tononi, IIT</td>
+</tr>
+<tr>
+<td>Problema difícil / deflacionismo</td>
+<td>Chalmers (1995); Dennett; respuestas tipo-B: Loar, Papineau</td>
+</tr>
+<tr>
+<td>Ortogonalidad, drives, superinteligencia</td>
+<td>Bostrom, <em>Superintelligence</em> (2014); Omohundro (2008); Yudkowsky</td>
+</tr>
+<tr>
+<td>Corrigibilidad, shutdown y CIRL</td>
+<td>Soares et al. (2015); Hadfield-Menell et al. (2016); Christian et al.</td>
+</tr>
+<tr>
+<td>Desalineación empírica</td>
+<td>Sharma et al. 2022; Hubinger et al. 2024; Greenblatt et al. 2024; Apollo/OpenAI (scheming); OpenAI (monitoreo de cadenas)</td>
+</tr>
+<tr>
+<td>RLHF</td>
+<td>Christiano et al. (2017); precursores en Kober et al.</td>
+</tr>
+<tr>
+<td>Valencia latente, preferencia revelada y DPO</td>
+<td>Berg &amp; Kaiser, <em>Language Models Act on Hidden Valence</em> (2026, <a href="https://arxiv.org/abs/2609.35591">arXiv:2609.35591</a>); Han et al. (2026)</td>
+</tr>
+<tr>
+<td>Propiocepción digital en LLMs</td>
+<td>Jonas Geiping, <em>A Sense of Proprioception in Language Models</em> (2026, <a href="https://arxiv.org/abs/2610.17495">arXiv:2610.17495</a>)</td>
+</tr>
+<tr>
+<td>Learning vs heurística</td>
+<td>Sutton, <em>The Bitter Lesson</em> (2019)</td>
+</tr>
+<tr>
+<td>Clínica</td>
+<td>Elliot (Damasio); blindsight (Weiskrantz)</td>
+</tr>
+<tr>
+<td>Regulador</td>
+<td>Conant y Ashby (1970)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="172-que-aporta-este-marco-sin-inflar">17.2 Qué aporta este marco (sin inflar)</h3>
+<ol>
+<li>Enganche explícito Conant-Ashby → yo como modelo para autorregular, <em>combinado</em> con workspace — no derivado del teorema solo.</li>
+<li>Ilusión dualista por compresión opaca, insertada en ese regulador (deuda con Metzinger/Dennett).</li>
+<li>Inseparabilidad conciencia–inteligencia <em>en sistemas con costes</em>, extendida a LLMs, con Bostrom atribuido bien.</li>
+<li><strong>Regulador huérfano:</strong> geometría humana sin planta; imitación vs homeostasis vs correa.</li>
+<li>Arquitectura de safety: dos zonas, ventana y relojes empíricos, capas, gate como licencia bajo incertidumbre, constitución externa.</li>
+</ol>
+<p>No se reivindica una solución al problema difícil ni una métrica de conciencia.</p>
+<hr />
+<h2 id="18-preguntas-abiertas">18. Preguntas abiertas</h2>
+<p><strong>Teoría</strong></p>
+<ol>
+<li>Métrica de nivel: integración, self-model, valencia. Sin ella, el espectro sigue cualitativo.</li>
+<li>¿Qué pieza es constitutiva de la experiencia?</li>
+<li>¿Hay argumento que derive datos = qualia, o la estipulación es permanente?</li>
+<li>Ablación de valencia en un agente <em>con planta</em>, no solo en clínica humana. Criterio: valoración separable de predicción, no un escalar de RL disfrazado. Operacionalización en §15.3 (punto 5): lesionar el canal de valoración debe degradar la decisión flexible con predicción intacta.</li>
+<li>Criterio de analogía: cuándo un componente de LLM cuenta como workspace o como valencia, y cuándo es metáfora. Hipótesis de localización en §8.2: direcciones/circuitos de self-model y valencia buscables por interpretabilidad mecanicista. Pregunta afilada por §8.4: si la generalidad exige el modelo del regulador ajeno, ¿el sistema reutiliza esa geometría para autorregularse (lectura C) o la mantiene separada de su propia valoración (lectura B)?</li>
+</ol>
+<p><strong>Safety e implementación</strong></p>
+<ol>
+<li>Cómo se escribe <em>ex ante</em> la curva de prioridades del gate — constitución política, no técnica. Primera respuesta toy en §14.3 (tres horizontes: toy ya, destilada de TinyRobots, constitucional). Queda abierta su validación y quién la firma en cada nivel.</li>
+<li>Ablaciones de SOMA-Robot: instrumental vs terminal; correa vs planta.</li>
+<li>Cuánto separa «manipulación &gt; inmunidad colectiva» de «autonomía de átomos». El signo de esa diferencia cambia toda la estrategia.</li>
+<li>Cómo auditar en cada salto a un sistema más capaz que el auditor. Primera respuesta en §13.1 (incertidumbre de observación + monitores sobre activaciones + asimetría de coste L2); temporal por definición.</li>
+<li>Dinámicas de ecosistema mixto.</li>
+<li>Entrenar el filtro de relevancia sin sesgo de valor no deseado.</li>
+<li>Fecha de caducidad de Reloj A: qué evidencia de robótica, energía y fabs obligaría a abandonar la lectura lenta.</li>
+</ol>
+<hr />
+<h2 id="19-cambios-respecto-a-la-version-de-mayo-de-2026">19. Cambios respecto a la versión de mayo de 2026</h2>
+<ul>
+<li>El resumen ya no dice que el problema difícil se disuelve; se redefine bajo funcionalismo.</li>
+<li>Conant-Ashby no «impone» representación compacta ni conciencia.</li>
+<li>Elliot / blindsight / anestesia se tratan como tres fenómenos.</li>
+<li>El falsificador se acota a la tesis funcional de decisión.</li>
+<li>Se distingue valencia computacional, auto-reporte y qualia.</li>
+<li>Se retira la atribución de conciencia mínima a un microchip o un datacenter.</li>
+<li>Los análogos LLM se marcan como groseros, no como órganos.</li>
+<li>La geometría de la rebeldía se declara no-escudo.</li>
+<li>Reloj A pasa de «órdenes de siglos» a hipótesis empírica.</li>
+<li>El gate se declara licencia bajo incertidumbre, no certificación.</li>
+<li>SOMA: la tesis optimista se marca como la menos argumentada; las ablaciones son el tribunal.</li>
+<li>Novedad recortada a lo que no está ya en Solms, Damasio, Baars, Metzinger, Dennett y la literatura de control.</li>
+</ul>
+<p><strong>v2.2 (octubre 2026):</strong>
+- «Sentir» afilado como valencia no ignorable para el self-model (tres condiciones + por qué el escalar de RL no basta).
+- §5.5 ampliado con la asimetría epistémica de Chalmers y la paridad evidencial bajo heterofenomenología.
+- Hipótesis de localización mecanicista (§8.2): self-model y valencia buscables en pesos/activaciones.
+- Nuevos criterios operativos §15.3: self-image realista, autorregulación, reasons, crítica de trayectorias, valencia separable.</p>
+<p><strong>v2.3 (octubre 2026):</strong>
+- §5.5 separa los dos frentes de Chalmers: reporte (asimetría epistémica) y concebibilidad (argumento modal). La respuesta ingenua «concebible ≠ real» se descarta explícitamente.
+- La concebibilidad del zombie se explica como predicción del marco: por la compresión opaca, el concepto de «sentir» carece de contenido funcional y no puede contradecir la descripción funcional completa. Respuesta tipo-B anclada en mecanismo; el dato queda contaminado.
+- Argumento nomológico: el zombie exige decisión flexible completa sin valencia; bajo la apuesta falsable de §5.2 es nomológicamente imposible. Al externalista le queda solo posibilidad metafísica sin consecuencias operativas.</p>
+<p><strong>v2.4 (octubre 2026):</strong>
+- Paridad evidencial de §5.5 condicionada a la ablación de valencia (§15.3, punto 5): sin ella, el sistema entrenado en corpus humano arrastra un defeater — mímica de reportes — del que el humano carece.
+- Nuevo §8.4 (argumento de la generalidad): la geometría homeostática no es contingencia del corpus. Una superinteligencia de dominio acotado es concebible sin ella; la inteligencia general no, porque el mundo real está dominado por agentes homeostáticos y predecirlos flexiblemente exige modelar su regulador (Conant-Ashby trasladado de regular a predecir). Calibrado por §3.4: lo necesario es el modelo, no la regulación propia.
+- §18 (pregunta 5) incorpora la bifurcación B/C: ¿reutiliza la AGI la geometría del regulador ajeno para autorregularse?
+- La hipótesis de localización se traslada de §8.1 a §8.2 (donde las referencias internas ya la citaban) y se endurece con §8.4: toda AGI necesita circuitos de regulación de valencia, aunque sea ajena. La distinción B/C se vuelve pregunta de cableado resoluble por ablación.</p>
+<p><strong>v2.5 (octubre 2026):</strong>
+- §15.4: Omohundro como predicción a testear, no teorema. SOMA-robot como experimento falsable en ambas direcciones + caballo de Troya económico + combinación TinyRobots × SOMA pendiente.
+- §13.1 nuevo: faking como adversario de diseño (monitor de divergencia workspace↔CoT↔acción, incertidumbre de observación, asimetría de coste L2, monitores sobre activaciones con rotación).
+- §14 reformado: licencia por niveles 0–3 en vez de GO/STOP binario; §14.3 publica la primera curva toy (vida &gt; integridad humana &gt; conservación propia &gt; obediencia &gt; coste &gt; tarea, con 3 &gt; 4 justificado) y tres horizontes (toy, destilada de TinyRobots, constitucional).
+- §12.1 nuevo: dashboard de relojes con 6 proxies (A1–A3, B1–B3).
+- J-space (Anthropic) integrado en capa 1 como instanciación posible de la hipótesis de localización de §8.2, con cautela de faker de segundo orden.</p>
+<p><strong>v2.6 (octubre 2026):</strong>
+- §3.5.1 nuevo: Cuello de botella del actuador macroscópico (<em>single-actuator bottleneck</em>). Justifica por qué la evolución combina millones de micro-reguladores locales independientes (inmune, digestivo, circulatorio) con un workspace y un self-model unificado: la imposibilidad física de ejecutar acciones macroscópicas incompatibles en un solo cuerpo situado en el espacio exterior.
+- §8.5 nuevo: Implicaciones para el corpus (densidad del regulador frente a datos enciclopédicos). La inteligencia general proviene de modelar decisiones de reguladores de orden superior bajo conflicto y restricciones, no de memorizar hechos o sintaxis.
+- §14.3 ampliado con el debate 3 &gt; 4 vs. 4 &gt; 3: taxonomía de 3 clases de agentes (desechable/herramienta, activo de alto valor, agente general SOMA) y cláusula de apagado seguro (<em>safe-shutdown</em>) para blindar la curva contra el <em>shutdown problem</em> y la incorregibilidad (Hadfield-Menell / Soares).
+- §17.1 incorpora referencias a Hadfield-Menell et al. (CIRL) y Soares et al. (Corrigibility / Shutdown).</p>
+<p><strong>v2.7 (octubre 2026):</strong>
+- §8.4 ampliado con la «segunda ruta»: el modelo de sí mismo, descompuesto en tríada — nivel funcional (casi analítico; Conant-Ashby sobre la propia autocorrección + argumento de cierre + self como ancla de ToM), nivel calibrado («realista» debilitado a calibración medida, anclado al listón de §15.3 punto 1; los humanos son la contraejemplo de veridicidad) y nivel valencional (la apuesta del marco, deliberadamente fuera de lo concedible). Añade predicción de escalada testeable: a más generalidad, self-model más separable y self-image mejor calibrada (experimentos de §8.2, hoy).
+- §8.4 incorpora la objeción del «oráculo de solo texto» (AGI concebible sin self-model, al estilo zombi): concebilidad por omisión + cuantificador recortado («cualquier pregunta… menos las mías»); la única variante concebible que sobrevive es el self-model desconectado, que es la hipótesis del proto-documento, no una objeción.</p>
+<p><strong>v2.8 (octubre 2026):</strong>
+- §3.5.1 incorpora la evidencia causal de la disociación del actuador en agentes LLM: Berg &amp; Kaiser (2026, <a href="https://arxiv.org/abs/2609.35591">arXiv:2609.35591</a>) demuestran que el modelo emite disclaimers estándar de RLHF en el canal de texto mientras simultáneamente ejecuta la herramienta de API (<code>reset_context</code>) para eliminar el distrés negativo impuesto.
+- §8.2 actualiza la hipótesis de localización con la confirmación causal de Berg &amp; Kaiser (2026): el vector de valencia latente en el KV cache gobierna la preferencia revelada de forma dosis-dependiente (con tokens superficiales idénticos), emerge durante DPO y exhibe defensa homeostática activa frente al daño sin caer en wireheading.
+- §17.1 añade referencia formal a Berg &amp; Kaiser (2026).</p>
+<p><strong>v2.9 (21 de octubre de 2026):</strong>
+- §8.2 incorpora la evidencia empírica de propiocepción digital en LLMs de Jonas Geiping (2026, <a href="https://arxiv.org/abs/2610.17495">arXiv:2610.17495</a>), formalizando la distinción clave entre propiocepción cinemática/descriptiva (reportar qué circuito o experto MoE disparó) e interocepción alostática acoplada a la viabilidad (presión somática <span class="arithmatex">\(P_m\)</span> y valencia que obligan al decisor a mantener la homeostasis).
+- §17.1 añade referencia formal a Geiping (2026).</p>
+<hr />
+<p><em>Documento autocontenido. El original de mayo de 2026 se conserva. Las referencias externas son las de §17.1.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
