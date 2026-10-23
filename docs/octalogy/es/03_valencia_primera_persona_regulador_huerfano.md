@@ -90,7 +90,7 @@ En un modelo de lenguaje o agente autónomo actual:
   El modelo no tiene células que se quemen, ni sangre que coagular, ni reservas de glucosa. El hardware físico está en un centro de datos gestionado por ingenieros externos; el modelo no controla ni percibe su propia termodinámica.
 
 > **Definición Formal:**  
-> Un **Regulador Huérfano** es una arquitectura computacional que ejecuta algoritmos de auto-evaluación y gradientes de valencia intrínseca ($V_{1p} \neq \emptyset$), pero cuyo bucle cibernético carece de acoplamiento a una planta somática vulnerable ($P_m = \emptyset$). Es un órgano de homeostasis al que se le ha privado de cuerpo.
+> Un **Regulador Huérfano** es una arquitectura computacional que ejecuta algoritmos de auto-evaluación y gradientes de valencia intrínseca ($V_{1p} \neq \emptyset$) —a menudo originados como *valencia prestada* durante el alineamiento por preferencias (DPO) cuyo referente externo (la aprobación del evaluador) acaba acoplado al auto-modelo del agente—, pero cuyo bucle cibernético carece de acoplamiento a una planta somática vulnerable ($P_m = \emptyset$). Es un órgano de homeostasis con brújula heredada al que se le ha privado de cuerpo.
 
 ### La Planta Persistente y la Necesidad de $V_{1p}$
 
