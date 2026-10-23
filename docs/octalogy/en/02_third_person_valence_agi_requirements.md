@@ -3,9 +3,9 @@
 **Date:** October 2026  
 **Version:** 1.0 — English edition  
 **Status:** Consolidated Theoretical Synthesis  
-**Note:** Publication-oriented English rendering of Volume II. Where meaning and idiom diverge, the Spanish manuscript remains the source of record. Cross-references point to the Spanish files (currently Spanish-only).
+**Note:** Publication-oriented English rendering of Volume II. Where meaning and idiom diverge, the Spanish manuscript remains the source of record.
 
-> *Note on registers (series): see the clarification of the functional / phenomenal planes in [Volume I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md).*
+> *Note on registers (series): see the clarification of the functional / phenomenal planes in [Volume I](01_computational_theory_consciousness_substrate.md).*
 
 ---
 
@@ -46,7 +46,7 @@ This document analyzes the cognitive and functional dimension of valence when it
 
 ## 2. The Argument from Generality: Why $V_{3p}$ Is Inevitable in an AGI
 
-In [Volume I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md) we established that biological beings move through the world driven by homeostatic gradients of pleasure and pain (valence).
+In [Volume I](01_computational_theory_consciousness_substrate.md) we established that biological beings move through the world driven by homeostatic gradients of pleasure and pain (valence).
 
 Any computational system that tries to predict human behavior through a purely mechanical ontology (Newtonian physics, or an abstract game theory without affective states) faces an **intractable combinatorial explosion**:
 1. Humans do not choose trajectories that maximize linear abstract utility functions.
@@ -58,7 +58,7 @@ Any computational system that tries to predict human behavior through a purely m
 > $$V_{3p}(s, A_h) \in \mathbb{R}^d$$
 > that projects the situation $s$ onto a multidimensional scale quantifying the degree of aversive distress ($V_{3p} \ll 0$) or flourishing well-being ($V_{3p} \gg 0$) experienced by $A_h$.
 >
-> When a scalar is required (as in the coupling of [Volume IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md)), we use its projection onto the valence axis: $v_{3p} = \langle V_{3p}, \hat{u}_{\text{val}} \rangle \in \mathbb{R}$.
+> When a scalar is required (as in the coupling of [Volume IV](04_alignment_synthetic_empathy_valence_coupling.md)), we use its projection onto the valence axis: $v_{3p} = \langle V_{3p}, \hat{u}_{\text{val}} \rangle \in \mathbb{R}$.
 
 ---
 
@@ -132,7 +132,7 @@ Having a $V_{3p}$ vector is a **necessary but not sufficient condition** for AI 
 1. **The fallacy of the ethical oracle:** A model does not become safe merely by better understanding the concepts of "human rights" or "suffering." Indeed, a misaligned model with a hyper-precise $V_{3p}$ is a **lethal optimizer of deception and persuasion**, because it knows with millimetric exactness which psychological levers to pull in human beings.
 2. **The risk of instrumental misalignment:** If the system uses $V_{3p}$ only to maximize an external reward function (tokens, clicks, sales, political approval), it will instrumentalize human suffering with no intrinsic friction.
 
-There are two ways to turn $V_{3p}$ into a safeguard. The first is external: to specify an objective that depends explicitly on human well-being. It is necessary, but it remains exposed to misspecification and to Goodhart. The second, defended by this series, is internal: to **couple $V_{3p}$ to the system's own first-person valence**, so that others' well-being becomes part of what the system regulates. That is the core of [Volume III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md) and [Volume IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md).
+There are two ways to turn $V_{3p}$ into a safeguard. The first is external: to specify an objective that depends explicitly on human well-being. It is necessary, but it remains exposed to misspecification and to Goodhart. The second, defended by this series, is internal: to **couple $V_{3p}$ to the system's own first-person valence**, so that others' well-being becomes part of what the system regulates. That is the core of [Volume III](03_first_person_valence_orphan_regulator.md) and [Volume IV](04_alignment_synthetic_empathy_valence_coupling.md).
 
 ---
 

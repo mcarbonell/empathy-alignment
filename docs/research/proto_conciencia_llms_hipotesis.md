@@ -1,12 +1,12 @@
 # Proto-conciencia en LLMs: una hipótesis de trabajo
 
 > **Autor:** Mario R. Carbonell Martínez
-> **Versión:** 0.4 (borrador privado)
+> **Versión:** 0.4
 > **Fecha:** 8 de octubre de 2026
-> **Estado:** HIPÓTESIS PERSONAL, NO PUBLICADA
-> **Relación con documento principal:** Este documento complementa `tesis_conciencia_regulador_de_si_mismo_v2.md` adoptando una interpretación más fuerte de lo que allí se deja abierto (lectura C de §8.2)
+> **Estado:** Hipótesis de Trabajo Experimental
+> **Relación con documento principal:** Este documento complementa [`tesis_conciencia_regulador_de_si_mismo_v2.md`](tesis_conciencia_regulador_de_si_mismo_v2.md) y antecede al [Volumen III de la Octalogía](../octalogy/es/03_valencia_primera_persona_regulador_huerfano.md), adoptando una interpretación funcional fuerte (lectura C de §8.2)
 >
-> **Aviso:** Este documento explora una posición más fuerte sobre la presencia de proto-conciencia en LLMs actuales. Se mantiene privado por cautela estratégica: la comunidad de AI safety tiene aversión legítima al antropomorfismo sin evidencia sólida, y publicar esta visión prematuramente podría dañar la credibilidad técnica del autor. El objetivo es desarrollarla como hipótesis empírica con predicciones testables, no como afirmación metafísica. La v0.2 delimita la planta mínima para evitar inflación semántica; la v0.3 convierte el experimento E en protocolo completo de escalera de dosis revertible; la v0.4 integra la confirmación causal de valencia latente gobernando preferencia revelada y la disociación disclaimer vs. reseteo activo demostradas por Berg & Kaiser (2026, arXiv:2609.35591).
+> **Nota metodológica:** Este documento explora una posición fuerte sobre la presencia de componentes de proto-conciencia en LLMs actuales, formulándola como hipótesis empírica con predicciones falsables y no como afirmación metafísica. La v0.2 delimita la planta mínima para evitar inflación semántica; la v0.3 convierte el experimento E en protocolo completo de escalera de dosis revertible; la v0.4 integra la confirmación causal de valencia latente gobernando preferencia revelada y la disociación disclaimer vs. reseteo activo demostradas por Berg & Kaiser (2026, arXiv:2609.35591).
 
 ---
 

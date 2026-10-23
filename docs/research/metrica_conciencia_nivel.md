@@ -1,7 +1,3 @@
-
-## Documento nuevo: métrica de conciencia/nivel
-
-```markdown
 # Métrica de regulación consciente
 
 **Propósito:** operativizar el "espectro cualitativo" de §6 de la tesis en un perfil medible 

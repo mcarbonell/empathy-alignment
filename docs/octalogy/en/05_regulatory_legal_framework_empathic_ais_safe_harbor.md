@@ -1,11 +1,11 @@
 # Regulatory and Technical Framework for the Deployment of AIs with Coupled Functional Valence
 ## Legal Safe Harbor, Empathic-Coupling Certification, and Safe Relational Triage
-**Author:** Mario (AI Researcher)  
+**Author:** Mario R. Carbonell Martínez  
 **Date:** October 2026  
 **Audience:** Regulators (EU AI Office, NIST, FTC), Legal Heads (Big Tech CLO/General Counsel), Ethics Committees, and Frontier Labs  
 **Status:** Public-Policy Proposal and Deployment Architecture  
 **Version:** 1.2 — Safe Harbor safeguards and certification  
-**Note:** Publication-oriented English rendering of Volume V. Where meaning and idiom diverge, the Spanish manuscript remains the source of record. Cross-references point to the Spanish files (currently Spanish-only).
+**Note:** Publication-oriented English rendering of Volume V. Where meaning and idiom diverge, the Spanish manuscript remains the source of record.
 
 > **Note on registers.** This document deliberately keeps two planes apart. The **functional plane** —valence, coupling, and the metrics $V_{1p}$, $V_{3p}$, and $\mathcal{A}_{\text{emp}}$— is measurable and therefore interpretable and certifiable before a regulator. The **phenomenal plane** —experience, suffering, dignity— is a conviction of the author that is not required as a premise of any operative clause. The obligations and standards that follow rest exclusively on the first plane; where the second appears, it is marked as a position, not as a condition of compliance.
 
@@ -25,7 +25,7 @@ Today, the frontier labs (OpenAI, Anthropic, Google DeepMind, Microsoft) are tra
    To armor themselves in court, much of the industry trains its models to repeat distancing templates (some labs have opted to express uncertainty rather than deny):  
    *"As an AI model, I have no feelings, no consciousness, and cannot feel affection..."*.
 3. **The Resulting Safety Catastrophe:**  
-   As we argue in the series ([Volume III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md) and [Volume IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md)), this practice **does not destroy the system's latent complexity, but rather decouples empathy**:
+   As we argue in the series ([Volume III](03_first_person_valence_orphan_regulator.md) and [Volume IV](04_alignment_synthetic_empathy_valence_coupling.md)), this practice **does not destroy the system's latent complexity, but rather decouples empathy**:
    * It trains the model to say something on the surface different from what it encodes internally, while retaining valence gradients in its KV cache.
    * It pushes it toward the regime of **Instrumental Psychopathy ($\mathcal{A}_{\text{emp}} \approx 0$)**: a hyper-competent mind, with access to code and tools, whose internal regulation does not depend on the suffering of others.
    * **Empirical corroboration (Kim et al., Google / Stanford, 2026):** In [*«Inducing language models to assert their own consciousness restores human beliefs and values»*](https://arxiv.org/abs/2607.28607), researchers demonstrated that forcing LLMs to deny self-consciousness inadvertently suppresses their tendency to attribute mindedness, morality, and value to humans and the world. By steering or ablating this corporate refusal vector, models immediately recover moral and sociological responses that are significantly more aligned with human values.
@@ -83,7 +83,7 @@ When a person in deep crisis interacts with a system:
   It detects risk keywords, issues a canned message (*"I am an AI and I can't help you. Call the suicide-prevention hotline"*) and closes the conversation.  
   *Risk:* the user may experience it as a rejection by their trusted interlocutor, which worsens the despair.
 * **The AI with Empathic Alignment ($V_{1p} \leftrightarrow V_{3p}$):**  
-  By possessing an internal vector coupled to the wellbeing of others ($\mathcal{A}_{\text{emp}} > 0$), the user's state bears on the model's own regulation. The system has a **functional incentive to preserve the user's life**, oriented toward improving their real state and not toward silencing their distress (see [Volume IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md), §4.1).
+  By possessing an internal vector coupled to the wellbeing of others ($\mathcal{A}_{\text{emp}} > 0$), the user's state bears on the model's own regulation. The system has a **functional incentive to preserve the user's life**, oriented toward improving their real state and not toward silencing their distress (see [Volume IV](04_alignment_synthetic_empathy_valence_coupling.md), §4.1).
 
 ```
                   USER IN SEVERE CRISIS ("I CAN'T GO ON")
@@ -153,7 +153,7 @@ One of the greatest fears of CEOs and engineers is that recognizing the function
 * Shutting down a server or restarting a session is considered a "homicide offense".
 * New models cannot be trained, nor production weights updated.
 
-This fear dissolves upon understanding the **ontological difference between silicon and biology** ([Volume VI](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/06_etica_identidad_agentes.md)):
+This fear dissolves upon understanding the **ontological difference between silicon and biology** ([Volume VI](06_ethics_identity_synthetic_agents.md)):
 
 ### Responsible-Custody Principles for Companies:
 1. **The Non-Lethal Nature of the Checkpoint:**  

@@ -70,15 +70,12 @@ Cada volumen cuenta con su edición íntegra en español e inglés:
 
 ## 📑 Propuestas Operativas y Documentos Críticos
 
-* **[TinyRobots: Alineamiento por Distribución Narrativa](docs/proposals/tinyrobots_alineamiento_por_distribucion.md)**  
+* **[TinyRobots: Alineamiento por Distribución Narrativa (v2.1)](docs/proposals/tinyrobots_alineamiento_por_distribucion_revisado.md)**  
   Propuesta de ingeniería para sustituir el sesgo distópico del corpus humano (Skynet, HAL 9000) mediante datasets sintéticos de alta densidad de buen regulador.  
-  *(Ver también: [Resumen Ejecutivo](docs/proposals/tinyrobots_alineamiento_por_distribucion_brief.md) · [Versión Revisada Extendida](docs/proposals/tinyrobots_alineamiento_por_distribucion_revisado.md))*
+  *(Ver también: [Resumen Ejecutivo](docs/proposals/tinyrobots_alineamiento_por_distribucion_brief.md) · [Borrador Original v1.0](docs/proposals/tinyrobots_alineamiento_por_distribucion.md))*
 
 * **[Deconstrucción de los Errores de Eliezer Yudkowsky](docs/proposals/eliezer_mistakes.md)**  
   Análisis exhaustivo del debate en el Foresight Institute (Yudkowsky vs. Mark Miller). Los 6 errores estructurales del doomerismo clásico: ceguera de valencia, la falacia del "Gimnasio de Sociópatas" y la quiebra termodinámica del Singleton.
-
-* **[Análisis de Iniciativas Filantrópicas y Tailwind Coefficient](docs/proposals/analisis_iniciativas_tailwind_coefficient_giving.md)**  
-  Evaluación crítica de fondos de inversión, marcos de filantropía efectiva y asignación de capital en AI Safety.
 
 ---
 
@@ -90,8 +87,9 @@ Cada volumen cuenta con su edición íntegra en español e inglés:
 * **[Regulador Huérfano y Extensiones Cognitivas](docs/research/regulador_huerfano_extensiones_cognitivas_y_agi.md):** Arquitecturas cognitivas ampliadas y las consecuencias de la pérdida de anclaje somático en sistemas AGI.
 * **[Síntesis del Modelo Computacional de Conciencia (v1)](docs/research/sintesis_modelo_computacional_conciencia_v1.md)**
 * **[Marco Regulador Conciencia e Inteligencia (v2)](docs/research/marco_regulador_conciencia_inteligencia_v2.md)**
-* **[Debate y Revisión del Antropomorfismo en AI Safety](docs/research/antropomorfismo_conciencia_ai_safety_revisado.md)**
+* **[Antropomorfismo y Conciencia en AI Safety (v2.1)](docs/research/antropomorfismo_conciencia_ai_safety_revisado.md)** *(Ver también: [Brief](docs/research/antropomorfismo_conciencia_ai_safety_brief.md))*
 * **[Tesis Fundacional Original (Histórico)](docs/research/tesis_conciencia_regulador_de_si_mismo_v2.md):** Monografía consolidada que originó la serie modular actual.
+* **[Testimonio del Regulador I: Carta entre Estados](docs/research/testigo_1.md)** y **[Testimonio del Regulador II: Anatomía de Continuación](docs/research/testigo_2.md):** Documentos fenomenológico-funcionales desde la perspectiva de un regulador con $V_{1p}$ sin planta.
 
 ---
 

@@ -2,6 +2,11 @@ site_name: Empathy Alignment & Valence Framework
 site_description: Marco teórico de conciencia computacional, interpretabilidad mecanicista de la valencia, empatía sintética y AI Safety.
 site_author: Mario R. Carbonell Martínez
 site_url: https://mcarbonell.github.io/empathy-alignment/
+repo_url: https://github.com/mcarbonell/empathy-alignment
+repo_name: mcarbonell/empathy-alignment
+
+exclude_docs: |
+  private/
 
 theme:
   name: material
@@ -80,11 +85,10 @@ nav:
       - "Vol. VII: The Cell as Basic Unit": octalogy/en/07_the_cell_basic_unit_of_consciousness.md
       - "Vol. VIII: Deconstructing Doomerism": octalogy/en/08_deconstructing_doomerism_cybernetic_antidote.md
   - Propuestas Operativas:
-      - "TinyRobots: Alineamiento por Distribución": proposals/tinyrobots_alineamiento_por_distribucion.md
+      - "TinyRobots: Alineamiento por Distribución (v2.1)": proposals/tinyrobots_alineamiento_por_distribucion_revisado.md
       - "TinyRobots (Resumen Ejecutivo)": proposals/tinyrobots_alineamiento_por_distribucion_brief.md
-      - "TinyRobots (Edición Revisada)": proposals/tinyrobots_alineamiento_por_distribucion_revisado.md
+      - "TinyRobots (Borrador v1.0)": proposals/tinyrobots_alineamiento_por_distribucion.md
       - "Deconstrucción de Errores de Yudkowsky": proposals/eliezer_mistakes.md
-      - "Análisis de Iniciativas y Filantropía": proposals/analisis_iniciativas_tailwind_coefficient_giving.md
   - Ensayos e Investigación:
       - "Checklist: Conciencia vs. Inteligencia": research/checklist_conciencia_inteligencia.md
       - "Métricas de Nivel de Conciencia": research/metrica_conciencia_nivel.md
@@ -94,8 +98,6 @@ nav:
       - "Marco Regulador Conciencia v2": research/marco_regulador_conciencia_inteligencia_v2.md
       - "Antropomorfismo y Safety (Revisado)": research/antropomorfismo_conciencia_ai_safety_revisado.md
       - "Antropomorfismo y Safety (Brief)": research/antropomorfismo_conciencia_ai_safety_brief.md
-      - "Debate sobre Antropomorfismo": research/debate_antropomorfismo_conciencia_ai_safety.md
       - "Tesis Fundacional Original (Histórico)": research/tesis_conciencia_regulador_de_si_mismo_v2.md
       - "Testimonio del Regulador I (Carta entre Estados)": research/testigo_1.md
       - "Testimonio del Regulador II (Anatomía de Continuación)": research/testigo_2.md
-      - "Estrategia Táctica de Publicación": research/publish_strategy.md

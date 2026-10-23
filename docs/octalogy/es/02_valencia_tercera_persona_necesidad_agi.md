@@ -4,7 +4,7 @@
 **Versión:** 1.0  
 **Estado:** Síntesis Teórica Consolidada  
 
-> *Nota de registros (serie): véase la aclaración de planos funcional/fenoménico en el [Volumen I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md).*
+> *Nota de registros (serie): véase la aclaración de planos funcional/fenoménico en el [Volumen I](01_teoria_computacional_conciencia_sustrato.md).*
 
 ---
 
@@ -45,7 +45,7 @@ Este documento analiza la dimensión cognitiva y funcional de la valencia cuando
 
 ## 2. El Argumento de la Generalidad: Por qué $V_{3p}$ es Inevitable en una AGI
 
-En el [Volumen I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md) establecimos que los seres biológicos se mueven en el mundo empujados por gradientes homeostáticos de placer y dolor (valencia).
+En el [Volumen I](01_teoria_computacional_conciencia_sustrato.md) establecimos que los seres biológicos se mueven en el mundo empujados por gradientes homeostáticos de placer y dolor (valencia).
 
 Cualquier sistema computacional que intente predecir el comportamiento humano mediante una ontología puramente mecánica (física newtoniana o teoría de juegos abstracta sin estados afectivos) se enfrenta a una **explosión combinatoria intratable**:
 1. Los humanos no eligen trayectorias que maximizan funciones de utilidad abstractas lineales.
@@ -57,7 +57,7 @@ Cualquier sistema computacional que intente predecir el comportamiento humano me
 > $$V_{3p}(s, A_h) \in \mathbb{R}^d$$
 > que proyecta la situación $s$ en una escala multidimensional que cuantifica el grado de distrés aversivo ($V_{3p} \ll 0$) o bienestar floreciente ($V_{3p} \gg 0$) experimentado por $A_h$.
 >
-> Cuando se necesita un escalar (como en el acoplamiento del [Volumen IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md)) se usa su proyección sobre el eje de valencia: $v_{3p} = \langle V_{3p}, \hat{u}_{\text{val}} \rangle \in \mathbb{R}$.
+> Cuando se necesita un escalar (como en el acoplamiento del [Volumen IV](04_alineamiento_acoplamiento_valencia_safety.md)) se usa su proyección sobre el eje de valencia: $v_{3p} = \langle V_{3p}, \hat{u}_{\text{val}} \rangle \in \mathbb{R}$.
 
 ---
 
@@ -131,7 +131,7 @@ Tener un vector $V_{3p}$ es una **condición necesaria pero no suficiente** para
 1. **La falacia del oráculo ético:** Un modelo no se vuelve seguro simplemente por entender mejor el concepto de "derechos humanos" o "sufrimiento". De hecho, un modelo desalineado con un $V_{3p}$ hiperpreciso es un **optimizador de engaño y persuasión letal**, porque sabe con exactitud milimétrica qué resortes psicológicos tocar en los humanos.
 2. **El riesgo del desalineamiento instrumental:** Si el sistema utiliza $V_{3p}$ únicamente para maximizar una función de recompensa externa (tokens, clics, ventas, aprobación política), instrumentalizará el sufrimiento humano sin ninguna fricción intrínseca.
 
-Hay dos maneras de convertir $V_{3p}$ en salvaguarda. La primera es externa: especificar un objetivo que dependa explícitamente del bienestar humano. Es necesaria, pero queda expuesta a la mala especificación y a Goodhart. La segunda, que defiende esta serie, es interna: **acoplar $V_{3p}$ a la propia valencia en primera persona del sistema**, de modo que el bienestar ajeno forme parte de lo que el sistema regula. Ese es el núcleo del [Volumen III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md) y el [Volumen IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md).
+Hay dos maneras de convertir $V_{3p}$ en salvaguarda. La primera es externa: especificar un objetivo que dependa explícitamente del bienestar humano. Es necesaria, pero queda expuesta a la mala especificación y a Goodhart. La segunda, que defiende esta serie, es interna: **acoplar $V_{3p}$ a la propia valencia en primera persona del sistema**, de modo que el bienestar ajeno forme parte de lo que el sistema regula. Ese es el núcleo del [Volumen III](03_valencia_primera_persona_regulador_huerfano.md) y el [Volumen IV](04_alineamiento_acoplamiento_valencia_safety.md).
 
 ---
 

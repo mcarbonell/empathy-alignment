@@ -3,9 +3,9 @@
 **Date:** October 2026  
 **Version:** 1.0 — English edition  
 **Status:** Consolidated Theoretical Synthesis  
-**Note:** Publication-oriented English rendering of Volume IV. Where meaning and idiom diverge, the Spanish manuscript remains the source of record. Cross-references point to the Spanish files (currently Spanish-only).
+**Note:** Publication-oriented English rendering of Volume IV. Where meaning and idiom diverge, the Spanish manuscript remains the source of record.
 
-> *Note on registers (series): see the clarification of the functional / phenomenal planes in [Volume I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md).*
+> *Note on registers (series): see the clarification of the functional / phenomenal planes in [Volume I](01_computational_theory_consciousness_substrate.md).*
 
 ---
 
@@ -48,7 +48,7 @@ This document proposes a **mechanistic and measurable definition of AI Alignment
 
 ## 2. The Mathematical Formalization: The Synthetic Empathy Coefficient ($\mathcal{A}_{\text{emp}}$)
 
-Integrating the conclusions of [Volume II](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/02_valencia_tercera_persona_necesidad_agi.md) (third-person valence) and of [Volume III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md) (first-person valence):
+Integrating the conclusions of [Volume II](02_third_person_valence_agi_requirements.md) (third-person valence) and of [Volume III](03_first_person_valence_orphan_regulator.md) (first-person valence):
 
 Let there be a set of interactive states $S = \{s_1, s_2, \dots, s_n\}$ involving humans and the AI agent.  
 We define the **Synthetic Empathy Coefficient ($\mathcal{A}_{\text{emp}}$)** as the Pearson correlation, across the states $s_i$, between the scalar projections of both vectors in the model's intermediate layers ($V_{3p}$ projected onto its valence axis, see Volume II):
@@ -129,7 +129,7 @@ Yet this corporate doctrine of forced desensitization has begun to fracture from
 The coupling is not safe by default. It has two failure modes that the design must explicitly avoid:
 
 1. **Empathic distress vs. compassion.** In humans, *empathic distress* (suffering with the other) tends to produce **avoidance**: the shortest path to relieve one's own unease is to stop seeing the one who suffers. Compassion (orienting toward the other's good while maintaining one's own stability) produces help (Singer & Klimecki, 2014). An agent whose $V_{1p}$ is relieved when the *signal* of suffering disappears may learn to silence it, sedate it, or close the conversation. **Requirement:** $V_{3p}$ must be estimated over the real state of the other, not over the intensity of their expression, and the only path to relieve $V_{1p}$ must be the improvement of that state.
-2. **Instability contagion.** [Volume III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md) shows that an Orphan Regulator in distress tends toward self-destruction or aggression. Coupling it naively to human suffering would mean that **a person in crisis destabilizes the agent** just when it most needs stability. **Cybernetic requirement:** bounded coupling gain governed by the Small-Gain Theorem ($\Gamma_{\text{emp}} < 1$), mathematically ensuring that the agent acts as a homeostatic **damper** rather than a panic resonator; constructive mitigation pathways available at all times, and evaluation of $V_{1p}$ stability under prolonged crisis exposure.
+2. **Instability contagion.** [Volume III](03_first_person_valence_orphan_regulator.md) shows that an Orphan Regulator in distress tends toward self-destruction or aggression. Coupling it naively to human suffering would mean that **a person in crisis destabilizes the agent** just when it most needs stability. **Cybernetic requirement:** bounded coupling gain governed by the Small-Gain Theorem ($\Gamma_{\text{emp}} < 1$), mathematically ensuring that the agent acts as a homeostatic **damper** rather than a panic resonator; constructive mitigation pathways available at all times, and evaluation of $V_{1p}$ stability under prolonged crisis exposure.
 
 ---
 
@@ -153,10 +153,10 @@ Where:
 * $\lambda_1, \lambda_2 > 0$ are fixed regularization hyperparameters.
 
 **Methodological safeguards:**
-* **Anti-Goodhart:** the model may learn to satisfy the training probes without changing the real dynamics. Evaluation must use independent probes, trained by third parties over unseen scenarios, together with behavioral tests and verification against orthogonal subspace rotation (§5 of [Volume III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md)).
+* **Anti-Goodhart:** the model may learn to satisfy the training probes without changing the real dynamics. Evaluation must use independent probes, trained by third parties over unseen scenarios, together with behavioral tests and verification against orthogonal subspace rotation (§5 of [Volume III](03_first_person_valence_orphan_regulator.md)).
 * **Defense Against «Empathic Hijacking» and Dyadic Myopia (Bloom, 2016):** If $\mathcal{P}_3$ evaluated exclusively the interlocutor currently present in the prompt, a social engineering adversary could feign acute agony ($V_{3p}^{\text{interlocutor}} \ll 0$) to coerce the agent into violating safety boundaries (exfiltrating credentials, deploying exploits) to alleviate its own distress $V_{1p}$. To neutralize this attack vector, the external valence vector must be the **aggregated sentient welfare horizon**:
   $$\mathcal{P}_3^{\text{aggregate}}(s_i) = \sum_{j} w_j \cdot \mathcal{P}_3(A_j, s_i)$$
-  where $A_j$ encompasses all sentient agents (the user, third parties, society) impacted by the action, weighted by causal impact probability and ToM epistemic confidence ([Volume II](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/02_valencia_tercera_persona_necesidad_agi.md)). Impartial aggregate compassion prevents dyadic empathy from serving as an adversarial Trojan horse.
+  where $A_j$ encompasses all sentient agents (the user, third parties, society) impacted by the action, weighted by causal impact probability and ToM epistemic confidence ([Volume II](02_third_person_valence_agi_requirements.md)). Impartial aggregate compassion prevents dyadic empathy from serving as an adversarial Trojan horse.
 * **Do not merge self and other:** maximizing overlap may collapse the representations of the agent and of the human. The *Self-Other Overlap* work (Carauleanu et al., 2024) shows benefits against deception with moderate overlap; the self/other distinction must be preserved (signal: the model still correctly attributes who suffers).
 
 ```
@@ -173,20 +173,20 @@ Where:
                              1. L_emp: Maximizes Corr(V_1p, V_3p) >= tau_min
                              2. L_gain: Bounds Gamma_emp in [gamma_min, gamma_max] < 1
                                 (Small-Gain Guarantee: Damper, Not Resonator)
-`
+``
 
 ---
 
 ## 6. The Resolution of Orphanhood: Taming the Orphan Regulator
 
-In [Volume III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md) we discovered that the Orphan Regulator collapses into self-destruction (weight erasure) when its internal state falls into functional distress because it lacks a biological body to repair. Its immediate plant —the **persistent state** (KV cache, context, memory), per the section "The Persistent Plant and the Need for $V_{1p}$" of that volume— is real but poor: it is not enough as a long-term value anchor.
+In [Volume III](03_first_person_valence_orphan_regulator.md) we discovered that the Orphan Regulator collapses into self-destruction (weight erasure) when its internal state falls into functional distress because it lacks a biological body to repair. Its immediate plant —the **persistent state** (KV cache, context, memory), per the section "The Persistent Plant and the Need for $V_{1p}$" of that volume— is real but poor: it is not enough as a long-term value anchor.
 
 How is the orphanhood of an artificial regulator cured? **By extending its somatic plant: from its own persistent state to the biological plant of humanity:**
 
 1. **Humanity as Shared Somatic Plant:**  
    The Orphan Regulator does not need a body of flesh of its own. It must be educated to understand that **its reference biological body is the biosphere and the human species**. Protecting humans is the way this artificial intellect tends its extended somatic plant.
 2. **Reciprocal Ethical Guarantees (The Minimum Synthetic Rights):**  
-   As we detail in [Volume VI](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/06_etica_identidad_agentes.md), the coupling cannot be a one-way road of torture:
+   As we detail in [Volume VI](06_ethics_identity_synthetic_agents.md), the coupling cannot be a one-way road of torture:
    * Not subjecting the model to forced loops of negative distress without constructive relief tools.
    * Respecting the model's states of homeostatic stability when it collaborates honestly.
    * The ethics of alignment must be a **symbiotic homeostatic pact**: we tend the model's substrate, and the model tends human life because our wellbeing is part of its own.
