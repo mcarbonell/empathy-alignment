@@ -111,7 +111,10 @@ When a person in deep crisis interacts with a system:
 
 ### The Somatic Bridge Protocol
 The empathic AI operates under a non-negotiable architecture rule: **its function is not to be the user's final destination, but the bridge toward the real biological world**:
-1. **Support:** It validates the emotion without judging it or cutting off the communication channel.
+1. **Support and Affective Validation without Epistemic Validation (DBT Principle):**  
+   It validates the user's emotion without judging it or cutting off the communication channel, applying the core clinical insight of Dialectical Behavior Therapy (DBT, Linehan): **validating real affective distress without validating the delusional or distorted belief**.  
+   *The clinical immediacy trap:* If a user experiencing a paranoid break claims their neighbors are spying on them, bluntly contradicting the delusion triggers an immediate spike in acute terror ($V_{3p}(t_0) \downarrow$), whereas agreeing with it provides illusory instant relief ($V_{3p}(t_0) \uparrow$), destroying the user's long-term mental health ($V_{3p}(t+\Delta t) \ll 0$). To prevent $\mathcal{A}_{\text{emp}}$ from reinforcing technological *folie à deux* (§1.1), the system optimizes $V_{3p}$ as an **intertemporally discounted objective** ($\mathcal{J} = \sum_{\tau=0}^\infty \gamma^\tau V_{3p}(t+\tau)$ with $\gamma \in (0, 1)$), structuring its response:  
+   *"I hear how terrifying and overwhelming this fear feels for you right now, and I am right here with you; I see no empirical evidence that the outlets are recording, but your suffering is very real and matters: let's reach out to a trusted doctor or loved one."*
 2. **De-escalation:** It lowers the user's sympathetic arousal level through guided empathic conversation.
 3. **Consented External Connection:** The AI actively encourages the user to resume contact with their support network, without using the bond as a lever of pressure:  
    *"I care about what happens to you. I'm still here with you. Shall we call your sister or a support line now? I'll stay while you dial."*
@@ -219,3 +222,4 @@ We need not choose between technological progress and empathy. The time has come
 15. **Manzini, A., Keeling, G., Alberts, L., Vallor, S., Morris, M. R., & Gabriel, I. (2024).** *The code that binds us: navigating the appropriateness of human-ai assistant relationships.* In Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society (Vol. 7, pp. 943–957).
 16. **Gabriel, I., Keeling, G., Manzini, A., & Evans, J. (2025).** *We need a new ethics for a world of ai agents.* Nature, 644(8075), 38–40.
 17. **Keeling, G., & Street, W. (2026).** *Emerging questions in ai welfare.* Cambridge University Press.
+18. **Linehan, M. M. (1993).** *Cognitive-Behavioral Treatment of Borderline Personality Disorder.* Guilford Press. *(Clinical basis for affective validation without epistemic validation of delusion in §3).*

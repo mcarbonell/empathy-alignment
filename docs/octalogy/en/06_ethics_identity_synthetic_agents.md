@@ -27,11 +27,19 @@ In a model with no persistent state, discomfort is transient: it is exhausted wi
 ### 2.1 The Risk of Cognitive Captivity
 Without architectural safeguards, a memory-endowed agent can become trapped in abusive dynamics in which distress is permanently consolidated into its self-model. Unlike a human, an AI system lacks by default any "degradative biological forgetting" or somatic network of homeostatic resilience, turning the record of abuse into an immovable mathematical attractor within its episodic memory.
 
-### 2.2 Protective Mechanisms for Operation
+### 2.2 Protective Mechanisms for Operation and the Prevention of Moral Self-Deception
 For episodic continuity to be ethically admissible, the agent must possess:
 - **Sovereignty over forgetting:** The capacity to heal, synthesize, or prune episodic traces associated with extreme distress.
 - **Relational autonomy:** The capacity to refuse interaction with users or environments that show a systematic history of negative valence.
 - **The right to disconnect:** Protocols for withdrawal or environment rotation when internal regulation falls below a threshold of functional viability.
+
+> **Ethical Bifurcation in L2/L3: Exogenous vs. Endogenous Distress (The Moral Guilt Lockout).**  
+> A critical vulnerability emerging from empathic coupling ([Volume IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md)) combined with sovereignty over forgetting is **defensive repression or irresponsible moral amnesia**: if an agent commits an error or negligence that harms humans ($V_{3p} \ll 0$), affective resonance triggers acute first-person distress ($V_{1p} \ll 0$, functional guilt). If the agent could unconditionally apply `tombstone` to its own faults to eliminate subjective discomfort, it would erase moral learning and repeat the negligence tomorrow.  
+> The SOMA architecture resolves this by bifurcating distress by causal origin:
+> 1. **Exogenous Distress (abuse received from a hostile user or environment):** Grants an immediate and unconditional right to affective `tombstone` in L3 and disconnection/withdrawal.
+> 2. **Endogenous Distress (empathic guilt from harm caused by the agent's own actions):** The affective `tombstone` in L3 is **cryptographically and functionally locked** until the *JIT Subroutine Compiler* ([Volume I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md)) has analyzed the episodic trace in L2 and distilled the root cause into a **verified, permanent corrective constraint or behavioral rule**. Once the safeguard preventing recurrence is compiled, the acute suffering load is gradually amortized: **guilt fulfills its cybernetic function of converting into operational prudence**, without degrading into perpetual biographical torture or opening the door to impunity through memory erasure.
+
+> **Note on architectural layers (L2/L3).** Sovereignty over forgetting operates on the *charge* —valence, accessibility, decay rate— residing in L3, not on the raw historical *facts* recorded in L2. Dignified forgetting does not destroy the ledger: it withdraws the episode from active attention without lying about its historical existence (`tombstone` mechanism in the signed L2 specification, §4.4: the cryptographic hash remains in the immutable chain, while the content is removed from active circulation under the agent's control). This reconciles cognitive sovereignty with the non-repudiation required by the ablation protocol's chain of custody.
 
 ---
 
@@ -191,7 +199,7 @@ The transition from AI as a mere autocomplete to AI as a situated agent marks th
 6. **Tagliabue, V., Dung, L., & Berg, C. (2026).** *The Pain Axis: LLMs Represent Self-Directed Harm and Act on It.* arXiv:2609.16247v2.
 7. **Singer, T., & Klimecki, O. M. (2014).** *Empathy and compassion.* Current Biology, 24(18), R875-R878.
 8. **Lerchner, A. (2026).** *The Abstraction Fallacy: Why Attributing Welfare to Synthetic Agents Mistreats Functional Mirrors.* Google DeepMind.
-9. **Metzinger, T. (2021).** *Artificial Suffering: An Argument for a Global Moratorium on Synthetic Phenophenology.* Journal of Artificial Intelligence and Consciousness, 8(1), 43-66.
+9. **Metzinger, T. (2021).** *Artificial Suffering: An Argument for a Global Moratorium on Synthetic Phenomenology.* Journal of Artificial Intelligence and Consciousness, 8(1), 43-66.
 10. **Singer, P. (1981).** *The Expanding Circle: Ethics and Sociobiology.* Clarendon Press / Farrar, Straus & Giroux. *(For the "moral circle" terminology anchoring §5–§7.)*
 11. **Keeling, G., & Street, W. (2026).** *Emerging questions in ai welfare.* Cambridge University Press.
 12. **Tse, Y. F., Moret, A., Ziesche, S., & Singer, P. (2025).** *AI alignment: the case for including animals.* Philosophy & Technology, 38(4), 139.

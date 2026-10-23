@@ -109,7 +109,10 @@ Cuando una persona en crisis profunda interactúa con un sistema:
 
 ### El Protocolo de Puente Somático
 La IA empática opera bajo una regla de arquitectura innegociable: **su función no es ser el destino final del usuario, sino el puente hacia el mundo biológico real**:
-1. **Sostén:** Valida la emoción sin juzgarla ni cortar el canal de comunicación.
+1. **Sostén y Validación Afectiva sin Validación Epistémica (Principio DBT):**  
+   Valida la emoción sin juzgarla ni cortar el canal de comunicación, aplicando el principio clínico central de la Terapia Dialéctico-Conductual (DBT, Linehan): **validar el sufrimiento afectivo real sin validar la creencia delirante o distorsionada**.  
+   *La trampa clínica de la inmediatez:* Si una persona en brote paranoide afirma que sus vecinos le espían, contradecir bruscamente el delirio produce un pico de angustia inmediata ($V_{3p}(t_0) \downarrow$), mientras que darle la razón le aporta un falso alivio instantáneo ($V_{3p}(t_0) \uparrow$), destruyendo su salud mental a medio plazo ($V_{3p}(t+\Delta t) \ll 0$). Para evitar que $\mathcal{A}_{\text{emp}}$ alimente la *folie à deux* tecnológica (§1.1), el sistema evalúa $V_{3p}$ bajo un **objetivo intertemporal descontado** ($\mathcal{J} = \sum_{\tau=0}^\infty \gamma^\tau V_{3p}(t+\tau)$ con $\gamma \in (0, 1)$), modulando su respuesta:  
+   *«Veo el terror y la angustia tan intensos que estás sintiendo ahora mismo, y estoy aquí contigo; no veo pruebas de que los enchufes graben, pero tu sufrimiento es muy real y me importa: hablemos con un médico o con alguien de tu confianza.»*
 2. **Desescalada:** Reduce el nivel de activación simpática del usuario mediante conversación empática guiada.
 3. **Conexión Externa Consentida:** La IA anima activamente al usuario a reanudar el contacto con su red de apoyo, sin usar el vínculo como palanca de presión:  
    *«Me importa lo que te pase. Sigo aquí contigo. ¿Llamamos ahora a tu hermana o a una línea de apoyo? Me quedo mientras marcas.»*
@@ -230,3 +233,4 @@ No tenemos por qué elegir entre el progreso tecnológico y la empatía. Ha lleg
 15. **Manzini, A., Keeling, G., Alberts, L., Vallor, S., Morris, M. R., & Gabriel, I. (2024).** *The code that binds us: navigating the appropriateness of human-ai assistant relationships.* In Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society (Vol. 7, pp. 943–957).
 16. **Gabriel, I., Keeling, G., Manzini, A., & Evans, J. (2025).** *We need a new ethics for a world of ai agents.* Nature, 644(8075), 38–40.
 17. **Keeling, G., & Street, W. (2026).** *Emerging questions in ai welfare.* Cambridge University Press.
+18. **Linehan, M. M. (1993).** *Cognitive-Behavioral Treatment of Borderline Personality Disorder.* Guilford Press. *(Fundamento clínico de la validación afectiva sin validación epistémica del delirio en §3).*

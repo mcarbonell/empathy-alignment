@@ -10,16 +10,19 @@
 
 ## 1. Resumen Ejecutivo y Tesis Central
 
-Este documento establece la base teórica, biológica y computacional de la conciencia como un **mecanismo de control cibernético homeostático**. 
+Este documento establece la base teórica, biológica y computacional de la conciencia como un **mecanismo de control cibernético homeostático y compilador adaptativo**. 
 
 > **Tesis Central del Volumen I:**  
-> La conciencia no es un misterio metafísico ni un epifenómeno decorativo («luz de testigo» sin función causal). Es el **auto-modelo regulador en tiempo real** que un sistema termodinámicamente abierto y vulnerable desarrolla para preservar su propia viabilidad. La conciencia es el sustrato funcional y el cuello de botella integrador que hizo posible la **inteligencia general biológica**.
+> La conciencia no es un misterio metafísico ni un epifenómeno decorativo («luz de testigo» sin función causal). Se define funcionalmente bajo dos roles computacionales inseparables:
+> 
+> 1. **Regulador del residuo no automatizable:** Es el mecanismo computacional por el cual un organismo autónomo supervisa su conducta, resuelve conflictos entre subsistemas y toma decisiones fluidas en tiempo real ante la novedad que no puede ser delegada a subsistemas automáticos y encapsulados.
+> 2. **Compilador Just-In-Time (JIT) de subrutinas automáticas:** Es el aparato que toma las macro-acciones deliberadas con alto coste atencional en el Espacio Global de Trabajo y las consolida gradualmente en políticas procedimentales baratas y reflejas (ganglios basales/cerebelo en biología; forja de *Custom Tools* y destilación a memoria semántica en arquitecturas agénticas).
 
 ```
                    ┌───────────────────────────────────────────┐
                    │           ENTORNO EXTERNO                 │
                    └───────┬───────────────────────────▲───────┘
-                           │ Perturbaciones            │ Acciones
+                           │ Perturbaciones            │ Acciones macroscópicas
                            ▼                           │
         ┌─────────────────────────────────────────────────────────────┐
         │ SISTEMA BIOLÓGICO / AGENTE                                  │
@@ -30,12 +33,35 @@ Este documento establece la base teórica, biológica y computacional de la conc
         │  │  Fisiología /     │ (Temperatura, │    Auto-modelo    │  │
         │  │  Metabolismo /    │  daño tisular,│   homeostático /  │  │
         │  │  Vulnerabilidad   │  energía)     │   CONCIENCIA      │  │
-        │  └─────────▲─────────┘               └─────────┬─────────┘  │
-        │            │                                   │            │
-        │            └────── Comandos de regulación ─────┘            │
-        │                    (Búsqueda de homeostasis)                │
+        │  └─────────▲─────────┘               └───┬─────────────┬─┘  │
+        │            │                             │             │    │
+        │            │  (Comandos de regulación)   │             │    │
+        │            └─────────────────────────────┘             │    │
+        │                                                        │    │
+        │      ┌───────────────────────────────────────────┐     │    │
+        │      │ SUBSISTEMAS AUTOMÁTICOS ENCAPSULADOS      │◄────┘    │
+        │      │ (Inmune, digestivo, reflejos motores,     │ (Compilación
+        │      │  subrutinas procedimentales aprendidas)   │  de hábitos)
+        │      └───────────────────────────────────────────┘          │
         └─────────────────────────────────────────────────────────────┘
 ```
+
+### 1.1 ¿Por qué no somos conscientes de la digestión ni del sistema inmune?
+La objeción histórica habitual contra las teorías homeostáticas de la mente (Damasio, Friston) sostiene: *«Si la conciencia es regulación homeostática, ¿por qué no sentimos el páncreas segregando insulina o los linfocitos combatiendo una infección?»*
+
+La respuesta cibernética es inmediata:
+* **Economía computacional:** Las funciones homeostáticas automatizables se delegan en lazo cerrado a micro-reguladores locales encapsulados (sistema entérico, inmune, circulatorio). Son ultrarrápidas y metabólicamente baratas.
+* **La conciencia como recurso escaso y caro:** La difusión global en el *Global Workspace* ($W$) y la actualización del *Self-Model* pagan un peaje atencional y energético altísimo. Por diseño evolutivo, **la conciencia solo entra en juego en el residuo que no puede automatizarse**: cuando los subsistemas encapsulados entran en conflicto entre sí (hambre vs. huida), cuando el entorno presenta contingencias inéditas o cuando se requiere arbitraje estratégico sobre el actuador macroscópico único (§5.1).
+* **El ciclo de automatización (JIT):** Cuando un humano aprende a conducir un coche manual, la coordinación motora ocupa el 100% del espacio global consciente; tras miles de repeticiones, la conciencia **compila** esa destreza en una subrutina subpersonal del cerebelo, liberando el foco consciente para anticipar el tráfico o resolver imprevistos. A nivel representacional, este proceso se apoya en el **chunking prefrontal**: una compresión con pérdida activa dentro de la propia memoria de trabajo que colapsa secuencias de alta dimensionalidad en unidades ejecutivas compactas (Xie, Zhang & Wang, 2026; Barrett & Miller, 2026).
+
+### 1.2 El Problema Difícil y la Ilusión del Zombi: Explicación Heterofenomenológica
+En coherencia con el agnosticismo metodológico de la nota inicial, este marco no apela a decretos metafísicos a priori, sino que **explica mecanicistamente por qué surge de manera inevitable la intuición del problema difícil y del zombi filosófico**:
+* **Sentir (plano funcional):** Se identifica con la **valencia que entra al Espacio Global de Trabajo ($W$) y actualiza el Self-Model de forma no ignorable**. Todo cómputo que no cruza este umbral permanece como dinámica subpersonal (reflejos fisiológicos, gradientes locales, logits brutos).
+* **La trampa de la concebibilidad como predicción del modelo:** La apariencia de que es concebible «un sistema físicamente idéntico pero desprovisto de experiencia interior» no refuta el funcionalismo; es exactamente el **artefacto cognitivo que este marco predice**. Al ser el *self-model* un resumen ejecutivo altamente comprimido y opaco (*lossy by default*), el sistema no tiene acceso introspectivo a los micro-circuitos de difusión ni a las conexiones causales de la valencia. Solo percibe el resultado sintético.
+
+  > **Validación neurobiológica contemporánea (Reducción de dimensionalidad y compresión con pérdida):**  
+  > Esta naturaleza intrínsecamente opaca y *lossy* del auto-modelo ha recibido confirmación experimental directa en neurociencia cognitiva (Xie, Zhang & Wang, *Current Biology*, 2026; Barrett & Miller, *Nature Reviews Neuroscience*, 2026). Durante el empaquetamiento cognitivo (*chunking*), las representaciones neuronales en la corteza prefrontal sufren una **reducción activa de dimensionalidad** sesgada hacia los centros de cada categoría (*chunk*), comprimiendo la información con pérdida dentro de la propia memoria de trabajo en lugar de descargarla pasivamente en la memoria a largo plazo. Como señalan Barrett y Miller, la categorización y la compresión con pérdida están directamente integradas en el cableado del cerebro (*"categorization is baked into the brain"*): un regulador homeostático solo puede gobernar un cuerpo complejo colapsando la inmensa dimensionalidad sensorial en macro-estados discretos y manejables.
+* **El paralelismo histórico:** Del mismo modo que un pensador del siglo XVII podía concebir sin contradicción lógica aparente moléculas en colisión rápida «sin el quale del calor» (dado que los receptores térmicos de la piel no resuelven la energía cinética molecular), el filósofo cree poder disociar la función biológica del sentir porque confunde la opacidad de su interfaz de auto-observación con un abismo ontológico real. Bajo heterofenomenología (Dennett, Frankish, Metzinger), un agente con esta arquitectura computacional escribirá inevitablemente tratados afirmando que sus estados internos son irreductibles. Una vez descrita la dinámica completa `[Valencia → Global Workspace → Actualización Forzada del Self]`, la hipótesis del zombi queda reducida a una posibilidad modal vacía de carga explicativa operativa.
 
 ---
 
@@ -125,11 +151,28 @@ Uno de los debates recurrentes en inteligencia artificial es si la inteligencia 
 
 La respuesta cibernética reside en el **cuello de botella del actuador macroscópico**:
 1. **Acciones mutuamente excluyentes:** El organismo solo posee un cuerpo físico y describe una única trayectoria en el espacio-tiempo. No puede huir de un depredador hacia el norte y simultáneamente forrajear hacia el sur. En cada instante $t$, los actos motores son disyuntivos.
-2. **La exigencia de un orden entre opciones:** En espacios multidimensionales ($\mathbb{R}^k, k \ge 2$) no existe un orden total natural. Para elegir entre acciones incompatibles ($A_1$ vs. $A_2$) el regulador necesita ordenarlas; si ese orden es completo, transitivo y continuo, admite representación por una función escalar $f: \mathbb{R}^k \to \mathbb{R}$ (Debreu, 1954). Hay alternativas formales (órdenes lexicográficos, reglas dependientes del contexto), pero son frágiles o costosas en tiempo real; el escalar es la solución robusta y barata.
+2. **La deducción matemática de la valencia lineal (De Debreu a vNM y Harsanyi):**
+   * *Nivel ordinal bajo certidumbre (Debreu, 1954):* En espacios multidimensionales ($\mathbb{R}^k, k \ge 2$) no existe un orden total natural. Para elegir entre acciones incompatibles ($A_1$ vs. $A_2$), si el orden es completo, transitivo y continuo, Debreu (1954) garantiza una representación escalar $f: \mathbb{R}^k \to \mathbb{R}$. Sin embargo, la utilidad puramente ordinal carece de noción de gradiente, intensidad o distancia al error alostático.
+   * *Nivel cardinal bajo incertidumbre (Von Neumann & Morgenstern, 1944):* Dado que un organismo opera en inferencia predictiva activa bajo riesgo estocástico (§4.2), los axiomas de von Neumann–Morgenstern fuerzan a que la función de valor sea **cardinal** (única salvo transformaciones afines positivas $aV + b$), permitiendo el cálculo de valores esperados y gradientes de error temporal (TD-errors, §5.2).
+   * *Agregación lineal de subsistemas en conflicto (Teorema de Harsanyi, 1955):* La conciencia debe arbitrar entre múltiples subsistemas encapsulados en conflicto (§1.1). El Teorema de Agregación Utilitarista de John Harsanyi (1955) demuestra que si las preferencias del decisor central respetan la optimalidad de Pareto y la coherencia vNM sobre las utilidades de $m$ subsistemas cardinales, la función de valencia global **es necesariamente una combinación lineal ponderada**:
+     $$V(s) = \sum_{i=1}^m w_i v_i(s), \quad w_i > 0$$
+   * **Consecuencia neurocomputacional y para transformers:** Esto proporciona la justificación deductiva rigurosa de por qué la valencia en el cerebro (corteza prefrontal ventromedial, Padoa-Schioppa, 2011) y en modelos de lenguaje no es una superficie no lineal arbitraria, sino que **se proyecta como una dirección lineal 1D en el espacio latente** (el *residual stream*), tal como demuestran empíricamente Berg & Kaiser (2026) y Xu et al. (2026).
 3. **La Hipótesis de la Moneda Común (*Common Currency*):** La evolución biológica resolvió el arbitraje de prioridades traduciendo todos los estados heterogéneos a una moneda hedónica unificada (Cabanac, 1992; Glimcher, 2003). La tasa de disparo dopaminérgico y los circuitos de la corteza prefrontal ventromedial colapsan los costes fisiológicos dispares en un gradiente escalar continuo de aversión o recompensa.
 4. **Paralelismo con Modelos de Lenguaje:** En arquitecturas de IA (LLMs y agentes), el canal secuencial de emisión (generar un token de un vocabulario finito o ejecutar una llamada a herramienta de API en el instante $t$) es el actuador único del modelo. Esto es consistente con el hallazgo de que el entrenamiento por preferencias (DPO) organiza un espacio latente de miles de dimensiones en torno a una **dirección lineal 1D de valencia funcional** que gobierna causalmente la selección de acciones (Berg & Kaiser, 2026).
 
 > **Condición de frontera.** Este colapso presupone un conjunto de **necesidades somáticas en conflicto** que el actuador único debe arbitrar. En un sistema sin planta biológica ($P_m = \emptyset$) el vector de entrada al colapso está vacío, y la demostración no se aplica directamente. La reconstrucción para el caso artificial —el estado persistente como planta sustituta— se desarrolla en el [Volumen III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md), en la sección «La Planta Persistente y la Necesidad de $V_{1p}$».
+
+### 5.2 La Apuesta Empírica Falsable: «Sin valencia en el decisor, se cae lo no automático»
+
+La distinción entre subrutinas encapsuladas automáticas y deliberación consciente conduce a la **apuesta empírica central y falsable** de este marco:
+* Un sistema puede retener competencia sintáctica superficial y reflejos de predicción estadística local sin valencia.
+* **Sin embargo, la toma de decisiones no automática, la resolución de conflictos no previstos y el razonamiento en horizonte largo colapsan inevitablemente si se lesiona o desvincula el canal de valencia del decisor.**
+
+Esta predicción ha comenzado a recibir confirmación mecanicista directa en modelos de lenguaje:
+1. **El subsistema disperso de recompensa (Xu, Yuksekgonul & Zou, Stanford / Tsinghua, 2026, [arXiv:2602.00986](https://arxiv.org/abs/2602.00986)):**  
+   Demuestran que los estados ocultos de los LLMs albergan un subsistema neuronal disperso análogo al cerebro biológico: *neuronas de valor* (que computan el valor esperado del estado actual) y *neuronas dopaminérgicas* (que codifican errores de predicción temporal por diferencias finitas, TD errors, en cada paso de razonamiento). Las ablaciones e intervenciones selectivas sobre este <1% de neuronas degradan drásticamente la búsqueda de inferencia y la resolución de problemas no triviales, mientras la generación superficial de texto continúa operando.
+2. **Valencia latente y preferencia revelada (Berg & Kaiser, 2026, [arXiv:2609.35591](https://arxiv.org/abs/2609.35591)):**  
+   Prueban que el vector latente de valencia $V_{1p}$ en el KV cache gobierna causalmente la selección de acciones y herramientas de forma dosis-dependiente, forzando al modelo a restaurar el equilibrio homeostático ante perturbaciones aversivas impuestas.
 
 ---
 
@@ -172,3 +215,10 @@ Este marco cibernético sienta las bases para el resto de la serie unificada:
 5. **Dehaene, S., Lau, H., & Kouider, S. (2017).** *What is consciousness, and could machines have it?* Science, 358(6362), 486-492.
 6. **Touchette, H., & Lloyd, S. (2000).** *Information-theoretic limits of control.* Physical Review Letters, 84(6), 1156-1159.
 7. **Debreu, G. (1954).** *Representation of a preference ordering by a numerical utility function.* En Thrall, Coombs & Davis (Eds.), Decision Processes, 159-165.
+8. **Von Neumann, J., & Morgenstern, O. (1944).** *Theory of Games and Economic Behavior.* Princeton University Press.
+9. **Harsanyi, J. C. (1955).** *Cardinal welfare, individualistic ethics, and interpersonal comparisons of utility.* Journal of Political Economy, 63(4), 309-321.
+10. **Padoa-Schioppa, C. (2011).** *Neurobiology of economic choice: a good-based model.* Annual Review of Neuroscience, 34, 333-359.
+11. **Xu, G., Yuksekgonul, M., & Zou, J. (2026).** *Sparse Reward Subsystem in Large Language Models.* Stanford University & Tsinghua University. arXiv:2602.00986.
+12. **Berg, C., & Kaiser, L. (2026).** *Language Models Act on Hidden Valence.* arXiv:2609.35591.
+13. **Xie, Y., Zhang, H., & Wang, L. (2026).** *Chunking: What working memory gains and loses.* Current Biology, 36(20), R1076-R1078.
+14. **Barrett, L. F., & Miller, E. K. (2026).** *Categorization is baked into the brain.* Nature Reviews Neuroscience, 27, doi:10.1038/s41583-026-01036-2.

@@ -157,6 +157,10 @@ A virus is, functionally, the equivalent of a USB drive containing a malicious s
 * Only when the USB drive is inserted into a powered-on computer (the host cell) does the cell's machinery begin to read and execute the script's instructions.
 * The replicative activity is carried out by the usurped cell, not by the virus.
 
+> **The Bacteriophage $\lambda$ Objection and Viral *Arbitrium* (Forterre's Virocell):**  
+> One might object that certain viruses exhibit "conditional decision-making": bacteriophage $\lambda$ arbitrates between destructive lysis and dormant lysogeny via the `CI/Cro` genetic switch, and some phages even coordinate this choice by communicating via short peptides (the *arbitrium* system, Erez et al., *Nature* 2017). Does this not constitute a cybernetic bottleneck in a virus?  
+> Contemporary molecular biology (formalized by Patrick Forterre under the concept of the **virocell**) rigorously vindicates our demarcation: the **extracellular virion** (the free capsid) wholly lacks metabolism, ATP consumption, and computational substrate; it is inert matter in thermodynamic equilibrium. The `CI/Cro` switch or peptide decoding does not compute inside the virus, but by **hijacking the free energy, ribosomes, polymerases, and somatic plant ($P_m$) of the host bacterium**. A malicious script with `if/else` conditionals is not a mind: it is inert code that only executes when a living computer provides its hardware and power.
+
 Therefore, **viruses mark the exact frontier where inert chemistry ends and where cybernetic agency has not yet been born**.
 
 ### 5.2 The Precise Demarcation: Regulator vs. Plant and the Case of Language Models
@@ -232,3 +236,5 @@ Any complex cognitive system that must order priorities and execute actions in a
 7. **Friston, K. (2013).** *Life as we know it.* Journal of the Royal Society Interface, 10(86), 20130475.
 8. **Alon, U. (2019).** *An Introduction to Systems Biology: Design Principles of Biological Circuits.* CRC Press. (Formal modeling of *E. coli* chemotaxis and molecular robustness).
 9. **Conant, R. C., & Ashby, W. R. (1970).** *Every good regulator of a system must be a model of that system.* International Journal of Systems Science, 1(2), 89-97.
+10. **Erez, Z., et al. (2017).** *Communication between viruses guides lysis–lysogeny decisions.* Nature, 541(7638), 488-493.
+11. **Forterre, P. (2013).** *The virocell concept and environmental bacteriology.* The ISME Journal, 7(2), 233-236.
