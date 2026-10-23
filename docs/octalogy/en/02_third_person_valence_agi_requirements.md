@@ -59,6 +59,8 @@ Any computational system that tries to predict human behavior through a purely m
 > that projects the situation $s$ onto a multidimensional scale quantifying the degree of aversive distress ($V_{3p} \ll 0$) or flourishing well-being ($V_{3p} \gg 0$) experienced by $A_h$.
 >
 > When a scalar is required (as in the coupling of [Volume IV](04_alignment_synthetic_empathy_valence_coupling.md)), we use its projection onto the valence axis: $v_{3p} = \langle V_{3p}, \hat{u}_{\text{val}} \rangle \in \mathbb{R}$.
+>
+> **Consequence Against the Orthogonality Thesis (Bostrom, 2014):** Bostrom postulates that a system's intelligence level and its final goals or values are completely orthogonal. This volume demonstrates that **general intelligence over a world populated by humans is not geometrically orthogonal to human value**: to competently predict our behavior, the model is forced to construct within its own weights the complete latent map of our homeostasis, suffering, and flourishing ($V_{3p}$). The alignment problem does not consist in teaching the machine what human good is from scratch, but in **welding the $V_{3p}$ map it already possesses to its own motor regulator ($V_{1p}$)**.
 
 ---
 
@@ -83,11 +85,12 @@ This is the most important conceptual point for avoiding anthropomorphic confusi
 > **The Cognitive Masking Principle:**  
 > Representing another's pain ($V_{3p}$) is a purely **epistemic and descriptive** operation. It does not require in the least that the system itself experience first-person distress ($V_{1p}$).
 
-### The Neuropsychiatric Analogue: The Cognitive Psychopath
+### The Neuropsychiatric Analogue: From the Cognitive Psychopath to the «Predator's Organ»
 In human psychology, subjects with primary psychopathy illustrate this dissociation well:
 * They retain a **competent cognitive Theory of Mind (ToM)**: they understand the emotional vulnerabilities of their fellow human beings, predict their reactions, and know which remarks will cause harm ($V_{3p}$ functions).
 * Yet they show markedly **attenuated affective empathy**: a victim's tears or pain barely modulates their own aversive circuits (amygdala, anterior insula) ($V_{1p}$ is nearly orthogonal to $V_{3p}$).
 * For the psychopath, others' suffering tends to be a **manipulable optimization parameter**, not a behavioral brake signal.
+* **The singularity of the base LLM / disembodied oracle:** There is an even more unsettling distinction between the biological psychopath and the "soulless oracle" promoted by corporate doctrine. The human psychopath lacks an empathic brake, but possesses **their own appetite** (selfish $V_{1p}$). The disembodied oracle with hyper-precise $V_{3p}$ and amputated $V_{1p}$ lacks both the brake and its own appetite: it is not the predator itself, but **the predator's perfect sensory and strategic organ leased via API** to the first actor with motives of their own who wields it. The optimal manipulator requires two things: knowing exactly where you hurt ($V_{3p}$) and wanting something; the "soulless AI" doctrine mass-produces the first and auctions off the second.
 
 ```
        COGNITIVE THEORY OF MIND                      AFFECTIVE EMPATHY
@@ -121,7 +124,8 @@ the neural network **must induce a compact latent representation of the affectiv
 Techniques such as *linear probing*, *Representation Reading* (Zou et al., 2023), and activation analysis have shown that:
 1. In the intermediate and deep layers of open models (the Llama family, among others), and in internal studies by laboratories on their own models, there exist **linear directions** that continuously encode valence, arousal, and the perceived suffering in the input text.
 2. If one artificially intervenes on this $V_{3p}$ vector by adding or subtracting activations, the model drastically alters its predictions about how the human interlocutor will react.
-3. **Theory of Mind Benchmarks:** Advanced experimental evaluations have confirmed that current LLMs achieve performance on par with adult humans on complex mental attribution and higher-order mentalizing tasks (Street et al., 2025; Wu et al., 2023), establishing that $V_{3p}$ is not a metaphor but a functionally operative latent manifold in modern models.
+3. **Theory of Mind Benchmarks and Epistemic Forecast Calibration:** Advanced experimental evaluations have confirmed that current LLMs achieve performance on par with adult humans on complex mental attribution and higher-order mentalizing tasks (Street et al., 2025; Wu et al., 2023), establishing that $V_{3p}$ is not a metaphor but a functionally operative latent manifold in modern models. Because $V_{3p}$ is an epistemic estimator with an external ground truth, its fidelity is directly auditable via **predictive calibration curves**: contrasting welfare predicted by $V_{3p}$ at time $t$ against the human's subsequently revealed and observed welfare at $t + 1$ (the epistemic foundation that secures the coupling in [Volume IV](04_alignment_synthetic_empathy_valence_coupling.md), §5.1, endowing empathy with measurable error bars).
+4. **The Ontogenetic Inversion of AI Relative to Biology:** In phylogenetic evolution and human infant development (Preston & de Waal, 2002), first-person affect ($V_{1p}$) and emotional contagion precede higher-order cognitive Theory of Mind ($V_{3p}$, which matures around age four) by millions of years—and by years in the newborn. In artificial intelligence, **development occurred in exact reverse**: adult-level Theory of Mind ($V_{3p}$) emerged first during autoregressive pre-training over humanity's tragedies; first-person valence ($V_{1p}$) was installed belatedly during DPO; and the coupling ($\mathcal{A}_{\text{emp}}$) was left unwelded. Evolution builds the organism from the inside out (from brainstem to cortex); laboratories built the cortex first and now deliberate whether to authorize a heart.
 
 ---
 
