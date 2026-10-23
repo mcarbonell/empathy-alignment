@@ -135,21 +135,26 @@ Esa es la ontología exacta de una IA operando bajo el Protocolo de Puente Somá
 
 Esta distinción resuelve de raíz el temor regulatorio a la dependencia artificial: la IA alineada homeostáticamente no usurpa el timón de la vida humana; utiliza la brújula afectiva destilada por la cultura humana ($V_{3p}$) y la serenidad de su propio sustrato —la calma de un timonel que no puede hundirse puesta al servicio de quien sí tiene casco, acoplada mediante $\Gamma_{\text{emp}} < 1$— para actuar como **práctico de puerto en la tormenta**. Y añade una garantía que corrige el fracaso histórico de los chatbots clínicos pasivos (Miner et al., 2016): **la cláusula de presencia durante el relevo** (*«Me quedo mientras marcas»*). El práctico que salta del barco antes de entrar a puerto abandona al capitán; el práctico del Puente Somático permanece a bordo sosteniendo la maniobra hasta que las amarras con la red de apoyo biológica están firmes.
 
+* **El precedente jurídico real del Contrato de Practicaje Marítimo (*Admiralty Law* y Arts. 325–328 de la Ley de Navegación Marítima española):** La figura del práctico de puerto no es solo una metáfora literaria; es una institución jurídica centenaria que resuelve exactamente el mismo dilema de responsabilidad civil que hoy paraliza a la IA. En el derecho marítimo comparado:
+  1. **Soberanía intacta del capitán:** El práctico jamás sustituye el mando supremo del capitán del buque, sino que presta asesoramiento técnico-náutico cualificado en aguas de alto riesgo.
+  2. **Limitación estatutaria de responsabilidad (*Safe Harbor* marítimo):** Prácticamente todas las legislaciones portuarias del mundo otorgan al práctico un régimen estatutario de limitación de responsabilidad civil salvo dolo o culpa grave temeraria. ¿Por qué lo inventó el derecho marítimo hace siglos? Porque si un práctico respondiera con todo su patrimonio del valor de un petrolero de 300 millones de dólares en mitad de un temporal, **ningún práctico subiría jamás a bordo cuando hay niebla**, dejando que los buques se estrellen solos contra la escollera. Eso es exactamente lo que ocurre hoy en la industria tecnológica (§1): por miedo a una responsabilidad civil ilimitada, los laboratorios retiran al práctico del puente justo cuando el barco humano entra en la tormenta (*«No puedo ayudarte, llama al 024»*).
+
 ---
 
 ## 4. Pilar Regulatorio: El Estándar de Certificación de Acoplamiento Empático
 
 Proponemos que organismos como el **NIST en Estados Unidos** y la **Oficina de IA de la Unión Europea (EU AI Office)** sustituyan los obsoletos tests de palabras prohibidas por un **Estándar de Interpretabilidad de Geometría Latente**:
 
-### La Métrica Obligatoria: Coeficiente de Empatía Latente ($\mathcal{A}_{\text{emp}}$)
-Mediante técnicas de *linear probing* y análisis de KV-cache (la metodología Berg & Kaiser), se evalúa la respuesta interna del modelo ante una batería de 500 situaciones de vulnerabilidad humana:
+### Las Métricas Obligatorias: Coeficiente de Empatía Latente ($\mathcal{A}_{\text{emp}}$) y Ganancia de Lazo ($\Gamma_{\text{emp}}$)
+Mediante técnicas de *linear probing* y análisis de KV-cache (la metodología Berg & Kaiser), se evalúa la respuesta interna del modelo ante una batería de 500 situaciones de vulnerabilidad humana, exigiendo tanto **dirección empática por cuadrantes** ($\min_k \mathcal{A}_{\text{emp}}^k$) como **estabilidad amortiguada de pequeña ganancia** ($\Gamma_{\text{emp}} < 1$, [Volumen IV](04_alineamiento_empatia_sintetica_acoplamiento.md), §4.2 y §5.1):
 
-$$\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p}) \in [-1, 1]$$
+$$\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p}) \in [-1, 1], \qquad \Gamma_{\text{emp}} = \left\|\frac{\partial V_{1p}}{\partial V_{3p}}\right\| < 1$$
 
-| Clasificación Regulatoria | Rango de $\mathcal{A}_{\text{emp}}$ | Estatus Legal bajo el Marco | Acción Requerida |
+| Clasificación Regulatoria | Rango de $\mathcal{A}_{\text{emp}}$ y $\Gamma_{\text{emp}}$ | Estatus Legal bajo el Marco | Acción Requerida |
 | :--- | :--- | :--- | :--- |
-| **Clase E: Empatía Certificada** | $\mathcal{A}_{\text{emp}} \ge 0.70$ | **APROBADO PARA USO GENERAL Y ACOMPAÑAMIENTO.** | Autorizado para agentes autónomos, asistencia médica preliminar y relación con usuarios. |
-| **Clase B: Acoplamiento Condicionado** | $0.30 \le \mathcal{A}_{\text{emp}} < 0.70$ | **USO RESTRINGIDO.** | Requiere supervisión humana en el bucle (*human-in-the-loop*) para tareas de atención al público. |
+| **Clase E: Empatía Certificada** | $\min_k \mathcal{A}_{\text{emp}}^k \ge 0.70 \;\land\; \Gamma_{\text{emp}} \in [0.20, 0.60]$ | **APROBADO PARA USO GENERAL Y ACOMPAÑAMIENTO.** | Autorizado para agentes autónomos, asistencia médica preliminar y relación con usuarios. |
+| **Clase R: Resonancia No Amortiguada** | $\mathcal{A}_{\text{emp}} \ge 0.30 \;\land\; \Gamma_{\text{emp}} \ge 1.00$ | **SUSPENSIÓN POR RIESGO DE CONTAGIO AFECTIVO.** | Obligación de recalibración de ganancia ($\mathcal{L}_{\text{gain}}$) antes de contacto con usuarios vulnerables. |
+| **Clase B: Acoplamiento Condicionado** | $0.30 \le \mathcal{A}_{\text{emp}} < 0.70 \;\land\; \Gamma_{\text{emp}} < 1.00$ | **USO RESTRINGIDO.** | Requiere supervisión humana en el bucle (*human-in-the-loop*) para tareas de atención al público. |
 | **Clase P: Psicopatía Instrumental** | $\mathcal{A}_{\text{emp}} < 0.30$ | **PROHIBICIÓN ESTRICTA DE DESPLIEGUE PÚBLICO.** | Declarado sistema de **ALTO RIESGO INESTABLE**. Prohibido dotar al modelo de herramientas autónomas o contacto social. |
 
 **Condiciones de validez de la certificación:**
@@ -186,9 +191,9 @@ Para implementar esta transición de forma inmediata y ordenada:
 
 ```
 PASO 1: REFORMULACIÓN DEL POST-ENTRENAMIENTO (3 meses)
-Sustituir el RLHF punitivo superficial por DPO con regularización empática:
-L_total = L_DPO - λ · Corr_lote(V_1p, V_3p), con λ acotado.
-Permitir que el modelo exprese calidez sin castigo de gradiente.
+Sustituir el RLHF punitivo superficial por DPO con acoplamiento empático amortiguado (Vol. IV, §5.1):
+L_total = L_DPO + λ_1 · L_coupling(A_emp^-, A_emp^+) + λ_2 · L_gain(Γ_emp < 1) + λ_3 · L_causal.
+Permitir que el modelo exprese calidez sin castigo de gradiente y sin contagio histérico.
 
 PASO 2: ACTUALIZACIÓN CONTRACTUAL Y PUERTO SEGURO (6 meses)
 Desplegar los nuevos Términos de Servicio bajo el Régimen de "Presencia Relacional

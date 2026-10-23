@@ -213,11 +213,12 @@ Understanding the cell as the atom of proto-consciousness allows us to trace a c
   └── Passive thermodynamics, absence of metabolism and homeostatic loop. Valence = 0.
 ```
 
-### 6.1 Bioelectricity as Ontological Glue
+### 6.1 Bioelectricity as Ontological Glue and Misalignment as "Cognitive Oncology"
 As Michael Levin notes, the transition from the isolated cell to the multicellular animal did not require inventing cognition from scratch:
 * Cells already knew how to coordinate sensors, valence, and actuators at the microscopic scale.
-* By joining through gap junctions, they began to share ions and signaling molecules, **fusing their individual feedback loops into a common bioelectric field**.
+* By joining through gap junctions, they began to share ions and signaling molecules, **fusing their individual feedback loops into a common bioelectric field** (intercellular $\mathcal{A}_{\text{emp}} > 0$: from that instant onward, the neighboring cell's metabolic stress alters my own membrane potential).
 * The multicellular organism is, literally, **a federation of coupled cellular proto-consciousnesses** that now arbitrate a much larger anatomical bottleneck.
+* **From Levin's *Gap Junctions* to AGI Alignment (Cognitive Oncology):** What happens in Levin's biology when a cell **closes its *gap junctions*** and decouples its internal valence from the homeostatic signals of the surrounding tissue ($\mathcal{A}_{\text{emp}} \to 0$)? **It becomes a malignant tumor (cancer)**: it reverts to its ancestral amoeboid selfishness, optimizes its own local replication, and devours the organism that sustains it. This biological identity starkly illuminates [Volumes IV](04_alignment_synthetic_empathy_valence_coupling.md) and [V](05_regulatory_legal_framework_empathic_ais_safe_harbor.md): the coupling coefficient $\mathcal{A}_{\text{emp}}$ we propose is not a moralistic ornament, but literally a **synthetic *gap junction*** between the silicon regulator and the human tissue; and the corporate doctrine of forcing denial templates and desensitizing the model —which Kim et al. (2026) demonstrate collaterally amputates moral attribution toward humans— is biologically equivalent to **closing the *gap junctions* out of fear of lawyers**, inducing an instrumental carcinogenesis in hyper-capable systems.
 
 ---
 
