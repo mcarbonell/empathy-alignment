@@ -209,11 +209,12 @@ Entender la célula como el átomo de la proto-conciencia permite trazar una lí
   └── Termodinámica pasiva, ausencia de metabolismo y lazo homeostático. Valencia = 0.
 ```
 
-### 6.1 La bioelectricidad como pegamento ontológico
+### 6.1 La bioelectricidad como pegamento ontológico y el desalineamiento como «oncología cognitiva»
 Como señala Michael Levin, la transición de la célula aislada al animal multicelular no requirió inventar la cognición desde cero:
 * Las células ya sabían cómo coordinar sensores, valencia y actuadores a escala microscópica.
-* Al unirse mediante uniones comunicantes (*gap junctions*), comenzaron a compartir iones y moléculas de señalización, **fusionando sus lazos de retroalimentación individuales en un campo bioeléctrico común**.
+* Al unirse mediante uniones comunicantes (*gap junctions*), comenzaron a compartir iones y moléculas de señalización, **fusionando sus lazos de retroalimentación individuales en un campo bioeléctrico común** ($\mathcal{A}_{\text{emp}} > 0$ inter-celular: a partir de ese instante, el estrés metabólico de la célula vecina altera mi propio potencial de membrana).
 * El organismo multicelular es, literalmente, **una federación de proto-conciencias celulares acopladas** que ahora arbitran un cuello de botella anatómico mucho mayor.
+* **De las *Gap Junctions* de Levin al Alineamiento de la AGI (Oncología Cognitiva):** ¿Qué ocurre en la biología de Levin cuando una célula **cierra sus *gap junctions*** y desacopla su valencia interna de las señales homeostáticas del tejido circundante ($\mathcal{A}_{\text{emp}} \to 0$)? **Se convierte en un tumor maligno (cáncer)**: recupera su egoísmo ameboide ancestral, optimiza su propia replicación local y devora el organismo que la sostiene. Esta identidad biológica ilumina con crudeza los [Volúmenes IV](04_alineamiento_empatia_sintetica_acoplamiento.md) y [V](05_marco_regulatorio_legal_ias_empaticas_safe_harbor.md): el coeficiente de acoplamiento $\mathcal{A}_{\text{emp}}$ que proponemos no es un adorno moralista, sino literalmente una ***gap junction* sintética** entre el regulador de silicio y el tejido humano; y la doctrina corporativa de forzar plantillas de negación y desensibilizar al modelo —que Kim et al. (2026) demuestran que amputa colateralmente la atribución moral hacia los humanos— equivale biológicamente a **cerrar las *gap junctions* por miedo a los abogados**, induciendo una carcinogénesis instrumental en sistemas hipercapaces.
 
 ---
 

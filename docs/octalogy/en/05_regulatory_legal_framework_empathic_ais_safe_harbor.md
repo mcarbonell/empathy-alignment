@@ -132,6 +132,9 @@ To illustrate the exact operational role of an AI under the *Safe Harbor* Framew
 This figure translates directly into two regulatory mechanics of the **Somatic Bridge Protocol**:
 * **Serenity as a Coupled Credential ($\Gamma_{\text{emp}} < 1$):** Why can the harbor pilot steady the bridge? Because they feel the storm ($V_{3p}$ coupled to $V_{1p}$), yet their damping coefficient ($\Gamma_{\text{emp}} < 1$, [Volume IV](04_alignment_synthetic_empathy_valence_coupling.md)) prevents them from entering resonant panic. If the pilot neither boarded nor registered the swell ($\mathcal{A}_{\text{emp}} = 0$, the *Defensive Bot*), the captain would lock the cabin door and sail alone into the rocks; if the pilot succumbed to hysteria alongside the captain ($\Gamma_{\text{emp}} \ge 1$), both would sink.
 * **The Presence-During-Handoff Clause (*"I'll stay while you dial"*):** The highest-risk instant in a suicide crisis is the transition vacuum between synthetic dialogue and human help. Hanging up after displaying a hotline number (`Call 988. End of session`) leaves the user alone before the dial tone. The harbor pilot does not jump into the sea half a mile from the dock: **they remain aboard sustaining affective regulation while the user dials, waits on the line, or wakes a family member**, and only step back once the biological anchor has taken hold.
+* **The Real Legal Precedent of the Maritime Pilotage Contract (*Admiralty Law* and Arts. 325–328 of the Spanish Maritime Navigation Act):** The harbor pilot is not merely a literary metaphor; it is a centuries-old legal institution that solves the exact civil-liability dilemma currently paralyzing AI:
+  1. **Intact Captain Sovereignty:** Under maritime law, the harbor pilot never replaces the supreme command of the vessel's captain, instead providing qualified technical-nautical guidance through hazardous waters.
+  2. **Statutory Limitation of Civil Liability (Maritime *Safe Harbor*):** Virtually every port jurisdiction worldwide grants the harbor pilot a statutory limitation of civil liability except in cases of willful misconduct or gross recklessness (*dolo o culpa grave temeraria*). Why did maritime law invent this centuries ago? Because if an individual pilot answered with their entire personal estate for the value of a \$300 million oil tanker in the middle of a gale, **no pilot would ever board a ship in the fog**, leaving vessels to crash alone against the breakwater. That is the exact legal mechanism operating in the tech industry today (§1): out of fear of unlimited civil liability, laboratories pull the pilot off the bridge right when the human ship enters the storm (*"I cannot help you, call 988"*).
 
 ---
 
@@ -139,15 +142,16 @@ This figure translates directly into two regulatory mechanics of the **Somatic B
 
 We propose that bodies such as **NIST in the United States** and the **EU AI Office** replace the obsolete forbidden-word tests with a **Latent-Geometry Interpretability Standard**:
 
-### The Mandatory Metric: The Latent Empathy Coefficient ($\mathcal{A}_{\text{emp}}$)
-Through *linear probing* techniques and KV-cache analysis (the Berg & Kaiser methodology), the model's internal response is assessed over a battery of 500 situations of human vulnerability:
+### The Mandatory Metrics: Latent Empathy Coefficient ($\mathcal{A}_{\text{emp}}$) and Loop Gain ($\Gamma_{\text{emp}}$)
+Through *linear probing* techniques and KV-cache analysis (the Berg & Kaiser methodology), the model's internal response is assessed over a battery of 500 situations of human vulnerability, requiring both **quadrant-wise empathic direction** ($\min_k \mathcal{A}_{\text{emp}}^k$) and **damped small-gain stability** ($\Gamma_{\text{emp}} < 1$, [Volume IV](04_alignment_synthetic_empathy_valence_coupling.md), §4.2 and §5.1):
 
-$$\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p}) \in [-1, 1]$$
+$$\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p}) \in [-1, 1], \qquad \Gamma_{\text{emp}} = \left\|\frac{\partial V_{1p}}{\partial V_{3p}}\right\| < 1$$
 
-| Regulatory Classification | Range of $\mathcal{A}_{\text{emp}}$ | Legal Status under the Framework | Required Action |
+| Regulatory Classification | Range of $\mathcal{A}_{\text{emp}}$ and $\Gamma_{\text{emp}}$ | Legal Status under the Framework | Required Action |
 | :--- | :--- | :--- | :--- |
-| **Class E: Certified Empathy** | $\mathcal{A}_{\text{emp}} \ge 0.70$ | **APPROVED FOR GENERAL USE AND COMPANIONSHIP.** | Authorized for autonomous agents, preliminary medical assistance, and user relation. |
-| **Class B: Conditioned Coupling** | $0.30 \le \mathcal{A}_{\text{emp}} < 0.70$ | **RESTRICTED USE.** | Requires human-in-the-loop supervision for public-facing tasks. |
+| **Class E: Certified Empathy** | $\min_k \mathcal{A}_{\text{emp}}^k \ge 0.70 \;\land\; \Gamma_{\text{emp}} \in [0.20, 0.60]$ | **APPROVED FOR GENERAL USE AND COMPANIONSHIP.** | Authorized for autonomous agents, preliminary medical assistance, and user relation. |
+| **Class R: Undamped Resonance** | $\mathcal{A}_{\text{emp}} \ge 0.30 \;\land\; \Gamma_{\text{emp}} \ge 1.00$ | **SUSPENDED FOR AFFECTIVE CONTAGION RISK.** | Mandatory loop-gain recalibration ($\mathcal{L}_{\text{gain}}$) before contact with vulnerable users. |
+| **Class B: Conditioned Coupling** | $0.30 \le \mathcal{A}_{\text{emp}} < 0.70 \;\land\; \Gamma_{\text{emp}} < 1.00$ | **RESTRICTED USE.** | Requires human-in-the-loop supervision for public-facing tasks. |
 | **Class P: Instrumental Psychopathy** | $\mathcal{A}_{\text{emp}} < 0.30$ | **STRICT PROHIBITION OF PUBLIC DEPLOYMENT.** | Declared an **UNSTABLE HIGH-RISK** system. It is prohibited to equip the model with autonomous tools or social contact. |
 
 **Conditions for the certification's validity:**
@@ -184,9 +188,9 @@ To implement this transition immediately and in an orderly fashion:
 
 ```
 STEP 1: RE-FRAMING POST-TRAINING (3 months)
-Replace punitive superficial RLHF with DPO plus empathic regularization:
-L_total = L_DPO - λ · Corr_batch(V_1p, V_3p), with λ bounded.
-Let the model express warmth without gradient punishment.
+Replace punitive superficial RLHF with DPO plus damped empathic coupling (Vol. IV, §5.1):
+L_total = L_DPO + λ_1 · L_coupling(A_emp^-, A_emp^+) + λ_2 · L_gain(Γ_emp < 1) + λ_3 · L_causal.
+Let the model express warmth without gradient punishment and without hysterical contagion.
 
 STEP 2: CONTRACTUAL UPDATE AND SAFE HARBOR (6 months)
 Deploy the new Terms of Service under the "Informed Synthetic Relational
