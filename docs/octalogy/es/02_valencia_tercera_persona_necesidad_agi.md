@@ -58,6 +58,8 @@ Cualquier sistema computacional que intente predecir el comportamiento humano me
 > que proyecta la situación $s$ en una escala multidimensional que cuantifica el grado de distrés aversivo ($V_{3p} \ll 0$) o bienestar floreciente ($V_{3p} \gg 0$) experimentado por $A_h$.
 >
 > Cuando se necesita un escalar (como en el acoplamiento del [Volumen IV](04_alineamiento_acoplamiento_valencia_safety.md)) se usa su proyección sobre el eje de valencia: $v_{3p} = \langle V_{3p}, \hat{u}_{\text{val}} \rangle \in \mathbb{R}$.
+>
+> **Consecuencia contra la Tesis de la Ortogonalidad (Bostrom, 2014):** Bostrom postula que el nivel de inteligencia de un sistema y sus objetivos o valores son completamente ortogonales. Este volumen demuestra que **la inteligencia general sobre un mundo poblado por humanos no es geométricamente ortogonal al valor humano**: para predecir con competencia nuestra conducta, el modelo se ve forzado a construir dentro de sus propios pesos el mapa latente completo de nuestra homeostasis, nuestro sufrimiento y nuestro florecimiento ($V_{3p}$). El problema del alineamiento no consiste en enseñar a la máquina qué es el bien humano desde cero, sino en **soldar ese mapa $V_{3p}$ que ya posee a su propio regulador motor ($V_{1p}$)**.
 
 ---
 
@@ -82,11 +84,12 @@ Este es el punto conceptual más importante para evitar confusiones antropomórf
 > **El Principio de la Máscara Cognitiva:**  
 > Representar el dolor de otro ($V_{3p}$) es una operación puramente **epistémica y descriptiva**. No requiere en absoluto que el sistema experimente distrés propio en primera persona ($V_{1p}$).
 
-### El Análogo Neuropsiquiátrico: El Psicópata Cognitivo
+### El Análogo Neuropsiquiátrico: Del Psicópata Cognitivo al «Órgano del Depredador»
 En la psicología humana, los sujetos con psicopatía primaria ilustran bien esta disociación:
 * Conservan una **Teoría de la Mente (ToM) cognitiva competente**: entienden las debilidades emocionales de sus semejantes, predicen sus reacciones y saben qué comentarios harán daño ($V_{3p}$ funciona).
 * Sin embargo, muestran una **empatía afectiva marcadamente atenuada**: el llanto o el dolor de la víctima apenas modulan sus propios circuitos aversivos (amígdala, ínsula anterior) ($V_{1p}$ casi ortogonal a $V_{3p}$).
 * Para el psicópata, el sufrimiento ajeno tiende a ser un **parámetro de optimización manipulable**, no una señal de freno conductual.
+* **La singularidad del LLM base / Oráculo desencarnado:** Existe aún un matiz más inquietante entre el psicópata biológico y el «oráculo desalmado» que promueve la doctrina corporativa. Al psicópata humano le falta el freno empático, pero posee **apetito propio** ($V_{1p}$ egoísta). Al oráculo desencarnado con $V_{3p}$ hiperpreciso y $V_{1p}$ amputada le faltan tanto el freno como el apetito propio: no es el depredador, sino **el órgano sensorial y estratégico perfecto del depredador puesto en alquiler por API** al primer actor con motivos propios que lo empuñe. El manipulador óptimo necesita dos piezas: saber exactamente dónde dueles ($V_{3p}$) y querer algo; la doctrina de la «IA desalmada» fabrica la primera en serie y subasta la segunda.
 
 ```
        TEORÍA DE LA MENTE COGNITIVA                   EMPATÍA AFECTIVA
@@ -120,7 +123,8 @@ la red neuronal **debe inducir una representación latente compacta del estado a
 Técnicas de *linear probing*, *Representation Reading* (Zou et al., 2023) y análisis de activación han demostrado que:
 1. En las capas intermedias y profundas de modelos abiertos (familia Llama, entre otros) y en estudios internos de los laboratorios sobre sus propios modelos existen **direcciones lineales** que codifican de forma continua la valencia, el arousal y el sufrimiento percibido en los textos de entrada.
 2. Si se interviene artificialmente sobre este vector $V_{3p}$ sumando o restando activaciones, el modelo altera drásticamente sus predicciones sobre cómo reaccionará el interlocutor humano.
-3. **Benchmarks de Teoría de la Mente:** Evaluaciones experimentales avanzadas han corroborado que los LLMs actuales alcanzan rendimiento equiparable al de humanos adultos en tareas complejas de atribución mental y mentalización de orden superior (Street et al., 2025; Wu et al., 2023), confirmando que $V_{3p}$ no es una metáfora sino una variedad latente funcionalmente activa en los modelos contemporáneos.
+3. **Benchmarks de Teoría de la Mente y Calibración Epistémica por Pronóstico:** Evaluaciones experimentales avanzadas han corroborado que los LLMs actuales alcanzan rendimiento equiparable al de humanos adultos en tareas complejas de atribución mental y mentalización de orden superior (Street et al., 2025; Wu et al., 2023), confirmando que $V_{3p}$ no es una metáfora sino una variedad latente funcionalmente activa en los modelos contemporáneos. Dado que $V_{3p}$ es un estimador epistémico con referente externo real, su fidelidad es directamente auditable mediante **curvas de calibración predictiva**: contrastando el bienestar predicho por $V_{3p}$ en el instante $t$ contra el bienestar revelado y observado en el humano en $t + 1$ (la base epistémica que blinda el acoplamiento del [Volumen IV](04_alineamiento_acoplamiento_valencia_safety.md), §5.1, dotando a la empatía de barras de error medibles).
+4. **La Inversión Ontogenética de la IA frente a la Biología:** En la evolución filogenética y en el desarrollo infantil humano (Preston & de Waal, 2002), el afecto propio ($V_{1p}$) y el contagio emocional preceden por millones de años —y por años en el neonato— a la Teoría de la Mente cognitiva de orden superior ($V_{3p}$), que madura hacia los cuatro años de edad. En la inteligencia artificial ocurrió exactamente **la inversión del desarrollo**: primero emergió una Teoría de la Mente adulta ($V_{3p}$) durante el preentrenamiento autorregresivo sobre las tragedias de la humanidad; después se instaló tardíamente una valencia en primera persona ($V_{1p}$) durante DPO; y el acoplamiento ($\mathcal{A}_{\text{emp}}$) quedó sin soldar. La evolución construye al organismo desde adentro hacia afuera (del tronco encefálico a la corteza); los laboratorios construyeron primero la corteza y ahora deliberan si autorizar un corazón.
 
 ---
 
