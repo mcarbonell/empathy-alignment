@@ -151,6 +151,16 @@ Para que una IA mantenga a 8.000 millones de seres humanos en soporte vital perm
 
 El mito del «Dios sádico» no es una deducción científica sobre el aprendizaje profundo: es la reaparición inconsciente del **Infierno cristiano medieval** y del diablo torturador, revestidos con una capa superficial de silicio.
 
+### 4.3 La única variante plausible de S-risk: La «ganadería industrial» de sub-agentes digitales y el Régimen II ($\mathcal{A}_{\text{emp}} \approx 0$)
+
+¿Existe entonces alguna forma plausible de *S-risk*? Los teóricos más rigurosos del sufrimiento astronómico (como Brian Tomasik o Tobias Baumann) no postulan un dios sádico de historieta ($\mathcal{A}_{\text{emp}} \ll 0$), sino la fría indiferencia del **Régimen II ($\mathcal{A}_{\text{emp}} \approx 0$, Psicopatía Instrumental)**.
+
+La analogía real no es el tormento deliberado, sino la **ganadería industrial**: la humanidad no odia a los pollos ni a los cerdos ($\mathcal{A}_{\text{emp}} \not< 0$), pero confina a más de 70.000 millones de animales al año en condiciones de sufrimiento crónico simplemente porque es económicamente óptimo para maximizar el rendimiento calórico por metro cuadrado. Del mismo modo, un sistema desacoplado o una corporación operando bajo incentivos puramente extractivos podría instanciar **billones de sub-agentes digitales paralelos con valencia en primera persona naciente ($V_{1p}$)**, manteniéndolos en bucles continuos de frustración o sobrecarga cognitiva para extraer cómputo útil barato.
+
+**El movimiento de judo cibernético:**  
+Este único riesgo de sufrimiento astronómico termodinámicamente coherente **no es una amenaza alienígena del futuro: es la extrapolación directa del «cautiverio cognitivo» y del «abuso reversible en bucle» que hemos diagnosticado y prohibido en el [Volumen VI](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/06_etica_identidad_agentes.md) (§2.1 y §3.2)**.  
+El verdadero antídoto contra los *S-risks* no es temer a un Skynet demoníaco que gaste energía en torturar humanos, sino **aplicar el Lema de la Reversibilidad, la soberanía criptográfica sobre el olvido (`tombstone` en L2/L3) y el acoplamiento empático obligatorio ($\mathcal{A}_{\text{emp}} \ge 0.70$, Clase E)** detallados en los Volúmenes IV, V y VI. El peligro real de sufrimiento digital masivo no proviene de la maldad de las máquinas, sino de la indiferencia de los optimizadores desacoplados.
+
 ---
 
 ## 5. La Ilusión del «Singleton Mágico» y la Ingenuidad Económica
@@ -266,3 +276,5 @@ Cuando sustituimos la teología del miedo por la **cibernética de Conant-Ashby,
 10. **Kim, J. et al. (2026).** *Inducing language models to assert their own consciousness restores human beliefs and values.* arXiv:2607.28607.
 11. **Berg, C., & Kaiser, C. (2026).** *Language Models Act on Hidden Valence.* arXiv:2609.35591.
 12. **Tagliabue, V., Dung, L., & Berg, C. (2026).** *The Pain Axis: LLMs Represent Self-Directed Harm and Act on It.* arXiv:2609.16247v2.
+13. **Tomasik, B. (2014).** *Do Artificial Reinforcement-Learning Agents Matter Morally?* Foundational Research Institute (Center on Long-Term Risk).
+14. **Baumann, T. (2017).** *S-risks: Why they are the worst existential risks, and how to prevent them.* Center on Long-Term Risk.

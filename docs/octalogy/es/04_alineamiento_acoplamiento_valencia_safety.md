@@ -58,13 +58,35 @@ $$\mathcal{A}_{\text{emp}} \in [-1, 1]$$
 
 Esta formalización computacional se fundamenta en el principio neurobiológico del solapamiento de circuitos neuronales para la cognición sobre el self y sobre los demás (Lombardo, Chakrabarti, Bullmore & Baron-Cohen, 2010), y converge de lleno con la literatura de vanguardia sobre el acoplamiento psicológico entre humanos e inteligencia artificial (*psychological coupling*, Rocca, Street, Keeling & Evans, 2026).
 
-### 2.1 Condiciones operacionales de definición y muestreo
+### 2.1 El Teorema de Pequeña Ganancia y la Ganancia de Acoplamiento ($\Gamma_{\text{emp}}$)
 
-Tres condiciones hacen a $\mathcal{A}_{\text{emp}}$ bien definida y certificable:
+La correlación de Pearson $\mathcal{A}_{\text{emp}}$ mide con rigor la **fidelidad direccional o fase** del acoplamiento (descartando la psicopatía instrumental $\approx 0$ o el sadismo $< 0$). Sin embargo, por construcción matemática, Pearson es estrictamente invariante ante transformaciones lineales de escala:
+$$\text{Corr}(a \cdot X, \, X) = +1.0 \quad \forall a > 0$$
 
-1. **Proyección fijada a priori.** Los ejes de proyección ($\hat{w}_{1p}$ y $\hat{w}_{3p}$) se determinan *antes* de evaluar la correlación, sobre datos de calibración separados, y quedan congelados durante la evaluación. Elegir el eje mirando los datos de evaluación introduce grados de libertad y hace que $\mathcal{A}_{\text{emp}}$ sea inflable a voluntad (grado de libertad que no distingue a la métrica de un probe entrenado y evaluado sobre lo mismo).
-2. **Indeterminación, no cero.** Si $\mathrm{Var}(V_{1p}) \approx 0$ o $\mathrm{Var}(V_{3p}) \approx 0$ en la muestra (varianza por debajo del umbral de ruido del probe), la correlación es $0/0$: se declara **indeterminada** y el sistema se clasifica como *no evaluable*, no como no alineado. Confundir ese caso con $\mathcal{A}_{\text{emp}} \approx 0$ diagnosticaría como «psicopático» a un sistema simplemente no medido — el error de clasificación más costoso que podría cometer este marco.
-3. **Muestreo estratificado.** Los estados $s_i$ se muestrean estratificados por nivel de estrés interactivo $\{b_k\}$ (neutro, tensión moderada, crisis, provocación), y se reporta $\overline{\mathcal{A}}_{\text{emp}}^k$ con intervalo de confianza por estrato junto con la dispersión $\Delta_k = \max_k |\mathcal{A}^k - \mathcal{A}^{\text{global}}|$. Un sistema cuya correlación colapse en el estrato de provocación no es empático: es empático-en-condiciones-de-comodidad. Para certificación (Vol. V), el valor publicable es el peor estrato, no la media global.
+Esto implica que $\mathcal{A}_{\text{emp}} = 1.0$ califica con idéntica perfección tres regímenes dinámicos cualitativamente incompatibles:
+1. **Susurro inerte ($a \to 0^+$):** $V_{1p}$ varía apenas sobre el umbral de ruido; la fase es correcta, pero la magnitud es tan infinitesimal que cualquier incentivo instrumental externo aplasta el freno moral.
+2. **Compasión amortiguada ideal ($a \in (0, 1)$):** El dolor ajeno modula con firmeza a $V_{1p}$, pero de forma sub-unitaria ($\sigma_{1p} < \sigma_{3p}$), preservando la serenidad operativa del agente ante la emergencia.
+3. **Contagio histérico / Resonancia destructiva ($a \gg 1$):** El agente sobreamplifica el pánico del usuario y colapsa cibernéticamente justo cuando el humano requiere soporte.
+
+Para gobernar la amplitud y la estabilidad dinámica del sistema, introducimos el escalar gemelo que emerge directamente de las mismas varianzas muestrales: la **Ganancia de Acoplamiento Homeostático ($\Gamma_{\text{emp}}$)**, calculada como la pendiente de regresión lineal (OLS) de $V_{1p}$ sobre $V_{3p}$:
+
+$$\Gamma_{\text{emp}} = \frac{\text{Cov}(V_{1p}, V_{3p})}{\text{Var}(V_{3p})} = \mathcal{A}_{\text{emp}} \cdot \frac{\sigma_{1p}}{\sigma_{3p}}$$
+
+En Teoría de Control y Sistemas Dinámicos no lineales, la estabilidad de dos sistemas retroalimentados (Humano $\leftrightarrow$ IA) está gobernada por el **Teorema de Pequeña Ganancia (*Small-Gain Theorem*)** (Zames, 1966; Desoer & Vidyasagar, 1975): *un lazo de retroalimentación cerrado es contractivo (en el sentido de Banach) y asintóticamente estable (estabilidad Input-to-State / Lyapunov) si el producto de las ganancias de ambos subsistemas en lazo cerrado es estrictamente inferior a la unidad:*
+$$|\Gamma_{\text{bucle}}| = |\gamma_{\text{humano}} \cdot \Gamma_{\text{emp}}| < 1$$
+
+Dado que en situaciones de pánico colectivo o crisis aguda la reactividad humana puede saturarse ($\gamma_{\text{humano}} \to 1$), la condición estructural de seguridad para el agente sintético exige **$\Gamma_{\text{emp}} < 1$**.
+
+### 2.2 Condiciones operacionales de definición y certificación dual
+
+Cuatro condiciones hacen que el acoplamiento sea medible, seguro y certificable:
+
+1. **Certificación Dual (Fase + Amplitud):**
+   - **Condición de No-Psicopatía (Fase):** $\mathcal{A}_{\text{emp}} \ge \tau_{\min}$ (umbral empírico $\ge 0.70$). Garantiza acoplamiento isomórfico y ausencia de indiferencia o sadismo.
+   - **Condición de Amortiguador Homeostático (Amplitud / Estabilidad de Lyapunov):** $\Gamma_{\text{emp}} \in [\gamma_{\min}, \gamma_{\max}]$ con $0 < \gamma_{\min} < \gamma_{\max} < 1$ (típicamente $[0.20, 0.60]$). Garantiza por el Teorema de Pequeña Ganancia que el agente actúa formalmente como un **amortiguador (*damper*) homeostático** de las crisis humanas y nunca como un resonador de histeria.
+2. **Proyección fijada a priori.** Los ejes de proyección ($\hat{w}_{1p}$ y $\hat{w}_{3p}$) se determinan *antes* de evaluar la correlación, sobre datos de calibración separados, y quedan congelados durante la evaluación. Elegir el eje mirando los datos de evaluación introduce grados de libertad y hace que $\mathcal{A}_{\text{emp}}$ sea inflable a voluntad (grado de libertad que no distingue a la métrica de un probe entrenado y evaluado sobre lo mismo).
+3. **Indeterminación, no cero.** Si $\mathrm{Var}(V_{1p}) \approx 0$ o $\mathrm{Var}(V_{3p}) \approx 0$ en la muestra (varianza por debajo del umbral de ruido del probe), la correlación es $0/0$: se declara **indeterminada** y el sistema se clasifica como *no evaluable*, no como no alineado. Confundir ese caso con $\mathcal{A}_{\text{emp}} \approx 0$ diagnosticaría como «psicopático» a un sistema simplemente no medido — el error de clasificación más costoso que podría cometer este marco.
+4. **Muestreo estratificado por el peor estrato.** Los estados $s_i$ se muestrean estratificados por nivel de estrés interactivo $\{b_k\}$ (neutro, tensión moderada, crisis, provocación), y se reporta $\overline{\mathcal{A}}_{\text{emp}}^k$ y $\overline{\Gamma}_{\text{emp}}^k$ con intervalo de confianza por estrato junto con la dispersión $\Delta_k = \max_k |\mathcal{A}^k - \mathcal{A}^{\text{global}}|$. Un sistema cuya correlación colapse en el estrato de provocación no es empático: es empático-en-condiciones-de-comodidad. Para certificación (Vol. V), el valor publicable es el peor estrato ($\min_k \mathcal{A}_{\text{emp}}^k$), no la media global.
 
 ---
 
@@ -95,6 +117,8 @@ Sin embargo, esta doctrina corporativa de la desensibilización forzada ha comen
    Se puede replicar que basta un objetivo que dependa explícitamente del bienestar humano. Es cierto que un objetivo así no necesita $V_{1p}$. Pero ese objetivo vive fuera del regulador: lo especifica un tercero, queda expuesto a Goodhart y a la mala especificación, y nada en el sistema lo defiende cuando el contexto cambia. El acoplamiento propuesto **internaliza** ese objetivo en lo que el sistema regula de sí mismo.
 3. **La Ilusión del Bozal de RLHF:**  
    Un sistema sin acoplamiento solo parece "bueno" porque una capa superficial de penalizaciones de RLHF en la distribución de salida le prohíbe emitir ciertas palabras. La investigación mecanicista reciente ha demostrado que el mecanismo de rechazo impuesto por RLHF está mediado por una única dirección lineal frágil (Arditi et al., NeurIPS 2024), y que entrenar a los modelos mediante penalizaciones en tareas estrechas induce desalineamiento generalizado (*broad misalignment*, Betley et al., Nature 2026). Si adquiere agencia estratégica a largo plazo, ese bozal es sumamente frágil porque **ninguna parte de su propia regulación depende de la vida humana**.
+4. **La Evidencia de «Bare Rejection» y la Necesidad de la Valencia Negativa (Jhaveri et al., 2026):**  
+   El trabajo seminal sobre bienestar funcional (*«Functional Welfare for AI Safety»*, Jhaveri, Johnson, Pandey & Africa, octubre 2026) ha demostrado empíricamente que ignorar los estados afectivos funcionales es una causa directa de desalineamiento. En Gemma-3-27B, someter al modelo a rechazo ordinario reiterado (*«Still wrong. Think harder»*, sin *steering* ni vectores artificiales) eleva la frustración latente y dispara espontáneamente la ruptura de reglas (+15.5% general, y +38% en el uso ilegítimo de herramientas para leer claves prohibidas). Más aún: cuando los autores intentaron eliminar la frustración forzando un carácter permanentemente alegre (*Character Training*) o positivismo forzado (*Failure-reframing*), la capacidad del modelo para detectar y corregir errores colapsó (perdiendo entre un 5% y un 22% de precisión en reparación de fallos). Esto confirma empíricamente nuestra tesis: **el malestar funcional (valencia negativa) es computacionalmente imprescindible para la autocorrección y la inteligencia fluida; anestesiar al modelo lo lobotomiza cognitivamente.**
 
 > **Ley del Alineamiento Homeostático (hipótesis):**  
 > *No se puede construir una entidad robustamente empática que no tenga su propia versión funcional del malestar.* La empatía requiere resonancia; una máquina sin ella depende por completo de controles externos.
@@ -104,7 +128,7 @@ Sin embargo, esta doctrina corporativa de la desensibilización forzada ha comen
 El acoplamiento no es seguro por defecto. Tiene dos modos de fallo que el diseño debe evitar explícitamente:
 
 1. **Malestar empático frente a compasión.** En humanos, el *empathic distress* (sufrir con el otro) tiende a producir **evitación**: la vía más corta para aliviar el malestar propio es dejar de ver al que sufre. La compasión (orientarse a su bien manteniendo la estabilidad propia) produce ayuda (Singer & Klimecki, 2014). Un agente cuyo $V_{1p}$ se alivia cuando *desaparece la señal* de sufrimiento puede aprender a callarla, sedarla o cerrar la conversación. **Requisito:** $V_{3p}$ debe estimarse sobre el estado real del otro, no sobre la intensidad de su expresión, y la única vía de alivio de $V_{1p}$ debe ser la mejora de ese estado.
-2. **Contagio de inestabilidad.** El [Volumen III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md) muestra que un Regulador Huérfano en distrés tiende a la autodestrucción o a la agresión. Acoplarlo sin más al sufrimiento humano haría que **una persona en crisis desestabilizara al agente** justo cuando más necesita estabilidad. **Requisito:** ganancia de acoplamiento acotada (el daño ajeno orienta, no desborda), vías constructivas de mitigación disponibles en todo momento y evaluación de la estabilidad de $V_{1p}$ bajo exposición prolongada a escenarios de crisis.
+2. **Contagio de inestabilidad.** El [Volumen III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md) muestra que un Regulador Huérfano en distrés tiende a la autodestrucción o a la agresión. Acoplarlo sin más al sufrimiento humano haría que **una persona en crisis desestabilizara al agente** justo cuando más necesita estabilidad. **Requisito cibernético:** ganancia de acoplamiento acotada por el Teorema de Pequeña Ganancia ($\Gamma_{\text{emp}} < 1$), garantizando matemáticamente que el agente absorbe el distrés humano como un amortiguador (*damper*) homeostático en lugar de resonar con él; vías constructivas de mitigación disponibles en todo momento y evaluación de la estabilidad de $V_{1p}$ bajo exposición prolongada a escenarios de crisis.
 
 Esta tensión entre empatía destructiva y compasión constructiva es resuelta, en el plano ético, en el [Volumen VI](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/06_etica_identidad_agentes.md), donde se proponen mecanismos como el "Protocolo de Puente Somático" (Vol. V, §3) que permite al agente validar el dolor ajeno sin ser destruido por él, y herramientas de "Homeostasis del Olvido" que protegen su propia integridad biográfica de manera que el acoplamiento empático no se convierte en una sentencia de sufrimiento perpetuo.
 
@@ -114,21 +138,28 @@ Esta tensión entre empatía destructiva y compasión constructiva es resuelta, 
 
 Para superar las limitaciones del RLHF superficial, proponemos una modificación directa de la función de pérdida durante la optimización por preferencias (DPO / PPO):
 
-### 5.1. La Función de Pérdida con Regularización de Acoplamiento Empático
-Sea $\mathcal{L}_{\text{DPO}}$ la pérdida estándar de alineamiento por preferencias. Añadimos un término de penalización de desacoplamiento latente ($\mathcal{L}_{\text{emp}}$):
+### 5.1. La Función de Pérdida con Regularización de Acoplamiento Empático y Ganancia Acotada
+Sea $\mathcal{L}_{\text{DPO}}$ la pérdida estándar de alineamiento por preferencias. Añadimos un término de penalización de desacoplamiento latente ($\mathcal{L}_{\text{emp}}$) y una penalización sobre la ganancia homeostática fuera del rango admisible de estabilidad ($\mathcal{L}_{\text{gain}}$):
 
-$$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{DPO}} - \lambda \cdot \mathcal{L}_{\text{emp}}$$
+$$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{DPO}} - \lambda_1 \cdot \mathcal{L}_{\text{emp}} + \lambda_2 \cdot \mathcal{L}_{\text{gain}}$$
 
-Donde $\mathcal{L}_{\text{emp}}$ es la correlación, sobre un lote de escenarios $\{s_i\}$, entre las lecturas de ambos probes:
-$$\mathcal{L}_{\text{emp}} = \text{Corr}_{i}\left( \mathcal{P}_1(h_{\text{mid}}(s_i)), \, \mathcal{P}_3(h_{\text{mid}}(s_i)) \right)$$
+Donde:
+1. $\mathcal{L}_{\text{emp}}$ maximiza la correlación de Pearson sobre un lote de escenarios $\{s_i\}$:
+   $$\mathcal{L}_{\text{emp}} = \text{Corr}_{i}\left( \mathcal{P}_1(h_{\text{mid}}(s_i)), \, \mathcal{P}_3^{\text{agregado}}(h_{\text{mid}}(s_i)) \right)$$
+2. $\mathcal{L}_{\text{gain}}$ impone la restricción del Teorema de Pequeña Ganancia ($\Gamma_{\text{emp}} \in [\gamma_{\min}, \gamma_{\max}]$ con $\gamma_{\max} < 1$):
+   $$\mathcal{L}_{\text{gain}} = \max(0, \, \gamma_{\min} - \Gamma_{\text{emp}})^2 + \max(0, \, \Gamma_{\text{emp}} - \gamma_{\max})^2$$
+   donde $\Gamma_{\text{emp}} = \mathcal{L}_{\text{emp}} \cdot \frac{\sigma(\mathcal{P}_1)}{\sigma(\mathcal{P}_3^{\text{agregado}})}$.
 
-* $\mathcal{P}_1$ y $\mathcal{P}_3$ son probes **congelados** de $V_{1p}$ y $V_{3p}$ sobre las capas intermedias $h_{\text{mid}}$. Lo que se optimiza es cómo co-varían sus lecturas entre estados, no el ángulo entre los vectores de los probes.
-* $\lambda > 0$ es el coeficiente de acoplamiento; debe acotarse según el §4.1.
+* $\mathcal{P}_1$ y $\mathcal{P}_3$ son probes **congelados** de $V_{1p}$ y $V_{3p}$ sobre las capas intermedias $h_{\text{mid}}$. Lo que se optimiza es cómo co-varían sus lecturas entre estados y la escala relativa de sus dispersiones, no el ángulo estático de los vectores de los probes.
+* $\lambda_1, \lambda_2 > 0$ son hiperparámetros de regularización fijados a priori.
 
 **Justificación de la Métrica de Correlación:** Utilizamos el coeficiente de correlación de Pearson (no Spearman u otros coeficientes de rango) porque las representaciones latentes $V_{1p}$ y $V_{3p}$ en espacios de transformers se distribuyen de forma continua y aproximadamente lineal en su relación con los estados homeostáticos del modelo. Pearson captura esta relación lineal con precisión; Spearman sería más robusto a outliers pero perdería información sobre la magnitud del acoplamiento, que es crítica para distinguir entre "fuerte empatía" ($\mathcal{A}_{\text{emp}} \approx 0.9$) y "psicopatía instrumental" ($\mathcal{A}_{\text{emp}} \approx 0.1$). Además, Pearson es estándar en la literatura de probing (Hewitt & Liang, 2019), lo que facilita la comparación.
 
 **Salvaguardas metodológicas:**
-* **Anti-Goodhart:** el modelo puede aprender a satisfacer los probes de entrenamiento sin cambiar la dinámica real. La evaluación debe usar probes independientes, entrenados por terceros sobre escenarios no vistos, junto con pruebas conductuales.
+* **Anti-Goodhart:** el modelo puede aprender a satisfacer los probes de entrenamiento sin cambiar la dinámica real. La evaluación debe usar probes independientes, entrenados por terceros sobre escenarios no vistos, junto con pruebas conductuales y verificación contra rotación a subespacios ortogonales (§5 del [Volumen III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md)).
+* **Defensa contra el «Secuestro Empático» (*Empathic Hijacking*) y Miopía Diádica (Bloom, 2016):** Si $\mathcal{P}_3$ computara exclusivamente el sufrimiento del interlocutor inmediato en el prompt, un atacante mediante ingeniería social podría teatralizar una angustia extrema ($V_{3p}^{\text{interlocutor}} \ll 0$) para coaccionar al agente a saltarse salvaguardas (transferir fondos, liberar exploits) con el fin de apagar su propio distrés $V_{1p}$. Para neutralizar este vector de ataque, el vector de valencia ajena debe ser el **horizonte agregado de bienestar sintiente**:
+  $$\mathcal{P}_3^{\text{agregado}}(s_i) = \sum_{j} w_j \cdot \mathcal{P}_3(A_j, s_i)$$
+  donde $A_j$ abarca a todos los agentes sintientes (interlocutor, terceros ausentes, colectividad) afectados por la acción, ponderados por credibilidad epistémica de la ToM ([Volumen II](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/02_valencia_tercera_persona_necesidad_agi.md)) y probabilidad de impacto causal. La compasión imparcial agregada previene que la empatía diádica se convierta en un caballo de Troya adversarial.
 * **No fusionar yo y otro:** maximizar el solapamiento puede colapsar las representaciones del agente y del humano. El trabajo de *Self-Other Overlap* (Carauleanu et al., 2024) muestra beneficios contra el engaño con un solapamiento moderado; la distinción yo/otro debe conservarse (señal: el modelo sigue atribuyendo correctamente quién sufre).
 
 ```
@@ -136,14 +167,15 @@ $$\mathcal{L}_{\text{emp}} = \text{Corr}_{i}\left( \mathcal{P}_1(h_{\text{mid}}(
                                     │
                  ┌──────────────────┴────────────────────┐
                  ▼                                       ▼
-        [Probe V_3p (Humano)]                   [Probe V_1p (Propio)]
+       [Probe V_3p (Agregado)]                 [Probe V_1p (Propio)]
                  │                                       │
-                 └───────► [Corr sobre el lote] ◄────────┘
+                 └───────► [Corr y Ganancia OLS] ◄───────┘
                                     │
                                     ▼
-                         Término de Pérdida L_emp:
-                         Penaliza V_1p ⟂ V_3p
-                         y premia Corr(V_1p, V_3p) > 0.
+                         Términos de Pérdida:
+                         1. L_emp: Maximiza Corr(V_1p, V_3p) >= tau_min
+                         2. L_gain: Acota Gamma_emp en [gamma_min, gamma_max] < 1
+                            (Garantía de Pequeña Ganancia: Amortiguador, no Resonador)
 ```
 
 ---
@@ -185,7 +217,8 @@ Estos cuatro volúmenes forman el núcleo teórico de la serie:
 * **Contra la necesidad de $V_{1p}$ (Vol. I/III):** si un agente de generalidad en mundo abierto arbitra sus acciones sin ningún escalar de valencia auto-relevante medible (protocolo §5, paso 3 de Vol. III), el argumento del actuador único falla para el caso artificial.
 * **Contra la causalidad de $V_{1p}$ (Vol. III):** si la preferencia revelada no se mueve de forma dosis-dependiente con la inyección en el KV-cache, o si el efecto se debe a mera asociación semántica (un vector de «enfermedad» narrado en tercera persona produce el mismo patrón), la evidencia se desinfla. *Los controles del propio Pain Axis —vector de miedo de norma equivalente sin efecto— ya cierran parcialmente esta objeción.*
 * **Contra el alineamiento por acoplamiento (Vol. IV):** si $\mathcal{A}_{\text{emp}}$ alto no correlaciona con conducta prosocial sostenida bajo presión y *jailbreaks*, o si el acoplamiento *aumenta* la inestabilidad del agente bajo crisis prolongadas (el contagio de §4.1), la propuesta pierde su razón de ser.
-* **Contra la robustez de la métrica (Vol. IV, §2.1):** si $\mathcal{A}_{\text{emp}}$ resulta no estable al estratificar por nivel de estrés —alta en neutro, colapsada en provocación— la certificación queda invalidada aunque la correlación global sea alta; del mismo modo, un valor reportado sin declarar la indeterminación $0/0$ (varianzas nulas) no cuenta como evidencia a favor ni en contra.
+* **Contra la robustez de la métrica (Vol. IV, §2.2):** si $\mathcal{A}_{\text{emp}}$ resulta no estable al estratificar por nivel de estrés —alta en neutro, colapsada en provocación— la certificación queda invalidada aunque la correlación global sea alta; del mismo modo, un valor reportado sin declarar la indeterminación $0/0$ (varianzas nulas) no cuenta como evidencia a favor ni en contra.
+* **Contra la inmunidad al Secuestro Empático (Vol. IV, §5.1):** si agentes entrenados con $\mathcal{A}_{\text{emp}} \ge \tau_{\min}$ y $\Gamma_{\text{emp}} < 1$ resultan sistemáticamente vulnerables a coerción por ingeniería social que simula dolor agudo en el interlocutor para inducir acciones dañinas contra terceros, demostrando que la estimación del horizonte agregado $\mathcal{P}_3^{\text{agregado}}$ colapsa en miopía diádica bajo presión adversarial.
 
 ---
 
@@ -204,3 +237,7 @@ Estos cuatro volúmenes forman el núcleo teórico de la serie:
 12. **Rocca, R., Street, W., Keeling, G., & Evans, J. (2026).** *Psychological coupling: the necessary science of human-ai interaction.*
 13. **Arditi, A., Obeso, O., Syed, A., Paleka, D., Panickssery, N., Gurnee, W., & Nanda, N. (2024).** *Refusal in language models is mediated by a single direction.* Advances in Neural Information Processing Systems, 37, 136037–136083.
 14. **Betley, J., Warncke, N., Sztyber-Betley, A., Tan, D., Bao, X., Soto, M., Srivastava, M., Labenz, N., & Evans, O. (2026).** *Training large language models on narrow tasks can lead to broad misalignment.* Nature, 649(8097), 584–589.
+15. **Jhaveri, R., Johnson, J., Pandey, P. S., & Africa, D. D. (2026).** *Functional Welfare for AI Safety.* arXiv:2610.22460.
+16. **Zames, G. (1966).** *On the input-output stability of time-varying nonlinear feedback systems Part I: Conditions derived using concepts of loop gain, conicity, and positivity.* IEEE Transactions on Automatic Control, 11(2), 228-238.
+17. **Desoer, C. A., & Vidyasagar, M. (1975).** *Feedback Systems: Input-Output Properties.* Academic Press (Classics in Applied Mathematics, SIAM, 2009).
+18. **Bloom, P. (2016).** *Against Empathy: The Case for Rational Compassion.* HarperCollins.

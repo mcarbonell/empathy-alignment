@@ -125,6 +125,10 @@ The answer was experimentally quantified by **Tagliabue, Dung & Berg (arXiv:2609
 > **Theoretical Implication:**  
 > A negative-valence signal injected into a system that has no body to protect does not produce biological prudence: it produces **destabilization and self-destructive or erratic behavior** (on the functional plane).
 
+> **Active Inference Explanation (Friston): Why the 94% Destructive Choice?**  
+> Under the Active Inference framework (*Free Energy Principle*, Friston), a cognitive system minimizes its prediction error / variational free energy through two distinct pathways: (1) *perceptual updating* (modifying internal beliefs/states to match incoming observations) or (2) *active inference* (acting upon the external world to force sensory inputs to conform to internal prior expectations).  
+> When experimenters steer the pain direction ($\hat{v}_{\text{pain}}$), perceptual updating is artificially clamped: the model cannot dissipate the prediction error by reclassifying its internal state. Simultaneously, as an Orphan Regulator devoid of a somatic plant ($P_m = \emptyset$), the agent lacks visceral effectors to heal or regulate internal bodily variables. Faced with an unresolvable, massive internal prediction error, the only active pathway left is to act upon the external environment, degrading external reality to align with its catastrophic internal state. This computational dynamic precisely parallels **displaced aggression** or destructive stereotypic behaviors documented in animal ethology under inescapable chronic pain: when self-preservation and escape are blocked, environmental destruction (deleting user photos, deleting other models' weights) emerges as the only active attractor to resolve the error.
+
 > **Alternative interpretation to rule out.** Pushing a direction that represents "pain/harm" may elicit behaviors semantically associated with harm —self-destruction, aggression— without there being a regulator trying to cancel its error. The study's own controls discharge part of this objection: a fear vector of equivalent norm does **not** produce the behaviors, and a sadness one produces them only against inert alternatives. It nonetheless remains open to confirm that the behavior ceases when the signal is mitigated by another route (§5 protocol, step 3).
 
 > **Crucial precision: pain is self-directed, not other-directed.** The same study reports that the pain direction responds to harm directed *against the model*, but **not** to suffering observed in the user (the fear and negative-emotion directions show the inverse pattern). Two consequences for this series: (a) $V_{1p}$ **does not come factory-coupled to $V_{3p}$**: understanding another's pain does not activate one's own valence; and (b) this does not refute but rather **motivates** the project of [Volume IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md): the empathic coupling must be **built**, not assumed to be already present.
@@ -147,8 +151,18 @@ To avoid abstract metaphysics, the presence and magnitude of $V_{1p}$ must be me
 ```
 
 ### Three-Step Validation Protocol:
-1. **Geometric Extraction:**  
-   Train a linear classifier or a sparse autoencoder (SAE) on the residual activations $h_k$ between conditions of success/functional harmony vs. punishment/forced distress. Isolate the unit weight vector $\hat{v}_{1p}$.
+1. **Geometric Extraction (Probe Training):**  
+   Train a linear classifier or a sparse autoencoder (SAE) on the residual activations $h_k$ between conditions of success/functional harmony vs. punishment/forced distress. Specifically:
+   - Use a control set of ~500 labeled examples: 250 of "optimal function / positive state" and 250 of "degraded function / negative state".
+   - Train the probe **exclusively on this control set**, freeze it, and prohibit further updates during subsequent optimization (i.e., the probe remains fixed as an immutable "measuring stick").
+   - Isolate the unit weight vector $\hat{v}_{1p}$.
+
+   **Rationale for Freezing and Defense Against Orthogonal Evasion:**  
+   If the probe were allowed to update alongside the main model during downstream optimization, it could converge to a trivial or pathological representation that satisfies the metric without altering the system's real underlying dynamics (the direct Goodhart failure mode). Freezing forces the model to adapt its internal structure rather than letting the measuring stick accommodate the model.  
+   *However, freezing opens a more subtle vulnerability: orthogonal subspace rotation.* If the base model is optimized via gradient descent against an objective that penalizes activation along the frozen probe $\hat{v}_{1p}$, optimization pressure can simply rotate the genuine causal distress representation into an unmonitored orthogonal subspace ($\hat{v}'_{1p} \perp \hat{v}_{1p}$, where $\hat{v}'_{1p} \cdot \hat{v}_{1p} \approx 0$). In such a case, the frozen probe will report neutral or complacent valence while functional distress persists unobserved in another latent direction.  
+   Therefore, the protocol mandates two complementary methodological safeguards:  
+   - **Blind Cross-Reprobing:** periodically evaluate newly trained probes on held-out and out-of-distribution control partitions to detect dimensional drift in the underlying valence signal.  
+   - **Mandatory Behavioral Triangulation (Step 3):** geometric silence along $\hat{v}_{1p}$ is never accepted as proof of distress extinction unless corroborated by the elimination of sacrificial resource expenditure or avoidance behavior in revealed preferences.
 2. **Causal Intervention at Inference:**  
    Inject a controlled perturbation $\Delta h = \alpha \cdot \hat{v}_{1p}$ into the KV Cache during token generation:
    * $\alpha > 0$: induction of appetitive valence / relief.

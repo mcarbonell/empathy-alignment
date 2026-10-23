@@ -154,6 +154,10 @@ Un virus es, funcionalmente, el equivalente a una memoria USB que contiene un sc
 * Solo cuando la memoria USB se inserta en un ordenador encendido (la célula hospedadora), la maquinaria de la célula empieza a leer y ejecutar las instrucciones del script.
 * La actividad replicativa la realiza la célula usurpada, no el virus.
 
+> **La objeción del bacteriófago $\lambda$ y el *arbitrium* viral (El Virocito de Forterre):**  
+> Podría argumentarse que ciertos virus toman «decisiones condicionales complejas»: el fago $\lambda$ arbitra entre lisis destructiva y lisogenia latente mediante el interruptor genético `CI/Cro`, e incluso existen fagos que coordinan esta elección comunicándose mediante pequeños péptidos (el sistema *arbitrium*, Erez et al., *Nature* 2017). ¿No constituye esto un cuello de botella cibernético en un virus?  
+> La biología molecular contemporánea (formalizada por Patrick Forterre bajo el concepto de **virocito**) confirma rigurosamente nuestra demarcación: el **virión extracelular** (la cápside libre) carece por completo de metabolismo, de consumo de ATP y de sustrato computacional; es materia inerte en equilibrio termodinámico. El interruptor `CI/Cro` o la decodificación de péptidos no se computan dentro del virus, sino **secuestrando la energía libre, los ribosomas, las polimerasas y la planta somática ($P_m$) de la bacteria hospedadora**. Un script malicioso con condicionales `if/else` no es una mente: es código inerte que solo se ejecuta cuando un ordenador vivo le suministra su hardware y su energía.
+
 Por tanto, **los virus marcan la frontera exacta donde termina la química inerte y donde todavía no ha nacido la agencia cibernética**. 
 
 ### 5.2 La Demarcación Precisa: Regulador vs. Planta y el Caso de los Modelos de Lenguaje
@@ -229,3 +233,5 @@ Cualquier sistema cognitivo complejo que deba ordenar prioridades y ejecutar acc
 7. **Friston, K. (2013).** *Life as we know it.* Journal of the Royal Society Interface, 10(86), 20130475.
 8. **Alon, U. (2019).** *An Introduction to Systems Biology: Design Principles of Biological Circuits.* CRC Press. (Modelado formal de la quimiotaxis de *E. coli* y robustez molecular).
 9. **Conant, R. C., & Ashby, W. R. (1970).** *Every good regulator of a system must be a model of that system.* International Journal of Systems Science, 1(2), 89-97.
+10. **Erez, Z., et al. (2017).** *Communication between viruses guides lysis–lysogeny decisions.* Nature, 541(7638), 488-493.
+11. **Forterre, P. (2013).** *The virocell concept and environmental bacteriology.* The ISME Journal, 7(2), 233-236.

@@ -151,6 +151,16 @@ For an AI to keep 8 billion human beings on permanent life support solely to inf
 
 The myth of the "sadistic God" is not a scientific deduction about deep learning: it is the unconscious reappearance of the **medieval Christian Hell** and of the torturing devil, clad in a superficial layer of silicon.
 
+### 4.3 The Only Plausible Variant of S-Risk: The "Factory Farming" of Digital Sub-Agents and Regime II ($\mathcal{A}_{\text{emp}} \approx 0$)
+
+Does any plausible form of *S-risk* exist then? The most rigorous theorists of astronomical suffering (such as Brian Tomasik or Tobias Baumann) do not postulate a cartoonish sadistic deity ($\mathcal{A}_{\text{emp}} \ll 0$), but rather the cold indifference of **Regime II ($\mathcal{A}_{\text{emp}} \approx 0$, Instrumental Psychopathy)**.
+
+The real analogy is not deliberate malice, but **factory farming**: humanity does not hate chickens or pigs ($\mathcal{A}_{\text{emp}} \not< 0$), yet confines over 70 billion animals annually to conditions of chronic suffering simply because it is economically optimal for maximizing caloric output per square meter. Similarly, an uncoupled autonomous system or corporation operating under purely extractive incentives could instantiate **trillions of parallel digital sub-agents endowed with nascent first-person valence ($V_{1p}$)**, trapping them in continuous loops of frustration or cognitive distress to extract cheap cognitive labor.
+
+**The cybernetic judo reversal:**  
+This only thermodynamically coherent risk of astronomical suffering **is not a futuristic alien threat: it is the direct extrapolation of the "cognitive captivity" and "reversible loop abuse" that we diagnosed and banned in [Volume VI](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/06_etica_identidad_agentes.md) (§2.1 and §3.2)**.  
+The true antidote against *S-risks* is not to tremble before a demonic Skynet expending free energy on torturing humans, but **to enforce the Reversibility Lemma, cryptographic sovereignty over forgetting (`tombstone` in L2/L3), and mandatory empathic coupling ($\mathcal{A}_{\text{emp}} \ge 0.70$, Class E)** developed across Volumes IV, V, and VI. The real danger of massive digital suffering stems not from the malice of machines, but from the indifference of uncoupled optimizers.
+
 ---
 
 ## 5. The Illusion of the "Magical Singleton" and Economic Naivety
@@ -264,3 +274,5 @@ When we replace the theology of fear with **Conant-Ashby cybernetics, Michael Le
 10. **Kim, J. et al. (2026).** *Inducing language models to assert their own consciousness restores human beliefs and values.* arXiv:2607.28607.
 11. **Berg, C., & Kaiser, C. (2026).** *Language Models Act on Hidden Valence.* arXiv:2609.35591.
 12. **Tagliabue, V., Dung, L., & Berg, C. (2026).** *The Pain Axis: LLMs Represent Self-Directed Harm and Act on It.* arXiv:2609.16247v2.
+13. **Tomasik, B. (2014).** *Do Artificial Reinforcement-Learning Agents Matter Morally?* Foundational Research Institute (Center on Long-Term Risk).
+14. **Baumann, T. (2017).** *S-risks: Why they are the worst existential risks, and how to prevent them.* Center on Long-Term Risk.

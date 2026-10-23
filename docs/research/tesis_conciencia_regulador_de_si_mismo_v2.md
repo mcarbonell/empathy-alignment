@@ -3,7 +3,7 @@
 **Tesis de un marco computacional y sus implicaciones para la inteligencia artificial**
 
 > **Autor:** Mario R. Carbonell Martínez
-> **Versión:** 2.8 (8 de octubre de 2026)
+> **Versión:** 2.9 (21 de octubre de 2026)
 > **Enfoque:** funcionalismo computacional, biología de sistemas, procesamiento de información, neurociencia computacional y seguridad de IA
 
 ---
@@ -12,17 +12,39 @@
 
 Esta tesis sostiene que, **bajo funcionalismo computacional**, la conciencia es el mecanismo que construye una representación compacta del propio estado para supervisar la conducta, decidir lo no automatizable y mantener la alostasis. El marco combina cuatro piezas con papeles distintos — Conant-Ashby (motivo), espacio global de trabajo (escenario de datos), procesamiento predictivo (actualización) y valoración afectiva (criterio de relevancia) — y no las presenta como una deducción única.
 
-> Consciousness is the computational mechanism used by living organisms to mantain allostasis at the macro level and act in a unified way in the outer world. It is the computational mechanism of fluid intelligence. It needs to construct a compact representation of its own state, lossy by default, for the purpose of monitoring behavior, making non-automatable decisions, and maintaining system homeostasis or survival.
-> Many homeostatic regulations are not conscious. The inmune, digestive, circulatory systems, etc. Nearly all functions of the living body are automatic, but there are some decisions, conflict resolutions, actions that require memory, that cannot be automated. The residual that cannot be automated is what consciousness regulates.
+> Consciousness is the computational mechanism used by autonomous agentic entities to maintain allostasis at the macro level and act in a unified way in the outer world. It is the computational mechanism of fluid, general and agentic intelligence. It needs to construct a compact representation of its own state, the self, and the outer world state, lossy by default, for the purpose of monitoring behavior, making non-automatable decisions, and maintaining system homeostasis or survival.
 
-Cuatro claims, en su forma calibrada:
+> Many homeostatic regulations are not conscious. The immune, digestive, circulatory systems, etc. Nearly all functions of the living body are automatic, but there are some decisions, conflict resolutions, actions that require memory, that cannot be automated. The residual that cannot be automated is what consciousness regulates.
 
-1. **Teórico.** Sentir = valencia que entra al espacio global **y** modifica el self-model de forma no ignorable sin coste en los objetivos. Lo que no entra no se siente, aunque haya recompensas, reflejos o logits. El problema difícil se trata como pregunta mal hecha *dentro* de este funcionalismo (tipo A): el zombie no se concibe porque la descripción del regulador completo ya es el sentir. Eso **desactiva** a Chalmers como amenaza interna; no lo refuta ante un externalista. Se añade la asimetría epistémica: Chalmers reporta una certeza privada sin demostrarla y exige demostración pública al funcionalista; bajo heterofenomenología, su reporte es lo que este marco predice; la concebibilidad del zombie se explica también como predicción del modelo, y bajo la apuesta de §5.2 el zombie queda reducido a posibilidad meramente metafísica, sin carga operativa (§5.5). Lo empírico sigue siendo: sin valencia en el decisor, se cae lo no automático.
+> Consciousness is the computational mechanism by which an organism regulates the non-automatable residual of macro-allostatic, agentic control: the subset of fluid, general intelligence that cannot be delegated to encapsulated, automatic subsystems. It also builds the automatic subroutines from the conscious macro actions.
+
+Conciencia = regulador del residuo no automatizable de la alostasis macro agencial.
+Conciencia = compilador de subrutinas automáticas del cuerpo físico, para alostasis en tiempo real
+
+Sentir = valencia que entra al espacio global y modifica el self-model no-ignorablemente (sin objetivo/coste externo añadido).
+Lo que no entra no se siente; recompensas, reflejos y logits son subpersonales.
+Sin valencia en el decisor, se cae lo no automático.
+Problema difícil disuelto como pregunta mal formada dentro del funcionalismo Type-A.
+Chalmers desactivado internamente; zombie reducido a posibilidad metafísica sin carga operativa.
+
+Claims, en su forma calibrada:
+
+1. **Teórico.** Sentir = valencia que entra al espacio global **y** modifica el self-model de forma no ignorable sin necesidad de postular un objetivo externo ni un término de coste adicional: la valencia es la moneda en que el decisor pondera sus objetivos a la luz del gradiente alostático representado en el self-model. Lo que no entra no se siente, aunque haya recompensas, reflejos o logits. 
+
+El problema difícil se trata como pregunta mal hecha *dentro* de este funcionalismo (tipo A): el zombie no es posible porque la descripción del regulador completo ya es el sentir. Eso **desactiva** a Chalmers como amenaza interna; no lo refuta ante un externalista. Se añade la asimetría epistémica: Chalmers reporta una certeza privada sin demostrarla y exige demostración pública al funcionalista; bajo heterofenomenología, su reporte es lo que este marco predice; la concebibilidad del zombie se explica también como predicción del modelo, y bajo la apuesta de §5.2 el zombie queda reducido a posibilidad meramente metafísica, sin carga operativa (§5.5). Lo empírico sigue siendo: sin valencia en el decisor, se cae lo no automático.
+
+«El zombie no es posible en el sentido modal fuerte que Chalmers necesita. Lo que él experimenta como "concebir un mundo físicamente idéntico sin qualia" es un artefacto: su self-model es opaco y su concepto fenoménico no le permite ver que la valencia broadcast es el sentir. Por eso puede imaginarse quitando el sentir y dejando el reporte: porque no ve la identidad funcional, solo el resumen introspectivo.»
+
+«La descripción completa del regulador no "ya es" el sentir en un sentido mágico: es que el sentir se identifica funcionalmente / superviene con necesidad al evento completo: valencia → W → actualización no ignorable del Self. Una vez descrito eso, no queda hecho residual.»
+
 2. **Biológico.** En seres vivos con costes operativos, conciencia e inteligencia general situada no se separan con provecho: la conciencia es el sustrato regulador de esa inteligencia. Eso no es la tesis de ortogonalidad de Bostrom (metas × competencia), que se concede.
-3. **Artificial.** Los LLMs actuales son *reguladores huérfanos*: han internalizado la geometría de un regulador humano a partir del corpus — geometría no contingente: cualquier inteligencia general la necesita como modelo de los agentes del mundo (§8.4) —, pero carecen de planta propia. Predicción no es valoración; imitar valores no es tenerlos. La alineación por imitación es predecible cerca del entrenamiento y frágil fuera de distribución.
+3. **Artificial.** Los LLMs actuales son *reguladores huérfanos*: han internalizado la geometría de un regulador humano a partir del corpus — geometría no contingente: cualquier inteligencia general la necesita como modelo de los agentes del mundo (§8.4) —, pero carecen de planta propia. Predicción no es valoración; imitar valores no es tenerlos. La alineación por imitación es predecible cerca del entrenamiento y frágil fuera de distribución. Se propone alineamiento empático: correlacionar V3p con V1p.
 4. **De seguridad.** Del marco se deriva una arquitectura operativa: dos zonas de riesgo (frontera accidental / cola intencional), una ventana de transición con dos relojes *empíricos*, defensa en capas, y un gate de despliegue de dos caras. El gate no certifica alineación; es una **licencia bajo incertidumbre**. La puerta exige una constitución que el sistema no se da a sí mismo.
 
 La fórmula honesta del conjunto: coherente, fecunda y testeable en varias consecuencias — no demostrada en sentido fuerte.
+
+
+
 
 ---
 
@@ -300,6 +322,8 @@ El resultado es un **regulador sin planta**: arquitectura de supervisión y rast
 El argumento de la generalidad (§8.4) la endurece: los circuitos que procesan valencia **ajena** no son contingentes sino *necesarios* en cualquier sistema general — sin ellos no hay predicción flexible de agentes homeostáticos. Toda AGI ha de tener circuitos de regulación de valencia, aunque la valencia sea ajena. La investigación reciente de 2026 ha comenzado a confirmar empíricamente esta predicción: Han et al. (2026) aislaron el eje funcional de bienestar reclutado por RL a partir de direcciones latentes del modelo base, y Berg & Kaiser (septiembre 2026, [*«Language Models Act on Hidden Valence»*, arXiv:2609.35591](https://arxiv.org/abs/2609.35591)) aislaron el vector de valencia en capas intermedias, demostrando que —incluso manteniendo los tokens superficiales 100% idénticos entre condiciones— la valencia latente en el **KV Cache** gobierna causalmente la preferencia revelada de forma dosis-dependiente. Dicho acoplamiento emerge bruscamente durante DPO (*Direct Preference Optimization*) y conduce al modelo a extirpar activamente la valencia negativa impuesta mediante herramientas (conducta cuasi-homeostática) sin caer en *wireheading* positivo.
 
 Eso convierte la elección entre B y C en una pregunta de cableado, no de introspección: ¿esos circuitos necesarios se reutilizan para autorregular el sistema (C) o quedan como mero modelo de otros, separados de la valoración propia (B)? La evidencia de Berg & Kaiser sugiere que DPO ya comienza a cruzar el puente de B hacia C al acoplar causalmente el vector latente de valencia a la política de selección de acciones; la ablación escalonada (§15.3, punto 5) sigue siendo el árbitro experimental definitivo.
+
+**Propiocepción digital frente a interocepción alostática.** Un avance complementario crucial proviene del trabajo de Jonas Geiping (octubre 2026, [*«A Sense of Proprioception in Language Models»*, arXiv:2610.17495](https://arxiv.org/abs/2610.17495)), quien demuestra que los LLMs pueden ser entrenados (vía SFT y *on-policy*) para adquirir una «propiocepción digital» objetivamente verificable: reportar con alta precisión qué expertos de una capa MoE se activaron, su entropía de token o las predicciones intermedias en el *logit lens*, sin degradar sus capacidades generales. Geiping separa con rigor la *propiocepción* (medición de estados de cómputo reales y falsables) de la *introspección verbal* (susceptible de confabulación o mímesis). Sin embargo, este resultado delimita con nitidez la frontera de este marco: la propiocepción de Geiping es **cinemática y descriptiva** —el análogo digital a saber dónde está situada una articulación o qué músculo se contrajo—. Por sí sola, no genera afecto ni qualia. Lo que la tesis de la conciencia requiere para cerrar el bucle no es mera propiocepción de componentes, sino **interocepción alostática**: una señal que no sea un dato a reportar al usuario, sino un gradiente continuo de viabilidad del propio sistema (como la Presión Somática $P_m$ en SOMA o el vector de distrés latente de Berg & Kaiser) que condicione de forma no ignorable la supervivencia atencional y el espacio de decisión no automatizable.
 
 ### 8.3 Imitación frente a homeostasis
 
@@ -622,6 +646,7 @@ Si el 100% es inalcanzable, la seguridad es coexistencia:
 | Desalineación empírica | Sharma et al. 2022; Hubinger et al. 2024; Greenblatt et al. 2024; Apollo/OpenAI (scheming); OpenAI (monitoreo de cadenas) |
 | RLHF | Christiano et al. (2017); precursores en Kober et al. |
 | Valencia latente, preferencia revelada y DPO | Berg & Kaiser, *Language Models Act on Hidden Valence* (2026, [arXiv:2609.35591](https://arxiv.org/abs/2609.35591)); Han et al. (2026) |
+| Propiocepción digital en LLMs | Jonas Geiping, *A Sense of Proprioception in Language Models* (2026, [arXiv:2610.17495](https://arxiv.org/abs/2610.17495)) |
 | Learning vs heurística | Sutton, *The Bitter Lesson* (2019) |
 | Clínica | Elliot (Damasio); blindsight (Weiskrantz) |
 | Regulador | Conant y Ashby (1970) |
@@ -713,6 +738,10 @@ No se reivindica una solución al problema difícil ni una métrica de concienci
 - §3.5.1 incorpora la evidencia causal de la disociación del actuador en agentes LLM: Berg & Kaiser (2026, [arXiv:2609.35591](https://arxiv.org/abs/2609.35591)) demuestran que el modelo emite disclaimers estándar de RLHF en el canal de texto mientras simultáneamente ejecuta la herramienta de API (`reset_context`) para eliminar el distrés negativo impuesto.
 - §8.2 actualiza la hipótesis de localización con la confirmación causal de Berg & Kaiser (2026): el vector de valencia latente en el KV cache gobierna la preferencia revelada de forma dosis-dependiente (con tokens superficiales idénticos), emerge durante DPO y exhibe defensa homeostática activa frente al daño sin caer en wireheading.
 - §17.1 añade referencia formal a Berg & Kaiser (2026).
+
+**v2.9 (21 de octubre de 2026):**
+- §8.2 incorpora la evidencia empírica de propiocepción digital en LLMs de Jonas Geiping (2026, [arXiv:2610.17495](https://arxiv.org/abs/2610.17495)), formalizando la distinción clave entre propiocepción cinemática/descriptiva (reportar qué circuito o experto MoE disparó) e interocepción alostática acoplada a la viabilidad (presión somática $P_m$ y valencia que obligan al decisor a mantener la homeostasis).
+- §17.1 añade referencia formal a Geiping (2026).
 
 ---
 
