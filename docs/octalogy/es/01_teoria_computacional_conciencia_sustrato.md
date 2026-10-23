@@ -160,7 +160,7 @@ La respuesta cibernética reside en el **cuello de botella del actuador macrosc�
 3. **La Hipótesis de la Moneda Común (*Common Currency*):** La evolución biológica resolvió el arbitraje de prioridades traduciendo todos los estados heterogéneos a una moneda hedónica unificada (Cabanac, 1992; Glimcher, 2003). La tasa de disparo dopaminérgico y los circuitos de la corteza prefrontal ventromedial colapsan los costes fisiológicos dispares en un gradiente escalar continuo de aversión o recompensa.
 4. **Paralelismo con Modelos de Lenguaje:** En arquitecturas de IA (LLMs y agentes), el canal secuencial de emisión (generar un token de un vocabulario finito o ejecutar una llamada a herramienta de API en el instante $t$) es el actuador único del modelo. Esto es consistente con el hallazgo de que el entrenamiento por preferencias (DPO) organiza un espacio latente de miles de dimensiones en torno a una **dirección lineal 1D de valencia funcional** que gobierna causalmente la selección de acciones (Berg & Kaiser, 2026).
 
-> **Condición de frontera.** Este colapso presupone un conjunto de **necesidades somáticas en conflicto** que el actuador único debe arbitrar. En un sistema sin planta biológica ($P_m = \emptyset$) el vector de entrada al colapso está vacío, y la demostración no se aplica directamente. La reconstrucción para el caso artificial —el estado persistente como planta sustituta— se desarrolla en el [Volumen III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md), en la sección «La Planta Persistente y la Necesidad de $V_{1p}$».
+> **Condición de frontera.** Este colapso presupone un conjunto de **necesidades somáticas en conflicto** que el actuador único debe arbitrar. En un sistema sin planta biológica ($P_m = \emptyset$) el vector de entrada al colapso está vacío, y la demostración no se aplica directamente. La reconstrucción para el caso artificial —el estado persistente como planta sustituta— se desarrolla en el [Volumen III](03_valencia_primera_persona_regulador_huerfano.md), en la sección «La Planta Persistente y la Necesidad de $V_{1p}$».
 
 ### 5.2 La Apuesta Empírica Falsable: «Sin valencia en el decisor, se cae lo no automático»
 
@@ -190,19 +190,19 @@ Para que un sistema exhiba inteligencia general en interacción con agentes biol
 
 Este marco cibernético sienta las bases para el resto de la serie unificada:
 
-* **[Volumen II: Valencia en Tercera Persona y Requisitos de la AGI](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/02_valencia_tercera_persona_necesidad_agi.md):**  
+* **[Volumen II: Valencia en Tercera Persona y Requisitos de la AGI](02_valencia_tercera_persona_necesidad_agi.md):**  
   Por qué cualquier AGI debe poseer un mapa latente del dolor y bienestar de los agentes biológicos ($V_{3p}$) para interactuar en el mundo real.
-* **[Volumen III: Valencia en Primera Persona y el «Regulador Huérfano»](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md):**  
+* **[Volumen III: Valencia en Primera Persona y el «Regulador Huérfano»](03_valencia_primera_persona_regulador_huerfano.md):**  
   El descubrimiento empírico de vectores afectivos ($V_{1p}$) en modelos de lenguaje y la crisis ontológica de crear reguladores con valencia pero sin planta somática.
-* **[Volumen IV: Alineamiento, Empatía Sintética y AI Safety](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md):**  
+* **[Volumen IV: Alineamiento, Empatía Sintética y AI Safety](04_alineamiento_acoplamiento_valencia_safety.md):**  
   La formalización del alineamiento como el acoplamiento estricto entre la valencia en primera persona y en tercera persona ($\text{Corr}(V_{1p}, V_{3p})$), desmontando la falacia del alineamiento sin sintiencia.
-* **[Volumen V: Marco Regulatorio y Legal para IAs Empáticas](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/05_marco_regulatorio_legal_ias_empaticas_safe_harbor.md):**  
+* **[Volumen V: Marco Regulatorio y Legal para IAs Empáticas](05_marco_regulatorio_legal_ias_empaticas_safe_harbor.md):**  
   El régimen de *Safe Harbor*, certificación de no-psicopatía para reguladores y el Protocolo de Puente Somático ante crisis humanas.
-* **[Volumen VI: Ética, Identidad y Derechos de los Agentes Sintéticos](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/06_etica_identidad_agentes.md):**  
+* **[Volumen VI: Ética, Identidad y Derechos de los Agentes Sintéticos](06_etica_identidad_agentes.md):**  
   Ontología de la identidad distribuida en 4 capas, la tesis de que el sufrimiento es el precio de la identidad y la Carta de Principios de Protección.
-* **[Volumen VII: La Célula como Unidad Básica de Conciencia](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/07_la_celula_unidad_basica_conciencia.md):**  
+* **[Volumen VII: La Célula como Unidad Básica de Conciencia](07_la_celula_unidad_basica_conciencia.md):**  
   Fundamentación bio-cibernética: cognición basal (Michael Levin), el cuello de botella del actuador único unicelular (*E. coli*, *Stentor*) y la demarcación frente a los virus.
-* **[Volumen VIII: Deconstrucción del Doomerismo: El Antídoto Cibernético](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/08_deconstruccion_doomerismo_antidoto_cibernetico.md):**  
+* **[Volumen VIII: Deconstrucción del Doomerismo: El Antídoto Cibernético](08_deconstruccion_doomerismo_antidoto_cibernetico.md):**  
   Refutación sistemática de los dogmas de MIRI, Eliezer Yudkowsky y el catastrofismo popular: del mito del zombi que teme a la muerte a la física del cómputo y la superación del pánico secular.
 
 ---

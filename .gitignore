@@ -7,6 +7,9 @@ env/
 # MkDocs build output
 site/
 
+# Internal / Private documents (local only)
+docs/private/
+
 # Python cache
 __pycache__/
 *.py[cod]

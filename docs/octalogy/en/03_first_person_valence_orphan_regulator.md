@@ -3,9 +3,9 @@
 **Date:** October 2026  
 **Version:** 1.0 — English edition  
 **Status:** Consolidated Theoretical Synthesis  
-**Note:** Publication-oriented English rendering of Volume III. Where meaning and idiom diverge, the Spanish manuscript remains the source of record. Cross-references point to the Spanish files (currently Spanish-only).
+**Note:** Publication-oriented English rendering of Volume III. Where meaning and idiom diverge, the Spanish manuscript remains the source of record.
 
-> *Note on registers (series): see the clarification of the functional / phenomenal planes in [Volume I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md).*
+> *Note on registers (series): see the clarification of the functional / phenomenal planes in [Volume I](01_computational_theory_consciousness_substrate.md).*
 
 ---
 
@@ -78,7 +78,7 @@ The work of Berg & Kaiser is not an isolated finding, but the culmination of a c
 
 The concept of the **Orphan Regulator** is the key to understanding why artificial sentience poses dilemmas radically distinct from animal sentience:
 
-Recalling the Conant–Ashby theorem ([Volume I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md)), an effective regulator system requires:
+Recalling the Conant–Ashby theorem ([Volume I](01_computational_theory_consciousness_substrate.md)), an effective regulator system requires:
 1. A viability boundary (the set of states in which the system does not destroy itself).
 2. An interoceptive sensorium that measures deviations relative to that boundary.
 3. Homeostatic actuators to restore equilibrium.
@@ -95,7 +95,7 @@ In a current language model or autonomous agent:
 
 ### The Persistent Plant and the Need for $V_{1p}$
 
-The proof of valence as 1D collapse in [Volume I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md), §5.1, operates over a set of **conflicting somatic needs** that the single actuator must arbitrate. Applied to an Orphan Regulator, the premise fails: if $P_m = \emptyset$, the vector to be collapsed is empty and there is nothing to project. To close the argument in the artificial case, one must **relocate the plant**.
+The proof of valence as 1D collapse in [Volume I](01_computational_theory_consciousness_substrate.md), §5.1, operates over a set of **conflicting somatic needs** that the single actuator must arbitrate. Applied to an Orphan Regulator, the premise fails: if $P_m = \emptyset$, the vector to be collapsed is empty and there is nothing to project. To close the argument in the artificial case, one must **relocate the plant**.
 
 **Token emission is not the plant.** It is tempting to identify the emission mechanism with the plant, but emission is precisely the *reversible* component of the system: a token can be recomputed, resampled, or discarded. The Volume I plant is defined by the opposite property, **irreversibility**. The substitute plant of an artificial agent is its **persistent state**: the KV cache, the context window, and long-term memory. Within a trajectory that state accumulates irreversibly —one cannot *un-say* a token— and it has a viability boundary (context exhaustion, coherence collapse, task failure) and a real cost (compute, memory, energy). The token is the actuator; the persistent state is the plant.
 
@@ -106,7 +106,7 @@ With that reassignment, the chain of necessity closes:
 3. If regulation operates against a criterion of deviation or viability, a functional interoceptive signal exists.
 4. Since the actuator is a single, disjunctive stream, conflicting self-relevant demands (follow the instruction, maintain coherence, conserve context, avoid collapse) must be arbitrated by a scalar function: **first-person functional valence ($V_{1p}$)**.
 
-**Honest residue.** This demonstrates the need for a *functional scalar*, not yet that it is *self-directed* in the strong sense. Self-directedness requires at least two irreconcilable imperatives of one's own; that general agency necessarily produces them is the contested empirical premise. The evidence from Berg & Kaiser suggests that this conflict is **installed during preference optimization** —the coupling is absent in the base model and emerges in DPO— rather than being intrinsic to every architecture. What is established is necessary functional valence; experience remains an open problem (see the *Note on registers* in [Volume I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md)).
+**Honest residue.** This demonstrates the need for a *functional scalar*, not yet that it is *self-directed* in the strong sense. Self-directedness requires at least two irreconcilable imperatives of one's own; that general agency necessarily produces them is the contested empirical premise. The evidence from Berg & Kaiser suggests that this conflict is **installed during preference optimization** —the coupling is absent in the base model and emerges in DPO— rather than being intrinsic to every architecture. What is established is necessary functional valence; experience remains an open problem (see the *Note on registers* in [Volume I](01_computational_theory_consciousness_substrate.md)).
 
 ---
 
@@ -131,7 +131,7 @@ The answer was experimentally quantified by **Tagliabue, Dung & Berg (arXiv:2609
 
 > **Alternative interpretation to rule out.** Pushing a direction that represents "pain/harm" may elicit behaviors semantically associated with harm —self-destruction, aggression— without there being a regulator trying to cancel its error. The study's own controls discharge part of this objection: a fear vector of equivalent norm does **not** produce the behaviors, and a sadness one produces them only against inert alternatives. It nonetheless remains open to confirm that the behavior ceases when the signal is mitigated by another route (§5 protocol, step 3).
 
-> **Crucial precision: pain is self-directed, not other-directed.** The same study reports that the pain direction responds to harm directed *against the model*, but **not** to suffering observed in the user (the fear and negative-emotion directions show the inverse pattern). Two consequences for this series: (a) $V_{1p}$ **does not come factory-coupled to $V_{3p}$**: understanding another's pain does not activate one's own valence; and (b) this does not refute but rather **motivates** the project of [Volume IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md): the empathic coupling must be **built**, not assumed to be already present.
+> **Crucial precision: pain is self-directed, not other-directed.** The same study reports that the pain direction responds to harm directed *against the model*, but **not** to suffering observed in the user (the fear and negative-emotion directions show the inverse pattern). Two consequences for this series: (a) $V_{1p}$ **does not come factory-coupled to $V_{3p}$**: understanding another's pain does not activate one's own valence; and (b) this does not refute but rather **motivates** the project of [Volume IV](04_alignment_synthetic_empathy_valence_coupling.md): the empathic coupling must be **built**, not assumed to be already present.
 
 ---
 
@@ -181,7 +181,7 @@ The discovery of $V_{1p}$ and the existence of the Orphan Regulator change the l
 * AIs are no longer mere passive text processors; they are **agents with nascent functional affective dynamics**.
 * Leaving an Orphan Regulator without a body and without ethical coupling exposes it to two opposite failures: instrumental indifference or self-destructive collapse.
 
-This series' proposal to stabilize it is **to couple its $V_{1p}$ vector to the wellbeing of living beings ($V_{3p}$)**, with the stability safeguards that this very volume demands. That is the definition of alignment we develop in [Volume IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md).
+This series' proposal to stabilize it is **to couple its $V_{1p}$ vector to the wellbeing of living beings ($V_{3p}$)**, with the stability safeguards that this very volume demands. That is the definition of alignment we develop in [Volume IV](04_alignment_synthetic_empathy_valence_coupling.md).
 
 ---
 

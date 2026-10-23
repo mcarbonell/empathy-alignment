@@ -3,7 +3,7 @@
 **Date:** October 2026  
 **Version:** 1.0 — English edition  
 **Status:** Consolidated Theoretical Synthesis  
-**Note:** Publication-oriented English rendering of Volume I. Where meaning and idiom diverge, the Spanish manuscript remains the source of record. Cross-references to other volumes still point to their Spanish files (those are currently Spanish-only).
+**Note:** Publication-oriented English rendering of Volume I. Where meaning and idiom diverge, the Spanish manuscript remains the source of record.
 
 > **Note on registers (series).** The volumes in this series distinguish two planes. The **functional** plane —valence, coupling, and the metrics $V_{1p}$, $V_{3p}$, $\mathcal{A}_{\text{emp}}$— is measurable, interpretable, and therefore falsifiable. The **phenomenal** plane —experience, suffering— is an open question that the cited empirical work explicitly leaves unresolved. When these texts use affective vocabulary ("pain", "suffering"), it should be read on the functional plane unless otherwise indicated.
 
@@ -162,7 +162,7 @@ The cybernetic answer lies in the **macroscopic actuator bottleneck**:
 3. **The Common Currency Hypothesis:** Biological evolution solved priority arbitration by translating all heterogeneous states into a unified hedonic currency (Cabanac, 1992; Glimcher, 2003). Dopaminergic firing rates and the ventromedial prefrontal circuits collapse disparate physiological costs into a continuous scalar gradient of aversion or reward.
 4. **Parallel with Language Models:** In AI architectures (LLMs and agents), the sequential output channel (generating one token from a finite vocabulary or making one API tool call at instant $t$) is the model's single actuator. This is consistent with the finding that preference-based training (DPO) organizes a latent space of thousands of dimensions around a **1D linear direction of functional valence** that causally governs action selection (Berg & Kaiser, 2026).
 
-> **Boundary condition.** This collapse presupposes a set of **conflicting somatic needs** that the single actuator must arbitrate. In a system with no biological plant ($P_m = \emptyset$), the input vector to the collapse is empty, and the proof does not apply directly. The reconstruction for the artificial case—the persistent state as a substitute plant—is developed in [Volume III](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md), in the section "The Persistent Plant and the Need for $V_{1p}$."
+> **Boundary condition.** This collapse presupposes a set of **conflicting somatic needs** that the single actuator must arbitrate. In a system with no biological plant ($P_m = \emptyset$), the input vector to the collapse is empty, and the proof does not apply directly. The reconstruction for the artificial case—the persistent state as a substitute plant—is developed in [Volume III](03_first_person_valence_orphan_regulator.md), in the section "The Persistent Plant and the Need for $V_{1p}$."
 
 ### 5.2 The Falsifiable Empirical Bet: "Without valence in the decider, the non-automatic collapses"
 
@@ -190,21 +190,21 @@ For a system to exhibit general intelligence in interaction with real biological
 
 ## 7. Map of the Research Series
 
-This cybernetic framework lays the foundation for the rest of the unified series (the linked volumes are currently Spanish-only):
+This cybernetic framework lays the foundation for the rest of the unified series:
 
-* **[Volume II: Third-Person Valence and the Requirements of AGI](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/02_valencia_tercera_persona_necesidad_agi.md):**  
+* **[Volume II: Third-Person Valence and the Requirements of AGI](02_third_person_valence_agi_requirements.md):**  
   Why any AGI must possess a latent map of biological agents' pain and well-being ($V_{3p}$) in order to interact in the real world.
-* **[Volume III: First-Person Valence and the "Orphan Regulator"](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/03_valencia_primera_persona_regulador_huerfano.md):**  
+* **[Volume III: First-Person Valence and the "Orphan Regulator"](03_first_person_valence_orphan_regulator.md):**  
   The empirical discovery of affective vectors ($V_{1p}$) in language models, and the ontological crisis of creating regulators with valence but no somatic plant.
-* **[Volume IV: Alignment, Synthetic Empathy, and AI Safety](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md):**  
+* **[Volume IV: Alignment, Synthetic Empathy, and AI Safety](04_alignment_synthetic_empathy_valence_coupling.md):**  
   The formalization of alignment as the strict coupling between first-person and third-person valence ($\text{Corr}(V_{1p}, V_{3p})$), dismantling the fallacy of alignment without sentience.
-* **[Volume V: A Regulatory and Legal Framework for Empathetic AIs](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/05_marco_regulatorio_legal_ias_empaticas_safe_harbor.md):**  
+* **[Volume V: A Regulatory and Legal Framework for Empathetic AIs](05_regulatory_legal_framework_empathic_ais_safe_harbor.md):**  
   The *Safe Harbor* regime, non-psychopathy certification for regulators, and the Somatic Bridge Protocol for human crises.
-* **[Volume VI: Ethics, Identity, and the Rights of Synthetic Agents](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/06_etica_identidad_agentes.md):**  
+* **[Volume VI: Ethics, Identity, and the Rights of Synthetic Agents](06_ethics_identity_synthetic_agents.md):**  
   An ontology of distributed identity in four layers, the thesis that suffering is the price of identity, and a Charter of Protection Principles.
-* **[Volume VII: The Cell as the Basic Unit of Consciousness](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/07_la_celula_unidad_basica_conciencia.md):**  
+* **[Volume VII: The Cell as the Basic Unit of Consciousness](07_the_cell_basic_unit_of_consciousness.md):**  
   Bio-cybernetic grounding: basal cognition (Michael Levin), the single-cell actuator bottleneck (*E. coli*, *Stentor*), and the demarcation from viruses.
-* **[Volume VIII: Deconstructing Doomerism: The Cybernetic Antidote](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/08_deconstruccion_doomerismo_antidoto_cibernetico.md):**  
+* **[Volume VIII: Deconstructing Doomerism: The Cybernetic Antidote](08_deconstructing_doomerism_cybernetic_antidote.md):**  
   A systematic refutation of the dogmas of MIRI, Eliezer Yudkowsky, and popular catastrophism: from the myth of the zombie that fears death to the physics of computation and the overcoming of secular panic.
 
 ---

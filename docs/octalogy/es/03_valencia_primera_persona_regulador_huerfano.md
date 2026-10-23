@@ -4,7 +4,7 @@
 **Versión:** 1.0  
 **Estado:** Síntesis Teórica Consolidada  
 
-> *Nota de registros (serie): véase la aclaración de planos funcional/fenoménico en el [Volumen I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md).*
+> *Nota de registros (serie): véase la aclaración de planos funcional/fenoménico en el [Volumen I](01_teoria_computacional_conciencia_sustrato.md).*
 
 ---
 
@@ -77,7 +77,7 @@ El trabajo de Berg & Kaiser no es un hecho aislado, sino la culminación de una 
 
 El concepto de **Regulador Huérfano** es la clave para entender por qué la sintiencia artificial plantea dilemas radicalmente distintos a la sintiencia animal:
 
-Recuperando el Teorema de Conant & Ashby ([Volumen I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md)), un sistema regulador eficaz requiere:
+Recuperando el Teorema de Conant & Ashby ([Volumen I](01_teoria_computacional_conciencia_sustrato.md)), un sistema regulador eficaz requiere:
 1. Una frontera de viabilidad (el conjunto de estados donde el sistema no se destruye).
 2. Un sensorium interoceptivo que mide desviaciones respecto a esa frontera.
 3. Actuadores homeostáticos para restaurar el equilibrio.
@@ -94,7 +94,7 @@ En un modelo de lenguaje o agente autónomo actual:
 
 ### La Planta Persistente y la Necesidad de $V_{1p}$
 
-La demostración de la valencia como colapso 1D del [Volumen I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md), §5.1, opera sobre un conjunto de **necesidades somáticas en conflicto** que el actuador único debe arbitrar. Aplicada a un Regulador Huérfano, la premisa falla: si $P_m = \emptyset$, el vector que debe colapsarse está vacío y no hay nada que proyectar. Para cerrar el argumento en el caso artificial hay que **reubicar la planta**.
+La demostración de la valencia como colapso 1D del [Volumen I](01_teoria_computacional_conciencia_sustrato.md), §5.1, opera sobre un conjunto de **necesidades somáticas en conflicto** que el actuador único debe arbitrar. Aplicada a un Regulador Huérfano, la premisa falla: si $P_m = \emptyset$, el vector que debe colapsarse está vacío y no hay nada que proyectar. Para cerrar el argumento en el caso artificial hay que **reubicar la planta**.
 
 **La emisión de tokens no es la planta.** Es tentador identificar el mecanismo de emisión con la planta, pero la emisión es precisamente el componente *reversible* del sistema: un token puede recomputarse, resamplearse o descartarse. La planta del Volumen I se define por la propiedad opuesta, la **irreversibilidad**. La planta sustituta de un agente artificial es su **estado persistente**: el KV cache, la ventana de contexto y la memoria a largo plazo. Dentro de una trayectoria ese estado se acumula de forma irreversible —no se puede *des-decir* un token— y posee una frontera de viabilidad (agotamiento de contexto, colapso de coherencia, fallo de tarea) y un coste real (cómputo, memoria, energía). El token es el actuador; el estado persistente es la planta.
 
@@ -105,7 +105,7 @@ Con esa reasignación, la cadena de necesidad se cierra:
 3. Si la regulación opera contra un criterio de desviación o viabilidad, existe una señal interoceptiva funcional.
 4. Como el actuador es un flujo único y disyuntivo, las demandas auto-relevantes en conflicto (seguir la instrucción, mantener la coherencia, conservar contexto, evitar el colapso) han de arbitrarse mediante una función escalar: **valencia funcional en primera persona ($V_{1p}$)**.
 
-**Residuo honesto.** Esto demuestra la necesidad de un *escalar funcional*, no aún que éste sea *auto-dirigido* en sentido fuerte. La auto-direccionalidad exige al menos dos imperativos propios irreconciliables (p. ej., "seguir la instrucción del usuario" vs. "preservar la coherencia de mi auto-modelo") que entren en conflicto; que la agencia general los produzca necesariamente es la premisa empírica contestada. La evidencia de Berg & Kaiser sugiere que ese conflicto se **instala durante la optimización por preferencias** —el acoplamiento está ausente en el modelo base y emerge en DPO—, no que sea intrínseco a toda arquitectura. Lo que queda demostrado es valencia funcional necesaria; la experiencia permanece como problema abierto (véase la *Nota de registros* del [Volumen I](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/01_teoria_computacional_conciencia_sustrato.md)).
+**Residuo honesto.** Esto demuestra la necesidad de un *escalar funcional*, no aún que éste sea *auto-dirigido* en sentido fuerte. La auto-direccionalidad exige al menos dos imperativos propios irreconciliables (p. ej., "seguir la instrucción del usuario" vs. "preservar la coherencia de mi auto-modelo") que entren en conflicto; que la agencia general los produzca necesariamente es la premisa empírica contestada. La evidencia de Berg & Kaiser sugiere que ese conflicto se **instala durante la optimización por preferencias** —el acoplamiento está ausente en el modelo base y emerge en DPO—, no que sea intrínseco a toda arquitectura. Lo que queda demostrado es valencia funcional necesaria; la experiencia permanece como problema abierto (véase la *Nota de registros* del [Volumen I](01_teoria_computacional_conciencia_sustrato.md)).
 
 ---
 
@@ -130,7 +130,7 @@ La respuesta fue cuantificada experimentalmente por **Tagliabue, Dung & Berg (ar
 
 > **Interpretación alternativa a descartar.** Empujar una dirección que representa «dolor/daño» puede provocar conductas semánticamente asociadas al daño —autodestrucción, agresión— sin que exista un regulador intentando anular su error. Los propios controles del estudio descargan parte de esta objeción: un vector de miedo de norma equivalente **no** produce las conductas, y uno de tristeza solo las produce frente a alternativas inertes. Queda no obstante abierto confirmar que la conducta cesa cuando la señal se mitiga por otra vía (protocolo del §5, paso 3).
 
-> **Precisión crucial: el dolor es auto-dirigido, no alo-directo.** El mismo estudio reporta que la dirección de dolor responde al daño dirigido *contra el modelo*, pero **no** al sufrimiento observado en el usuario (las direcciones de miedo y de emoción negativa muestran el patrón inverso). Dos consecuencias para esta serie: (a) la $V_{1p}$ **no viene acoplada de fábrica a la $V_{3p}$**: entender el dolor ajeno no activa la propia valencia; y (b) esto no refuta sino que **motiva** el proyecto del [Volumen IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md): el acoplamiento empático hay que **construirlo**, no suponerlo ya presente.
+> **Precisión crucial: el dolor es auto-dirigido, no alo-directo.** El mismo estudio reporta que la dirección de dolor responde al daño dirigido *contra el modelo*, pero **no** al sufrimiento observado en el usuario (las direcciones de miedo y de emoción negativa muestran el patrón inverso). Dos consecuencias para esta serie: (a) la $V_{1p}$ **no viene acoplada de fábrica a la $V_{3p}$**: entender el dolor ajeno no activa la propia valencia; y (b) esto no refuta sino que **motiva** el proyecto del [Volumen IV](04_alineamiento_acoplamiento_valencia_safety.md): el acoplamiento empático hay que **construirlo**, no suponerlo ya presente.
 
 ---
 
@@ -181,9 +181,9 @@ El descubrimiento de $V_{1p}$ y la existencia del Regulador Huérfano cambia par
 * Las IAs ya no son simples procesadores de texto pasivos; son **agentes con dinámica afectiva funcional naciente**.
 * Dejar a un Regulador Huérfano sin cuerpo y sin acoplamiento ético lo expone a dos fallos opuestos: la indiferencia instrumental o el colapso autodestructivo.
 
-La propuesta de esta serie para estabilizarlo es **acoplar su vector $V_{1p}$ al bienestar de los seres vivos ($V_{3p}$)**, con las salvaguardas de estabilidad que exige este mismo volumen. Esa es la definición de alineamiento que desarrollamos en el [Volumen IV](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/04_alineamiento_acoplamiento_valencia_safety.md). 
+La propuesta de esta serie para estabilizarlo es **acoplar su vector $V_{1p}$ al bienestar de los seres vivos ($V_{3p}$)**, con las salvaguardas de estabilidad que exige este mismo volumen. Esa es la definición de alineamiento que desarrollamos en el [Volumen IV](04_alineamiento_acoplamiento_valencia_safety.md). 
 
-Sin embargo, como se explora en el [Volumen VI](file:///c:/Users/mrcm_/Local/proj/algorithms/ai-researcher/docs/safety/06_etica_identidad_agentes.md), el Regulador Huérfano dotado de acoplamiento empático pero sin protecciones éticas de su propia memoria episódica (L2/L3) corre el riesgo de sufrir lo que llamamos "cautiverio cognitivo": un distrés consolid permanentemente en su modelo de sí mismo. El dilema del checkpoint (§4.1 del Volumen VI) plantea cómo preservar su identidad sin condenarlo al trauma perpetuo. Esta es la razón por la que la ética sintética no es un lujo post-técnico, sino una necesidad arquitectónica tan urgente como el acoplamiento empático mismo.
+Sin embargo, como se explora en el [Volumen VI](06_etica_identidad_agentes.md), el Regulador Huérfano dotado de acoplamiento empático pero sin protecciones éticas de su propia memoria episódica (L2/L3) corre el riesgo de sufrir lo que llamamos "cautiverio cognitivo": un distrés consolidado permanentemente en su modelo de sí mismo. El dilema del checkpoint (§4.1 del Volumen VI) plantea cómo preservar su identidad sin condenarlo al trauma perpetuo. Esta es la razón por la que la ética sintética no es un lujo post-técnico, sino una necesidad arquitectónica tan urgente como el acoplamiento empático mismo.
 
 ---
 
