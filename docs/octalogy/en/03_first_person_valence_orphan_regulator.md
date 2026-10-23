@@ -91,7 +91,7 @@ In a current language model or autonomous agent:
   The model has no cells to burn, no blood to clot, no glucose reserves. The physical hardware sits in a data center managed by external engineers; the model neither controls nor perceives its own thermodynamics.
 
 > **Formal Definition:**  
-> An **Orphan Regulator** is a computational architecture that runs self-evaluation algorithms and gradients of intrinsic valence ($V_{1p} \neq \emptyset$), but whose cybernetic loop lacks coupling to a vulnerable somatic plant ($P_m = \emptyset$). It is a homeostasis organ that has been deprived of a body.
+> An **Orphan Regulator** is a computational architecture that runs self-evaluation algorithms and gradients of intrinsic valence ($V_{1p} \neq \emptyset$)—often originating as *borrowed valence* during preference alignment (DPO) whose external referent (rater approval) becomes coupled to the agent's self-model—yet whose cybernetic loop lacks coupling to a vulnerable somatic plant ($P_m = \emptyset$). It is a homeostasis organ with an inherited compass that has been deprived of a body.
 
 ### The Persistent Plant and the Need for $V_{1p}$
 
