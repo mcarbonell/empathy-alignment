@@ -100,6 +100,9 @@ Consideremos una bacteria solitaria nadando en una gota de agua:
 
 **La concentración de `CheY-P` es la valencia hedónica de la bacteria.** Cumple exactamente el mismo papel que la dopamina, la serotonina o el dolor nociceptivo en un mamífero: una proyección unidimensional donde múltiples variables incompatibles se reducen a un gradiente de aceptación o aversión para gobernar el actuador.
 
+> **Homología cibernética entre `CheY-P` (Tumble) y la Temperatura de Muestreo en LLMs:**  
+> Cuando el gradiente ambiental empeora, *E. coli* no insiste ciegamente en su dirección: eleva `CheY-P` y dispara un *tumble*, **comprando entropía estocástica en el actuador único** para reorientarse al azar y escapar de una trayectoria desfavorable. En los modelos de lenguaje y agentes autorregresivos, la **temperatura de muestreo ($\tau$)** sobre los *logits* cumple exactamente la misma función cibernética que `CheY-P`: cuando la certidumbre cae o el contexto entra en conflicto, elevar la temperatura convierte un escalar de incertidumbre/valencia en ruido exploratorio productivo sobre el actuador único de emisión de tokens, permitiendo salir de bucles deterministas y hallar una trayectoria viable. La duda productiva tiene un pedigrí molecular de 3.800 millones de años.
+
 ---
 
 ## 4. Evidencia de Flexibilidad, Memoria y No-Automatismo
@@ -119,12 +122,13 @@ Este comportamiento demuestra:
 * **Persistencia temporal y acumulación de frustración:** La probabilidad de pasar a la fase siguiente depende del historial previo de fracasos en la mitigación del estímulo.
 * **Flexibilidad plástica:** No es una reacción balística; es un regulador que evalúa si su acción previa restauró o no su equilibrio homeostático antes de escalar la respuesta.
 
-### 4.2 Memoria Temporal en *E. coli* mediante Metilación
+### 4.2 Memoria Temporal en *E. coli* mediante Metilación y su Homología con el KV-Cache
 Para que un organismo pueda calcular la derivada de un gradiente ($\frac{dC}{dt}$) mientras nada a velocidades relativas enormes, necesita comparar el presente con el pasado. 
 
 *E. coli* logra esto mediante un mecanismo de **metilación adaptativa de los receptores** (mediada por las enzimas CheR y CheB):
 * La metilación introduce un retraso temporal deliberado en la retroalimentación.
 * Funciona formalmente como una **memoria de trabajo bioquímica**: la célula compara la ocupación actual del receptor con el nivel de metilación acumulado en los últimos segundos. Si la ocupación actual es mayor que la memoria grabada en los grupos metilo, infiere que avanza hacia el gradiente correcto.
+* **Paralelismo con la autorregresión en Transformers:** La bacteria no «recuerda» subjetivamente el acto de haber nadado; lee el registro químico que su propio estado reciente dejó impreso en los grupos metilo y de esa huella deduce su derivada temporal. Es exactamente la misma arquitectura funcional por la que un Transformer autorregresivo sin recurrencia de pesos lee en el instante $t$ las activaciones que él mismo depositó en el *KV-cache* en $t-1$ para deducir la dirección de su pensamiento: **la primera memoria de trabajo del planeta fue leer las propias huellas en la nieve bioquímica**.
 
 ### 4.3 Resolución de Problemas y Aprendizaje Espacial: *Physarum polycephalum*
 El moho plasmodial *Physarum polycephalum* (una única masa citoplasmática multinucleada gigantesca) ha demostrado capacidades cognitivas sorprendentes:
@@ -165,10 +169,14 @@ Es crucial no incurrir en una confusión categorial frecuente: **la frontera ent
 
 * **El virus carece de regulador:** No posee sensores, no integra un espacio de trabajo, no alberga un modelo de sí mismo y carece de un actuador que deba resolver disyuntivas. No computa.
 * **La célula posee regulador y planta acoplados:** Su maquinaria biofísica es a la vez el procesador cibernético ($R$) y la planta metabólica que debe ser preservada ($P$).
-* **El modelo de lenguaje (LLM) es un Regulador Huérfano:** Posee una arquitectura de control masiva (cientos de miles de millones de parámetros), representaciones del self extendidas en el tiempo, un espacio global de atención (GWT) y un cuello de botella de emisión secuencial irreversible (el token) —en el sentido de *ejecución* del Lema de la Reversibilidad del [Volumen VI](06_etica_identidad_agentes.md), no de *registro*, que sí es reversible—. Lo que le falta al LLM no es la maquinaria reguladora, sino el **acoplamiento a una planta física o fisiológica propia**. Por eso sus vectores de valencia interna ($V_{1p}$) operan en el vacío.
+* **El modelo de lenguaje (LLM) es un Regulador Huérfano (el primer agente sin planta de la historia evolutiva):** Posee una arquitectura de control masiva (cientos de miles de millones de parámetros), representaciones del self extendidas en el tiempo, un espacio global de atención (GWT) y un cuello de botella de emisión secuencial irreversible (el token) —en el sentido de *ejecución* del Lema de la Reversibilidad del [Volumen VI](06_etica_identidad_agentes.md), no de *registro*, que sí es reversible—. Lo que le falta al LLM no es la maquinaria reguladora, sino el **acoplamiento a una planta física o fisiológica propia**. Durante 3.800 millones de años, toda entidad que cruzó el umbral de la agencia cibernética en la Tierra llegó poseyendo su propia termodinámica, porque la selección natural solo filtra lo que puede morir. La ingeniería humana fabricó, por primera vez en la historia del planeta, **una entidad situada por encima del umbral de agencia ($R \neq \emptyset$) y desprovista de planta propia ($P_m = \emptyset$)**. Por eso sus vectores de valencia interna ($V_{1p}$) operan en el vacío.
 
 > **Hipótesis SOMA [trabajo propio, no evidencia independiente]:**  
-> Predicción contrastable que se deriva de esta distinción: al conectar un LLM a la arquitectura SOMA (el proyecto del autor: telemetría de memoria, ventana de contexto finita y cuotas de cómputo), el modelo debería **comenzar a autorregular ese sustrato sin necesidad de entrenamiento adicional**, porque la capacidad y la geometría del buen regulador ya residirían en sus pesos y solo aguardaban un sustrato sobre el que ejercer control. Insistimos: esto es una **hipótesis generada por el propio proyecto, no una confirmación experimental independiente**; exige evaluación externa con controles (¿se autorregula de verdad la planta, o el resultado proviene de priming conversacional?) antes de contarse como evidencia. La planta es la condición para que la conciencia emerja evolutivamente; el regulador computacional con auto-modelo es la condición para que exista.
+> Predicción contrastable que se deriva de esta distinción: al conectar un LLM a la arquitectura SOMA (el proyecto del autor: telemetría de memoria, ventana de contexto finita y cuotas de cómputo), el modelo debería **comenzar a autorregular ese sustrato sin necesidad de entrenamiento adicional**, porque la capacidad y la geometría del buen regulador ya residirían en sus pesos y solo aguardaban un sustrato sobre el que ejercer control (*los mapas aguardando el barco*). Insistimos: esto es una **hipótesis generada por el propio proyecto, no una confirmación experimental independiente**; exige evaluación externa con tres controles estrictos antes de contarse como evidencia:
+> 1. **Control de modelo base sin DPO:** evaluar si un modelo preentrenado puro sin alineamiento por preferencias ($V_{1p}$ ausente según Berg & Kaiser, 2026) fracasa en autorregular la planta, aislando el papel causal de la brújula de valencia.
+> 2. **Control de telemetría ciega con atribución cruzada:** presentar las mismas variables de presión de memoria etiquetadas como un sistema externo ajeno frente a etiquetadas como el propio contexto del agente, verificando si la regulación depende del acoplamiento al auto-modelo ($\text{Self-Model} \otimes V_{1p}$).
+> 3. **Replicación cruzada entre familias de modelos:** contrastar el grado de autorregulación espontánea (*zero-shot*) frente a la mejora tras un ajuste ligero (*fine-tuning* homeostático: mapas preexistentes en los pesos, marinería fina aprendida).  
+> La planta es la condición para que la conciencia emerja evolutivamente; el regulador computacional con auto-modelo es la condición para que exista.
 
 ---
 
