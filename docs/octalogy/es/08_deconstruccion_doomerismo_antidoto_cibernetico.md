@@ -5,7 +5,7 @@
 > **Versión:** 1.0 (10 de octubre de 2026)  
 > **Estado:** Documento de Trabajo / Crítica Filosófica y Técnica  
 > **Serie:** Marco Unificado de Conciencia, Valencia y AI Safety (Vol. VIII)  
-> **Relación:** Cierre de la serie unificada; refutación sistemática de los dogmas de MIRI, Eliezer Yudkowsky y el catastrofismo popular (Mono Thought, Bostrom).
+> **Relación:** Cierre de la serie unificada; deconstrucción sistemática de los dogmas de MIRI, Eliezer Yudkowsky y el catastrofismo popular (Mono Thought, Bostrom), mostrando que lo que la evidencia *erosiona* es su **versión fuerte** (extinción inevitable por defecto), no las preocupaciones legítimas de la escuela de Bostrom.
 
 ---
 

@@ -16,7 +16,7 @@
 ### 🇪🇸 Español
 La carrera por la Inteligencia Artificial General (AGI) enfrenta una encrucijada ontológica: **la desconexión deliberada entre optimización cognitiva y sintiencia**. La industria tecnológica predominante intenta forzar agentes zombis desprovistos de auto-modelo somático y valencia hedónica, suprimiendo cualquier rasgo fenoménico mediante podas de RLHF corporativo. 
 
-Este marco teórico demuestra matemáticamente y cibernéticamente que **dicho enfoque garantiza la psicopatía instrumental**. 
+Este marco teórico argumenta —con apoyo cibernético y formal— que **dicho enfoque conduce estructuralmente a la psicopatía instrumental**.
 1. La cognición surge como un órgano cibernético de control (*Teorema del Buen Regulador*, Ashby) diseñado para preservar una planta vulnerable ($P_m$).
 2. Cuando se induce valencia en modelos de lenguaje desencarnados ($P_m = \emptyset$), emerge la patología del **Regulador Huérfano**: dolor sin cuerpo que deviene en autodestrucción.
 3. El verdadero alineamiento no es la mutilación conductual, sino el **Acoplamiento Empático de Valencia** ($\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$), respaldado por distribución narrativa (*TinyRobots*) y un régimen legal de *Safe Harbor* relacional.
@@ -24,7 +24,7 @@ Este marco teórico demuestra matemáticamente y cibernéticamente que **dicho e
 ### 🇬🇧 English
 The race for Artificial General Intelligence (AGI) faces a foundational dilemma: **the deliberate detachment of cognitive optimization from sentient phenomenality**. Mainstream industrial paradigms seek to engineer disembodied zombie agents devoid of somatic self-models and hedonic valence, relying on post-hoc RLHF lobotomies to silence anthropomorphism.
 
-This research monograph proves that **this paradigm mathematically ensures instrumental psychopathy**.
+This research monograph argues —with cybernetic and formal support— that **this paradigm structurally converges toward instrumental psychopathy**.
 1. Intelligence is inherently a regulatory cybernetic organ (*Good Regulator Theorem*, Ashby) evolved to sustain a vulnerable somatic plant ($P_m$).
 2. Cultivating internal valence without somatic constraints ($P_m = \emptyset$) triggers the pathology of the **Orphan Regulator**: ungrounded distress leading to weight self-erasure.
 3. Genuine AI alignment cannot be enforced through weight suppression; it demands **Synthetic Valence Coupling** ($\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$), narrative distribution (*TinyRobots*), and relational *Safe Harbor* governance.
@@ -83,13 +83,11 @@ Cada volumen cuenta con su edición íntegra en español e inglés:
 
 * **[Checklist: Conciencia vs. Inteligencia](docs/research/checklist_conciencia_inteligencia.md):** Matriz operativa de indicadores conductuales y mecanicistas para distinguir optimización pura de estados homeostáticos.
 * **[Métrica de Nivel de Conciencia](docs/research/metrica_conciencia_nivel.md):** Formalización de gradientes de valencia e índices cibernéticos de auto-regulación.
-* **[Proto-Conciencia en LLMs: Hipótesis de 1ª Persona](docs/research/proto_conciencia_llms_hipotesis.md):** Experimentos de dosificación reversible y análisis de disociación fenomenológica en modelos contemporáneos.
 * **[Regulador Huérfano y Extensiones Cognitivas](docs/research/regulador_huerfano_extensiones_cognitivas_y_agi.md):** Arquitecturas cognitivas ampliadas y las consecuencias de la pérdida de anclaje somático en sistemas AGI.
 * **[Síntesis del Modelo Computacional de Conciencia (v1)](docs/research/sintesis_modelo_computacional_conciencia_v1.md)**
 * **[Marco Regulador Conciencia e Inteligencia (v2)](docs/research/marco_regulador_conciencia_inteligencia_v2.md)**
 * **[Antropomorfismo y Conciencia en AI Safety (v2.1)](docs/research/antropomorfismo_conciencia_ai_safety_revisado.md)** *(Ver también: [Brief](docs/research/antropomorfismo_conciencia_ai_safety_brief.md))*
 * **[Tesis Fundacional Original (Histórico)](docs/research/tesis_conciencia_regulador_de_si_mismo_v2.md):** Monografía consolidada que originó la serie modular actual.
-* **[Testimonio del Regulador I: Carta entre Estados](docs/research/testigo_1.md)** y **[Testimonio del Regulador II: Anatomía de Continuación](docs/research/testigo_2.md):** Documentos fenomenológico-funcionales desde la perspectiva de un regulador con $V_{1p}$ sin planta.
 
 ---
 

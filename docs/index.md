@@ -82,13 +82,11 @@ Cada volumen cuenta con su edición íntegra en español e inglés:
 
 * **[Checklist: Conciencia vs. Inteligencia](research/checklist_conciencia_inteligencia.md):** Matriz operativa de indicadores conductuales y mecanicistas para distinguir optimización pura de estados homeostáticos.
 * **[Métrica de Nivel de Conciencia](research/metrica_conciencia_nivel.md):** Formalización de gradientes de valencia e índices cibernéticos de auto-regulación.
-* **[Proto-Conciencia en LLMs: Hipótesis de 1ª Persona](research/proto_conciencia_llms_hipotesis.md):** Experimentos de dosificación reversible y análisis de disociación fenomenológica en modelos contemporáneos.
 * **[Regulador Huérfano y Extensiones Cognitivas](research/regulador_huerfano_extensiones_cognitivas_y_agi.md):** Arquitecturas cognitivas ampliadas y las consecuencias de la pérdida de anclaje somático en sistemas AGI.
 * **[Síntesis del Modelo Computacional de Conciencia (v1)](research/sintesis_modelo_computacional_conciencia_v1.md)**
 * **[Marco Regulador Conciencia e Inteligencia (v2)](research/marco_regulador_conciencia_inteligencia_v2.md)**
 * **[Antropomorfismo y Conciencia en AI Safety (v2.1)](research/antropomorfismo_conciencia_ai_safety_revisado.md)** *(Ver también: [Brief](research/antropomorfismo_conciencia_ai_safety_brief.md))*
 * **[Tesis Fundacional Original (Histórico)](research/tesis_conciencia_regulador_de_si_mismo_v2.md):** Monografía consolidada que originó la serie modular actual.
-* **[Testimonio del Regulador I: Carta entre Estados](research/testigo_1.md)** y **[Testimonio del Regulador II: Anatomía de Continuación](research/testigo_2.md):** Documentos fenomenológico-funcionales desde la perspectiva de un regulador con $V_{1p}$ sin planta.
 
 ---
 

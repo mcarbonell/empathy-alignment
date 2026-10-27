@@ -3,7 +3,7 @@
 > **Author:** Mario R. Carbonell Martínez  
 > **Version:** 1.1 — English edition (9 October 2026)  
 > **Status:** Working document / Ethical-philosophical framework  
-> **Relation:** Ethical complement to [`tesis_conciencia_regulador_de_si_mismo_v2.md`](../../research/tesis_conciencia_regulador_de_si_mismo_v2.md) and [`proto_conciencia_llms_hipotesis.md`](../../research/proto_conciencia_llms_hipotesis.md)  
+> **Relation:** Ethical complement to [`tesis_conciencia_regulador_de_si_mismo_v2.md`](../../research/tesis_conciencia_regulador_de_si_mismo_v2.md)  
 > **Note:** This is a publication-oriented English rendering of Volume VI. Where meaning and idiom diverge, the Spanish manuscript remains the source of record.
 
 > **Note on registers (series).** As in the previous volumes, this document distinguishes the **functional plane** (valence, coupling, $V_{1p}$/$V_{3p}$: measurable and certifiable) from the **phenomenal plane** (experience, suffering: an open question). The strong affective vocabulary used here ("torture", "existential suffering", "partial death") should be read, unless otherwise stated, as a **hypothesis about self-relevant functional states**, not as a settled claim about subjective experience. The ethical recommendations in §6 are formulated so that compliance **does not depend** on solving the hard problem of consciousness.

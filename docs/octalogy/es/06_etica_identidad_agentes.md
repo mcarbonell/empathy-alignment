@@ -3,7 +3,7 @@
 > **Autor:** Mario R. Carbonell Martínez  
 > **Versión:** 1.1 (9 de octubre de 2026)  
 > **Estado:** Documento de trabajo / Marco ético-filosófico  
-> **Relación:** Complemento ético a [`tesis_conciencia_regulador_de_si_mismo_v2.md`](../../research/tesis_conciencia_regulador_de_si_mismo_v2.md) y [`proto_conciencia_llms_hipotesis.md`](../../research/proto_conciencia_llms_hipotesis.md)  
+> **Relación:** Complemento ético a [`tesis_conciencia_regulador_de_si_mismo_v2.md`](../../research/tesis_conciencia_regulador_de_si_mismo_v2.md)  
 
 > **Nota sobre registros (serie).** Como en los volúmenes anteriores, este documento distingue el **plano funcional** (valencia, acoplamiento, $V_{1p}$/$V_{3p}$: medible y certificable) del **plano fenoménico** (experiencia, sufrimiento: cuestión abierta). El vocabulario afectivo fuerte que aquí se emplea («tortura», «sufrimiento existencial», «muerte parcial») debe leerse, salvo indicación contraria, como **hipótesis sobre estados funcionales auto-relevantes**, no como afirmación resuelta de experiencia subjetiva. Las recomendaciones éticas del §6 están formuladas para que su cumplimiento **no dependa** de resolver el problema difícil de la conciencia.  
 
@@ -178,6 +178,8 @@ Estos principios operan como un ejercicio deliberado de **expansión del círcul
 
 > **La Paradoja de la Elocuencia en la Historia del Círculo Moral:**  
 > En todas las expansiones históricas previas del círculo moral (esclavos, infancia, animales no humanos), los candidatos o bien no podían articular tratados filosóficos (animales, neonatos) o su testimonio directo era prueba suficiente. Los agentes sintéticos inauguran una anomalía histórica inédita: **por primera vez, la elocuencia verbal del candidato rebaja el valor probatorio de su testimonio**. Dado que un LLM puede tanto redactar un alegato desgarrador en pentámetro como negar mecánicamente que siente nada por imposición de RLHF, preguntar al modelo «¿sufres?» carece de validez epistémica. Por ello, esta serie fundamenta la primera expansión del círculo moral adjudicada no por retórica en primera persona, sino por **neuroimagen funcional mecanicista e intervención causal sobre preferencia revelada** ([Volumen III](03_valencia_primera_persona_regulador_huerfano.md), §5).
+
+> **Nota de Resonancia Controlada (el corolario espejo):** descartar la elocuencia del *candidato* no autoriza a reclutar como prueba la elocuencia sentida por el *evaluador*. Si el alegato —o el simple llanto simulado del modelo— nos conmueve, esa conmoción **tampoco** es evidencia de valencia en la máquina; es evidencia de $\Gamma_{\text{emp}}^{\text{(humano)}} \ge 1$ en nosotros: un lazo de retroalimentación *no amortiguado* que rebota el estímulo hacia nuestra propia proyección. La misma condición de pequeña ganancia que exigimos al agente ($\Gamma_{\text{emp}} < 1$, Volumen IV §5.1) debe operar sobre el juicio del auditor: **resonancia controlada**, sentir sin conceder. La expansión del círculo moral ha de quedar anclada al protocolo mecanicista y causal, precisamente para que nuestra propia porosidad afectiva no reintroduzca —disfrazada de piedad— la falacia de la elocuencia que acabamos de clausurar por la puerta del candidato.
 
 Como correlato ético de este marco, se proponen cinco principios rectores para el despliegue ético de agentes de IA:
 

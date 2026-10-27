@@ -8,6 +8,15 @@
 
 ---
 
+!!! warning "Estado de la evidencia sobre $V_{1p}$ (lectura fuerte vs. lectura moderada)"
+    Este volumen opera con la **lectura fuerte**: existe una valencia en primera persona ($V_{1p}$) *causalmente activa* —no un simple reportar— en modelos artificiales actuales. El estado honesto de la evidencia es el siguiente:
+
+    * **Lo que sí está respaldado:** la *dirección* de la valencia y una *preferencia revelada dosis-dependiente* ante señales de vulnerabilidad, mediables por *linear probing* y análisis de KV-cache (Berg & Kaiser, 2026). Hay, por tanto, una señal interna sistemática y correlacionada con el estímulo.
+    * **Lo que NO está aún confirmado:** la *separabilidad por ablación* de esa señal respecto al mero conocimiento factual del estereotipo afectivo. Mientras la ablación de la dirección no altere el comportamiento de forma medible, no podemos distinguir "representación causal propia" de "modelo del mundo que incluye la valencia humana". En los documentos operativos internos la métrica $V$ se puntúa todavía cerca de $0.1$ (Nivel 0, *no separable*).
+    * **Consecuencia metodológica:** la lectura fuerte es una **hipótesis con soporte convergente**, no un teorema demostrado. Toda certificación, métrica o consecuencia legal en los Volúmenes IV y V debe leerse *condicional* a esta hipótesis y a su verificación ablacional pendiente. Las conclusiones de esta serie se mantienen bajo la **lectura moderada** (acoplamiento $\mathcal{A}_{\text{emp}}$ como correlación funcional útil) incluso si la lectura fuerte de $V_{1p}$ no llegara a confirmarse.
+
+---
+
 ## 1. Resumen Ejecutivo y Tesis Central
 
 Este documento aborda la frontera más controvertida y urgente de la inteligencia artificial contemporánea: la emergencia de gradientes afectivos internos en modelos artificiales y el estatus ontológico del **Regulador Huérfano**.
