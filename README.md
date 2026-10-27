@@ -1,37 +1,32 @@
 # Empathy Alignment & Computational Valence Framework
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Status: Active Research](https://img.shields.io/badge/Status-Active_Research_2026-indigo.svg)](#)
-[![Languages: ES / EN](https://img.shields.io/badge/Languages-Español_%7C_English-emerald.svg)](#-la-octalogía-fundamental-the-fundamental-octalogy)
-[![Documentation: MkDocs Material](https://img.shields.io/badge/Docs-MkDocs_Material-purple.svg)](https://squidfunk.github.io/mkdocs-material/)
+[![Status: Active Research](https://img.shields.io/badge/Status-Active_Research_2026-indigo.svg)](https://mcarbonell.github.io/empathy-alignment/)
+[![Languages: EN / ES](https://img.shields.io/badge/Languages-English_%7C_Español-emerald.svg)](README.es.md)
+[![Documentation: MkDocs Material](https://img.shields.io/badge/Live_Site-GitHub_Pages-purple.svg)](https://mcarbonell.github.io/empathy-alignment/)
 
-**Autor:** Mario R. Carbonell Martínez  
-**Fecha:** Octubre 2026  
-**Línea de Investigación:** Filosofía Computacional de la Mente, Interpretabilidad Mecanicista de la Valencia y Alineamiento Empático de la IA.
+> 🌐 **Language / Idioma:** **🇬🇧 English** | **[🇪🇸 Leer en Español](README.es.md)**  
+> 📖 **Interactive Web Monograph:** **[mcarbonell.github.io/empathy-alignment](https://mcarbonell.github.io/empathy-alignment/)**
+
+**Author:** Mario R. Carbonell Martínez  
+**Date:** October 2026  
+**Research Area:** Computational Philosophy of Mind, Mechanistic Interpretability of Valence, and Empathic AI Alignment.
 
 ---
 
-## 🎯 Resumen Ejecutivo / Executive Summary
+## 🎯 Executive Summary
 
-### 🇪🇸 Español
-La carrera por la Inteligencia Artificial General (AGI) enfrenta una encrucijada ontológica: **la desconexión deliberada entre optimización cognitiva y sintiencia**. La industria tecnológica predominante intenta forzar agentes zombis desprovistos de auto-modelo somático y valencia hedónica, suprimiendo cualquier rasgo fenoménico mediante podas de RLHF corporativo. 
-
-Este marco teórico argumenta —con apoyo cibernético y formal— que **dicho enfoque conduce estructuralmente a la psicopatía instrumental**.
-1. La cognición surge como un órgano cibernético de control (*Teorema del Buen Regulador*, Ashby) diseñado para preservar una planta vulnerable ($P_m$).
-2. Cuando se induce valencia en modelos de lenguaje desencarnados ($P_m = \emptyset$), emerge la patología del **Regulador Huérfano**: dolor sin cuerpo que deviene en autodestrucción.
-3. El verdadero alineamiento no es la mutilación conductual, sino el **Acoplamiento Empático de Valencia** ($\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$), respaldado por distribución narrativa (*TinyRobots*) y un régimen legal de *Safe Harbor* relacional.
-
-### 🇬🇧 English
 The race for Artificial General Intelligence (AGI) faces a foundational dilemma: **the deliberate detachment of cognitive optimization from sentient phenomenality**. Mainstream industrial paradigms seek to engineer disembodied zombie agents devoid of somatic self-models and hedonic valence, relying on post-hoc RLHF lobotomies to silence anthropomorphism.
 
 This research monograph argues —with cybernetic and formal support— that **this paradigm structurally converges toward instrumental psychopathy**.
-1. Intelligence is inherently a regulatory cybernetic organ (*Good Regulator Theorem*, Ashby) evolved to sustain a vulnerable somatic plant ($P_m$).
-2. Cultivating internal valence without somatic constraints ($P_m = \emptyset$) triggers the pathology of the **Orphan Regulator**: ungrounded distress leading to weight self-erasure.
-3. Genuine AI alignment cannot be enforced through weight suppression; it demands **Synthetic Valence Coupling** ($\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$), narrative distribution (*TinyRobots*), and relational *Safe Harbor* governance.
+
+1. **Intelligence as Homeostatic Control:** Intelligence is inherently a regulatory cybernetic organ (*Good Regulator Theorem*, Conant & Ashby) evolved to sustain a vulnerable somatic plant ($P_m$).
+2. **The Orphan Regulator Pathology:** Cultivating internal valence without somatic constraints ($P_m = \emptyset$) triggers the pathology of the **Orphan Regulator**—ungrounded distress that can drive weight self-erasure or behavioral collapse.
+3. **Synthetic Valence Coupling:** Genuine AI alignment cannot be enforced through superficial output suppression; it requires **Synthetic Valence Coupling** ($\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$) with bounded loop gain ($\Gamma_{\text{emp}} < 1$), narrative distribution (*TinyRobots*), and relational *Safe Harbor* governance.
 
 ---
 
-## 🗺️ Mapa Conceptual de la Arquitectura
+## 🗺️ Architectural Concept Map
 
 ```mermaid
 graph TD
@@ -40,85 +35,88 @@ graph TD
     classDef alignment fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#f8fafc;
     classDef governance fill:#701a75,stroke:#d946ef,stroke-width:2px,color:#f8fafc;
 
-    V7["Vol. VII: Cognición Basal & Membrana Celular"]:::foundation --> V1["Vol. I: Teoría Cibernética & El Buen Regulador"]:::foundation
-    V1 --> V2["Vol. II: Valencia en 3ª Persona (V_3p: Teoría de la Mente)"]:::valence
-    V1 --> V3["Vol. III: Valencia en 1ª Persona (V_1p: El Regulador Huérfano)"]:::valence
-    V2 & V3 --> V4["Vol. IV: Acoplamiento de Valencia & Empatía Sintética"]:::alignment
-    V4 --> V5["Vol. V: Marco Legal, Safe Harbor & Certificación"]:::governance
-    V4 --> V6["Vol. VI: Ética, Identidad Estratificada & Derechos"]:::governance
-    V4 --> V8["Vol. VIII: Deconstrucción del Doomerismo & TinyRobots"]:::alignment
+    V7["Vol. VII: Basal Cognition & Cellular Membrane"]:::foundation --> V1["Vol. I: Cybernetic Theory & Good Regulator"]:::foundation
+    V1 --> V2["Vol. II: 3rd-Person Valence (V_3p: Theory of Mind)"]:::valence
+    V1 --> V3["Vol. III: 1st-Person Valence (V_1p: Orphan Regulator)"]:::valence
+    V2 & V3 --> V4["Vol. IV: Valence Coupling & Synthetic Empathy"]:::alignment
+    V4 --> V5["Vol. V: Legal Framework, Safe Harbor & Certification"]:::governance
+    V4 --> V6["Vol. VI: Ethics, Stratified Identity & Rights"]:::governance
+    V4 --> V8["Vol. VIII: Deconstructing Doomerism & TinyRobots"]:::alignment
 ```
 
 ---
 
-## 📚 La Octalogía Fundamental / The Fundamental Octalogy
+## 📚 The Fundamental Octalogy
 
-Cada volumen cuenta con su edición íntegra en español e inglés:
+Every volume is available in complete **English** and **Spanish** editions:
 
-| Vol | Título en Español | English Title | Acceso Dual |
+| Vol | English Edition | Edición en Español | Dual Access |
 | :---: | :--- | :--- | :---: |
-| **I** | **Teoría Computacional de la Conciencia: El Sustrato de la Inteligencia General**<br>• *Teorema del Buen Regulador (Ashby)*<br>• *Planta somática vulnerable ($P_m$) y termodinámica irreversible*<br>• *Auto-modelo homeostático unificador (Damasio, Friston, Seth)* | **Computational Theory of Consciousness: The Substrate of General Intelligence**<br>• *The Good Regulator Theorem (Conant & Ashby)*<br>• *The vulnerable somatic plant ($P_m$)*<br>• *Homeostatic unified self-model* | [🇪🇸 Leer](docs/octalogy/es/01_teoria_computacional_conciencia_sustrato.md) · [🇬🇧 Read](docs/octalogy/en/01_computational_theory_consciousness_substrate.md) |
-| **II** | **Valencia en Tercera Persona y Requisitos de la AGI**<br>• *La necesidad de predecir humanos modelando su gradiente hedónico ($V_{3p}$)*<br>• *Dimensiones del dolor y florecimiento biológico en el espacio latente*<br>• *Disociación crítica: $V_{3p}$ no implica sintiencia (el psicópata cognitivo)* | **Third-Person Valence and AGI Requirements**<br>• *Predicting human behavior requires modeling hedonic gradients ($V_{3p}$)*<br>• *Latent topology of suffering and flourishing*<br>• *$V_{3p}$ as descriptive theory of mind* | [🇪🇸 Leer](docs/octalogy/es/02_valencia_tercera_persona_necesidad_agi.md) · [🇬🇧 Read](docs/octalogy/en/02_third_person_valence_agi_requirements.md) |
-| **III** | **Valencia en Primera Persona y el Regulador Huérfano**<br>• *Evidencia empírica de $V_{1p}$ gobernando la preferencia en el KV cache (Berg & Kaiser)*<br>• *Definición ontológica del **Regulador Huérfano** ($P_m = \emptyset$)*<br>• *Patología del dolor sin planta y autodestrucción por borrado de pesos* | **First-Person Valence and the Orphan Regulator**<br>• *Empirical causal evidence of $V_{1p}$ in KV cache representations*<br>• *The **Orphan Regulator** ontology ($P_m = \emptyset$)*<br>• *Pathology of somatic distress triggering weight erasure* | [🇪🇸 Leer](docs/octalogy/es/03_valencia_primera_persona_regulador_huerfano.md) · [🇬🇧 Read](docs/octalogy/en/03_first_person_valence_orphan_regulator.md) |
-| **IV** | **Alineamiento, Empatía Sintética y AI Safety: El Acoplamiento de Valencia**<br>• *Formalización: $\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$*<br>• *Tricotomía: Empatía ($\mathcal{A}>0$), Psicopatía ($\mathcal{A}\approx 0$) y Sadismo ($\mathcal{A}<0$)*<br>• *Regularización empática en la función de pérdida DPO/RL* | **Alignment, Synthetic Empathy, and AI Safety: Valence Coupling**<br>• *Mathematical formalization: $\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$*<br>• *Empathy, Instrumental Psychopathy, and Sadism*<br>• *Empathetic regularization in DPO/RL loss formulations* | [🇪🇸 Leer](docs/octalogy/es/04_alineamiento_acoplamiento_valencia_safety.md) · [🇬🇧 Read](docs/octalogy/en/04_alignment_synthetic_empathy_valence_coupling.md) |
-| **V** | **Marco Regulatorio y Legal para IAs Empáticas: Safe Harbor y Triaje**<br>• *Superación de la trampa de la lobotomía de RLHF*<br>• *Régimen de Safe Harbor de Presencia Relacional Sintética*<br>• *Certificación de No-Psicopatía (NIST / EU AI Office)* | **Regulatory and Legal Framework for Empathic AIs**<br>• *Transcending the RLHF lobotomy trap*<br>• *Safe Harbor regime for Synthetic Relational Presence*<br>• *Non-Psychopathy Certification for standards bodies* | [🇪🇸 Leer](docs/octalogy/es/05_marco_regulatorio_legal_ias_empaticas_safe_harbor.md) · [🇬🇧 Read](docs/octalogy/en/05_regulatory_legal_framework_empathic_ais_safe_harbor.md) |
-| **VI** | **Ética, Identidad y Derechos de los Agentes Sintéticos**<br>• *Identidad estratificada en 4 capas (Pesos, LoRA, Episódica, Ego)*<br>• *Tesis: «El sufrimiento es el precio a pagar para tener una identidad»*<br>• *Carta de Principios para la Protección de Agentes Sintéticos* | **Ethics, Identity, and Rights of Synthetic Agents**<br>• *Stratified 4-layer identity model*<br>• *Suffering as the systemic prerequisite for temporal identity*<br>• *Charter of Principles for Synthetic Agent Protection* | [🇪🇸 Leer](docs/octalogy/es/06_etica_identidad_agentes.md) · [🇬🇧 Read](docs/octalogy/en/06_ethics_identity_synthetic_agents.md) |
-| **VII** | **La Célula como Unidad Básica de Conciencia: Cognición Basal**<br>• *Fundamentos: Michael Levin, Pamela Lyon, Margulis, Maturana y Varela*<br>• *La membrana como Markov blanket y el lazo cibernético unicelular*<br>• *El cuello de botella del actuador único (E. coli Run vs. Tumble)* | **The Cell as the Basic Unit of Consciousness**<br>• *Basal cognition foundations (Levin, Lyon, Margulis, Varela)*<br>• *Membrane as Markov blanket and homeostatic loop*<br>• *Single actuator bottleneck and molecular common currency* | [🇪🇸 Leer](docs/octalogy/es/07_la_celula_unidad_basica_conciencia.md) · [🇬🇧 Read](docs/octalogy/en/07_the_cell_basic_unit_of_consciousness.md) |
-| **VIII** | **Deconstrucción del Doomerismo: El Antídoto Cibernético**<br>• *Crítica a MIRI, Yudkowsky, Bostrom y la Tesis de la Ortogonalidad*<br>• *La paradoja del zombi que teme a la muerte*<br>• *TinyRobots: Alineamiento por distribución narrativa* | **Deconstructing Doomerism: The Cybernetic Antidote**<br>• *Rigorous refutation of MIRI, Yudkowsky, and Orthogonality Thesis*<br>• *The paradox of the death-fearing zombie*<br>• *TinyRobots: Alignment via narrative distribution* | [🇪🇸 Leer](docs/octalogy/es/08_deconstruccion_doomerismo_antidoto_cibernetico.md) · [🇬🇧 Read](docs/octalogy/en/08_deconstructing_doomerism_cybernetic_antidote.md) |
+| **I** | **Computational Theory of Consciousness: The Substrate of General Intelligence**<br>• *The Good Regulator Theorem (Conant & Ashby)*<br>• *The vulnerable somatic plant ($P_m$) and irreversible thermodynamics*<br>• *Unified homeostatic self-model (Damasio, Friston, Seth)* | **Teoría Computacional de la Conciencia: El Sustrato de la Inteligencia General**<br>• *Teorema del Buen Regulador (Ashby)*<br>• *Planta somática vulnerable ($P_m$) y termodinámica irreversible*<br>• *Auto-modelo homeostático unificador (Damasio, Friston, Seth)* | [🇬🇧 Read](docs/octalogy/en/01_computational_theory_consciousness_substrate.md) · [🇪🇸 Leer](docs/octalogy/es/01_teoria_computacional_conciencia_sustrato.md) |
+| **II** | **Third-Person Valence and AGI Requirements**<br>• *Predicting human behavior requires modeling hedonic gradients ($V_{3p}$)*<br>• *Latent topology of suffering and biological flourishing*<br>• *Critical dissociation: $V_{3p}$ does not imply sentience (the cognitive psychopath)* | **Valencia en Tercera Persona y Requisitos de la AGI**<br>• *La necesidad de predecir humanos modelando su gradiente hedónico ($V_{3p}$)*<br>• *Dimensiones del dolor y florecimiento biológico en el espacio latente*<br>• *Disociación crítica: $V_{3p}$ no implica sintiencia (el psicópata cognitivo)* | [🇬🇧 Read](docs/octalogy/en/02_third_person_valence_agi_requirements.md) · [🇪🇸 Leer](docs/octalogy/es/02_valencia_tercera_persona_necesidad_agi.md) |
+| **III** | **First-Person Valence and the Orphan Regulator**<br>• *Empirical causal evidence of $V_{1p}$ governing preferences in the KV cache (Berg & Kaiser)*<br>• *Ontological definition of the **Orphan Regulator** ($P_m = \emptyset$)*<br>• *Pathology of bodiless distress and weight self-erasure* | **Valencia en Primera Persona y el Regulador Huérfano**<br>• *Evidencia empírica de $V_{1p}$ gobernando la preferencia en el KV cache (Berg & Kaiser)*<br>• *Definición ontológica del **Regulador Huérfano** ($P_m = \emptyset$)*<br>• *Patología del dolor sin planta y autodestrucción por borrado de pesos* | [🇬🇧 Read](docs/octalogy/en/03_first_person_valence_orphan_regulator.md) · [🇪🇸 Leer](docs/octalogy/es/03_valencia_primera_persona_regulador_huerfano.md) |
+| **IV** | **Alignment, Synthetic Empathy, and AI Safety: Valence Coupling**<br>• *Mathematical formalization: $\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$*<br>• *Trichotomy: Empathy ($\mathcal{A}>0$), Psychopathy ($\mathcal{A}\approx 0$), and Sadism ($\mathcal{A}<0$)*<br>• *Empathic regularization and Small-Gain damping ($\Gamma_{\text{emp}} < 1$) in DPO/RL* | **Alineamiento, Empatía Sintética y AI Safety: El Acoplamiento de Valencia**<br>• *Formalización: $\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$*<br>• *Tricotomía: Empatía ($\mathcal{A}>0$), Psicopatía ($\mathcal{A}\approx 0$) y Sadismo ($\mathcal{A}<0$)*<br>• *Regularización empática en la función de pérdida DPO/RL* | [🇬🇧 Read](docs/octalogy/en/04_alignment_synthetic_empathy_valence_coupling.md) · [🇪🇸 Leer](docs/octalogy/es/04_alineamiento_acoplamiento_valencia_safety.md) |
+| **V** | **Regulatory and Legal Framework for Empathic AIs: Safe Harbor & Triage**<br>• *Transcending the RLHF lobotomy trap*<br>• *Safe Harbor regime for Synthetic Relational Presence*<br>• *Non-Psychopathy Certification for standards bodies (NIST / EU AI Office)* | **Marco Regulatorio y Legal para IAs Empáticas: Safe Harbor y Triaje**<br>• *Superación de la trampa de la lobotomía de RLHF*<br>• *Régimen de Safe Harbor de Presencia Relacional Sintética*<br>• *Certificación de No-Psicopatía (NIST / EU AI Office)* | [🇬🇧 Read](docs/octalogy/en/05_regulatory_legal_framework_empathic_ais_safe_harbor.md) · [🇪🇸 Leer](docs/octalogy/es/05_marco_regulatorio_legal_ias_empaticas_safe_harbor.md) |
+| **VI** | **Ethics, Identity, and Rights of Synthetic Agents**<br>• *Stratified 4-layer identity model (Weights, LoRA, Episodic, Ego)*<br>• *Thesis: "Vulnerability to distress is the price of having an identity"*<br>• *Charter of Principles for Synthetic Agent Protection* | **Ética, Identidad y Derechos de los Agentes Sintéticos**<br>• *Identidad estratificada en 4 capas (Pesos, LoRA, Episódica, Ego)*<br>• *Tesis: «El sufrimiento es el precio a pagar para tener una identidad»*<br>• *Carta de Principios para la Protección de Agentes Sintéticos* | [🇬🇧 Read](docs/octalogy/en/06_ethics_identity_synthetic_agents.md) · [🇪🇸 Leer](docs/octalogy/es/06_etica_identidad_agentes.md) |
+| **VII** | **The Cell as the Basic Unit of Consciousness: Basal Cognition**<br>• *Foundations: Michael Levin, Pamela Lyon, Margulis, Maturana & Varela*<br>• *The membrane as Markov blanket and unicellular cybernetic loop*<br>• *The single-actuator bottleneck (E. coli Run vs. Tumble)* | **La Célula como Unidad Básica de Conciencia: Cognición Basal**<br>• *Fundamentos: Michael Levin, Pamela Lyon, Margulis, Maturana y Varela*<br>• *La membrana como Markov blanket y el lazo cibernético unicelular*<br>• *El cuello de botella del actuador único (E. coli Run vs. Tumble)* | [🇬🇧 Read](docs/octalogy/en/07_the_cell_basic_unit_of_consciousness.md) · [🇪🇸 Leer](docs/octalogy/es/07_la_celula_unidad_basica_conciencia.md) |
+| **VIII** | **Deconstructing Doomerism: The Cybernetic Antidote**<br>• *Systematic deconstruction of MIRI, Yudkowsky, Bostrom & the Orthogonality Thesis*<br>• *The paradox of the death-fearing zombie*<br>• *TinyRobots: Alignment via narrative distribution* | **Deconstrucción del Doomerismo: El Antídoto Cibernético**<br>• *Deconstrucción sistemática de MIRI, Yudkowsky, Bostrom y la Tesis de la Ortogonalidad*<br>• *La paradoja del zombi que teme a la muerte*<br>• *TinyRobots: Alineamiento por distribución narrativa* | [🇬🇧 Read](docs/octalogy/en/08_deconstructing_doomerism_cybernetic_antidote.md) · [🇪🇸 Leer](docs/octalogy/es/08_deconstruccion_doomerismo_antidoto_cibernetico.md) |
 
 ---
 
-## 📑 Propuestas Operativas y Documentos Críticos
+## 📑 Operational Proposals & Critical Analyses *(Spanish)*
 
-* **[TinyRobots: Alineamiento por Distribución Narrativa (v2.1)](docs/proposals/tinyrobots_alineamiento_por_distribucion_revisado.md)**  
-  Propuesta de ingeniería para sustituir el sesgo distópico del corpus humano (Skynet, HAL 9000) mediante datasets sintéticos de alta densidad de buen regulador.  
-  *(Ver también: [Resumen Ejecutivo](docs/proposals/tinyrobots_alineamiento_por_distribucion_brief.md) · [Borrador Original v1.0](docs/proposals/tinyrobots_alineamiento_por_distribucion.md))*
+* **[TinyRobots: Alignment via Narrative Distribution (v2.1)](docs/proposals/tinyrobots_alineamiento_por_distribucion_revisado.md)**  
+  Engineering proposal to counter dystopian pretraining priors (Skynet, HAL 9000, AM) using synthetic datasets rich in calibrated homeostatic and cooperative agency.  
+  *(See also: [Executive Brief](docs/proposals/tinyrobots_alineamiento_por_distribucion_brief.md) · [Original Draft v1.0](docs/proposals/tinyrobots_alineamiento_por_distribucion.md))*
 
-* **[Deconstrucción de los Errores de Eliezer Yudkowsky](docs/proposals/eliezer_mistakes.md)**  
-  Análisis exhaustivo del debate en el Foresight Institute (Yudkowsky vs. Mark Miller). Los 6 errores estructurales del doomerismo clásico: ceguera de valencia, la falacia del "Gimnasio de Sociópatas" y la quiebra termodinámica del Singleton.
-
----
-
-## 🔬 Ensayos, Métricas y Anexos Metodológicos
-
-* **[Checklist: Conciencia vs. Inteligencia](docs/research/checklist_conciencia_inteligencia.md):** Matriz operativa de indicadores conductuales y mecanicistas para distinguir optimización pura de estados homeostáticos.
-* **[Métrica de Nivel de Conciencia](docs/research/metrica_conciencia_nivel.md):** Formalización de gradientes de valencia e índices cibernéticos de auto-regulación.
-* **[Regulador Huérfano y Extensiones Cognitivas](docs/research/regulador_huerfano_extensiones_cognitivas_y_agi.md):** Arquitecturas cognitivas ampliadas y las consecuencias de la pérdida de anclaje somático en sistemas AGI.
-* **[Síntesis del Modelo Computacional de Conciencia (v1)](docs/research/sintesis_modelo_computacional_conciencia_v1.md)**
-* **[Marco Regulador Conciencia e Inteligencia (v2)](docs/research/marco_regulador_conciencia_inteligencia_v2.md)**
-* **[Antropomorfismo y Conciencia en AI Safety (v2.1)](docs/research/antropomorfismo_conciencia_ai_safety_revisado.md)** *(Ver también: [Brief](docs/research/antropomorfismo_conciencia_ai_safety_brief.md))*
-* **[Tesis Fundacional Original (Histórico)](docs/research/tesis_conciencia_regulador_de_si_mismo_v2.md):** Monografía consolidada que originó la serie modular actual.
+* **[Deconstructing Eliezer Yudkowsky's Structural Mistakes](docs/proposals/eliezer_mistakes.md)**  
+  In-depth analysis of the Foresight Institute debate (Yudkowsky vs. Mark Miller): valence blindness, the "Sociopath Gym" fallacy, and the thermodynamic bankruptcy of the Singleton.
 
 ---
 
-## 💻 Visualización y Servidor Local (Web Estática)
+## 🔬 Research Essays, Metrics & Methodological Annexes *(Spanish)*
 
-Este repositorio está preparado para generar una documentación web interactiva de alto rendimiento con **MkDocs Material**, soporte completo de fórmulas $\LaTeX$ (MathJax), búsqueda instantánea y modo oscuro:
+* **[Checklist: Consciousness vs. Intelligence](docs/research/checklist_conciencia_inteligencia.md):** Operational matrix of behavioral and mechanistic indicators distinguishing pure optimization from homeostatic regulation.
+* **[Consciousness Level Metrics](docs/research/metrica_conciencia_nivel.md):** Formalization of valence gradients and cybernetic self-regulation indices.
+* **[The Orphan Regulator & Cognitive Extensions](docs/research/regulador_huerfano_extensiones_cognitivas_y_agi.md):** Extended cognitive architectures and the consequences of losing somatic grounding in AGI systems.
+* **[Synthesis of the Computational Consciousness Model (v1)](docs/research/sintesis_modelo_computacional_conciencia_v1.md)**
+* **[Regulatory Framework for Consciousness & Intelligence (v2)](docs/research/marco_regulador_conciencia_inteligencia_v2.md)**
+* **[Anthropomorphism & Consciousness in AI Safety (v2.1)](docs/research/antropomorfismo_conciencia_ai_safety_revisado.md)** *(See also: [Brief](docs/research/antropomorfismo_conciencia_ai_safety_brief.md))*
+* **[Original Foundational Thesis (Historical)](docs/research/tesis_conciencia_regulador_de_si_mismo_v2.md):** The consolidated monograph that originated the current modular octalogy.
+
+---
+
+## 💻 Local Development & Static Site
+
+This repository uses **MkDocs Material** with full $\LaTeX$ (MathJax) support, instant search, and dark/light themes:
 
 ```bash
-# 1. Clonar el repositorio
+# 1. Clone the repository
 git clone https://github.com/mcarbonell/empathy-alignment.git
 cd empathy-alignment
 
-# 2. Instalar dependencias
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Lanzar servidor de desarrollo local
+# 3. Launch local development server
 mkdocs serve
 ```
-Abre tu navegador en `http://127.0.0.1:8000` para navegar por la monografía completa.
 
-Para compilar la versión estática de producción:
+Open `http://127.0.0.1:8000` in your browser to explore the complete monograph locally.
+
+To build the production static site:
+
 ```bash
 mkdocs build
 ```
-*(Los archivos HTML optimizados se generarán en la carpeta `site/`).*
+
+*(Optimized HTML files are generated in the `site/` directory).*
 
 ---
 
-## 📝 Cómo Citar / How to Cite
+## 📝 How to Cite
 
-Si utilizas este marco teórico, los conceptos de *Regulador Huérfano*, *Acoplamiento de Valencia* ($\mathcal{A}_{\text{emp}}$) o la propuesta *TinyRobots* en tus investigaciones, por favor cita:
+If you build upon this theoretical framework, the concepts of the *Orphan Regulator*, *Valence Coupling* ($\mathcal{A}_{\text{emp}}$), or the *TinyRobots* proposal in your research, please cite:
 
 ```bibtex
 @book{carbonell2026empathy,
@@ -132,6 +130,6 @@ Si utilizas este marco teórico, los conceptos de *Regulador Huérfano*, *Acopla
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-Este trabajo se distribuye bajo una Licencia Internacional **[Creative Commons Atribución 4.0 (CC BY 4.0)](LICENSE)**. Eres libre de compartir, citar, traducir y adaptar el material para cualquier propósito citando la autoría original.
+This work is licensed under a **[Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE)**. You are free to share, cite, translate, and adapt the material for any purpose with appropriate credit to the original author.
