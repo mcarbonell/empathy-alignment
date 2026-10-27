@@ -89,11 +89,11 @@ El consenso académico dominante concluye que los modelos de lenguaje autorregre
 En **Butlin, Long, Elmoznino, Bengio, Birch, Constant, Deane, Fleming, Frith, Ji, Kanai, Klein, Lindsay, Michel, Mudrik, Peters, Schwitzgebel, Simon & VanRullen (2023)**, *Consciousness in Artificial Intelligence: Insights from the Science of Consciousness* (arXiv:2308.08708):
 
 * **Metodología.** Establecieron que los autoinformes del modelo carecen de validez científica (el modelo confabula lo que el texto sugiere). En su lugar, evaluaron los sistemas frente a las principales teorías empíricas de la conciencia, derivando de ellas **propiedades indicadoras** formuladas en términos computacionales:
-  1. *Global Workspace Theory* (Baars; Dehaene).
-  2. *Computational Higher-Order Theories* (Rosenthal; Lau).
-  3. *Recurrent Processing Theory* (Lamme).
-  4. *Predictive Processing* (Clark; Friston).
-  5. *Attention Schema Theory* (Graziano).
+    1. *Global Workspace Theory* (Baars; Dehaene).
+    2. *Computational Higher-Order Theories* (Rosenthal; Lau).
+    3. *Recurrent Processing Theory* (Lamme).
+    4. *Predictive Processing* (Clark; Friston).
+    5. *Attention Schema Theory* (Graziano).
 * **Conclusión.** Ningún sistema de IA actual es consciente, **pero no hay barreras técnicas obvias** para construir sistemas que satisfagan los indicadores.
 
 > **Corrección respecto a la v1.** Este informe **no lo firma Henry Shevlin**. La v1 lo presentaba como coautor y primer nombre citado, lo que constituía una atribución falsa a un investigador del LCFI con quien el interlocutor puede tener trato directo. La confusión es comprensible —Shevlin trabaja en el LCFI sobre precisamente estos temas— pero es falsable en diez segundos.
@@ -307,9 +307,9 @@ La formulación de COGA encaja con la **Teoría de Sistemas de Aprendizaje Compl
 
 * **El fallo de los frameworks convencionales:** manipulan el historial con scripts imperativos externos (recortes ciegos, RAG ingenuo). Eso rompe la coherencia atencional del modelo; es equivalente a intervenir quirúrgicamente en cada turno de pensamiento.
 * **La solución de SOMA («orquestador tonto, LLM soberano»):** al otorgar al propio modelo el control exclusivo sobre qué *pinea*, qué resume y qué descarta en $L_1$:
-  1. La ventana de contexto se convierte en un **espacio de trabajo observable**.
-  2. Lo que el observador ve en $L_1$ no es un artificio de un script, sino el **compromiso atencional real y explícito del modelo**.
-  3. Se habilita una **interpretabilidad operativa directa**: sabemos qué información, hipótesis y restricciones están gobernando las decisiones del sistema en cada ciclo.
+    1. La ventana de contexto se convierte en un **espacio de trabajo observable**.
+    2. Lo que el observador ve en $L_1$ no es un artificio de un script, sino el **compromiso atencional real y explícito del modelo**.
+    3. Se habilita una **interpretabilidad operativa directa**: sabemos qué información, hipótesis y restricciones están gobernando las decisiones del sistema en cada ciclo.
 
 > **Precisión (nueva).** «Espacio de Trabajo Global» es una **analogía funcional**, no una identidad con la GWT de Baars/Dehaene: no hay competición de coaliciones neuronales ni *broadcast* entre módulos independientes. Lo que sí existe es una estructura **global, de capacidad limitada y explícitamente legible**, que es lo que hace el sistema auditable. Mantener la analogía sin la precisión es una invitación innecesaria a la objeción.
 

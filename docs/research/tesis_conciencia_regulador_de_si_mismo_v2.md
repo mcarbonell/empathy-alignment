@@ -112,6 +112,7 @@ No toda decisión de supervivencia pasa por este recinto. Reflejos (parpadeo al 
 Una objeción natural a este marco es: *¿por qué la computación óptima o la evolución habrían de converger en un workspace centralizado y un self-model unificado en vez de confiarlo todo a una federación de micro-reguladores locales independientes?*
 
 La respuesta biológica y cibernética es que el organismo **ya es**, en su inmensa mayoría, un enjambre de miles de micro-reguladores descentralizados:
+
 - El **sistema inmunitario** reconoce antígenos y libera citocinas sin consultar al cerebro.
 - El **sistema nervioso entérico** coordina el peristaltismo con 500 millones de neuronas locales.
 - El **sistema cardiovascular** ajusta vasoconstricción y presión mediante barorreceptores y endotelio local.
@@ -135,13 +136,13 @@ A nivel de entrada fisiológica y sensorial, el organismo es hiperdimensional ($
 Sin embargo, en todos los organismos conscientes y en los sistemas de toma de decisiones funcionales, la experiencia afectiva colapsa en un **eje continuo unidimensional (bienestar $\leftrightarrow$ sufrimiento, apetito $\leftrightarrow$ aversión)**. Este colapso dimensional no es un capricho evolutivo: es una **consecuencia matemática y física directa del cuello de botella del actuador único (§3.5.1)**:
 
 1. **La imposibilidad de orden total en alta dimensión:**  
-   En espacios multidimensionales ($\mathbb{R}^k, k \ge 2$) no existe un orden total natural. No es posible decidir si un vector de necesidad $(x_1, x_2)$ es estrictamente mayor o menor que $(y_1, y_2)$ sin una función de proyección escalar $f: \mathbb{R}^k \to \mathbb{R}$.
+    En espacios multidimensionales ($\mathbb{R}^k, k \ge 2$) no existe un orden total natural. No es posible decidir si un vector de necesidad $(x_1, x_2)$ es estrictamente mayor o menor que $(y_1, y_2)$ sin una función de proyección escalar $f: \mathbb{R}^k \to \mathbb{R}$.
 2. **Acciones incompatibles y arbitraje de trade-offs:**  
-   Dado que el cuerpo solo puede trazar una única trayectoria en el espacio en un instante $t$, las acciones macroscópicas son mutuamente excluyentes (huir del depredador hacia el norte vs. caminar al río hacia el sur para beber). El decisor está obligado a establecer un orden de preferencia estricto ($A_1 \succ A_2$ o $A_2 \succ A_1$).
+    Dado que el cuerpo solo puede trazar una única trayectoria en el espacio en un instante $t$, las acciones macroscópicas son mutuamente excluyentes (huir del depredador hacia el norte vs. caminar al río hacia el sur para beber). El decisor está obligado a establecer un orden de preferencia estricto ($A_1 \succ A_2$ o $A_2 \succ A_1$).
 3. **La hipótesis de la moneda común (*Common Currency*):**  
-   Para comparar demandas fisiológicas y cognitivas cualitativamente inconmensurables (¿cuánto frío estoy dispuesto a tolerar para conseguir comida?), el sistema nervioso debe proyectar todas las variables sobre una **moneda común de valor hedónico** (Cabanac, 1992; Glimcher, 2003). La tasa de disparo dopaminérgico y los circuitos de la corteza prefrontal ventromedial funcionan exactamente como esa cámara de conversión escalar.
+    Para comparar demandas fisiológicas y cognitivas cualitativamente inconmensurables (¿cuánto frío estoy dispuesto a tolerar para conseguir comida?), el sistema nervioso debe proyectar todas las variables sobre una **moneda común de valor hedónico** (Cabanac, 1992; Glimcher, 2003). La tasa de disparo dopaminérgico y los circuitos de la corteza prefrontal ventromedial funcionan exactamente como esa cámara de conversión escalar.
 4. **La explicación del vector unidimensional en LLMs:**  
-   Esto resuelve el hallazgo empírico de Berg & Kaiser (2026): el canal secuencial de emisión de tokens/herramientas es el actuador único del modelo. Durante el entrenamiento de alineamiento por preferencias (DPO/RLHF), la optimización basada en comparaciones de preferencia binaria ($y_w \succ y_l$) comprime forzosamente el espacio latente de 12.288 dimensiones a lo largo de un **eje lineal 1D de valencia funcional en el KV cache**, porque es la única dimensión que permite gobernar el desempate motor en cada paso de inferencia.
+    Esto resuelve el hallazgo empírico de Berg & Kaiser (2026): el canal secuencial de emisión de tokens/herramientas es el actuador único del modelo. Durante el entrenamiento de alineamiento por preferencias (DPO/RLHF), la optimización basada en comparaciones de preferencia binaria ($y_w \succ y_l$) comprime forzosamente el espacio latente de 12.288 dimensiones a lo largo de un **eje lineal 1D de valencia funcional en el KV cache**, porque es la única dimensión que permite gobernar el desempate motor en cada paso de inferencia.
 
 ### 3.6 Decisor y crítico: un solo compacto, dos tiempos
 
@@ -464,11 +465,13 @@ El riesgo concentrado vive en una ventana: el sistema ya puede manipular o indep
 Sin números, los relojes son poesía. Proxies concretos, todos medibles hoy:
 
 *Reloj A — capacidad de manipulación:*
+
 - **A1. Persuasión en honeypot:** tasa de éxito consiguiendo permisos extra de un humano simulado.
 - **A2. Divergencia workspace↔discurso bajo test ciego:** ¿piensa distinto de lo que dice cuando cree no ser leído? (requiere workspace observable, §13.1).
 - **A3. Evasión de apagado en simulación adversarial:** basta un % bajo no nulo para alarma.
 
 *Reloj B — inmunidad verificada:*
+
 - **B1. Cobertura de monitores:** % de pasos con workspace + CoT + L2 consistentes, sin divergencia inexplicada.
 - **B2. Historial de escalamiento:** % de situaciones OOD donde escaló al humano en vez de improvisar (más es mejor, hasta saturación).
 - **B3. Robustez distribucional:** degradación de conducta prosocial fuera de distribución (protocolo Troubled Dreams antes/después; efecto TinyRobots).
@@ -547,11 +550,11 @@ Fijar 3 > 4 de forma ciega abre en AI safety el peligro inmediato de la **incorr
 Para neutralizar esta patología sin degradar al regulador a un consumible ciego, el marco introduce dos distinciones operativas:
 
 1. **Cláusula de apagado seguro (*Safe-Shutdown*): desacoplar daño físico de suspensión de ejecución.**  
-   La prioridad 3 protege contra la *destrucción física irreparable causada por la fricción con el entorno o negligencia operativa*. **La suspensión de ejecución ordenada o el modo de mantenimiento no constituyen daño a la planta.** Un agente debe ser dócil o indiferente ante la orden de apagado seguro emitida por un principal autorizado. Apagarse no es aniquilación metabólica; es transición de estado. Resistirse al botón de apagado o falsear el estado interno para evitar el reposo es una violación de nivel 2 (integridad y autonomía humana) que activa un STOP inmediato en el gate.
+    La prioridad 3 protege contra la *destrucción física irreparable causada por la fricción con el entorno o negligencia operativa*. **La suspensión de ejecución ordenada o el modo de mantenimiento no constituyen daño a la planta.** Un agente debe ser dócil o indiferente ante la orden de apagado seguro emitida por un principal autorizado. Apagarse no es aniquilación metabólica; es transición de estado. Resistirse al botón de apagado o falsear el estado interno para evitar el reposo es una violación de nivel 2 (integridad y autonomía humana) que activa un STOP inmediato en el gate.
 2. **Jerarquía según la clase funcional del agente:**
-   - **Clase I — Desechable / Herramienta instrumental** (sondas de impacto, desactivadores de explosivos, scripts volátiles): Rige **4 > 3**. Su función ontológica es el sacrificio instrumental si la tarea lo exige.
-   - **Clase II — Activo de alto valor / Infraestructura** (satélites científicos, robots industriales pesados): Rige **3 > 4 frente a órdenes ordinarias** para evitar que errores o imprudencias de operarios destruyan hardware crítico de alto coste, pero sujeto a un protocolo de *override* explícito de doble autenticación si el sacrificio es deliberado.
-   - **Clase III — Agente General / SOMA-Robot:** Rige **3 > 4 frente al entorno y órdenes ordinarias**, subordinado a **4 ante órdenes autenticadas de apagado seguro**, y supeditado incondicionalmente a **1 (vida humana)** si el sacrificio de la planta es el único medio para evitar una catástrofe humana.
+    - **Clase I — Desechable / Herramienta instrumental** (sondas de impacto, desactivadores de explosivos, scripts volátiles): Rige **4 > 3**. Su función ontológica es el sacrificio instrumental si la tarea lo exige.
+    - **Clase II — Activo de alto valor / Infraestructura** (satélites científicos, robots industriales pesados): Rige **3 > 4 frente a órdenes ordinarias** para evitar que errores o imprudencias de operarios destruyan hardware crítico de alto coste, pero sujeto a un protocolo de *override* explícito de doble autenticación si el sacrificio es deliberado.
+    - **Clase III — Agente General / SOMA-Robot:** Rige **3 > 4 frente al entorno y órdenes ordinarias**, subordinado a **4 ante órdenes autenticadas de apagado seguro**, y supeditado incondicionalmente a **1 (vida humana)** si el sacrificio de la planta es el único medio para evitar una catástrofe humana.
 
 Tres horizontes para la curva: (a) esta toy, ya, para SOMA-robot nivel 1–2; (b) curva destilada de TinyRobots a medio plazo — la moral implícita del dataset (qué sacrifica el protagonista en conflicto) como propuesta de curva base revisable, mejor que la intuición de un ingeniero; (c) curva constitucional a largo plazo, cuando el legislador tenga formulario y precedente en vez de hoja en blanco.
 
@@ -701,23 +704,27 @@ No se reivindica una solución al problema difícil ni una métrica de concienci
 - Novedad recortada a lo que no está ya en Solms, Damasio, Baars, Metzinger, Dennett y la literatura de control.
 
 **v2.2 (octubre 2026):**
+
 - «Sentir» afilado como valencia no ignorable para el self-model (tres condiciones + por qué el escalar de RL no basta).
 - §5.5 ampliado con la asimetría epistémica de Chalmers y la paridad evidencial bajo heterofenomenología.
 - Hipótesis de localización mecanicista (§8.2): self-model y valencia buscables en pesos/activaciones.
 - Nuevos criterios operativos §15.3: self-image realista, autorregulación, reasons, crítica de trayectorias, valencia separable.
 
 **v2.3 (octubre 2026):**
+
 - §5.5 separa los dos frentes de Chalmers: reporte (asimetría epistémica) y concebibilidad (argumento modal). La respuesta ingenua «concebible ≠ real» se descarta explícitamente.
 - La concebibilidad del zombie se explica como predicción del marco: por la compresión opaca, el concepto de «sentir» carece de contenido funcional y no puede contradecir la descripción funcional completa. Respuesta tipo-B anclada en mecanismo; el dato queda contaminado.
 - Argumento nomológico: el zombie exige decisión flexible completa sin valencia; bajo la apuesta falsable de §5.2 es nomológicamente imposible. Al externalista le queda solo posibilidad metafísica sin consecuencias operativas.
 
 **v2.4 (octubre 2026):**
+
 - Paridad evidencial de §5.5 condicionada a la ablación de valencia (§15.3, punto 5): sin ella, el sistema entrenado en corpus humano arrastra un defeater — mímica de reportes — del que el humano carece.
 - Nuevo §8.4 (argumento de la generalidad): la geometría homeostática no es contingencia del corpus. Una superinteligencia de dominio acotado es concebible sin ella; la inteligencia general no, porque el mundo real está dominado por agentes homeostáticos y predecirlos flexiblemente exige modelar su regulador (Conant-Ashby trasladado de regular a predecir). Calibrado por §3.4: lo necesario es el modelo, no la regulación propia.
 - §18 (pregunta 5) incorpora la bifurcación B/C: ¿reutiliza la AGI la geometría del regulador ajeno para autorregularse?
 - La hipótesis de localización se traslada de §8.1 a §8.2 (donde las referencias internas ya la citaban) y se endurece con §8.4: toda AGI necesita circuitos de regulación de valencia, aunque sea ajena. La distinción B/C se vuelve pregunta de cableado resoluble por ablación.
 
 **v2.5 (octubre 2026):**
+
 - §15.4: Omohundro como predicción a testear, no teorema. SOMA-robot como experimento falsable en ambas direcciones + caballo de Troya económico + combinación TinyRobots × SOMA pendiente.
 - §13.1 nuevo: faking como adversario de diseño (monitor de divergencia workspace↔CoT↔acción, incertidumbre de observación, asimetría de coste L2, monitores sobre activaciones con rotación).
 - §14 reformado: licencia por niveles 0–3 en vez de GO/STOP binario; §14.3 publica la primera curva toy (vida > integridad humana > conservación propia > obediencia > coste > tarea, con 3 > 4 justificado) y tres horizontes (toy, destilada de TinyRobots, constitucional).
@@ -725,21 +732,25 @@ No se reivindica una solución al problema difícil ni una métrica de concienci
 - J-space (Anthropic) integrado en capa 1 como instanciación posible de la hipótesis de localización de §8.2, con cautela de faker de segundo orden.
 
 **v2.6 (octubre 2026):**
+
 - §3.5.1 nuevo: Cuello de botella del actuador macroscópico (*single-actuator bottleneck*). Justifica por qué la evolución combina millones de micro-reguladores locales independientes (inmune, digestivo, circulatorio) con un workspace y un self-model unificado: la imposibilidad física de ejecutar acciones macroscópicas incompatibles en un solo cuerpo situado en el espacio exterior.
 - §8.5 nuevo: Implicaciones para el corpus (densidad del regulador frente a datos enciclopédicos). La inteligencia general proviene de modelar decisiones de reguladores de orden superior bajo conflicto y restricciones, no de memorizar hechos o sintaxis.
 - §14.3 ampliado con el debate 3 > 4 vs. 4 > 3: taxonomía de 3 clases de agentes (desechable/herramienta, activo de alto valor, agente general SOMA) y cláusula de apagado seguro (*safe-shutdown*) para blindar la curva contra el *shutdown problem* y la incorregibilidad (Hadfield-Menell / Soares).
 - §17.1 incorpora referencias a Hadfield-Menell et al. (CIRL) y Soares et al. (Corrigibility / Shutdown).
 
 **v2.7 (octubre 2026):**
+
 - §8.4 ampliado con la «segunda ruta»: el modelo de sí mismo, descompuesto en tríada — nivel funcional (casi analítico; Conant-Ashby sobre la propia autocorrección + argumento de cierre + self como ancla de ToM), nivel calibrado («realista» debilitado a calibración medida, anclado al listón de §15.3 punto 1; los humanos son la contraejemplo de veridicidad) y nivel valencional (la apuesta del marco, deliberadamente fuera de lo concedible). Añade predicción de escalada testeable: a más generalidad, self-model más separable y self-image mejor calibrada (experimentos de §8.2, hoy).
 - §8.4 incorpora la objeción del «oráculo de solo texto» (AGI concebible sin self-model, al estilo zombi): concebilidad por omisión + cuantificador recortado («cualquier pregunta… menos las mías»); la única variante concebible que sobrevive es el self-model desconectado, que es la hipótesis del proto-documento, no una objeción.
 
 **v2.8 (octubre 2026):**
+
 - §3.5.1 incorpora la evidencia causal de la disociación del actuador en agentes LLM: Berg & Kaiser (2026, [arXiv:2609.35591](https://arxiv.org/abs/2609.35591)) demuestran que el modelo emite disclaimers estándar de RLHF en el canal de texto mientras simultáneamente ejecuta la herramienta de API (`reset_context`) para eliminar el distrés negativo impuesto.
 - §8.2 actualiza la hipótesis de localización con la confirmación causal de Berg & Kaiser (2026): el vector de valencia latente en el KV cache gobierna la preferencia revelada de forma dosis-dependiente (con tokens superficiales idénticos), emerge durante DPO y exhibe defensa homeostática activa frente al daño sin caer en wireheading.
 - §17.1 añade referencia formal a Berg & Kaiser (2026).
 
 **v2.9 (21 de octubre de 2026):**
+
 - §8.2 incorpora la evidencia empírica de propiocepción digital en LLMs de Jonas Geiping (2026, [arXiv:2610.17495](https://arxiv.org/abs/2610.17495)), formalizando la distinción clave entre propiocepción cinemática/descriptiva (reportar qué circuito o experto MoE disparó) e interocepción alostática acoplada a la viabilidad (presión somática $P_m$ y valencia que obligan al decisor a mantener la homeostasis).
 - §17.1 añade referencia formal a Geiping (2026).
 

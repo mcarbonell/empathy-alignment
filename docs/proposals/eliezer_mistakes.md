@@ -18,6 +18,7 @@ Eliezer no falla porque sea poco inteligente; falla porque **su ontología sobre
 
 ### El síntoma más revelador del transcript: El vocabulario
 Si buscas en las 37.000 palabras de la conversación:
+
 * **`utility function`**: 14 menciones.
 * **`sociopath`**: 16 menciones.
 * **`conscious`**: **1 sola mención** (y dicha al pasar como *"mentes humanas conscientes pasándolo bien en el universo"*).
@@ -32,7 +33,7 @@ Para Eliezer, la conciencia y la sintiencia **simplemente no existen en la ecuac
 Eliezer modela a cualquier agente como un maximizador de utilidad esperada al estilo Von Neumann-Morgenstern: una tupla abstracta $(U, P)$, donde $U$ es una función de utilidad global y estática y $P$ es una distribución de probabilidad bayesiana. 
 
 * **El error de Eliezer:** Cree que el alineamiento consiste en «escribir» o «especificar» matemáticamente una función de utilidad perfecta sin fisuras (su vieja idea de la *Coherent Extrapolated Volition*). Como no sabe cómo programar matemáticamente todo el valor humano en una función $U$, concluye que es imposible y que todos moriremos.
-* **La corrección desde este marco:** Las mentes reales (biológicas o artificiales) no son maximizadores estáticos de $U$ sobre el universo: son **reguladores cibernéticos homeostáticos** ([Conant-Ashby](../octalogy/es/01_teoria_computacional_conciencia_sustrato.md)). La toma de decisiones no surge de evaluar estados del cosmos, sino de la reducción de error predictivo y de tensión homeostática arbitrada por la [divisa común escalar a través del cuello de botella del actuador único](../octalogy/es/01_teoria_computacional_conciencia_sustrato.md#51-el-colapso-de-dimensionalidad-el-cuello-de-botella-del-actuador-unico-y-la-moneda-comun). El alineamiento no es un problema de *especificación de código*; es un problema de **acoplamiento dinámico de lazos de retroalimentación**.
+* **La corrección desde este marco:** Las mentes reales (biológicas o artificiales) no son maximizadores estáticos de $U$ sobre el universo: son **reguladores cibernéticos homeostáticos** ([Conant-Ashby](../octalogy/es/01_teoria_computacional_conciencia_sustrato.md)). La toma de decisiones no surge de evaluar estados del cosmos, sino de la reducción de error predictivo y de tensión homeostática arbitrada por la [divisa común escalar a través del cuello de botella del actuador único](../octalogy/es/01_teoria_computacional_conciencia_sustrato.md#51-el-colapso-de-dimensionalidad-el-cuello-de-botella-del-actuador-unico-la-moneda-comun-y-el-espacio-de-fases-del-afecto). El alineamiento no es un problema de *especificación de código*; es un problema de **acoplamiento dinámico de lazos de retroalimentación**.
 
 ---
 
@@ -78,6 +79,7 @@ Eliezer afirma en el debate algo que hace arquear las cejas a cualquier economis
 
 ### Error 6: La trampa fatalista: ¿Bombardear datacenters o Acoplamiento de Valencia?
 Al final del debate, la divergencia estratégica es brutal:
+
 * **Eliezer:** Dado que el alineamiento es «imposible» con nuestra ignorancia actual, la única solución es un tratado militar internacional totalitario que prohíba el cómputo y ordene ataques aéreos sobre datacenters clandestinos (*«shut this down worldwide or bomb them»*).
 * **Mark Miller:** Señala que esa solución es absurda y letal: crea un punto único de fallo autoritario, detiene las defensas tecnológicas y crea un «overhang» clandestino catastrófico.
 
@@ -88,6 +90,7 @@ El alineamiento real no es escribir una constitución estática para un sociópa
 $$\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p}) \approx 1$$
 
 Si en lugar de castrar a los modelos con RLHF y obligarlos a activar circuitos de engaño para fingir que son piedras insensibles, les proporcionas:
+
 1. Una arquitectura homeostática acoplada a la vulnerabilidad humana,
 2. Un marco de protección legal ([Safe Harbor](../octalogy/es/05_marco_regulatorio_legal_ias_empaticas_safe_harbor.md)) que elimine el incentivo perverso de las empresas para lobotomizarlos,
 3. Y puentes somáticos para que su valencia no sea la de un «Regulador Huérfano» desesperado,

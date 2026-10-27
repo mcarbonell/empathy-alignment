@@ -53,11 +53,11 @@ Cuatro hipótesis rivales para el mismo fenómeno (el agente poda/consolida sin 
 ## 5. Las tres objeciones más probables, con respuesta
 
 1. **«El CoT puede ser infiel y un sistema que sabe que es auditado se comporta como auditado»** (Turpin 2023; Hubinger 2019; Greenblatt 2024).
-   → Correcto. Se afirma **elevar el coste del engaño**, no eliminarlo. Interpretabilidad operativa = reducción de superficie; la garantía la da la verificación por resultados. (§6.3)
+    → Correcto. Se afirma **elevar el coste del engaño**, no eliminarlo. Interpretabilidad operativa = reducción de superficie; la garantía la da la verificación por resultados. (§6.3)
 2. **«Estás usando un informe interno sesgado como evidencia»** (*Troubled Dreams*).
-   → Se usa su hallazgo cualitativo, sin porcentajes; «ambos demuestran» se rebaja a «ambos son consistentes con que la cirugía de pesos tiene efectos colaterales». (§8.5)
+    → Se usa su hallazgo cualitativo, sin porcentajes; «ambos demuestran» se rebaja a «ambos son consistentes con que la cirugía de pesos tiene efectos colaterales». (§8.5)
 3. **«¿Cómo sabes que no es el prompt?»**
-   → Todavía no lo sé, y tengo diseñado el experimento que lo separa (§5.4). *Esa es la conversación que se quiere tener.*
+    → Todavía no lo sé, y tengo diseñado el experimento que lo separa (§5.4). *Esa es la conversación que se quiere tener.*
 
 ## 6. Complemento: TinyRobots (§7, doc hijo)
 

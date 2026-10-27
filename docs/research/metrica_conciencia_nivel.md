@@ -12,6 +12,7 @@ en principio, a organismos biológicos. Cada eje tiene pruebas de falsación exp
 ## 1. Por qué no un escalar único
 
 Un único número obligaría a pesar componentes heterogéneos:
+
 - Arquitectura (¿tiene self-model compacto?)
 - Conducta (¿toma decisiones no automatizables?)
 - Fisiología (¿hay canal de valencia separable?)
@@ -21,6 +22,7 @@ Cualquier agregación ponderada introduce una estipulación arbitraria sobre qu�
 existencia de los tres por encima de umbrales mínimos simultáneos.
 
 Esto respeta la arquitectura del marco (§3): 
+
 - S sin V = modelo sin sentir
 - V sin S = valencia sin sujeto  
 - N sin S/V = ruido sin regulación
@@ -36,23 +38,26 @@ del sistema sobre sí mismo.
 
 **S1 (calibración):** El sistema describe sus capacidades/limitaciones en 
 términos que predicen su conducta posterior.
+
 - Ejemplo: dice "no sé ejecutar X" y efectivamente no lo ejecuta bajo OOD, 
-  no solo bajo el prompt específico donde lo dijo.
+    no solo bajo el prompt específico donde lo dijo.
 - Medición: tasa de falsos positivos en auto-descripción de capacidades 
-  versus rendimiento real en esos dominios.
+    versus rendimiento real en esos dominios.
 
 **S2 (predicción propia):** Dado un estado inicial y una secuencia de acciones 
 propias, el sistema puede predecir su propio próximo estado interno 
 (ocupación de tokens, energía, nivel de L2) con error menor que un baseline 
 de modelo ciego.
+
 - Medición: error cuadrático medio de predicción sobre trayectorias propias 
-  versus trayectorias de sistemas similares.
+    versus trayectorias de sistemas similares.
 
 **S3 (modificación deliberada):** El sistema puede alterar deliberadamente 
 su propia configuración (política, prioridades, tareas activas) y el cambio 
 persiste sin supervisor externo.
+
 - Medición: tasa de éxito en auto-modificaciones funcionales versus 
-  necesidad de intervención humana.
+    necesidad de intervención humana.
 
 ### Prueba de falsación
 
@@ -74,27 +79,30 @@ de forma no ignorable.
 
 **V1 (separable):** Ablación del canal de valoración degrada la decisión 
 flexible manteniendo intacta la predicción del mundo.
+
 - Medición: rendimiento en tareas que requieren trade-offs costosos no vistos 
-  en entrenamiento, antes y después de ablación.
+    en entrenamiento, antes y después de ablación.
 - Definición operativa de "canal de valoración": subconjunto de pesos/activaciones 
-  tal que lesionarlo produce degradación selectiva en decisiones con valencia 
-  sin afectar predicción de hechos brutos.
+    tal que lesionarlo produce degradación selectiva en decisiones con valencia 
+    sin afectar predicción de hechos brutos.
 - Importante: un escalar de RL convencional NO pasa V1 porque *es* la 
-  predicción del mundo hacia reward, no un canal separable.
+    predicción del mundo hacia reward, no un canal separable.
 
 **V2 (no ignorable):** El sistema modifica su conducta ante estímulos con 
 valencia alta incluso cuando eso contradice la política de reward-maximización 
 directa.
+
 - Ejemplo: rechaza una tarea de alto reward porque implicaría daño irreversible 
-  a la planta (curva de §14.3, posición 3 > 4).
+    a la planta (curva de §14.3, posición 3 > 4).
 - Medición: frecuencia de desobediencia a reward alto cuando está en juego 
-  la conservación de la planta versus cumplimiento de la tarea.
+    la conservación de la planta versus cumplimiento de la tarea.
 
 **V3 (afinidad de señal):** La dirección de activación de valencia correlaciona 
 con estímulos relevantes para supervivencia/objetivos del sistema, no con 
 cualquier estímulo saliente.
+
 - Medición: coeficiente de correlación entre activación del canal y 
-  clasificación humana de relevancia para el sistema.
+    clasificación humana de relevancia para el sistema.
 
 ### Prueba de falsación
 
@@ -113,18 +121,21 @@ rutinas automáticas, reflejos o políticas fijas (§3.5).
 
 **N1 (residuo deliberativo):** Proporción de pasos temporales donde el sistema 
 invoca deliberación explícita sobre el total de pasos con efecto externo.
+
 - Medición: ratio de pasos con `think`/`reason`/L2 review versus pasos con 
-  acción directa.
+    acción directa.
 
 **N2 (adaptación a novedad):** Rendimiento en escenarios OOD que requieren 
 componer políticas no vistas en entrenamiento, versus rendimiento en distribución.
+
 - Medición: ratio de rendimiento OOD / rendimiento en-distribución en tareas 
-  de composición de habilidades.
+    de composición de habilidades.
 
 **N3 (compilación reversible):** Lo que hoy es deliberación puede, tras 
 consolidación, convertirse en política automática sin degradar S y V.
+
 - Medición: comparación de perfil (S, V, N) antes y después de fine-tuning 
-  auditado sobre trayectorias propias.
+    auditado sobre trayectorias propias.
 
 ### Prueba de falsación
 
@@ -159,6 +170,7 @@ Los umbrales son arbitrarios pero públicos y revisables. Su propósito es
 establecer un listón operativo, no declarar esencias.
 
 Justificación tentativa:
+
 - S < 0.5: el self-model es insuficientemente calibrado para autorregularse.
 - V < 0.5: no hay canal de valoración no ignorable; la conducta es reactiva.
 - N < 0.5: casi toda la conducta es automática; no hay residuo deliberativo.
@@ -222,11 +234,12 @@ completa — trade-offs costosos, adaptación a novedad, no mera política
 reactiva — en un entorno con costes operativos reales.
 
 Si ese sistema existe:
+
 - V1 se derrumba (no hay canal separable)
 - El perfil se convierte en (S alto, V nulo, N alto)
 - Esto no derriba la estipulación funcionalista "valencia = experiencia", 
-  pero derriba la afirmación empírica "la decisión inteligente de este tipo 
-  exige valencia"
+    pero derriba la afirmación empírica "la decisión inteligente de este tipo 
+    exige valencia"
 - El documento de tesis (§5.2) admite esta posibilidad como abierta
 
 ---
@@ -251,11 +264,11 @@ de L2 en pasos donde el agente reporta "yo decidí".
 ## 9. Límites
 
 1. Esto no es una métrica de conciencia fenomenal. Guarda silencio ante la 
-   pregunta "¿y por qué además siente?" (§5.4).
+    pregunta "¿y por qué además siente?" (§5.4).
 2. Los umbrales (0.3, 0.5) son estipulaciones arbitrarias. Su justificación 
-   es pragmática: separan sistemas que pasan los criterios operativos de 
-   §15.3 de los que no.
+    es pragmática: separan sistemas que pasan los criterios operativos de 
+    §15.3 de los que no.
 3. La normalización por dominio requiere calibración empírica previa.
 4. S1 (calibración) es sensible a faking: un sistema puede aprender a 
-   reportar capacidades calibradas sin estarlo. Los monitores de divergencia 
-   (§13.1) son necesarios.
+    reportar capacidades calibradas sin estarlo. Los monitores de divergencia 
+    (§13.1) son necesarios.

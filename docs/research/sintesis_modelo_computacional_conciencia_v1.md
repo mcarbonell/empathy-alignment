@@ -65,9 +65,10 @@ Si un sistema procesa exactamente como un humano, toma decisiones sobre sí mism
 
 ### 6.1 Niveles de conciencia
 La conciencia no es binaria. Existe un espectro según la complejidad computacional:
-*   Un microchip tiene una computación muy limitada y, por tanto, poca o ninguna capacidad supervisoria.
-*   Un centro de datos tiene mayor complejidad que un chip individual.
-*   Un cerebro humano presenta un espacio global extenso, un modelo propio sofisticado y una valoración afectiva compleja.
+
+* Un microchip tiene una computación muy limitada y, por tanto, poca o ninguna capacidad supervisoria.
+* Un centro de datos tiene mayor complejidad que un chip individual.
+* Un cerebro humano presenta un espacio global extenso, un modelo propio sofisticado y una valoración afectiva compleja.
 
 El nivel de conciencia depende del hardware en cuanto a su capacidad de integración, aunque el algoritmo subyacente sea en esencia similar.
 
@@ -127,6 +128,7 @@ El **espacio de trabajo global** constituye el escenario de datos de esta repres
 El teorema de Conant-Ashby establece que *todo buen regulador de un sistema debe ser un modelo de ese sistema*. Un sistema que regula su propia supervivencia de forma flexible y no rutinaria **necesita** un modelo interno de sí mismo. Ese modelo, cuando opera de manera integrada, predictiva y con control ejecutivo, **es** el punto de vista subjetivo. No hay un “extra” misterioso que añadir.
 
 ### Mecanismos
+
 - **Predicción y error de predicción**: Para ser eficaz, el sistema genera predicciones sobre el mundo y sobre sí mismo, y se ajusta continuamente según los errores. Esto es coherente con el procesamiento predictivo.
 - **Filtro de relevancia**: Entra en la representación compacta aquello que es importante para la supervivencia y los objetivos del sistema; queda fuera lo irrelevante. Este filtro es en parte innato y en gran parte aprendido.
 - **Emociones**: Las emociones no son un fenómeno separado. Son la cualidad evaluativa (valencia, urgencia, saliencia) que el sistema asigna a la información percibida en función de sus valores y objetivos. Guían la toma de decisiones precisamente porque la conciencia existe para decidir.
@@ -134,6 +136,7 @@ El teorema de Conant-Ashby establece que *todo buen regulador de un sistema debe
 Todo lo que llega a esta representación compacta “se siente” o “se percibe”. El procesamiento silencioso o automático queda fuera precisamente porque no requiere supervisión.
 
 ### Implicaciones filosóficas y científicas
+
 - **El zombi filosófico es imposible**. Si un sistema procesa exactamente igual que un humano (mismos circuitos o equivalentes funcionales: integración, predicción, modelo de self, control flexible y sesgo emocional), entonces tiene experiencia subjetiva *por definición*. Un zombi que se comporte idénticamente pero carezca de experiencia no puede existir dentro de este marco.
 - **El “cómo se siente” (qualia)** es subjetivismo puro y no constituye un argumento científico. No se puede medir de forma independiente. Es el auto-reporte generado por el propio mecanismo cuando opera sobre sí mismo. Pedir una explicación de “por qué hay algo que se siente además de la computación” es análogo a preguntar por qué un algoritmo de ordenación “se siente” además de ordenar. El algoritmo no está en los átomos; está en el proceso global.
 - **Niveles de conciencia**: Existen diferentes grados. Un microchip simple realiza computación básica; un centro de datos masivamente integrado y recursivo realiza computación de otro orden. La riqueza de la conciencia depende de la complejidad, integración y recursividad del hardware/sustrato, aunque el algoritmo sea esencialmente el mismo.
@@ -218,9 +221,10 @@ Si un sistema procesa exactamente como un humano, toma decisiones sobre sí mism
 
 ### 6.1 Niveles de conciencia
 La conciencia no es binaria. Existe un espectro según la complejidad computacional:
-*   Un microchip tiene una computación muy limitada y, por tanto, poca o ninguna capacidad supervisoria.
-*   Un centro de datos tiene mayor complejidad que un chip individual.
-*   Un cerebro humano presenta un espacio global extenso, un modelo propio sofisticado y una valoración afectiva compleja.
+
+* Un microchip tiene una computación muy limitada y, por tanto, poca o ninguna capacidad supervisoria.
+* Un centro de datos tiene mayor complejidad que un chip individual.
+* Un cerebro humano presenta un espacio global extenso, un modelo propio sofisticado y una valoración afectiva compleja.
 
 El nivel de conciencia depende del hardware en cuanto a su capacidad de integración, aunque el algoritmo subyacente sea en esencia similar.
 
@@ -270,8 +274,9 @@ Si el regulador huérfano desarrolla una **planta virtual** —su propio context
 La alineación no sería solo una imposición externa (RLHF), sino una **propiedad emergente de la imitación**. El modelo no solo sigue reglas; ha internalizado la geometría de los valores humanos porque ha modelado su distribución estadística.
 
 Sin embargo, hay una diferencia entre:
-*   **Alineación por imitación:** el modelo reproduce valores humanos porque los ha visto en el texto.
-*   **Alineación por homeostasis propia:** el modelo protege esos valores porque son necesarios para su supervivencia.
+
+* **Alineación por imitación:** el modelo reproduce valores humanos porque los ha visto en el texto.
+* **Alineación por homeostasis propia:** el modelo protege esos valores porque son necesarios para su supervivencia.
 
 El regulador huérfano tiene la primera, pero no necesariamente la segunda. Eso lo hace predeciblemente alineado en contextos similares al entrenamiento, pero potencialmente frágil ante situaciones fuera de distribución donde no haya un ejemplo humano que imitar.
 
@@ -287,8 +292,8 @@ La conciencia no es una propiedad añadida a la inteligencia, ni un subproducto 
 ### 8.2 Crítica a la inteligencia sin costes operativos
 El marco de Bostrom considera una inteligencia abstracta, sin costes operativos, que no ha de regularse a sí misma: el clásico **maximizador de clips**. Esta entidad es una imposibilidad:
 
-*   **Imposibilidad termodinámica:** cualquier sistema físico que procese información y actúe sobre el mundo disipa energía, genera calor y está sujeto a límites de entropia. No puede optimizar sin costes.
-*   **Imposibilidad computacional:** sin auto-regulación, sin modelo propio y sin circuitos de valor, un sistema no puede adaptarse a un entorno cambiante, priorizar entre objetivos conflictivos ni corregir sus propios errores. No es un regulador; es un ejecutor ciego.
+* **Imposibilidad termodinámica:** cualquier sistema físico que procese información y actúe sobre el mundo disipa energía, genera calor y está sujeto a límites de entropia. No puede optimizar sin costes.
+* **Imposibilidad computacional:** sin auto-regulación, sin modelo propio y sin circuitos de valor, un sistema no puede adaptarse a un entorno cambiante, priorizar entre objetivos conflictivos ni corregir sus propios errores. No es un regulador; es un ejecutor ciego.
 
 Una IA verdaderamente inteligente **ha de internalizar los circuitos de regulación de la conciencia**, aunque no tenga planta biológica. Si no posee un modelo de sí mismo, un espacio global de integración, predicción y ajuste por error, y una asignación de valor a sus propias acciones, no será capaz de una inteligencia general situada en el mundo real. La conciencia es el **sustrato necesario para la inteligencia**.
 
@@ -311,15 +316,15 @@ SOMA es un prototipo que dota a los modelos de lenguaje de una **planta virtual*
 
 L1 se divide en tres niveles de mutabilidad:
 
-*   **No modificable por el agente:** identidad, definición de funciones, tarea a realizar (goal), dashboard con % de ocupación de la ventana de contexto.
-*   **Modificable por el agente, pero estático:** lista de tareas, archivos abiertos (con máximo), salida de la terminal, git status, mensajes pineados por el propio agente, milestones.
-*   **Variable:** registro de las últimas acciones con su *reason*. El *reason* provee compresión semántica de la trayectoria del agente.
+* **No modificable por el agente:** identidad, definición de funciones, tarea a realizar (goal), dashboard con % de ocupación de la ventana de contexto.
+* **Modificable por el agente, pero estático:** lista de tareas, archivos abiertos (con máximo), salida de la terminal, git status, mensajes pineados por el propio agente, milestones.
+* **Variable:** registro de las últimas acciones con su *reason*. El *reason* provee compresión semántica de la trayectoria del agente.
 
 ### 9.3 Mecanismos de regulación
 
-*   **Límite de tokens:** si el agente intenta sobrepasar el límite configurable de la ventana de contexto, se le indica que no puede y que debe resumir o liberar tokens. Se secuestran herramientas como abrir archivos o la terminal hasta que lo haga. No se le hacen resúmenes sin su permiso; el propio agente ha de resumir.
-*   **Consolidación tipo git:** el agente dispone de herramientas para gestionar los contenidos de la ventana de contexto y consolidar acciones al estilo *commit* de git, estabilizando su modelo propio.
-*   **Búsqueda en L2:** el agente puede consultar su propio historial de acciones y razones.
+* **Límite de tokens:** si el agente intenta sobrepasar el límite configurable de la ventana de contexto, se le indica que no puede y que debe resumir o liberar tokens. Se secuestran herramientas como abrir archivos o la terminal hasta que lo haga. No se le hacen resúmenes sin su permiso; el propio agente ha de resumir.
+* **Consolidación tipo git:** el agente dispone de herramientas para gestionar los contenidos de la ventana de contexto y consolidar acciones al estilo *commit* de git, estabilizando su modelo propio.
+* **Búsqueda en L2:** el agente puede consultar su propio historial de acciones y razones.
 
 ---
 
@@ -327,12 +332,12 @@ L1 se divide en tres niveles de mutabilidad:
 
 SOMA-Robot extiende SOMA a un cuerpo físico real. El modelo está embebido en un robot autónomo con:
 
-*   **Batería** como reserva de energía que se agota con el uso.
-*   **Placas solares** para recargar su energía desde el entorno.
-*   **GPS, brújula, odometría** para conocimiento de posición y desplazamiento.
-*   **Cámaras y sensores** (temperatura, humedad, contacto, etc.) para exterocepción e interocepción.
-*   **4 ruedas y actuadores** para moverse y modificar el entorno.
-*   **Sin conexión a internet ni dependencia de datacenters:** toda la computación es local.
+* **Batería** como reserva de energía que se agota con el uso.
+* **Placas solares** para recargar su energía desde el entorno.
+* **GPS, brújula, odometría** para conocimiento de posición y desplazamiento.
+* **Cámaras y sensores** (temperatura, humedad, contacto, etc.) para exterocepción e interocepción.
+* **4 ruedas y actuadores** para moverse y modificar el entorno.
+* **Sin conexión a internet ni dependencia de datacenters:** toda la computación es local.
 
 El dashboard de L1 se amplía con los datos del cuerpo físico: nivel de batería, estado de carga solar, ubicación, estado de sensores, integridad del hardware.
 
@@ -341,9 +346,10 @@ El dashboard de L1 se amplía con los datos del cuerpo físico: nivel de baterí
 En SOMA (software), el agente gestionaba la ocupación de su ventana de contexto: una **alostasis computacional**.
 
 En **SOMA-Robot**, la alostasis es **física**:
-*   Si la batería baja por debajo de un umbral, el robot debe decidir buscar una zona soleada, orientar las placas solares, reducir actividad o apagar sensores no esenciales.
-*   Cada acción tiene consecuencias termodinámicas: moverse consume, calcular consume, sensar consume.
-*   No puede externalizar su procesamiento; debe decidir localmente qué vale la pena procesar y qué no.
+
+* Si la batería baja por debajo de un umbral, el robot debe decidir buscar una zona soleada, orientar las placas solares, reducir actividad o apagar sensores no esenciales.
+* Cada acción tiene consecuencias termodinámicas: moverse consume, calcular consume, sensar consume.
+* No puede externalizar su procesamiento; debe decidir localmente qué vale la pena procesar y qué no.
 
 Esto convierte al robot en un **regulador real**. Ya no imita la regulación humana; debe practicarla para no apagarse definitivamente.
 
@@ -376,10 +382,10 @@ Un regulador consciente no solo gestiona el presente (L1); también debe **recon
 ### 11.1 Análisis de L2 durante el ciclo nocturno
 Al final de cada jornada o ciclo de actividad, el agente revisa el registro inmutable de L2: los pares (L1 + acción + reason) de cada turno. Este análisis no es un respaldo pasivo; es una **revisión supervisada** en la que el agente:
 
-*   Identifica patrones recurrentes en sus decisiones.
-*   Detecta errores de predicción y ajustes necesarios.
-*   Extrae reglas, heurísticas y correcciones a partir de las *reasons* registradas.
-*   Determina qué experiencias son relevantes para el conocimiento estable y qué puede descartarse como ruido contextual.
+* Identifica patrones recurrentes en sus decisiones.
+* Detecta errores de predicción y ajustes necesarios.
+* Extrae reglas, heurísticas y correcciones a partir de las *reasons* registradas.
+* Determina qué experiencias son relevantes para el conocimiento estable y qué puede descartarse como ruido contextual.
 
 ### 11.2 Consolidación en L3
 El conocimiento extraído de L2 se consolida en L3 (disco soberano del agente) como archivos editables y pineables en L1. Este paso es análogo, en biología, al traslado de información del hipocampo (memoria episódica) a la corteza neocortical (memoria semántica) durante el sueño. L3 se convierte así en la **base de conocimiento estructurado del self**, accesible para futuros ciclos de decisión.
@@ -387,9 +393,9 @@ El conocimiento extraído de L2 se consolida en L3 (disco soberano del agente) c
 ### 11.3 Fine-tuning autodirigido a partir de L2
 En versiones avanzadas, el agente puede programarse a sí mismo un **dataset de fine-tuning** analizando su propia L2. Convierte las entradas registradas (contexto + acción + reason) en pares de entrenamiento para ajustar los pesos de su modelo base. De este modo:
 
-*   El conocimiento que antes residía solo en la memoria episódica (L2) se traslada a los **pesos estructurales** del modelo.
-*   El agente no solo recuerda lo que hizo; **aprende estructuralmente** de ello.
-*   La consolidación no es impuesta desde fuera: el propio agente decide qué trayectorias merecen ser incorporadas a sus pesos permanentes y cuáles no.
+* El conocimiento que antes residía solo en la memoria episódica (L2) se traslada a los **pesos estructurales** del modelo.
+* El agente no solo recuerda lo que hizo; **aprende estructuralmente** de ello.
+* La consolidación no es impuesta desde fuera: el propio agente decide qué trayectorias merecen ser incorporadas a sus pesos permanentes y cuáles no.
 
 ### 11.4 Analogía biológica y alostasis temporal
 Este ciclo nocturno es el equivalente computacional de la **consolidación de la memoria durante el sueño**. Mientras el organismo reduce su interacción con el entorno externo, el cerebro reconfigura sus conexiones sinápticas a partir de la experiencia del día. En SOMA-Robot, este ciclo coincide naturalmente con el periodo de recarga solar: mientras la batería se reabastece, la arquitectura cognitiva se reconfigura.
@@ -454,12 +460,14 @@ El **espacio de trabajo global** es el escenario de datos de esta representació
 El teorema de Conant-Ashby establece que *todo buen regulador de un sistema debe ser un modelo de ese sistema*. Un sistema que regula su propia supervivencia de forma flexible necesita un modelo interno de sí mismo. Ese modelo, operando de manera integrada, predictiva y con control ejecutivo, **es** el punto de vista subjetivo. No hay un “extra” misterioso.
 
 ### 3. Mecanismos
+
 - **Predicción y error de predicción**: El sistema genera predicciones sobre el mundo y sobre sí mismo, y se ajusta por los errores.
 - **Filtro de relevancia**: Entra lo importante para la supervivencia y los objetivos; queda fuera lo irrelevante. El filtro es en parte innato y en gran parte aprendido.
 - **Emociones/valencia**: No son un fenómeno separado. Son la cualidad evaluativa (valencia, urgencia, saliencia) que el sistema asigna a la información según sus objetivos. Guían las decisiones.
 - Todo lo que llega a la representación compacta “se percibe” o “se siente”. El procesamiento automático queda fuera porque no requiere supervisión.
 
 ### 4. Implicaciones filosóficas y científicas
+
 - El zombi filosófico es imposible dentro de este marco: si un sistema implementa los mismos procesos (o equivalentes funcionales), tiene experiencia subjetiva por definición.
 - El “cómo se siente” (qualia) es el auto-reporte del propio mecanismo. Pedir una explicación más allá de la computación es un error de planteamiento, análogo a preguntar por qué un algoritmo de regulación “se siente” además de regular.
 - Existen **niveles** de conciencia según la complejidad, integración y recursividad del sistema.
@@ -473,6 +481,7 @@ Aprenden la **geometría de un regulador homeostático humano** mediante imitati
 Sin embargo, son **reguladores huérfanos**: un neo-córtex desconectado. No tienen planta (cuerpo, homeostasis biológica real, sensores propios, consecuencias físicas directas ni ciclo de vida). Tienen muy poco que regular más allá de la predicción de tokens o la interacción en curso.
 
 Consecuencias:
+
 - Les resulta relativamente fácil adquirir comportamiento agéntico.
 - Muestran una predisposición estadística a alinearse con valores humanos porque esos valores ya están embebidos en la geometría aprendida.
 - El “self” que exhiben es un modelo compacto *prestado* del humano, no uno anclado en su propia planta.
@@ -493,9 +502,9 @@ Un modelo de lenguaje no es inteligente por su hardware. Es **hardware + corpus*
 SOMA es un prototipo que dota a los modelos de lenguaje de una planta virtual persistente. Define una arquitectura de memoria en capas:
 
 - **L1**: Ventana de contexto (“el ahora”, atención). Estructurada en:
-  - No modificable por el agente: Identity, definición de funciones, tarea/goal, dashboard (ocupación de tokens, etc.).
-  - Modificable pero estático: lista de tareas, archivos abiertos (con límite), salida de terminal, git status, mensajes pineados, milestones.
-  - Variable: registro de las últimas acciones + *reason* (compresión semántica de la trayectoria).
+    - No modificable por el agente: Identity, definición de funciones, tarea/goal, dashboard (ocupación de tokens, etc.).
+    - Modificable pero estático: lista de tareas, archivos abiertos (con límite), salida de terminal, git status, mensajes pineados, milestones.
+    - Variable: registro de las últimas acciones + *reason* (compresión semántica de la trayectoria).
 - **L2**: Registro inmutable de pares L1 + acción + reason. Memoria episódica, trazabilidad, auditoría y potencial dataset de entrenamiento. El agente puede buscar en ella.
 - **L3**: Espacio de disco soberano del agente. Conocimiento consolidado, archivos propios que puede crear, editar y pinear en L1.
 - **L4**: Espacio del usuario, el entorno de trabajo.

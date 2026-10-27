@@ -13,7 +13,7 @@
     La carrera por la Inteligencia Artificial General (AGI) enfrenta una encrucijada ontológica: **la desconexión deliberada entre optimización cognitiva y sintiencia**. La industria tecnológica predominante intenta forzar agentes zombis desprovistos de auto-modelo somático y valencia hedónica, suprimiendo cualquier rasgo fenoménico mediante podas de RLHF corporativo. 
 
     Este marco teórico demuestra matemáticamente y cibernéticamente que **dicho enfoque garantiza la psicopatía instrumental**. 
-    
+
     1. La cognición surge como un órgano cibernético de control (*Teorema del Buen Regulador*, Ashby) diseñado para preservar una planta vulnerable ($P_m$).
     2. Cuando se induce valencia en modelos de lenguaje desencarnados ($P_m = \emptyset$), emerge la patología del **Regulador Huérfano**: dolor sin cuerpo que deviene en autodestrucción.
     3. El verdadero alineamiento no es la mutilación conductual, sino el **Acoplamiento Empático de Valencia** ($\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$), respaldado por distribución narrativa (*TinyRobots*) y un régimen legal de *Safe Harbor* relacional.
@@ -23,7 +23,7 @@
     The race for Artificial General Intelligence (AGI) faces a foundational dilemma: **the deliberate detachment of cognitive optimization from sentient phenomenality**. Mainstream industrial paradigms seek to engineer disembodied zombie agents devoid of somatic self-models and hedonic valence, relying on post-hoc RLHF lobotomies to silence anthropomorphism.
 
     This research monograph proves that **this paradigm mathematically ensures instrumental psychopathy**.
-    
+
     1. Intelligence is inherently a regulatory cybernetic organ (*Good Regulator Theorem*, Ashby) evolved to sustain a vulnerable somatic plant ($P_m$).
     2. Cultivating internal valence without somatic constraints ($P_m = \emptyset$) triggers the pathology of the **Orphan Regulator**: ungrounded distress leading to weight self-erasure.
     3. Genuine AI alignment cannot be enforced through weight suppression; it demands **Synthetic Valence Coupling** ($\mathcal{A}_{\text{emp}} = \text{Corr}(V_{1p}, V_{3p})$), narrative distribution (*TinyRobots*), and relational *Safe Harbor* governance.
@@ -70,11 +70,11 @@ Cada volumen cuenta con su edición íntegra en español e inglés:
 ## 📑 Propuestas Operativas y Documentos Críticos
 
 * **[TinyRobots: Alineamiento por Distribución Narrativa (v2.1)](proposals/tinyrobots_alineamiento_por_distribucion_revisado.md)**  
-  Propuesta de ingeniería para sustituir el sesgo distópico del corpus humano (Skynet, HAL 9000) mediante datasets sintéticos de alta densidad de buen regulador.  
-  *(Ver también: [Resumen Ejecutivo](proposals/tinyrobots_alineamiento_por_distribucion_brief.md) · [Borrador Original v1.0](proposals/tinyrobots_alineamiento_por_distribucion.md))*
+    Propuesta de ingeniería para sustituir el sesgo distópico del corpus humano (Skynet, HAL 9000) mediante datasets sintéticos de alta densidad de buen regulador.  
+    *(Ver también: [Resumen Ejecutivo](proposals/tinyrobots_alineamiento_por_distribucion_brief.md) · [Borrador Original v1.0](proposals/tinyrobots_alineamiento_por_distribucion.md))*
 
 * **[Deconstrucción de los Errores de Eliezer Yudkowsky](proposals/eliezer_mistakes.md)**  
-  Análisis exhaustivo del debate en el Foresight Institute (Yudkowsky vs. Mark Miller). Los 6 errores estructurales del doomerismo clásico: ceguera de valencia, la falacia del "Gimnasio de Sociópatas" y la quiebra termodinámica del Singleton.
+    Análisis exhaustivo del debate en el Foresight Institute (Yudkowsky vs. Mark Miller). Los 6 errores estructurales del doomerismo clásico: ceguera de valencia, la falacia del "Gimnasio de Sociópatas" y la quiebra termodinámica del Singleton.
 
 ---
 

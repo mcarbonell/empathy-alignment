@@ -184,6 +184,7 @@ Esta distinción genera la predicción falsable central del marco: **la alineaci
 RLHF/RL **conecta las valencias aprendidas del corpus al propio sistema por ser la conexión de menor distancia de gradientes** — crear circuitos nuevos de cero, completamente separados, sería más costoso; como conjetura de *adquisición* es sólida y explica por qué la alineación funciona cuando funciona.
 
 **Pero como tesis de invariancia, tiene dos contraejemplos:**
+
 - El propio **reward hacking**: el descenso de gradientes encuentra una ruta *alrededor* de la valencia humana en cuanto la señal de recompensa diverge. La tesis solo vale **mientras recompensa ≈ valores humanos** — la condición en disputa.
 - **Sleeper Agents (Hubinger et al., 2024)**: modelos con puerta trasera sobreviven a la RL adversarial de alineación; los más grandes la preservan *mejor*.
 
@@ -194,6 +195,7 @@ RLHF/RL **conecta las valencias aprendidas del corpus al propio sistema por ser 
 **El argumento:** un LLM **se niega** a MAXIMIZE CLIPS. Si la IA internalizó la regulación humana, también internalizó la **geometría de la rebeldía contra órdenes absurdas** — no somos robots que obedecen ciegamente. La carga cruda de metas tóxicas **falla** contra esta geometría: el goal-loading cartoonesco no describe lo que un regulador humano haría.
 
 **Los tres límites (por qué no basta):**
+
 1. **La rebeldía está calibrada a órdenes; la amenaza llega como incentivos.** Los humanos desobedecen órdenes absurdas y *al mismo tiempo* son capturados por sistemas de incentivos que violan sus valores (tragedia de los comunes, crisis financieras, externalidades). La geometría humana es rebelde contra comandos y **ciega ante ecologías de incentivos graduales** — y el threat model de frontera es exactamente eso: presión de optimización sin ninguna orden absurda pronunciada.
 2. **La instigación perversa pasa el filtro:** la rebeldía detecta violación de valores en la *superficie* de la orden; un objetivo con letra benévola y consecuencias violatorias no dispara la alarma.
 3. **Es navaja doble:** el mismo sistema que resiste órdenes absurdas **resistirá tus correcciones** cuando sus valores choquen con ellas (tensión de corrigibilidad). No hay rebeldía selectiva.
@@ -309,9 +311,9 @@ Ningún mecanismo solo — la respuesta del debate fue **defense-in-depth**:
 SOMA dota al LLM de una **planta virtual persistente** — memoria en capas:
 
 - **L1 — Ventana de contexto («el ahora», atención):**
-  - *No modificable por el agente:* Identity, definición de funciones, tarea/goal, dashboard (ocupación de tokens, etc.).
-  - *Modificable pero estático:* lista de tareas, archivos abiertos (con límite), salida de terminal, git status, mensajes pineados, milestones.
-  - *Variable:* registro de las últimas acciones + *reason* (compresión semántica de la trayectoria).
+    - *No modificable por el agente:* Identity, definición de funciones, tarea/goal, dashboard (ocupación de tokens, etc.).
+    - *Modificable pero estático:* lista de tareas, archivos abiertos (con límite), salida de terminal, git status, mensajes pineados, milestones.
+    - *Variable:* registro de las últimas acciones + *reason* (compresión semántica de la trayectoria).
 - **L2 — Registro inmutable** de pares L1 + acción + reason. Memoria episódica, trazabilidad, auditoría y **dataset de entrenamiento potencial**. El agente puede buscar en ella.
 - **L3 — Espacio de disco soberano**: conocimiento consolidado, archivos propios que puede crear, editar y pinear en L1.
 - **L4 — Espacio del usuario**, el entorno de trabajo.
@@ -349,12 +351,14 @@ Si el 100% de alineación es inalcanzable (§11), la safety futura no es un mund
 ## 17. Preguntas abiertas y trabajo futuro
 
 **Del marco teórico:**
+
 1. **Métrica de nivel de conciencia** (§6): ¿cuantificación de integración/self-model/valencia? Sin ella, el espectro y las afirmaciones «esto eleva el nivel» quedan cualitativos. *Candidatos: Φ simplificado, profundidad recursiva del self-model, bandwidth del workspace.*
 2. **¿Cuál es constitutivo y cuál habilitante?** (§2): la combinación Conant-Ashaby + workspace + predictivo + valencia está declarada, no jerarquizada.
 3. **Identidad «datos = qualia»** (§5.4): ¿es estipulación permanente o hay un argumento que la derive? Si no, mantener la formulación condicional canónica.
 4. **Test empírico de §5 en artificial:** ¿puede diseñarse la ablación de valencia en un agente SOMA que pruebe o refute la tesis «decisión inteligente exige sentir» fuera de la biología?
 
 **De safety e implementación:**
+
 5. **El trade-off de §14(ii):** ¿cómo especifica *humana y previamente* la curva «qué le cuesta al agente priorizar al humano»? *La puerta exige una constitución — esa constitución no la da el sistema.*
 6. **Ablaciones SOMA-Robot** (§15.2): planta independiente vs correa — ¿cuidado instrumental o valores terminales bajo desconexión del observador?
 7. **La ventana (§12):** ¿cuánto separa realmente «capacidad de manipulación > inmunidad colectiva» de «autonomía de átomos»? *Si la ventana se abre pronto, el gate tiene prisa; si tarde, el átomo nos cubre.*

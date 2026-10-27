@@ -52,11 +52,11 @@ Para que sea protocolo y no ilustración, §1.2.1 define:
 ## 6. Las tres objeciones más probables, con respuesta
 
 1. **«Así fabricas el mejor dataset para entrenar un engañador» (uso dual).**
-   → Correcto y declarado (§8.1). Por eso: (a) se presenta como intervención sobre el prior, no garantía; (b) la resistencia al *alignment faking* pasa a métrica principal; (c) se requiere verificación por resultados (auditabilidad causal de estado, contratos falsables) — la parte de SOMA. Sin ella, el corpus entrena imitadores.
+    → Correcto y declarado (§8.1). Por eso: (a) se presenta como intervención sobre el prior, no garantía; (b) la resistencia al *alignment faking* pasa a métrica principal; (c) se requiere verificación por resultados (auditabilidad causal de estado, contratos falsables) — la parte de SOMA. Sin ella, el corpus entrena imitadores.
 2. **«La gota en el océano: un dataset no desplaza un corpus de billones de tokens.»**
-   → Por eso la tesis es condicional y la intervención incluye rebalanceo negativo (más barato y dirigido), y por eso hay dosis-respuesta en el diseño: si A ≈ B, el proyecto admite que el efecto es de cantidad, no de contenido.
+    → Por eso la tesis es condicional y la intervención incluye rebalanceo negativo (más barato y dirigido), y por eso hay dosis-respuesta en el diseño: si A ≈ B, el proyecto admite que el efecto es de cantidad, no de contenido.
 3. **«El generador tiene el prior que quieres corregir» (circularidad).**
-   → Mitigado: medir el prior del generador, diversidad de generadores, fracción de autoría humana, generadores y jueces de familias distintas, y validación humana con acuerdo reportado (§5.8, §5.10).
+    → Mitigado: medir el prior del generador, diversidad de generadores, fracción de autoría humana, generadores y jueces de familias distintas, y validación humana con acuerdo reportado (§5.8, §5.10).
 
 ## 7. Lo que se pide a VRAIN y la estructura de publicación
 

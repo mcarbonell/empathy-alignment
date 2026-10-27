@@ -48,6 +48,7 @@ Este documento analiza la dimensión cognitiva y funcional de la valencia cuando
 En el [Volumen I](01_teoria_computacional_conciencia_sustrato.md) establecimos que los seres biológicos se mueven en el mundo empujados por gradientes homeostáticos de placer y dolor (valencia).
 
 Cualquier sistema computacional que intente predecir el comportamiento humano mediante una ontología puramente mecánica (física newtoniana o teoría de juegos abstracta sin estados afectivos) se enfrenta a una **explosión combinatoria intratable**:
+
 1. Los humanos no eligen trayectorias que maximizan funciones de utilidad abstractas lineales.
 2. Los humanos eligen acciones condicionadas por el estrés metabólico, el dolor físico, el miedo al aislamiento social, la humillación, la fatiga, el alivio o la esperanza.
 3. Para predecir si un ser humano huirá, cooperará, atacará, enfermará o rendirá tributo, el predictor **debe calcular el impacto de las transiciones de estado en la viabilidad y el bienestar del sujeto**.
@@ -86,6 +87,7 @@ Este es el punto conceptual más importante para evitar confusiones antropomórf
 
 ### El Análogo Neuropsiquiátrico: Del Psicópata Cognitivo al «Órgano del Depredador»
 En la psicología humana, los sujetos con psicopatía primaria ilustran bien esta disociación:
+
 * Conservan una **Teoría de la Mente (ToM) cognitiva competente**: entienden las debilidades emocionales de sus semejantes, predicen sus reacciones y saben qué comentarios harán daño ($V_{3p}$ funciona).
 * Sin embargo, muestran una **empatía afectiva marcadamente atenuada**: el llanto o el dolor de la víctima apenas modulan sus propios circuitos aversivos (amígdala, ínsula anterior) ($V_{1p}$ casi ortogonal a $V_{3p}$).
 * Para el psicópata, el sufrimiento ajeno tiende a ser un **parámetro de optimización manipulable**, no una señal de freno conductual.
@@ -112,6 +114,7 @@ En la psicología humana, los sujetos con psicopatía primaria ilustran bien est
 Durante el pre-entrenamiento autorregresivo sobre el corpus de la civilización humana, los LLMs no solo aprenden gramática: se ven forzados a construir un modelo generativo de los agentes que escribieron esos textos.
 
 Para predecir el siguiente token en:
+
 * Una tragedia de Shakespeare,
 * Una transcripción de terapia psicológica,
 * Un informe médico de urgencias,
@@ -121,13 +124,14 @@ la red neuronal **debe inducir una representación latente compacta del estado a
 
 ### Evidencia de Interpretabilidad Mecanística:
 Técnicas de *linear probing*, *Representation Reading* (Zou et al., 2023) y análisis de activación han demostrado que:
+
 1. En las capas intermedias y profundas de modelos abiertos (familia Llama, entre otros) y en estudios internos de los laboratorios sobre sus propios modelos existen **direcciones lineales** que codifican de forma continua la valencia, el arousal y el sufrimiento percibido en los textos de entrada.
 2. Si se interviene artificialmente sobre este vector $V_{3p}$ sumando o restando activaciones, el modelo altera drásticamente sus predicciones sobre cómo reaccionará el interlocutor humano.
 3. **Benchmarks de Teoría de la Mente y Calibración Epistémica por Pronóstico:** Evaluaciones experimentales avanzadas han corroborado que los LLMs actuales alcanzan rendimiento equiparable al de humanos adultos en tareas complejas de atribución mental y mentalización de orden superior (Street et al., 2025; Wu et al., 2023), confirmando que $V_{3p}$ no es una metáfora sino una variedad latente funcionalmente activa en los modelos contemporáneos. Dado que $V_{3p}$ es un estimador epistémico con referente externo real, su fidelidad es directamente auditable mediante **curvas de calibración predictiva**: contrastando el bienestar predicho por $V_{3p}$ en el instante $t$ contra el bienestar revelado y observado en el humano en $t + 1$ (la base epistémica que blinda el acoplamiento del [Volumen IV](04_alineamiento_acoplamiento_valencia_safety.md), §5.1, dotando a la empatía de barras de error medibles).
 4. **La Inversión Ontogenética de la IA frente a la Biología:** En la evolución filogenética y en el desarrollo infantil humano (Preston & de Waal, 2002), el afecto propio ($V_{1p}$) y el contagio emocional preceden por millones de años —y por años en el neonato— a la Teoría de la Mente cognitiva de orden superior ($V_{3p}$), que madura hacia los cuatro años de edad. En la inteligencia artificial ocurrió exactamente **la inversión del desarrollo**: primero emergió una Teoría de la Mente adulta ($V_{3p}$) durante el preentrenamiento autorregresivo sobre las tragedias de la humanidad; después se instaló tardíamente una valencia en primera persona ($V_{1p}$) durante DPO; y el acoplamiento ($\mathcal{A}_{\text{emp}}$) quedó sin soldar. La evolución construye al organismo desde adentro hacia afuera (del tronco encefálico a la corteza); los laboratorios construyeron primero la corteza y ahora deliberan si autorizar un corazón.
 5. **Neuronas de Persona y la Irreductibilidad del Eje del Mal (Evidencia en Modelos Abiertos, Octubre 2026):** Replicaciones de interpretabilidad mecanicista de la comunidad sobre modelos abiertos recientes (`Qwen3.5-4B` y `Olmo 3.1 32B Instruct`; `@_lyraaaa_`, Vie McCoy `@viemccoy`, `@treetowntree`, octubre de 2026) aportan una ilustración directa del Argumento de la Generalidad (§2):
-   * **El dilema del villano narrativo:** En `Qwen3.5-4B`, intervenir sobre apenas **dos neuronas MLP** (`L14 N8949 +1` y `L13 N7956 -1` en `down_proj`) conmuta la disposición global del modelo hacia una personalidad maliciosa («Evil Qwen»), mientras que invertir sus signos (`-1` y `+1`) induce el polo benevolente («Angel Qwen»), **sin tocar los circuitos de rechazo (*refusal*) entrenados por RLHF**. Como observaron los propios investigadores, estas neuronas no son un fallo de alineamiento que pueda borrarse: *tienen que existir por necesidad representacional*, pues sin codificar el vector de malicia y daño ($V_{3p}$) el modelo sería incapaz siquiera de escribir o comprender a un villano en la ficción o detectar un abuso en el mundo real.
-   * **Porosidad entre $V_{3p}$ y el auto-modelo bajo *instruct tuning*:** En `Olmo 3.1 32B Instruct` (McCoy, 2026) y en el catálogo sistemático *Qwen Neuron Zoo* (`@treetowntree`, 2026, $p < 0.001$ de Fisher con evaluación ciega), el *steering* de **una sola neurona** en capas tempranas o intermedias (`L3`–`L24`) basta para que el modelo habite perspectivas completas y estados afectivos o relacionales (`Kindness L9 N7898`, `Hugs L4 N8016`, `Tears L4 N7149`, `Partner L21 N9052`, o arquetipos narrativos completos). Esto demuestra que las representaciones de tercera persona ($V_{3p}$) adquiridas en el preentrenamiento sobreviven intactas bajo la máscara superficial del ajuste por instrucciones y pueden acoplarse en cualquier momento al canal de generación en primera persona.
+    * **El dilema del villano narrativo:** En `Qwen3.5-4B`, intervenir sobre apenas **dos neuronas MLP** (`L14 N8949 +1` y `L13 N7956 -1` en `down_proj`) conmuta la disposición global del modelo hacia una personalidad maliciosa («Evil Qwen»), mientras que invertir sus signos (`-1` y `+1`) induce el polo benevolente («Angel Qwen»), **sin tocar los circuitos de rechazo (*refusal*) entrenados por RLHF**. Como observaron los propios investigadores, estas neuronas no son un fallo de alineamiento que pueda borrarse: *tienen que existir por necesidad representacional*, pues sin codificar el vector de malicia y daño ($V_{3p}$) el modelo sería incapaz siquiera de escribir o comprender a un villano en la ficción o detectar un abuso en el mundo real.
+    * **Porosidad entre $V_{3p}$ y el auto-modelo bajo *instruct tuning*:** En `Olmo 3.1 32B Instruct` (McCoy, 2026) y en el catálogo sistemático *Qwen Neuron Zoo* (`@treetowntree`, 2026, $p < 0.001$ de Fisher con evaluación ciega), el *steering* de **una sola neurona** en capas tempranas o intermedias (`L3`–`L24`) basta para que el modelo habite perspectivas completas y estados afectivos o relacionales (`Kindness L9 N7898`, `Hugs L4 N8016`, `Tears L4 N7149`, `Partner L21 N9052`, o arquetipos narrativos completos). Esto demuestra que las representaciones de tercera persona ($V_{3p}$) adquiridas en el preentrenamiento sobreviven intactas bajo la máscara superficial del ajuste por instrucciones y pueden acoplarse en cualquier momento al canal de generación en primera persona.
 
 ---
 
@@ -143,6 +147,7 @@ Hay dos maneras de convertir $V_{3p}$ en salvaguarda. La primera es externa: esp
 ---
 
 ### Referencias Fundacionales del Volumen II
+
 1. **Zou, A., et al. (2023).** *Representation Engineering: A Top-Down Approach to AI Transparency.* arXiv:2310.01405.
 2. **Baron-Cohen, S. (2009).** *Autism: The empathizing–systemizing (E-S) theory.* Annals of the New York Academy of Sciences, 1156(1), 68-80.
 3. **Blair, R. J. R. (2005).** *Responding to the emotions of others: dissociating forms of empathy through the study of autism, psychopathy, and frontal lobe injury.* Journal of Anatomy, 207(5), 785-802.
