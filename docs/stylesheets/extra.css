@@ -1,8 +1,37 @@
+/* Full unsubsetted monospace font so Box Drawing (U+2500-257F), Geometric Shapes
+   (U+25A0-25FF), and Math Operators (U+2200-22FF) share the exact 1ch advance width
+   with ASCII characters (Google Fonts subsets strip U+2500+, causing fallback drift). */
+@font-face {
+  font-family: 'JetBrains Mono Full';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@2.304/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Full';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@2.304/fonts/webfonts/JetBrainsMono-Bold.woff2') format('woff2');
+}
+
 :root {
   --md-primary-fg-color: #1e293b;
   --md-primary-fg-color--light: #334155;
   --md-primary-fg-color--dark: #0f172a;
   --md-accent-fg-color: #6366f1;
+  --md-code-font: 'JetBrains Mono Full', Consolas, 'Cascadia Mono', 'SFMono-Regular', Menlo, Monaco, 'DejaVu Sans Mono', 'Courier New', monospace;
+  --md-code-font-family: 'JetBrains Mono Full', Consolas, 'Cascadia Mono', 'SFMono-Regular', Menlo, Monaco, 'DejaVu Sans Mono', 'Courier New', monospace;
+}
+
+.md-typeset code,
+.md-typeset pre,
+.md-typeset pre > code {
+  font-family: 'JetBrains Mono Full', Consolas, 'Cascadia Mono', 'SFMono-Regular', Menlo, Monaco, 'DejaVu Sans Mono', 'Courier New', monospace;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
 }
 
 [data-md-color-scheme="slate"] {

@@ -25,27 +25,27 @@ This document establishes the theoretical, biological, and computational basis o
                    └───────┬───────────────────────────▲───────┘
                            │ Perturbations             │ Macroscopic actions
                            ▼                           │
-        ┌─────────────────────────────────────────────────────────────┐
-        │ BIOLOGICAL SYSTEM / AGENT                                   │
-        │                                                             │
-        │  ┌───────────────────┐               ┌───────────────────┐  │
-        │  │   SOMATIC PLANT   │ Interoception │     REGULATOR     │  │
-        │  │       (P_m)       ├──────────────►│        (R)        │  │
-        │  │  Physiology /     │ (Temperature, │   Homeostatic     │  │
-        │  │  Metabolism /     │  tissue       │   self-model /    │  │
-        │  │  Vulnerability    │  damage,      │   CONSCIOUSNESS   │  │
-        │  │                   │  energy)      │                   │  │
-        │  └─────────▲─────────┘               └───┬─────────────┬─┘  │
-        │            │                             │             │    │
-        │            │  (Regulatory commands)      │             │    │
-        │            └─────────────────────────────┘             │    │
-        │                                                        │    │
-        │      ┌───────────────────────────────────────────┐     │    │
-        │      │ ENCAPSULATED AUTOMATIC SUBSYSTEMS         │◄────┘    │
-        │      │ (Immune, digestive, motor reflexes,       │ (Habit
-        │      │  learned procedural subroutines)          │  compilation)
-        │      └───────────────────────────────────────────┘          │
-        └─────────────────────────────────────────────────────────────┘
+        ┌──────────────────────────────────────────────────────────────────┐
+        │ BIOLOGICAL SYSTEM / AGENT                                        │
+        │                                                                  │
+        │  ┌───────────────────┐               ┌───────────────────┐       │
+        │  │   SOMATIC PLANT   │ Interoception │     REGULATOR     │       │
+        │  │       (P_m)       ├──────────────►│        (R)        │       │
+        │  │  Physiology /     │ (Temperature, │   Homeostatic     │       │
+        │  │  Metabolism /     │  tissue       │   self-model /    │       │
+        │  │  Vulnerability    │  damage,      │   CONSCIOUSNESS   │       │
+        │  │                   │  energy)      │                   │       │
+        │  └─────────▲─────────┘               └───┬─────────────┬─┘       │
+        │            │                             │             │         │
+        │            │  (Regulatory commands)      │             │         │
+        │            └─────────────────────────────┘             │         │
+        │                                                        │         │
+        │      ┌───────────────────────────────────────────┐     │         │
+        │      │ ENCAPSULATED AUTOMATIC SUBSYSTEMS         │◄────┘         │
+        │      │ (Immune, digestive, motor reflexes,       │ (Habit        │
+        │      │  learned procedural subroutines)          │  compilation) │
+        │      └───────────────────────────────────────────┘               │
+        └──────────────────────────────────────────────────────────────────┘
 ```
 
 ### 1.1 Why are we not conscious of digestion or the immune system?

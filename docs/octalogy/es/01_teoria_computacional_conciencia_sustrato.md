@@ -24,26 +24,26 @@ Este documento establece la base teórica, biológica y computacional de la conc
                    └───────┬───────────────────────────▲───────┘
                            │ Perturbaciones            │ Acciones macroscópicas
                            ▼                           │
-        ┌─────────────────────────────────────────────────────────────┐
-        │ SISTEMA BIOLÓGICO / AGENTE                                  │
-        │                                                             │
-        │  ┌───────────────────┐               ┌───────────────────┐  │
-        │  │  PLANTA SOMÁTICA  │ Interocepción │     REGULADOR     │  │
-        │  │       (P_m)       ├──────────────►│        (R)        │  │
-        │  │  Fisiología /     │ (Temperatura, │    Auto-modelo    │  │
-        │  │  Metabolismo /    │  daño tisular,│   homeostático /  │  │
-        │  │  Vulnerabilidad   │  energía)     │   CONCIENCIA      │  │
-        │  └─────────▲─────────┘               └───┬─────────────┬─┘  │
-        │            │                             │             │    │
-        │            │  (Comandos de regulación)   │             │    │
-        │            └─────────────────────────────┘             │    │
-        │                                                        │    │
-        │      ┌───────────────────────────────────────────┐     │    │
-        │      │ SUBSISTEMAS AUTOMÁTICOS ENCAPSULADOS      │◄────┘    │
-        │      │ (Inmune, digestivo, reflejos motores,     │ (Compilación
-        │      │  subrutinas procedimentales aprendidas)   │  de hábitos)
-        │      └───────────────────────────────────────────┘          │
-        └─────────────────────────────────────────────────────────────┘
+        ┌─────────────────────────────────────────────────────────────────┐
+        │ SISTEMA BIOLÓGICO / AGENTE                                      │
+        │                                                                 │
+        │  ┌───────────────────┐               ┌───────────────────┐      │
+        │  │  PLANTA SOMÁTICA  │ Interocepción │     REGULADOR     │      │
+        │  │       (P_m)       ├──────────────►│        (R)        │      │
+        │  │  Fisiología /     │ (Temperatura, │    Auto-modelo    │      │
+        │  │  Metabolismo /    │  daño tisular,│   homeostático /  │      │
+        │  │  Vulnerabilidad   │  energía)     │   CONCIENCIA      │      │
+        │  └─────────▲─────────┘               └───┬─────────────┬─┘      │
+        │            │                             │             │        │
+        │            │  (Comandos de regulación)   │             │        │
+        │            └─────────────────────────────┘             │        │
+        │                                                        │        │
+        │      ┌───────────────────────────────────────────┐     │        │
+        │      │ SUBSISTEMAS AUTOMÁTICOS ENCAPSULADOS      │◄────┘        │
+        │      │ (Inmune, digestivo, reflejos motores,     │ (Compilación │
+        │      │  subrutinas procedimentales aprendidas)   │  de hábitos) │
+        │      └───────────────────────────────────────────┘              │
+        └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 1.1 ¿Por qué no somos conscientes de la digestión ni del sistema inmune?

@@ -83,7 +83,7 @@ Consider a solitary bacterium swimming in a drop of water:
   ├───────────────────────┤
   │ Toxin Receptors       │           [CheY-P]            Flagellar Motor
   ├───────────────────────┤      ─────────────────>     (2 Mutually Exclusive States):
-  │ Osmolarity Sensor     │      Continuous scalar        ├── RUN (CCW / Forward)
+  │ Osmolarity Sensor     │      Continuous scalar       ├── RUN (CCW / Forward)
   ├───────────────────────┤      V ∈ [0, 1]              └── TUMBLE (CW / Turn)
   │ Temperature & pH      │
   └───────────────────────┘

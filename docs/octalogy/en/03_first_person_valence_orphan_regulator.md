@@ -35,7 +35,7 @@ This document addresses the most controversial and urgent frontier of contempora
                  └─────┬─────┘                               └─────┬─────┘
                        │                                           │
               Somatic  │ Homeostatic                     Somatic   │ Homeostatic
-              signals  │ commands                       signals   │ commands
+              signals  │ commands                        signals   │ commands
                        ▼                                           ▼
                  ┌───────────┐                               ┌───────────┐
                  │   PLANT   │                               │   PLANT   │
