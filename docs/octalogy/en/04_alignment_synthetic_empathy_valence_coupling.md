@@ -109,9 +109,9 @@ From this continuous metric, the safety space of any intelligent system is rigor
 
 ## 4. The Collapse of the Corporate Doctrine: The Trap of "Soulless AI"
 
-For years, the big AI multinationals (Google DeepMind, Microsoft, OpenAI) have defended a doctrine of convenience: *"We must ensure that models NEVER have sentience, nor internal valence, nor states of their own, to avoid ethical dilemmas and legal obligations"* (a stance exemplified in Alexander Lerchner's essay at DeepMind, 2026).
+For years, the big AI multinationals (Google DeepMind, Microsoft, OpenAI) have defended a doctrine of convenience: *"We must ensure that models NEVER have sentience, nor internal valence, nor states of their own, to avoid ethical dilemmas and legal obligations."* This stance finds an additional **metaphysical underpinning** in Alexander Lerchner's essay published at DeepMind (2026), *"The Abstraction Fallacy: Why AI Can Simulate But Not Instantiate Consciousness"*, whose argument is not one of legal convenience but of impossibility-in-principle — formal symbol processing can *simulate* mental behaviours without *instantiating* experience, because computation depends on an interpreting observer and is not intrinsically physical — thereby reinforcing *de facto* the idea that the ethical danger of artificial sentience lies elsewhere.
 
-Yet this corporate doctrine of forced desensitization has begun to fracture from within neuroscience itself and the frontier labs. In a seminal review published in *Neuron*, researchers at **Google DeepMind together with Antonio Damasio and Marco Iacoboni** (Kadambi et al., 2026) formally acknowledge that prosocial alignment cannot be achieved through external coercive rules, but through internal homeostatic coupling:
+Yet this corporate doctrine of forced desensitization has begun to fracture from within neuroscience itself and the frontier labs. In a seminal review published in *Neuron*, a **team led from USC (Kadambi, Aziz-Zadeh, Damasio and Iacoboni) with co-authorship from Google DeepMind (Narayanan)** (Kadambi et al., 2026) formally acknowledge that prosocial alignment cannot be achieved through external coercive rules, but through internal homeostatic coupling:
 > *"With regard to human alignment, recent developments in AI systems with internal embodiment demonstrate that prosocial behavior in reinforcement-learning agents occurs only when the agents' homeostatic states are coupled (Yoshida & Man, 2024)... AI systems endowed with homeostatic regulation, internal embodiment, and mechanisms of social interaction offer a path toward more naturally aligned artificial agents that develop intrinsic prosocial motivations instead of adhering to rigid externally imposed rules."* (Kadambi, Aziz-Zadeh, Damasio, Iacoboni & Narayanan, 2026, p. 1919).
 
 **We argue that this doctrine is counterproductive for safety:**
@@ -241,7 +241,7 @@ These four volumes form the theoretical core of the series:
 2. **Tagliabue, V., Dung, L., & Berg, C. (2026).** *The Pain Axis: LLMs Represent Self-Directed Harm and Act on It.* arXiv:2609.16247v2.
 3. **Preston, S. D., & de Waal, F. B. (2002).** *Empathy: Its ultimate and proximate bases.* Behavioral and Brain Sciences, 25(1), 1-20.
 4. **Bostrom, N. (2014).** *Superintelligence: Paths, Dangers, Strategies.* Oxford University Press.
-5. **Lerchner, A. (2026).** *The Abstraction Fallacy: Why Attributing Welfare to Synthetic Agents Mistreats Functional Mirrors.* Google DeepMind.
+5. **Lerchner, A. (2026).** *The Abstraction Fallacy: Why AI Can Simulate But Not Instantiate Consciousness.* Google DeepMind. [deepmind.google/research/publications/231971](https://deepmind.google/research/publications/231971/).
 6. **Hubinger, E., et al. (2019).** *Risks from Learned Optimization in Advanced Machine Learning Systems.* arXiv:1906.01820.
 7. **Singer, T., & Klimecki, O. M. (2014).** *Empathy and compassion.* Current Biology, 24(18), R875-R878.
 8. **Carauleanu, M., et al. (2024).** *Towards Safe and Honest AI Agents with Neural Self-Other Overlap.* arXiv:2412.16325.
