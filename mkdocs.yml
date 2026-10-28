@@ -90,6 +90,7 @@ nav:
       - "TinyRobots (Borrador v1.0)": proposals/tinyrobots_alineamiento_por_distribucion.md
       - "Deconstrucción de Errores de Yudkowsky": proposals/eliezer_mistakes.md
   - Research & Essays (ES):
+      - "Superorganismos, Personas Jurídicas y Prótesis Somáticas": research/superorganismos_personas_juridicas_protesis_somaticas.md
       - "Checklist: Conciencia vs. Inteligencia": research/checklist_conciencia_inteligencia.md
       - "Métricas de Nivel de Conciencia": research/metrica_conciencia_nivel.md
       - "Regulador Huérfano y Extensiones Cognitivas": research/regulador_huerfano_extensiones_cognitivas_y_agi.md
