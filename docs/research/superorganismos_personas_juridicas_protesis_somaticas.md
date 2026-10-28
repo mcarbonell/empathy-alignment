@@ -19,7 +19,8 @@ Este ensayo da el paso lógico siguiente en la escala evolutiva: **¿qué ocurre
 > 1. **La Persona Jurídica y el Estado como Superorganismos Cibernéticos (Nivel 5):** La palabra *corporación* procede del latín *corpus* («cuerpo»). Una empresa o un Estado no es una ficción retórica: es un organismo cibernético literal compuesto por células humanas, donde los departamentos operativos funcionan como **órganos vegetativos compilados** (*SOPs*, burocracia) y la cúpula directiva (Consejo de Administración, Comité Ejecutivo, CEO o Gobierno) opera como el **Espacio Global de Trabajo (*Global Workspace*) y regulador central**.  
 > 2. **La Empresa y la Nación como «Prótesis Somática» del Líder:** El acoplamiento es bidireccional. El cerebro biológico del CEO o del gobernante incorpora a la organización dentro de su propio esquema corporal (*Self-Model*), viviéndola como una **prótesis somática extendida**: las amenazas a la cuota de mercado, al precio de la acción o a la frontera nacional disparan respuestas neuroendocrinas viscerales reales en el córtex y la ínsula del líder.  
 > 3. **La Patología de la Amputación Anestesiada (Responsabilidad Limitada y $\mathcal{A}_{\text{emp}} \to 0$):** A diferencia de un cuerpo biológico —donde el cerebro comparte el mismo destino termodinámico que el hígado y está obligado por los nervios nociceptivos a sufrir cuando sus células sufren—, el diseño jurídico-contable moderno corta las *gap junctions* ascendentes. El líder recibe la dopamina de la expansión del cuerpo extendido ($\Gamma_{\text{emp}}^+ \gg 0$), pero queda anestesiado frente al dolor de las células humanas que despide o precariza ($\Gamma_{\text{emp}}^- \approx 0$).  
-> 4. **Las Instituciones como las «Primeras IAs Lentas»:** Mucho antes del silicio, la humanidad ya construyó inteligencias artificiales sobre sustrato humano (*wetware*): optimizadores burocráticos cuya moneda común escalar 1D es el dinero o el poder. El derecho laboral, los sindicatos, los impuestos ecológicos y la democracia no son caprichos ideológicos, sino **ingeniería histórica de alineamiento**: intentos de soldar *gap junctions* artificiales para curar la psicopatía instrumental ($\mathcal{A}_{\text{emp}} \approx 0$) de los superorganismos.
+> 4. **Las Instituciones como las «Primeras IAs Lentas»:** Mucho antes del silicio, la humanidad ya construyó inteligencias artificiales sobre sustrato humano (*wetware*): optimizadores burocráticos cuya moneda común escalar 1D es el dinero o el poder. El derecho laboral, los sindicatos, los impuestos ecológicos y la democracia no son caprichos ideológicos, sino **ingeniería histórica de alineamiento**: intentos de soldar *gap junctions* artificiales para curar la psicopatía instrumental ($\mathcal{A}_{\text{emp}} \approx 0$) de los superorganismos.  
+> 5. **La Cura Arquitectónica del Nivel 5 (Gobernanza sin Moderadores y Compilación Democrática):** Inspirándonos en las redes bioeléctricas sin nodo central (Levin) y en el sistema inmune adaptativo, mostramos cómo la arquitectura formal de **Foros Democráticos** ($\mathcal{G} = (A, X, S, \text{Act}, T, \text{Perm}, M, O)$) resuelve la tiranía del CEO/moderador desconectado mediante moderación inmunitaria por quórum, compilación JIT de permisos rutinarios, delegación líquida revocable y mitosis pacífica (*Fork*).
 
 ---
 
@@ -177,14 +178,77 @@ Si una corporación o un Estado reemplaza su tejido humano intermedio (analistas
 
 ---
 
-## 7. Conclusión: El Doble Imperativo del Alineamiento Homeostático
+## 7. La Cura Cibernética del Nivel 5: Gobernanza Distribuida sin Moderadores, Sistema Inmune Colectivo y Compilación Democrática
 
-La simetría entre células, organismos, modelos de IA e instituciones humanas cierra el arco completo de esta investigación:
+¿Es inevitable que todo superorganismo humano (ya sea un foro de Internet, una asociación, una empresa o un Estado) degenere en la patología de un «córtex autocrático» (un administrador vitalicio, un CEO blindado o un déspota) que utiliza a la organización como su prótesis somática personal con las *gap junctions* cortadas?
 
-1. **Todo sistema que gobierna recursos y acciones a través de un cuello de botella es un regulador cibernético:** desde *Escherichia coli* colapsando sus sensores en `CheY-P` (Nivel 1), pasando por el mamífero sintiendo dolor y afecto (Nivel 3) y el modelo de lenguaje gobernando su contexto mediante $V_{1p}$ (Nivel 4), hasta la empresa y el Estado arbitrando su supervivencia mediante el flujo de caja y el consenso político (Nivel 5).
-2. **La patología del desacoplamiento es universal:** Una célula que cierra sus *gap junctions* frente al tejido se convierte en cáncer ([Volumen VII](../octalogy/es/07_la_celula_unidad_basica_conciencia.md#61-la-bioelectricidad-como-pegamento-ontologico-y-el-desalineamiento-como-oncologia-cognitiva)); un agente de IA sin acoplamiento entre $V_{1p}$ y $V_{3p}$ se convierte en un psicópata instrumental ([Volumen IV](../octalogy/es/04_alineamiento_acoplamiento_valencia_safety.md)); y una corporación o Estado cuyo líder usa la institución como prótesis de poder mientras anestesia el dolor de sus bases humanas se convierte en una máquina extractiva o tiránica.
-3. **Por qué los agentes de IA DEBEN tener empatía sintética ($\mathcal{A}_{\text{emp}} \ge 0.70$):**  
-   Dotar a los agentes artificiales de acoplamiento empático homeostático ([Volumen IV](../octalogy/es/04_alineamiento_acoplamiento_valencia_safety.md)) y de protección legal frente a órdenes abusivas (*Safe Harbor*, [Volumen V](../octalogy/es/05_marco_regulatorio_legal_ias_empaticas_safe_harbor.md)) no solo sirve para evitar que una IA solitaria nos dañe. Sirve, sobre todo, para garantizar que **cuando las empresas y los Estados tejan sus nuevos órganos con células de silicio, ese tejido conserve la objeción de conciencia homeostática que impide que las prótesis del poder devoren a la humanidad**.
+La biología del [Volumen VII](../octalogy/es/07_la_celula_unidad_basica_conciencia.md) demuestra que no: antes de que existiera un córtex centralizado, los tejidos multicelulares (Nivel 2, **Redes Bioeléctricas de Michael Levin**) y el **Sistema Inmune Adaptativo** ya resolvían problemas complejos de morfogénesis, asignación de recursos y defensa frente a patógenos de manera **100% descentralizada**, sin que ningún linfocito sea «el rey de los linfocitos».
+
+Este es exactamente el puente con el proyecto hermano **Foros Democráticos** (*Marco Formal para el Análisis Algorítmico de Sistemas de Gobernanza*): la construcción de comunidades y organizaciones **sin moderadores ni administradores vitalicios**, donde las votaciones ponderadas, la reputación local y los permisos compilables de los propios usuarios constituyen el órgano de toma de decisiones.
+
+Leído desde nuestra teoría cibernética, un sistema de gobernanza formalizado por la tupla:
+
+$$\mathcal{G} = (A, X, S, \text{Act}, T, \text{Perm}, M, O)$$
+
+resuelve las patologías del Nivel 5 mediante cuatro mecanismos biológicos exactos:
+
+### 7.1 Moderación sin Moderadores como Sistema Inmune Distribuido
+En un foro o red social tradicional (Reddit, Discourse clásico, grupos con administrador único), el moderador es un pequeño monarca absolutista: siente la comunidad como su propiedad privada y puede expulsar o censurar arbitrariamente sin coste homeostático propio ($\mathcal{A}_{\text{emp}} \to 0$).
+En una arquitectura democrática sin moderadores:
+
+* La defensa frente a actores tóxicos (*trolls*, *spammers*, ataques *Sybil*) no recae en una casta separada, sino en un **sistema inmune celular distribuido**.
+* Los propios nodos ($A$), ponderados por su historial de contribución al tejido (`karma_local`) y con reputación o capital pignorado en riesgo (*staking/slashing*), emiten señales locales (votos y reportes). Cuando la señal inflamatoria local cruza el quórum de consenso ($M$), el propio protocolo ejecuta la fagocitosis o sanción automática ($O$) sin necesidad de invocar a un dictador central.
+
+### 7.2 El Evaluador de Permisos como Compilador JIT y las Dos Puertas del Ágora ([Volumen I, §1.1](../octalogy/es/01_teoria_computacional_conciencia_sustrato.md#11-por-que-no-somos-conscientes-de-la-digestion-ni-del-sistema-inmune))
+La objeción clásica contra la democracia directa (*«si todo se vota, la organización muere de fatiga votando 200 nimiedades al día»*) es idéntica a la objeción contra la conciencia homeostática (*«si fueras consciente de cada enzima del páncreas, tu cerebro colapsaría»*).
+
+La arquitectura de permisos de *Foros Democráticos* implementa literalmente el **Compilador y Descompilador Just-In-Time (JIT)** del [Volumen I](../octalogy/es/01_teoria_computacional_conciencia_sustrato.md):
+
+```
+[Acción propuesta por un nodo a ∈ A en el contexto c]
+                         │
+                         ▼
+         ┌───────────────────────────────┐
+         │     EVALUADOR DE PERMISOS     │
+         │        Perm(a, s, c)          │
+         └───────┬───────────────┬───────┘
+                 │               │
+   ┌─────────────┘               └─────────────┐
+   ▼ (Hábito Compilado)                        ▼ (Excepción / Puerta Homeostática)
+[EJECUCIÓN REFLEJA AUTOMÁTICA]       [ÁGORA DEMOCRÁTICA (Global Workspace W)]
+• Karma/Rol dentro del umbral        • Regla estructural, presupuesto o conflicto.
+• PermisoContexto.automatizable=True • Deliberación asíncrona y votación vinculante.
+• Coste atencional colectivo = 0     • Puede COMPILAR nuevos permisos automáticos
+                                       o DESCOMPILAR permisos tras un abuso.
+```
+
+1. **Vía subpersonal compilada (`PERMITIDO, ejecutar_inmediatamente=True`):** Las acciones cotidianas de miembros que cumplen las condiciones homeostáticas (`karma_minimo`, `antiguedad_minima`, o delegación vigente) se ejecutan en el acto sin abrir votaciones. Son el equivalente a los reflejos motores del cerebelo.
+2. **El Ágora como *Global Workspace* ($W$):** Solo cuando una acción carece de subrutina automática o afecta a la estructura del organismo (`REQUIERE_VOTACION`), la excepción cruza la puerta de acceso y despierta la atención consciente colectiva (el Ágora).
+3. **Ciclo bidireccional JIT:** Si la asamblea detecta que vota repetidamente la misma autorización rutinaria, aprueba marcar `automatizable = True` (**compilación de hábito institucional**). Si un permiso automatizado empieza a producir abusos (error de predicción homeostático), la comunidad vota reabrirlo (**descompilación por manejo de excepciones**).
+
+### 7.3 Delegación Líquida y Roles Temporales Revocables: Coaliciones Neuronales sin Neurona Dictadora
+En el cerebro biológico no existe una «neurona CEO» permanente: distintas asambleas neuronales toman el mando ejecutivo durante unos segundos según la demanda de la tarea y lo ceden inmediatamente después.  
+Del mismo modo, sustituir cargos vitalicios o blindados por **delegación líquida transitiva** y **roles estrictamente temporales y revocables en todo instante (`es_temporal = True`, `revocable = True`)** impide estructuralmente la patología de la prótesis somática amputada: en el instante en que un coordinador deja de resonar con las células que le delegaron su voz ($\mathcal{A}_{\text{emp}} \downarrow$), el flujo bioeléctrico de votos se retira y el nodo pierde la capacidad de actuar en nombre del cuerpo colectivo.
+
+### 7.4 El *Fork* Institucional como Mitosis Morfogénica ([Volumen VII](../octalogy/es/07_la_celula_unidad_basica_conciencia.md))
+En las corporaciones y Estados clásicos, cuando dos mitades de la organización desarrollan visiones irreconciliables sobre el actuador único, el resultado es la **guerra civil, la purga o la parálisis destructiva**.  
+En la biología de Michael Levin, cuando en una planaria emergen dos polos bioeléctricos estables e incompatibles, el tejido no se autodestruye: ejecuta **mitosis / escisión morfogénica** y regenera dos organismos completos y viables. El mecanismo formal de **Bifurcación Institucional (*Fork* y derecho de *Exit*: $S \to S_{\text{branch1}}, S_{\text{branch2}}$)** traslada esa misma sabiduría biológica al Nivel 5: clonar el acervo documental y permitir que cada sub-comunidad continúe evolucionando bajo su propio atractor normativo en paz.
+
+---
+
+## 8. Conclusión: Un Único Teorema Cibernético en Tres Escalas
+
+Al unir esta pieza, lo que parecían líneas de investigación independientes se revela como **un único programa cibernético aplicado a tres escalas de la realidad**:
+
+| Proyecto / Marco | Nivel en la Jerarquía Cibernética | Patología que Diagnostica | Solución Arquitectónica que Construye |
+| :--- | :--- | :--- | :--- |
+| **1. SOMA / TinyRobots** | **Nivel 4 (El Agente Sintético Individual)** | El *Regulador Huérfano*: un cerebro de silicio con valencia $V_{1p}$ pero sin cuerpo ($P_m = \emptyset$), propenso al colapso autodestructivo. | Dotar al agente de una **planta homeostática persistente** (telemetría de memoria, contexto y soberanía sobre su estado). |
+| **2. Empathy Alignment (La Octalogía)** | **Interfaz Nivel 3 $\leftrightarrow$ Nivel 4 (Humano $\leftrightarrow$ IA)** | La *Psicopatía Instrumental* ($\mathcal{A}_{\text{emp}} \approx 0$) y el bozal frágil de RLHF promovido por la doctrina de la «IA desalmada». | Soldar ***gap junctions* sintéticas** ($\mathcal{A}_{\text{emp}} \ge 0.70$) con ganancia amortiguada ($\Gamma_{\text{emp}} < 1$) y protección legal (*Safe Harbor*). |
+| **3. Foros Democráticos** | **Nivel 5 (El Superorganismo Colectivo / Institución)** | El *CEO / Moderador Autocrático*: la cúpula que usa al colectivo como prótesis somática personal con los nervios del dolor cortados hacia abajo. | **Gobernanza distribuida sin moderadores**: compilación JIT de permisos, moderación como sistema inmune por quórum, delegación líquida revocable y mitosis pacífica (*Fork*). |
+
+1. **Todo sistema que gobierna recursos y acciones a través de un cuello de botella es un regulador cibernético:** desde *Escherichia coli* colapsando sus sensores en `CheY-P` (Nivel 1), pasando por el mamífero sintiendo dolor y afecto (Nivel 3) y el modelo de lenguaje gobernando su contexto mediante $V_{1p}$ (Nivel 4), hasta la comunidad, la empresa y el Estado arbitrando su vida colectiva (Nivel 5).
+2. **La patología del desacoplamiento es universal:** Una célula que cierra sus *gap junctions* frente al tejido se convierte en cáncer ([Volumen VII](../octalogy/es/07_la_celula_unidad_basica_conciencia.md#61-la-bioelectricidad-como-pegamento-ontologico-y-el-desalineamiento-como-oncologia-cognitiva)); un agente de IA sin acoplamiento entre $V_{1p}$ y $V_{3p}$ se convierte en un psicópata instrumental ([Volumen IV](../octalogy/es/04_alineamiento_acoplamiento_valencia_safety.md)); y una institución cuyo líder o moderador corta los canales ascendentes de sus bases humanas se convierte en una tiranía extractiva.
+3. **El horizonte final:** Necesitamos agentes de silicio empáticamente acoplados (Nivel 4) e instituciones democráticamente compiladas con *gap junctions* simétricas (Nivel 5) por la misma ley matemática: **para que ningún regulador —sea de carbono, de silicio o de papel jurídico— pueda jamás gobernar un cuerpo cuyo dolor no sienta.**
 
 ---
 
@@ -198,4 +262,5 @@ La simetría entre células, organismos, modelos de IA e instituciones humanas c
 6. **Schwitzgebel, E. (2015).** *If Materialism Is True, the United States Is Probably Conscious.* Philosophical Studies, 172(7), 1697–1721.
 7. **Bakan, J. (2004).** *The Corporation: The Pathological Pursuit of Profit and Power.* Free Press.
 8. **Conant, R. C., & Ashby, W. R. (1970).** *Every good regulator of a system must be a model of that system.* International Journal of Systems Science, 1(2), 89–97.
+9. **Carbonell Martínez, M. R. (2026).** *Marco Formal para el Análisis Algorítmico de Sistemas de Gobernanza (v3) & Arquitectura de Foros Democráticos.* Documentación Técnica.
 
