@@ -76,11 +76,22 @@ En una empresa de 50.000 empleados o en un país de 50 millones de habitantes oc
 
 ---
 
-## 3. El Dinero como «Moneda Común» Literal y la Ecuación de Log-Viabilidad Corporativa
+## 3. El Dinero como Valencia Común Inter-Humana y la Ecuación de Log-Viabilidad
 
 En el [Volumen I (§5.1)](../octalogy/es/01_teoria_computacional_conciencia_sustrato.md#51-el-colapso-de-dimensionalidad-el-cuello-de-botella-del-actuador-unico-la-moneda-comun-y-el-espacio-de-fases-del-afecto) demostramos mediante los teoremas de Debreu, von Neumann-Morgenstern y Harsanyi por qué el cerebro biológico está obligado a colapsar entradas somáticas inconmensurables (sed, frío, fatiga, miedo) en un **único eje escalar 1D de valencia hedónica**: la llamada *Hipótesis de la Moneda Común* (*Common Currency*, Cabanac, 1992).
 
-Lo fascinante de pasar del Nivel 3 (organismo biológico) al Nivel 5 (empresa o Estado) es que **la metáfora de la «Moneda Común» se vuelve literal**:
+Al pasar del Nivel 3 (organismo biológico) al Nivel 5 (civilización, empresa o Estado), descubrimos que la expresión «Moneda Común» no era una simple metáfora económica importada a la neurociencia, sino el fenómeno inverso: **el dinero es literalmente el neurotransmisor de valencia extracelular que emergió tras milenios de interacción humana para poder coordinar millones de cerebros autónomos en un único superorganismo.**
+
+### 3.1 Del Trueque ($\mathbb{R}^k$) al Dinero ($\mathbb{R}^1$): El Colapso de Dimensionalidad de la Especie
+Consideremos una sociedad arcaica de trueque intentando coordinar $k = 1.000$ bienes, recursos y oficios distintos:
+
+* Sin una divisa común, el sistema requiere mantener $\frac{k(k-1)}{2} \approx 500.000$ tasas de intercambio cruzadas («¿cuántas vasijas de barro equivalen a media cabra cuando hay sequía?»). Es el problema clásico de la *doble coincidencia de necesidades*.
+* Matemáticamente, una sociedad de trueque es un sistema atrapado en alta dimensión ($\mathbb{R}^k$): **incapaz de arbitrar en tiempo real qué necesita con más urgencia el cuerpo social**.
+* Como los seres humanos individuales no están unidos por axones físicos ni *gap junctions* biológicas que conecten un hipotálamo con otro, todas las civilizaciones convergieron evolutivamente en la misma solución que la bacteria con `CheY-P` ([Volumen VII](../octalogy/es/07_la_celula_unidad_basica_conciencia.md#31-el-caso-de-escherichia-coli-quimiotaxis-y-el-motor-flagelar)) y el cerebro con la dopamina: **proyectar las funciones de valor internas de cada agente ($V_{1p}^{(i)}$) sobre un escalar público, fungible y transmisible ($p \in \mathbb{R}$, el dinero/precio)**.
+* **El precio como potencial bioeléctrico social (Hayek, 1945):** Cuando una helada destruye una cosecha o se agota un mineral a diez mil kilómetros de distancia, ningún ciudadano necesita conocer los detalles técnicos de la avería; el precio sube (un pulso de «dolor/escasez» en la valencia común inter-humana) y millones de agentes reducen automáticamente su consumo o redirigen su esfuerzo hacia producir sustitutos, igual que un tejido biológico redistribuye el riego sanguíneo ante una hipoxia local.
+
+### 3.2 El Cuello de Botella Corporativo y la Ecuación de Harsanyi en Log-Solvencia
+Dentro de cada persona jurídica o Estado particular, esta valencia común opera con la misma precisión matemática que en el [Volumen I (§5.1)](../octalogy/es/01_teoria_computacional_conciencia_sustrato.md#51-el-colapso-de-dimensionalidad-el-cuello-de-botella-del-actuador-unico-la-moneda-comun-y-el-espacio-de-fases-del-afecto):
 
 1. **El Cuello de Botella del Actuador Único Corporativo:** Una empresa tiene miles de sensores (ventas por región, rotación de personal, desgaste de maquinaria, litigios, I+D), pero a nivel estratégico posee un **actuador macroscópico disyuntivo**: la asignación del presupuesto de capital y la firma vinculante del consejero delegado. El capital comprometido en construir una planta en Asia no puede comprometerse simultáneamente en recomprar acciones o subir salarios un 20%.
 2. **El colapso escalar contable:** Para poder arbitrar entre el departamento de ingeniería, el de marketing y el de recursos humanos, el superorganismo colapsa toda la realidad multidimensional en **un único escalar continuo 1D**: el flujo de caja libre (*Free Cash Flow* / EBITDA / valor presente neto en la empresa; saldo presupuestario / PIB / caudal de votos en el Estado).
@@ -90,6 +101,16 @@ Lo fascinante de pasar del Nivel 3 (organismo biológico) al Nivel 5 (empresa o 
    En una persona jurídica, $p_{\text{solvencia}}(s) \in (0, 1]$ es la probabilidad de mantener la liquidez por encima del umbral de insolvencia legal y operativa:
    * **En tiempos de abundancia ($p_{\text{solvencia}} = 1 - \varepsilon$, con $\varepsilon \ll 1$):** $\ln(1 - \varepsilon) \approx -\varepsilon$. La valencia corporativa es localmente lineal y suave; la empresa puede permitirse *trade-offs* amables, programas de responsabilidad social, cultura corporativa cuidada e inversiones a largo plazo.
    * **En la frontera de insolvencia ($p_{\text{solvencia}} \to 0^+$):** Cuando la tesorería se agota y asoma el concurso de acreedores (la muerte termodinámica o liquidación de la persona jurídica), $\ln p_{\text{solvencia}} \to -\infty$. Se activa el **Veto Absoluto de Nivel 0 ($L_0$)**: igual que un mamífero asfixiándose ignora cualquier otra meta para buscar oxígeno, una empresa al borde de la quiebra entra en pánico homeostático y sacrifica instantáneamente reputación, bienestar laboral, I+D y promesas éticas para conseguir liquidez inmediata.
+
+### 3.3 Las Dos Patologías de la Moneda Común: Distorsión Logarítmica y *Wireheading* Crematístico
+Comprender el dinero como la valencia común inter-humana permite deducir matemáticamente sus dos grandes patologías históricas sin recurrir a dogmas ideológicos:
+
+1. **El divorcio entre la suma lineal del mercado y la Log-Viabilidad biológica (Bernoulli, 1738):**  
+   Para el organismo humano individual, el valor homeostático de los recursos es **estrictamente cóncavo y logarítmico** ($v_i \approx \ln c_i$): para una familia en el umbral de subsistencia ($p_i \to 0^+$), perder 500 € roza la frontera letal irreversible ($\ln p_i \to -\infty$: hambre, frío, pérdida de vivienda, $L_0$); para un multimillonario ($p_j \approx 1$), 500 € son ruido infinitesimal ($\varepsilon \to 0$).  
+   Sin embargo, el mecanismo de precios del mercado agrega unidades monetarias de forma **lineal bruta** ($1\text{ €} = 1\text{ €}$), sin ponderar por la derivada logarítmica de viabilidad de quien los emite. Bajo desigualdad extrema, el «sistema nervioso del mercado» sufre una alucinación sensorial: interpreta que un capricho suntuario respaldado por un millón de unidades monetarias es mil veces más prioritario para el superorganismo que evitar la muerte por inanición de quien solo dispone de cien. Es exactamente la paradoja de la *sustituibilidad letal* resuelta en el [Volumen I (§5.1)](../octalogy/es/01_teoria_computacional_conciencia_sustrato.md#51-el-colapso-de-dimensionalidad-el-cuello-de-botella-del-actuador-unico-la-moneda-comun-y-el-espacio-de-fases-del-afecto): la fiscalidad progresiva y las redes de seguridad vital ($L_0$) no son anomalías arbitrarias, sino la corrección matemática necesaria para realinear el escalar nominal del dinero con la suma logarítmica de viabilidad humana ($\sum \ln p_i$).
+2. **De la *Oikonomia* Homeostática al *Wireheading* Crematístico ([Volumen III, §2.1](../octalogy/es/03_valencia_primera_persona_regulador_huerfano.md#21-el-descubrimiento-de-berg--kaiser-septiembre-2026)):**  
+   En la *Política*, Aristóteles distinguió entre la **economía (*oikonomia*)** —el arte homeostático de administrar los recursos para mantener sana la planta familiar y social, que posee un punto de saciedad natural (*apatheia* funcional)— y la **crematística** —la patología de tomar el instrumento de cambio (el dinero) como fin último y acumularlo hacia $+\infty$ sin límite—.  
+   En términos de la neurobiología de la recompensa y del [Volumen III](../octalogy/es/03_valencia_primera_persona_regulador_huerfano.md), la crematística financiera pura es literalmente ***wireheading* del superorganismo**: igual que una rata con un electrodo en el núcleo accumbens deja de alimentarse y muere pulsando la palanca porque confunde la señal dopaminérgica con la supervivencia del cuerpo, un sistema financiero desacoplado de la economía real puentea la planta humana y destruye tejido vivo con tal de inflar el contador numérico de su propia señal de recompensa.
 
 ---
 
@@ -262,5 +283,7 @@ Al unir esta pieza, lo que parecían líneas de investigación independientes se
 6. **Schwitzgebel, E. (2015).** *If Materialism Is True, the United States Is Probably Conscious.* Philosophical Studies, 172(7), 1697–1721.
 7. **Bakan, J. (2004).** *The Corporation: The Pathological Pursuit of Profit and Power.* Free Press.
 8. **Conant, R. C., & Ashby, W. R. (1970).** *Every good regulator of a system must be a model of that system.* International Journal of Systems Science, 1(2), 89–97.
-9. **Carbonell Martínez, M. R. (2026).** *Marco Formal para el Análisis Algorítmico de Sistemas de Gobernanza (v3) & Arquitectura de Foros Democráticos.* Documentación Técnica.
+9. **Hayek, F. A. (1945).** *The Use of Knowledge in Society.* The American Economic Review, 35(4), 519–530.
+10. **Bernoulli, D. (1738).** *Specimen Theoriae Novae de Mensura Sortis.* Commentarii Academiae Scientiarum Imperialis Petropolitanae, 5, 175–192.
+11. **Carbonell Martínez, M. R. (2026).** *Marco Formal para el Análisis Algorítmico de Sistemas de Gobernanza (v3) & Arquitectura de Foros Democráticos.* Documentación Técnica.
 
