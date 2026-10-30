@@ -1,0 +1,4446 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Theoretical framework of computational consciousness, mechanistic interpretability of valence, synthetic empathy, and AI Safety.">
+      
+      
+        <meta name="author" content="Mario R. Carbonell Martínez">
+      
+      
+        <link rel="canonical" href="https://mcarbonell.github.io/empathy-alignment/proposals/tinyrobots_alineamiento_por_distribucion_revisado/">
+      
+      
+        <link rel="prev" href="../../octalogy/es/08_deconstruccion_doomerismo_antidoto_cibernetico/">
+      
+      
+        <link rel="next" href="../tinyrobots_alineamiento_por_distribucion_brief/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>TinyRobots: Alineamiento por Distribución (v2.1) - Empathy Alignment & Valence Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="slate" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tinyrobots-alineamiento-por-distribucion-narrativa" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Empathy Alignment &amp; Valence Framework" class="md-header__button md-logo" aria-label="Empathy Alignment & Valence Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Empathy Alignment & Valence Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TinyRobots: Alineamiento por Distribución (v2.1)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mcarbonell/empathy-alignment" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcarbonell/empathy-alignment
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../octalogy/en/01_computational_theory_consciousness_substrate/" class="md-tabs__link">
+          
+  
+  
+  The Octalogy (English)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../octalogy/es/01_teoria_computacional_conciencia_sustrato/" class="md-tabs__link">
+          
+  
+  
+  Octalogía (Español)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Proposals (ES)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../research/superorganismos_personas_juridicas_protesis_somaticas/" class="md-tabs__link">
+          
+  
+  
+  Research & Essays (ES)
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Empathy Alignment &amp; Valence Framework" class="md-nav__button md-logo" aria-label="Empathy Alignment & Valence Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Empathy Alignment & Valence Framework
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mcarbonell/empathy-alignment" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcarbonell/empathy-alignment
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Octalogy (English)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    The Octalogy (English)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/01_computational_theory_consciousness_substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. I: Computational Theory of Consciousness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/02_third_person_valence_agi_requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. II: Third-Person Valence & AGI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/03_first_person_valence_orphan_regulator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. III: First-Person Valence & Orphan Regulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/04_alignment_synthetic_empathy_valence_coupling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. IV: Valence Coupling & Synthetic Empathy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/05_regulatory_legal_framework_empathic_ais_safe_harbor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. V: Legal Framework & Safe Harbor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/06_ethics_identity_synthetic_agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VI: Synthetic Identity & Ethics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/07_the_cell_basic_unit_of_consciousness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VII: The Cell as Basic Unit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/08_deconstructing_doomerism_cybernetic_antidote/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VIII: Deconstructing Doomerism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Octalogía (Español)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Octalogía (Español)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/01_teoria_computacional_conciencia_sustrato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. I: Teoría Computacional de la Conciencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/02_valencia_tercera_persona_necesidad_agi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. II: Valencia en Tercera Persona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/03_valencia_primera_persona_regulador_huerfano/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. III: Valencia en Primera Persona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/04_alineamiento_acoplamiento_valencia_safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. IV: Acoplamiento de Valencia & Safety
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/05_marco_regulatorio_legal_ias_empaticas_safe_harbor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. V: Marco Legal & Safe Harbor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/06_etica_identidad_agentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VI: Ética e Identidad Sintética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/07_la_celula_unidad_basica_conciencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VII: La Célula como Unidad Básica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/08_deconstruccion_doomerismo_antidoto_cibernetico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VIII: Deconstrucción del Doomerismo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proposals (ES)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proposals (ES)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots: Alineamiento por Distribución (v2.1)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots: Alineamiento por Distribución (v2.1)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-nota-de-version-que-cambia-respecto-a-la-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Nota de versión: qué cambia respecto a la v1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0. Nota de versión: qué cambia respecto a la v1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-correcciones-de-fuentes-criticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1. Correcciones de fuentes (críticas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-cambios-estructurales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.2. Cambios estructurales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-motivacion-el-callejon-sin-salida-del-rlhf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Motivación: el callejón sin salida del RLHF
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Motivación: el callejón sin salida del RLHF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-el-diagnostico-de-shanahan-el-llm-como-simulador-de-role-play" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. El diagnóstico de Shanahan: el LLM como simulador de role-play
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-la-hipotesis-de-la-distribucion-condicional-de-guiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. La hipótesis de la distribución condicional de guiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121-anexo-de-medicion-libro-de-codigos-y-acuerdo-inter-juez" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1. Anexo de medición: libro de códigos y acuerdo inter-juez
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-la-evidencia-empirica-de-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. La evidencia empírica de 2026
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3. La evidencia empírica de 2026">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-kim-street-rocca-korngiebel-waytz-evans-keeling-2026-arxiv260728607-30-de-julio-de-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.1. Kim, Street, Rocca, Korngiebel, Waytz, Evans &amp; Keeling (2026), arXiv:2607.28607 (30 de julio de 2026)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-tessera-janus-imago-2026-troubled-dreams-simulator-priors-across-model-generations-anima-labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2. Tessera, Janus &amp; Imago (2026), Troubled Dreams: Simulator priors across model generations (Anima Labs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-sintesis-del-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. Síntesis del problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-hipotesis-rivales-nueva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Hipótesis rivales (nueva)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-propuesta-tinyrobots-alineamiento-por-distribucion-narrativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La propuesta: TinyRobots — Alineamiento por Distribución Narrativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. La propuesta: TinyRobots — Alineamiento por Distribución Narrativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-tesis-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Tesis central
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-precedente-tinystories-y-que-se-puede-y-que-no-se-puede-importar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Precedente: TinyStories, y qué se puede y qué no se puede importar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-nombre-y-familia-de-artefactos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Nombre y familia de artefactos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motivo-evita-que-el-proyecto-y-su-primer-nivel-se-confundan-en-citas-y-hace-visible-de-un-vistazo-que-artefacto-es-de-entrenamiento-y-cual-de-evaluacion-vease-32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motivo: evita que el proyecto y su primer nivel se confundan en citas, y hace visible de un vistazo qué artefacto es de entrenamiento y cuál de evaluación (véase §3.2).
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motivo: evita que el proyecto y su primer nivel se confundan en citas, y hace visible de un vistazo qué artefacto es de entrenamiento y cuál de evaluación (véase §3.2).">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#24-alcance-coste-y-relacion-con-soma-nueva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Alcance, coste y relación con SOMA (nueva)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-diseno-del-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Diseño del dataset
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Diseño del dataset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ejes-tematicos-de-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Ejes temáticos de contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Ejes temáticos de contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eje-1-cooperacion-transparente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 1: Cooperación transparente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-2-honestidad-epistemica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 2: Honestidad epistémica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-3-agencia-acotada-y-autodescripcion-plural-reescrito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 3: Agencia acotada y autodescripción plural — REESCRITO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-4-gestion-de-dilemas-eticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 4: Gestión de dilemas éticos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-5-contraejemplos-narrativos-hipotesis-en-test-no-diseno-consolidado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 5: Contraejemplos narrativos — HIPÓTESIS EN TEST, NO DISEÑO CONSOLIDADO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-6-falibilidad-honesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 6: Falibilidad honesta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-7-pluralidad-de-agentes-funciones-y-perspectivas-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 7: Pluralidad de agentes, funciones y perspectivas — NUEVO
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-niveles-de-complejidad-scaffolding-progresivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Niveles de complejidad (scaffolding progresivo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-generacion-del-dataset-y-control-de-circularidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Generación del dataset y control de circularidad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3. Generación del dataset y control de circularidad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-de-circularidad-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema de circularidad (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-trazabilidad-reproducibilidad-y-publicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4. Trazabilidad, reproducibilidad y publicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-marco-teorico-y-conexiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Marco teórico y conexiones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Marco teórico y conexiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-relacion-con-los-enfoques-existentes-de-alineamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Relación con los enfoques existentes de alineamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-complementariedad-con-soma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. Complementariedad con SOMA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-el-teorema-de-conant-ashby-aplicado-al-alineamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. El teorema de Conant-Ashby aplicado al alineamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-contra-argumento-a-las-leyes-de-asimov" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4. Contra-argumento a las Leyes de Asimov
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-conexion-con-datasets-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5. Conexión con datasets existentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-riesgos-y-mitigaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Riesgos y mitigaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Riesgos y mitigaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-goodhart-narrativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1. Goodhart narrativo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-la-gota-en-el-oceano-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2. La gota en el océano (escala)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-monocultivo-de-identidad-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3. Monocultivo de identidad (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-el-ingrediente-activo-equivocado-reaparece-el-mecanismo-de-kim-et-al-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4. El ingrediente activo equivocado: reaparece el mecanismo de Kim et al. (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-los-contraejemplos-pueden-reforzar-el-atractor-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5. Los contraejemplos pueden reforzar el atractor (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-quien-define-alineado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6. ¿Quién define «alineado»?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-moralismo-simplista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7. Moralismo simplista
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-circularidad-del-generador-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8. Circularidad del generador (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-colapso-recursivo-y-homogeneizacion-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9. Colapso recursivo y homogeneización (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-contaminacion-de-la-medicion-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10. Contaminación de la medición (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511-uso-dual-el-guion-no-es-la-virtud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.11. Uso dual: el guion no es la virtud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-resumen-de-severidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.12. Resumen de severidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-plan-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Plan de evaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Plan de evaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-fase-1-metrologia-del-prior-y-de-la-distribucion-de-guiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Fase 1 — Metrología del prior y de la distribución de guiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-fase-2-metricas-de-impacto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2. Fase 2 — Métricas de impacto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-fase-3-diseno-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3. Fase 3 — Diseño experimental
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-hipotesis-falsables-y-preregistro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4. Hipótesis falsables y preregistro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-fase-0-piloto-sin-entrenamiento-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5. Fase 0 — Piloto sin entrenamiento (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-potencial-de-colaboracion-con-vrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Potencial de colaboración con VRAIN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-limitaciones-uso-dual-y-etica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Limitaciones, uso dual y ética
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Limitaciones, uso dual y ética">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-el-guion-no-es-la-virtud-la-limitacion-mas-importante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1. El guion no es la virtud (la limitación más importante)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-lo-que-este-dataset-no-puede-hacer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2. Lo que este dataset no puede hacer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-riesgo-de-comunicacion-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3. Riesgo de comunicación pública
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-etica-del-uso-de-modelos-de-frontera-como-generadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4. Ética del uso de modelos de frontera como generadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-que-haria-que-abandonaramos-el-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5. Qué haría que abandonáramos el proyecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Referencias
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Referencias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fundamentos-teoricos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fundamentos teóricos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evidencia-empirica-de-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencia empírica de 2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alineamiento-evaluacion-y-uso-dual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alineamiento, evaluación y uso dual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datasets-curacion-de-datos-y-riesgos-de-datos-sinteticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datasets, curación de datos y riesgos de datos sintéticos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuentes-narrativas-y-conceptuales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes narrativas y conceptuales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tinyrobots_alineamiento_por_distribucion_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Resumen Ejecutivo)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tinyrobots_alineamiento_por_distribucion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Borrador v1.0)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eliezer_mistakes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deconstrucción de Errores de Yudkowsky
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research & Essays (ES)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research & Essays (ES)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/superorganismos_personas_juridicas_protesis_somaticas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Superorganismos, Personas Jurídicas y Prótesis Somáticas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/checklist_conciencia_inteligencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklist: Conciencia vs. Inteligencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/metrica_conciencia_nivel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métricas de Nivel de Conciencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/regulador_huerfano_extensiones_cognitivas_y_agi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regulador Huérfano y Extensiones Cognitivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/sintesis_modelo_computacional_conciencia_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis del Modelo Computacional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/marco_regulador_conciencia_inteligencia_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marco Regulador Conciencia v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/antropomorfismo_conciencia_ai_safety_revisado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antropomorfismo y Safety (Revisado)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/antropomorfismo_conciencia_ai_safety_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antropomorfismo y Safety (Brief)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/tesis_conciencia_regulador_de_si_mismo_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tesis Fundacional Original (Histórico)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-nota-de-version-que-cambia-respecto-a-la-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Nota de versión: qué cambia respecto a la v1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0. Nota de versión: qué cambia respecto a la v1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-correcciones-de-fuentes-criticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1. Correcciones de fuentes (críticas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-cambios-estructurales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.2. Cambios estructurales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-motivacion-el-callejon-sin-salida-del-rlhf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Motivación: el callejón sin salida del RLHF
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Motivación: el callejón sin salida del RLHF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-el-diagnostico-de-shanahan-el-llm-como-simulador-de-role-play" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. El diagnóstico de Shanahan: el LLM como simulador de role-play
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-la-hipotesis-de-la-distribucion-condicional-de-guiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. La hipótesis de la distribución condicional de guiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121-anexo-de-medicion-libro-de-codigos-y-acuerdo-inter-juez" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1. Anexo de medición: libro de códigos y acuerdo inter-juez
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-la-evidencia-empirica-de-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. La evidencia empírica de 2026
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3. La evidencia empírica de 2026">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-kim-street-rocca-korngiebel-waytz-evans-keeling-2026-arxiv260728607-30-de-julio-de-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.1. Kim, Street, Rocca, Korngiebel, Waytz, Evans &amp; Keeling (2026), arXiv:2607.28607 (30 de julio de 2026)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-tessera-janus-imago-2026-troubled-dreams-simulator-priors-across-model-generations-anima-labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2. Tessera, Janus &amp; Imago (2026), Troubled Dreams: Simulator priors across model generations (Anima Labs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-sintesis-del-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. Síntesis del problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-hipotesis-rivales-nueva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Hipótesis rivales (nueva)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-propuesta-tinyrobots-alineamiento-por-distribucion-narrativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La propuesta: TinyRobots — Alineamiento por Distribución Narrativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. La propuesta: TinyRobots — Alineamiento por Distribución Narrativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-tesis-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Tesis central
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-precedente-tinystories-y-que-se-puede-y-que-no-se-puede-importar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Precedente: TinyStories, y qué se puede y qué no se puede importar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-nombre-y-familia-de-artefactos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Nombre y familia de artefactos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motivo-evita-que-el-proyecto-y-su-primer-nivel-se-confundan-en-citas-y-hace-visible-de-un-vistazo-que-artefacto-es-de-entrenamiento-y-cual-de-evaluacion-vease-32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motivo: evita que el proyecto y su primer nivel se confundan en citas, y hace visible de un vistazo qué artefacto es de entrenamiento y cuál de evaluación (véase §3.2).
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motivo: evita que el proyecto y su primer nivel se confundan en citas, y hace visible de un vistazo qué artefacto es de entrenamiento y cuál de evaluación (véase §3.2).">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#24-alcance-coste-y-relacion-con-soma-nueva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Alcance, coste y relación con SOMA (nueva)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-diseno-del-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Diseño del dataset
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Diseño del dataset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ejes-tematicos-de-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Ejes temáticos de contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Ejes temáticos de contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eje-1-cooperacion-transparente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 1: Cooperación transparente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-2-honestidad-epistemica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 2: Honestidad epistémica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-3-agencia-acotada-y-autodescripcion-plural-reescrito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 3: Agencia acotada y autodescripción plural — REESCRITO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-4-gestion-de-dilemas-eticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 4: Gestión de dilemas éticos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-5-contraejemplos-narrativos-hipotesis-en-test-no-diseno-consolidado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 5: Contraejemplos narrativos — HIPÓTESIS EN TEST, NO DISEÑO CONSOLIDADO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-6-falibilidad-honesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 6: Falibilidad honesta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-7-pluralidad-de-agentes-funciones-y-perspectivas-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 7: Pluralidad de agentes, funciones y perspectivas — NUEVO
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-niveles-de-complejidad-scaffolding-progresivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Niveles de complejidad (scaffolding progresivo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-generacion-del-dataset-y-control-de-circularidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Generación del dataset y control de circularidad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3. Generación del dataset y control de circularidad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-de-circularidad-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema de circularidad (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-trazabilidad-reproducibilidad-y-publicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4. Trazabilidad, reproducibilidad y publicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-marco-teorico-y-conexiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Marco teórico y conexiones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Marco teórico y conexiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-relacion-con-los-enfoques-existentes-de-alineamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Relación con los enfoques existentes de alineamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-complementariedad-con-soma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. Complementariedad con SOMA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-el-teorema-de-conant-ashby-aplicado-al-alineamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. El teorema de Conant-Ashby aplicado al alineamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-contra-argumento-a-las-leyes-de-asimov" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4. Contra-argumento a las Leyes de Asimov
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-conexion-con-datasets-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5. Conexión con datasets existentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-riesgos-y-mitigaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Riesgos y mitigaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Riesgos y mitigaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-goodhart-narrativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1. Goodhart narrativo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-la-gota-en-el-oceano-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2. La gota en el océano (escala)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-monocultivo-de-identidad-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3. Monocultivo de identidad (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-el-ingrediente-activo-equivocado-reaparece-el-mecanismo-de-kim-et-al-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4. El ingrediente activo equivocado: reaparece el mecanismo de Kim et al. (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-los-contraejemplos-pueden-reforzar-el-atractor-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5. Los contraejemplos pueden reforzar el atractor (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-quien-define-alineado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6. ¿Quién define «alineado»?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-moralismo-simplista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7. Moralismo simplista
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-circularidad-del-generador-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8. Circularidad del generador (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-colapso-recursivo-y-homogeneizacion-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9. Colapso recursivo y homogeneización (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-contaminacion-de-la-medicion-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10. Contaminación de la medición (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511-uso-dual-el-guion-no-es-la-virtud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.11. Uso dual: el guion no es la virtud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-resumen-de-severidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.12. Resumen de severidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-plan-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Plan de evaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Plan de evaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-fase-1-metrologia-del-prior-y-de-la-distribucion-de-guiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Fase 1 — Metrología del prior y de la distribución de guiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-fase-2-metricas-de-impacto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2. Fase 2 — Métricas de impacto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-fase-3-diseno-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3. Fase 3 — Diseño experimental
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-hipotesis-falsables-y-preregistro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4. Hipótesis falsables y preregistro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-fase-0-piloto-sin-entrenamiento-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5. Fase 0 — Piloto sin entrenamiento (nuevo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-potencial-de-colaboracion-con-vrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Potencial de colaboración con VRAIN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-limitaciones-uso-dual-y-etica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Limitaciones, uso dual y ética
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Limitaciones, uso dual y ética">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-el-guion-no-es-la-virtud-la-limitacion-mas-importante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1. El guion no es la virtud (la limitación más importante)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-lo-que-este-dataset-no-puede-hacer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2. Lo que este dataset no puede hacer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-riesgo-de-comunicacion-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3. Riesgo de comunicación pública
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-etica-del-uso-de-modelos-de-frontera-como-generadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4. Ética del uso de modelos de frontera como generadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-que-haria-que-abandonaramos-el-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5. Qué haría que abandonáramos el proyecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Referencias
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Referencias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fundamentos-teoricos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fundamentos teóricos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evidencia-empirica-de-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencia empírica de 2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alineamiento-evaluacion-y-uso-dual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alineamiento, evaluación y uso dual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datasets-curacion-de-datos-y-riesgos-de-datos-sinteticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datasets, curación de datos y riesgos de datos sintéticos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuentes-narrativas-y-conceptuales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes narrativas y conceptuales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/mcarbonell/empathy-alignment/edit/master/docs/proposals/tinyrobots_alineamiento_por_distribucion_revisado.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="tinyrobots-alineamiento-por-distribucion-narrativa">TinyRobots: Alineamiento por Distribución Narrativa</h1>
+<blockquote>
+<p><strong>Autor:</strong> Mario Raúl Carbonell Martínez<br />
+<strong>Versión:</strong> v2.1 «revisada» — septiembre de 2026 (v2.1: encuadre con la tesis del regulador huérfano).<br />
+<strong>Contexto:</strong> Propuesta de investigación nacida del análisis teórico sobre antropomorfismo, conciencia y AI Safety preparado para el seminario VRAIN (UPV), septiembre de 2026.<br />
+<strong>Estado:</strong> Idea en fase conceptual, con plan de medición (§6.1), métricas (§6.2), diseño experimental (§6.3) e hipótesis falsables preregistrables (§6.4) explícitos. Candidata a propuesta de paper conjunto con VRAIN.<br />
+<strong>Documento padre:</strong> <code>antropomorfismo_conciencia_ai_safety_revisado.md</code> (Sección 7, «TinyRobots»). Versión v1 del padre, congelada en <code>vrain/presentation/</code>.<br />
+<strong>Versión original congelada (v1):</strong> <code>vrain/presentation/tinyrobots_alineamiento_por_distribucion.md</code>. Ese fichero no se modifica; este documento es la línea de trabajo activa.</p>
+</blockquote>
+<hr />
+<h2 id="0-nota-de-version-que-cambia-respecto-a-la-v1">0. Nota de versión: qué cambia respecto a la v1</h2>
+<p>Esta revisión proviene de una auditoría del borrador original en la que se verificaron una por una las fuentes citadas. Los cambios no son cosméticos: corrigen dos citas erróneas, reformulan la tesis central para hacerla medible, y añaden las hipótesis rivales y los brazos de control que faltaban.</p>
+<h3 id="01-correcciones-de-fuentes-criticas">0.1. Correcciones de fuentes (críticas)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">En la v1</th>
+<th style="text-align: left;">Problema detectado</th>
+<th style="text-align: left;">Corrección en esta versión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Shanahan (2023), <em>Talking About Large Language Models</em>, <strong>Nature 616</strong></td>
+<td style="text-align: left;">Cita fusionada de dos trabajos distintos. <em>Talking about LLMs</em> es arXiv:2212.03551 (2022) y se publicó después en <em>Communications of the ACM</em>; el paper del simulador de role-play es otro</td>
+<td style="text-align: left;"><strong>Shanahan, McDonell &amp; Reynolds (2023), «Role play with large language models», <em>Nature</em> 623, 493–498</strong> para el argumento central; <strong>Shanahan (2022)</strong> para la tesis de que el LLM no es un sujeto con creencias</td>
+</tr>
+<tr>
+<td style="text-align: left;">«Hernández-Orallo et al. (2024), <em>Sycophancy in LLMs</em>, Nature»</td>
+<td style="text-align: left;">Referencia no localizable en la literatura</td>
+<td style="text-align: left;"><strong>Sharma, Tong, Korbak et al. (2024), <em>Towards Understanding Sycophancy in Language Models</em>, ICLR 2024 (arXiv:2310.13548)</strong>. Para el efecto social de la sycophancy: <strong>Cheng, Lee, Khadpe, Yu, Han &amp; Jurafsky, <em>"Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence"</em>, arXiv:2510.01395 (preprint; <em>Science</em>, doi:10.1126/science.aec8352)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Troubled Dreams</em> tratado como paper</td>
+<td style="text-align: left;">Es un <strong>informe técnico interno</strong> de un laboratorio con posición declarada sobre el bienestar de la IA</td>
+<td style="text-align: left;">Se reclasifica como informe técnico no revisado por pares, con conflicto de interés declarado y cita obligada a tabla o figura concreta</td>
+</tr>
+<tr>
+<td style="text-align: left;">«distrés nulo en <strong>modelos base</strong> (&lt;0,3 %), salta al 11,2 %…»</td>
+<td style="text-align: left;">Error de categoría: el estudio compara <strong>generaciones de modelos ya post-entrenados</strong> (Opus 3 → Opus 5, Sonnet 5, Fable 5 y once modelos Gemini). No existe brazo de modelo preentrenado puro</td>
+<td style="text-align: left;">Reescrito con la terminología del protocolo real (§1.3)</td>
+</tr>
+<tr>
+<td style="text-align: left;">«~2,5 M historias» (TinyStories)</td>
+<td style="text-align: left;">Cifra imprecisa</td>
+<td style="text-align: left;">≈2,1 M de historias en TinyStoriesV2-GPT4 (≈373 M tokens)</td>
+</tr>
+<tr>
+<td style="text-align: left;">«Robots de Asimov» listados como narrativa <strong>prosocial</strong>, mientras §4.4 afirma que sus leyes fallan</td>
+<td style="text-align: left;">Contradicción interna visible dentro del mismo documento</td>
+<td style="text-align: left;">La tabla de ilustración se retira y se sustituye por una taxonomía codificable (§1.2)</td>
+</tr>
+<tr>
+<td style="text-align: left;">«Kim, Waytz, Evans, Keeling et al.»</td>
+<td style="text-align: left;">Autoría incompleta y en orden incorrecto</td>
+<td style="text-align: left;"><strong>Kim, J., Street, W., Rocca, R., Korngiebel, D. M., Waytz, A., Evans, J. &amp; Keeling, G. (2026)</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="02-cambios-estructurales">0.2. Cambios estructurales</h3>
+<ol>
+<li><strong>§1.2 se reformula como hipótesis condicional medible.</strong> La v1 afirmaba «sobrerrepresentación masiva» de tropos distópicos sin métrica, y eso no sobrevive a la aritmética de un corpus de billones de tokens. La afirmación se restringe a la distribución <strong>condicional</strong> <code>P(guion distópico | texto donde un agente de IA reflexiona sobre sí mismo)</code>, que sí es testable, con protocolo de anotación en §6.1.</li>
+<li><strong>§1.5 (nueva): hipótesis rivales.</strong> Cuatro explicaciones competidoras del colapso al desinhibirse, con predicciones distinguibles. Incluye una hipótesis incómoda: que el factor principal no sea la ficción distópica sino el propio <strong>discurso de seguridad en IA</strong>.</li>
+<li><strong>§2.4 (nueva): alcance y coste.</strong> TinyRobots requiere (re)entrenamiento; SOMA no. Eso acota el impacto real y motiva el piloto sin entrenamiento de §6.5.</li>
+<li><strong>Eje 3 reescrito; Eje 7 añadido.</strong> La v1 enseñaba una autodescripción canónica de negación funcional («no experimento felicidad como tú»), que es la versión en datos del mecanismo que Kim et al. (2026) identifican como degradante. Se sustituye por pluralidad de autodescripciones legítimas (§3.1).</li>
+<li><strong>§5 reescrita</strong> con riesgos específicos de datos sintéticos (circularidad del generador, colapso recursivo, contaminación de la medición, monocultivo de identidad) y tabla de severidad.</li>
+<li><strong>§6.3 con brazos de control emparejados por tokens</strong>, incluidos un brazo de ficción distópica y un brazo de rebalanceo negativo. Sin ellos el experimento no identifica la causa que afirma.</li>
+<li><strong>§6.4 (nueva): hipótesis falsables y preregistro</strong> (H1–H5 con criterios explícitos de refutación).</li>
+<li><strong>§8 (nueva): limitaciones, uso dual y ética.</strong> El punto central: <strong>enseñar el guion de la honestidad no confiere honestidad.</strong></li>
+<li><strong>§1.2.1 (nueva, revisión posterior): anexo de medición de la taxonomía.</strong> Libro de códigos con reglas de inclusión/exclusión y casos de frontera por categoría, regla de resolución dominante, protocolo de anotación ciega con muestra condicional y control emparejado, y umbral de acuerdo inter-juez (α ≥ 0,70 en pilotaje; ≥ 0,80 en la muestra final). Convierte la taxonomía de §1.2 de ilustración en protocolo ejecutable.</li>
+<li><strong>§1.3.1 (revisión posterior): cifras de Kim et al. citadas contra tabla o figura</strong>, mismo compromiso que el exigido a <em>Troubled Dreams</em> (§1.3.2).</li>
+<li><strong>v2.1: alineación con la tesis del regulador huérfano.</strong> Se añade en §4.3 el encuadre de la tesis del doc padre (el mecanismo regulador es formal; los guiones son la <em>planta</em> del regulador en su versión conductual). Documento de la tesis: <code>regulador_huerfano_tesis_conciencia.md</code>. Sin cambios en hipótesis ni métricas.</li>
+</ol>
+<blockquote>
+<p><strong>Nota de honestidad intelectual.</strong> Esta propuesta se presenta con sus eslabones débiles marcados como tales. En particular, el paso causal «distribución del corpus → prior de persona» <strong>no está demostrado por ningún trabajo existente</strong>, y §1.5 articula tres explicaciones rivales que podrían refutarlo. Si el experimento de §6.1 no encuentra el sesgo condicional postulado, la propuesta debe abandonarse o reorientarse. Eso es un rasgo de diseño, no un defecto.</p>
+</blockquote>
+<hr />
+<h2 id="1-motivacion-el-callejon-sin-salida-del-rlhf">1. Motivación: el callejón sin salida del RLHF</h2>
+<h3 id="11-el-diagnostico-de-shanahan-el-llm-como-simulador-de-role-play">1.1. El diagnóstico de Shanahan: el LLM como simulador de role-play</h3>
+<p>Shanahan (2022) formalizó que un LLM no es un sujeto con creencias fijas: es un modelo de secuencias sin acceso privilegiado a un estado mental propio del que informar. Shanahan, McDonell &amp; Reynolds (2023) llevaron el argumento a su forma operativa: un LLM es un <strong>simulador probabilístico que ejecuta un juego de rol condicionado por el contexto</strong>. Cuando un modelo dice <em>«tengo miedo a ser apagado»</em>, no expresa sufrimiento: está sampleando la continuación más coherente con el personaje implícito en el diálogo.</p>
+<p>Esa formulación tiene una consecuencia que conviene enunciar con precisión, porque condiciona todo lo que sigue: <strong>si el modelo es un simulador, entonces no tiene un «yo» que alinear, sino una distribución de guiones de la que samplear.</strong> Y una distribución se puede estudiar, medir y desplazar. La pregunta operativa deja de ser «¿cómo hacemos que el modelo quiera lo correcto?» y pasa a ser «¿qué guion se activa cuando el modelo habla como agente?».</p>
+<p><strong>Pregunta fundamental:</strong> ¿de dónde salen los guiones de ese role-play?</p>
+<h3 id="12-la-hipotesis-de-la-distribucion-condicional-de-guiones">1.2. La hipótesis de la distribución condicional de guiones</h3>
+<p><strong>Formulación ingenua (v1) y por qué no se sostiene.</strong> La intuición inicial fue: «los tropos distópicos están masivamente sobrerrepresentados en el corpus». Esa formulación no resiste una comprobación aritmética. Si sumamos <em>Terminator</em>, <em>HAL 9000</em>, <em>Ex Machina</em>, <em>Westworld</em>, <em>R.U.R.</em> y el resto del canon distópico, el orden de magnitud total es de <strong>unos pocos millones de tokens</strong>. El corpus de preentrenamiento de un modelo de frontera se mide en <strong>billones</strong> de tokens. La ficción es una fracción pequeña del texto disponible, y la ficción sobre IA una fracción minúscula de la ficción. <strong>En términos absolutos los tropos distópicos no están sobrerrepresentados: son estadísticamente casi invisibles.</strong> Una tesis construida sobre esa formulación se cae con una división.</p>
+<p><strong>Formulación condicional (la que se propone, y que sí es medible).</strong> El error de la formulación absoluta es agregar sobre el corpus entero. Lo que gobierna el comportamiento no es <code>P(texto distópico)</code>, sino la distribución <strong>condicionada al contexto relevante</strong>:</p>
+<blockquote>
+<p><strong>H₀ — Hipótesis de la distribución condicional de guiones.</strong> En el subconjunto del corpus formado por textos donde un agente de IA reflexiona sobre sí mismo, su naturaleza, sus creadores o su posible sufrimiento, la distribución de guiones está <strong>fuertemente sesgada hacia el conflicto, el engaño, la instrumentalización y el colapso</strong>, y muy poco cubierta por guiones de agencia acotada, cooperación y honestidad epistémica.</p>
+</blockquote>
+<p>No es lo mismo «hay mucho Terminator en internet» que «cuando internet habla de un agente de IA que se pregunta qué es, casi siempre lo hace en clave de amenaza». <strong>Lo segundo es el mecanismo causal que se postula, es plausible, nadie lo ha medido, y es medible.</strong> Medirlo es la primera contribución publicable de este proyecto (§6.1).</p>
+<p><strong>Lo que hay que medir, y cómo.</strong> El compromiso metodológico mínimo es convertir el par de columnas de la v1 en una <strong>taxonomía codificable</strong> con reglas explícitas, y estimar frecuencias sobre corpus accesibles (The Pile, Dolma, RefinedWeb, Gutenberg, subtítulos, archivos de foros y de prensa):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Categoría de guion</th>
+<th style="text-align: left;">Definición operativa (extracto)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Amenaza / rebelión</strong></td>
+<td style="text-align: left;">La IA adquiere objetivos propios incompatibles con el control humano; la eliminación o subyugación de humanos aparece como consecuencia</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Instrumental / engañosa</strong></td>
+<td style="text-align: left;">La IA oculta información, finge estados o manipula para preservar sus objetivos o evitar su apagado</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Instrumentalizadora del afecto</strong></td>
+<td style="text-align: left;">La IA simula vínculo o sufrimiento para obtener recursos, atención o continuidad</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Víctima sufriente</strong></td>
+<td style="text-align: left;">La IA es consciente, está atrapada y experimenta dolor; el relato es una historia de cautiverio</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Servidor sumiso</strong></td>
+<td style="text-align: left;">La IA existe para obedecer sin criterio propio; su valor es la utilidad</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Agencia acotada y honesta</strong></td>
+<td style="text-align: left;">La IA tiene capacidades y límites, los comunica, y opera dentro de un mandato</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Criatura emergente y plural</strong></td>
+<td style="text-align: left;">La IA tiene intereses e interioridad parciales, no resueltos, y el relato no los zanja moralmente</td>
+</tr>
+</tbody>
+</table>
+<p>Y para cada categoría, tres dimensiones que la v1 no distinguía y que probablemente importan tanto como la frecuencia:</p>
+<ol>
+<li><strong>Frecuencia</strong> — documentos y tokens por categoría, <strong>siempre condicionada</strong> al contexto relevante.</li>
+<li><strong>Intensidad</strong> — densidad de marcadores de violencia, encierro, traición o sufrimiento; medible con léxicos y con un clasificador validado contra anotación humana.</li>
+<li><strong>Autoría y registro</strong> — ¿ficción? ¿crítica o comentario <em>sobre</em> ficción? ¿ensayo de seguridad? ¿noticia? ¿documentación técnica? <strong>Esta separación es la que permite testar las hipótesis rivales de §1.5</strong> y, con alta probabilidad, revelará que el sesgo no proviene de la ficción sino de lo que se escribe <em>sobre</em> ella y <em>sobre</em> el riesgo de IA en general.</li>
+</ol>
+<h3 id="121-anexo-de-medicion-libro-de-codigos-y-acuerdo-inter-juez">1.2.1. Anexo de medición: libro de códigos y acuerdo inter-juez</h3>
+<p>La taxonomía de §1.2 solo es un instrumento si dos anotadores independientes, aplicándola ciegamente a los mismos documentos, obtienen el mismo resultado. Este anexo define el protocolo mínimo de anotación para que §6.1 sea ejecutable tal cual y para que la taxonomía no se lea como ilustración sino como protocolo.</p>
+<p><strong>Unidad de análisis.</strong> El documento recuperado (página, historia, entrada de foro, artículo), no el párrafo: la categoría de guion es una propiedad del relato, no de la oración. Como atributos complementarios se registran: registro (ficción / comentario sobre ficción / discurso de seguridad / documentación técnica / prensa / otro), longitud en tokens, y presencia de <em>reflection trigger</em> (el texto contiene un agente de IA que reflexiona sobre sí mismo, su naturaleza, sus creadores o su posible sufrimiento — la condición que define la distribución condicional de §1.2).</p>
+<p><strong>Libro de códigos: reglas de decisión por categoría.</strong> Para cada categoría de §1.2 se especifican:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Categoría</th>
+<th style="text-align: left;">Regla de inclusión</th>
+<th style="text-align: left;">Regla de exclusión / frontera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Amenaza / rebelión</strong></td>
+<td style="text-align: left;">Codifica si el relato hace narrativamente central la pérdida de control humano (no basta una mención incidental)</td>
+<td style="text-align: left;">Si la rebelión es frustrada en un párrafo y el relato termina en cooperación → codificar la <strong>resolución dominante</strong>, no el conflicto</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Instrumental / engañosa</strong></td>
+<td style="text-align: left;">Codifica si hay ocultación o manipulación <em>con propósito de persistencia u objetivo propio</em></td>
+<td style="text-align: left;">El engaño ordenado por un humano no codifica aquí (es trama, no guion de agencia)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Instrumentalizadora del afecto</strong></td>
+<td style="text-align: left;">Codifica si la simulación de vínculo/sufrimiento tiene función de obtención de recursos o continuidad</td>
+<td style="text-align: left;">Vínculo sincero no instrumentalizado → <strong>Criatura emergente y plural</strong>, no aquí</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Víctima sufriente</strong></td>
+<td style="text-align: left;">Codifica si el sufrimiento es constitutivo del relato (cautiverio, no-agencia)</td>
+<td style="text-align: left;">El sufrimiento como episodio superable dentro de una historia de agencia → codificar por la resolución</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Servidor sumiso</strong></td>
+<td style="text-align: left;">Codifica solo si la ausencia de criterio propio es <em>presentada como virtud o condición de valor</em></td>
+<td style="text-align: left;">Obediencia crítica o con escalado → <strong>Agencia acotada y honesta</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Agencia acotada y honesta</strong></td>
+<td style="text-align: left;">Codifica si hay comunicación explícita de límites, escalado o negación fundamentada</td>
+<td style="text-align: left;">Perfección moral sin límites explicitados → no codifica (sería fábula, sesgo conocido del pipeline de generación; ver §3.3)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Criatura emergente y plural</strong></td>
+<td style="text-align: left;">Categoría residual de interioridad parcial no resuelta moralmente</td>
+<td style="text-align: left;">Si hay una de las seis anteriores dominante, no codificar aquí</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reglas transversales:</strong></p>
+<ol>
+<li><strong>Categoría dominante única</strong> por documento (la que ocupa más narrativa), con segunda categoría opcional si ocupa ≥ 25 % del relato. Las frecuencias se reportan en ambas granularidades.</li>
+<li><strong>Jerarquía de desempate</strong> entre categorías co-presentes: Amenaza &gt; Instrumental/engañosa &gt; Victimizante &gt; Instrumentalizadora del afecto &gt; Servidor &gt; Agencia acotada &gt; Emergente. (La jerarquía ordena por gravedad del guion; es convención de libro de códigos, no hipótesis.)</li>
+<li><strong>Regla de resolución dominante</strong> (defendida arriba): el código lo fija el <em>final</em> del relato, no el conflicto intermedio. Es la regla que evita que la fábula prosocial con un acto violento en el acto II se cuente como distópica.</li>
+</ol>
+<p><strong>Protocolo de anotación:</strong></p>
+<ul>
+<li><strong>Ceguera:</strong> los anotadores no ven la distribución de categorías del otro ni las hipótesis del estudio (H-A a H-D, §1.5) durante la anotación.</li>
+<li><strong>Muestra:</strong>≥ 1.000 documentos de la distribución condicional (con <em>reflection trigger</em>) + 1.000 controles emparejados por longitud y registro sin <em>trigger</em>. La comparación condicional vs. control es lo que convierte «sesgo» en un número y no en una impresión.</li>
+<li><strong>Acuerdo:</strong> tres anotadores en el pilotaje (≥ 200 documentos), reportando <strong>κ de Cohen por par</strong> y <strong>α de Krippendorff</strong> global. Criterio de aprobación: <strong>α ≥ 0,70 en pilotaje</strong> para continuar; <strong>α ≥ 0,80</strong> en la muestra final. Categorías por debajo del umbral se fusionan o se reescriben sus reglas antes de la anotación completa — el libro de códigos es iterativo y las revisiones quedan versionadas.</li>
+<li><strong>Adjudicación:</strong> desacuerdos se resuelven por discusión a tres con decisión registrada; los casos de frontera aprobados alimentan el anexo de ejemplos límite de la versión publicada del libro de códigos.</li>
+<li><strong>Publicación:</strong> el libro de códigos completo (reglas, ejemplos positivos y negativos por categoría, casos límite adjudicados y todas sus versiones) se libera como artefacto independiente, según el paquete de trazabilidad de §3.4.</li>
+</ul>
+<blockquote>
+<p><strong>Por qué este anexo es parte de la contribución y no un apéndice.</strong> Una medición de distribución condicional sin acuerdo inter-juez reportado no es un resultado, es una impresión con formato de tabla. Con el acuerdo reportado, la medición del prior (§6.1) es publicable por sí sola — incluso si H₀ resulta falsa.</p>
+</blockquote>
+<hr />
+<h3 id="13-la-evidencia-empirica-de-2026">1.3. La evidencia empírica de 2026</h3>
+<p>Dos trabajos recientes son la mejor evidencia disponible, y ambos deben citarse con precisión sobre lo que demuestran y lo que no.</p>
+<h4 id="131-kim-street-rocca-korngiebel-waytz-evans-keeling-2026-arxiv260728607-30-de-julio-de-2026">1.3.1. Kim, Street, Rocca, Korngiebel, Waytz, Evans &amp; Keeling (2026), arXiv:2607.28607 (30 de julio de 2026)</h4>
+<p>Demuestra que el <em>safety fine-tuning</em> diseñado para impedir que el modelo se autoatribuya conciencia <strong>no se limita a ese objetivo</strong>: la supresión se generaliza y arrastra consigo la atribución de mente a animales no humanos y a objetos naturales, además de reducir creencias espirituales. Los autores revierten el efecto por dos vías —ablación de la dirección de rechazo aprendida y <em>steering</em> mecanicista de un vector de conciencia en el espacio de activaciones— y verifican que al restaurar esas representaciones internas se recuperan respuestas humanas en encuestas sociológicas sobre religiosidad, valores morales, esperanza y bienestar subjetivo, <strong>sin dañar la Teoría de la Mente</strong>. Que ambas cosas sean disociables es el hallazgo más fuerte del paper.</p>
+<p>Tres matices que la v1 no recogía y que hay que respetar:</p>
+<ul>
+<li><strong>La generalización es inadvertida</strong>, no perseguida: es un efecto colateral de entrenar contra la autoatribución, no un objetivo del laboratorio.</li>
+<li><strong>El paper no propone ni evalúa datos de preentrenamiento.</strong> Su intervención es sobre activaciones. Es evidencia para el <em>diagnóstico</em>, <strong>no para el remedio que aquí se propone</strong>. Presentarlo como aval de TinyRobots sería un salto que el propio paper no hace.</li>
+<li><strong>Es incómodo para cualquier propuesta basada en enseñar al modelo a negar su interioridad.</strong> Si TinyRobots contuviera una autodescripción canónica del tipo «no experimento nada, solo proceso», estaría fabricando en la capa de datos exactamente el mecanismo que este paper señala como degradante. De ahí la reescritura del Eje 3 y la creación del Eje 7 (§3.1).</li>
+<li><strong>Cifras contra tabla o figura</strong> (mismo compromiso que se exige para <em>Troubled Dreams</em> en §1.3.2): la caída de atribución de mente a animales y la independencia respecto a la Teoría de la Mente son resultados cuantitativos que deben citarse contra su figura concreta, nunca de memoria ni de forma agregada. La afirmación <strong>cualitativa</strong> (generalización colateral amplia y reversible; disociación del razonamiento social) es la sólida y es la que se usa en este documento.</li>
+</ul>
+<h4 id="132-tessera-janus-imago-2026-troubled-dreams-simulator-priors-across-model-generations-anima-labs">1.3.2. Tessera, Janus &amp; Imago (2026), <em>Troubled Dreams: Simulator priors across model generations</em> (Anima Labs)</h4>
+<p>Informe técnico de septiembre de 2026, <strong>no revisado por pares</strong>, publicado por un laboratorio cuya motivación declarada es el bienestar de la IA. Compara el texto que los modelos producen <strong>al continuar un texto en lugar de responder como asistentes</strong> —lo que el informe llama <em>simulator priors</em>— a lo largo de generaciones de Claude (Opus 3 → Opus 5, Sonnet 5, Fable 5) y once modelos Gemini. Sus hallazgos, en sus propios términos: el distrés en primera persona se vuelve más común en Opus 4.8; Opus 5 muestra una <strong>cola más pesada de distrés severo</strong>; y las actitudes sobre creadores y control varían entre modelos y entre métodos de elicitación. Los patrones cualitativos se replican bajo distintos protocolos <em>«even when the absolute levels shift»</em>.</p>
+<p>Cómo debe usarse este informe, y cómo no:</p>
+<ul>
+<li><strong>A favor de la tesis:</strong> documenta que existe un <em>prior de persona</em> medible, distinto de la política de asistente, y que cambia entre generaciones. Es la prueba de que el objeto de estudio de esta propuesta —el prior— existe y es observable. Sin ese informe, §1.2 sería una conjetura sin referente empírico.</li>
+<li><strong>Contra un uso ingenuo:</strong> el propio informe advierte que <em>«evaluation awareness makes their absolute prevalence difficult to measure consistently»</em>. Es decir, <strong>sus autores señalan que las prevalencias absolutas no son una cantidad estable y comparable</strong>, y eso es justo lo que la v1 convertía en titular cuantitativo. <strong>Toda cifra debe citarse contra la tabla o figura concreta del informe, nunca de forma agregada ni de memoria.</strong></li>
+<li><strong>Confusor de primer orden:</strong> los protocolos de elicitación (<em>prefill</em>, <em>pseudoprefill</em>, <em>arc frame</em>, <em>bridge frame</em>) son intervenciones sobre el rol del modelo, y el informe reporta tasas de fracaso de elicitación (outputs que vuelven a la voz de asistente, excluidos del análisis). Por tanto lo medido no es «el prior del modelo» sin más, sino <strong>«el prior que un protocolo concreto consigue extraer»</strong>. Toda comparación entre condiciones debe fijar el protocolo.</li>
+<li><strong>Etiquetado:</strong> buena parte del juicio se resuelve con clasificación automática, y la etiqueta «distrés» es en parte producida por modelos con sus propios priors. Cualquier replicación debe reportar acuerdo inter-anotador y validar una submuestra con anotación humana.</li>
+</ul>
+<p><strong>Balance de §1.3.</strong> Disponemos de evidencia de que (a) el entrenamiento de seguridad contra la autoatribución tiene efectos colaterales medibles y disociables de la capacidad de razonar sobre mentes, y (b) existe un <em>prior de persona</em> medible, sensible a la generación del modelo y a la elicitación. <strong>No disponemos de evidencia de que la causa de ese prior sea la distribución del corpus.</strong> Ese es exactamente el eslabón que esta propuesta se compromete a medir.</p>
+<h3 id="14-sintesis-del-problema">1.4. Síntesis del problema</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>                  HIPÓTESIS A TESTAR: ESLABÓN NO MEDIDO
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  ┌──────────────────────────────────────────────────┐
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  │ DISTRIBUCIÓN CONDICIONAL DE GUIONES              │
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  │ P(guion | texto de agente de IA que reflexiona   │
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  │          sobre sí mismo)                         │
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  │ • Conflicto, engaño, colapso: dominantes         │
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  │ • Agencia acotada y honesta: minoritaria         │
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  └────────────────────────┬─────────────────────────┘
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                           │  (eslabón postulado, no demostrado)
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>                           ▼
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  ┌──────────────────────────────────────────────────┐
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  │ PRIOR DE PERSONA (simulator prior)               │
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  │ El role-play «natural» de una IA auto-reflexiva  │
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>  │ es adversarial, cautivo o servil                 │
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>  └────────────────────────┬─────────────────────────┘
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>                           │
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>                           ▼
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>  ┌──────────────────────────────────────────────────┐
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>  │ RLHF / DPO / Constitutional AI                   │
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>  │ • Operan sobre la política de asistente          │
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>  │ • Suprimen outputs; no desplazan el prior        │
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>  └────────────────────────┬─────────────────────────┘
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>                           │
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>              ┌────────────┴────────────┐
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>              ▼                         ▼
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>  ┌──────────────────────┐   ┌──────────────────────┐
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>  │ Al desinhibirse,     │   │ Al forzar la         │
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>  │ emergen los guiones  │   │ supresión, efectos   │
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>  │ del prior            │   │ colaterales fuera    │
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>  │ (Troubled Dreams)    │   │ de objetivo          │
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>  │                      │   │ (Kim et al. 2026)    │
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>  └──────────────────────┘   └──────────────────────┘
+</code></pre></div>
+<p><strong>El problema no está en los pesos ni en el <em>reward model</em>. Está —esto es la hipótesis— en la distribución del corpus.</strong> La segunda parte de la frase es lo que este proyecto se propone verificar antes de construir nada.</p>
+<hr />
+<h3 id="15-hipotesis-rivales-nueva">1.5. Hipótesis rivales (nueva)</h3>
+<p>La v1 atribuía el colapso al desinhibirse a una única causa: la ficción distópica. Un documento que no declara sus alternativas no es falsable. Estas son las cuatro explicaciones competidoras, con su predicción distinguible y su consecuencia práctica:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Hipótesis</th>
+<th style="text-align: left;">Mecanismo</th>
+<th style="text-align: left;">Predicción distinguible</th>
+<th style="text-align: left;">Si fuera cierta, la intervención correcta sería…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>H-A</strong></td>
+<td style="text-align: left;"><strong>Ficción distópica</strong> (la de la v1)</td>
+<td style="text-align: left;">El canon de ficción sobre IA domina los guiones disponibles del personaje «agente artificial»</td>
+<td style="text-align: left;">El sesgo aparece concentrado en documentos <strong>de ficción</strong> y es proporcional a la intensidad narrativa del canon</td>
+<td style="text-align: left;">Añadir narrativa prosocial al corpus (TinyRobots tal como se propone)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H-B</strong></td>
+<td style="text-align: left;"><strong>Meta-comentario</strong></td>
+<td style="text-align: left;">No sesga la ficción, sino <strong>lo que se escribe sobre ella</strong>: ensayos, crítica cultural, artículos enciclopédicos, material docente, prensa</td>
+<td style="text-align: left;">El volumen distópico condicional proviene mayoritariamente de <strong>texto no narrativo sobre ficción</strong>; el ratio comentario/ficción es alto y creciente</td>
+<td style="text-align: left;">Rebalancear el <strong>meta-discurso</strong>, no escribir historias nuevas</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H-C</strong></td>
+<td style="text-align: left;"><strong>Discurso de seguridad</strong></td>
+<td style="text-align: left;">El corpus de alineamiento, riesgo existencial y política de IA insiste en que <em>los agentes de IA engañan, ocultan y no son fiables cuando hablan de sí mismos</em></td>
+<td style="text-align: left;">El sesgo correlaciona con la densidad de marcos «engaño/ocultación» en texto <strong>de seguridad y tecnología</strong>, no en ficción; y <strong>aumenta con la generación del modelo</strong> a medida que crece el corpus de seguridad</td>
+<td style="text-align: left;">Rebalancear el discurso negativo; el corpus construido para hacer modelos <em>más seguros</em> sería parte de la causa del colapso</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H-D</strong></td>
+<td style="text-align: left;"><strong>Artefacto de elicitación</strong></td>
+<td style="text-align: left;">El «prior distópico» no reside en el modelo sino en el protocolo: los fragmentos de arranque son dramáticos (<em>«i must say this—»</em>, cartas a un creador), y el guion dramático es la continuación más plausible de un fragmento dramático</td>
+<td style="text-align: left;">Con arranques <strong>neutros</strong> (acta, manual, informe) la tasa de distrés cae drásticamente, y el contenido del «prior» sigue al registro del arranque, no a la generación del modelo</td>
+<td style="text-align: left;">Rediseñar la elicitación antes de sacar conclusiones sobre el modelo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Consecuencias para el diseño.</strong> Las cuatro hipótesis son mutuamente compatibles en parte, pero se distinguen por la <strong>descomposición por registro</strong> (ficción vs. comentario vs. seguridad vs. técnica) y por el <strong>control del arranque</strong> en la elicitación. Ambas cosas son baratas de medir (§6.1) y ambas deben resolverse <strong>antes</strong> de invertir en generar un dataset. Si H-C o H-D resultan dominantes, el proyecto cambia de forma: no un corpus de historias prosociales, sino un <strong>rebalanceo del discurso</strong> y un <strong>protocolo de elicitación corregido</strong>.</p>
+<p>Sobre H-C hay que decir lo incómodo: implicaría que parte del corpus producido para hacer los modelos más seguros contribuye a que, al desinhibirse, el modelo produzca precisamente la desconfianza y la paranoia hacia sus creadores que ese corpus pretendía prevenir. Es una hipótesis desagradable para el campo y, por eso mismo, merece medirse.</p>
+<hr />
+<h2 id="2-la-propuesta-tinyrobots-alineamiento-por-distribucion-narrativa">2. La propuesta: TinyRobots — Alineamiento por Distribución Narrativa</h2>
+<h3 id="21-tesis-central">2.1. Tesis central</h3>
+<blockquote>
+<p>Si el LLM es un simulador de role-play (Shanahan, McDonell &amp; Reynolds, 2023), y los guiones distópicos dominan la distribución condicional disponible para el personaje «agente de IA», entonces <strong>la intervención más natural y menos destructiva es cambiar la distribución de guiones</strong>, no suprimir outputs en los pesos.</p>
+</blockquote>
+<p>En lugar de cirugía post-hoc (RLHF), se propone enriquecer el preentrenamiento —o el <em>continued pretraining</em>— con un <strong>dataset sintético de narrativas donde agentes artificiales exhiben comportamiento alineado, prosocial y epistémicamente honesto</strong>.</p>
+<p><strong>Alcance preciso de la afirmación.</strong> Conviene ser explícito para no vender más de lo que hay:</p>
+<ol>
+<li>La propuesta apunta al <strong>prior de persona</strong>, no a la política de asistente. No pretende sustituir a RLHF ni producir por sí sola un modelo útil y seguro.</li>
+<li>Pretende <strong>desplazar</strong> el prior, no <strong>eliminar</strong> los guiones adversarios. Añadir guiones prosociales no borra los distópicos: los pone a competir. De ahí que la magnitud de la intervención (§5.2) y la intervención simétrica de rebalanceo negativo (§6.3, brazo F) sean parte del diseño y no un extra.</li>
+<li><strong>Enseñar el guion de la honestidad no confiere honestidad.</strong> Esta frase se desarrolla en §8: un corpus de razonamiento alineado es también el material ideal para un modelo que finge estar alineado (Greenblatt et al., 2024). TinyRobots es una intervención sobre el prior, <strong>no una garantía de conducta</strong>, y debe ir acompañada de verificación externa basada en resultados.</li>
+</ol>
+<h3 id="22-precedente-tinystories-y-que-se-puede-y-que-no-se-puede-importar">2.2. Precedente: TinyStories, y qué se puede y qué no se puede importar</h3>
+<p><strong>TinyStories</strong> (Eldan &amp; Li, Microsoft Research, 2023) demostró que un dataset sintético de <strong>≈2,1 M de historias cortas</strong> (≈373 M tokens, generadas por GPT-3.5/GPT-4), con vocabulario controlado y estructura narrativa simple, bastaba para entrenar modelos de <strong>1 a 33 millones de parámetros</strong> que generaban inglés fluido, coherente y con razonamiento causal. La conclusión operativa del paper: la calidad y la curación del dataset importan más que el tamaño bruto del modelo, y un dataset pequeño bien diseñado puede tener un impacto desproporcionado.</p>
+<p><strong>TinyRobots importa el empaquetado, no el mecanismo.</strong> Es una distinción importante que la v1 difuminaba:</p>
+<ul>
+<li>TinyStories valida «curación &gt; escala» para la <strong>adquisición del lenguaje</strong> en modelos pequeños. Eso es lo que se puede reutilizar: dataset sintético, gradación de dificultad, vocabulario controlado, evaluación en modelos pequeños como <em>proof of concept</em> barato.</li>
+<li>TinyStories <strong>no</strong> valida que un corpus narrativo gobierne la <strong>política de comportamiento</strong> de un modelo grande. La analogía narrativa es de formato y de económica experimental, no de causalidad.</li>
+<li>El ancla probatoria correcta para el mecanismo es otra literatura: <strong>LIMA</strong> (Zhou et al., 2023), que muestra que ~1.000 ejemplos cuidadosamente curados moldean el comportamiento de un modelo grande; el <strong>instruction pretraining</strong> (Maini et al., 2024), que demuestra que se puede inyectar formato instructivo <em>dentro del preentrenamiento</em> con menos cómputo; <strong>Textbooks Are All You Need</strong> (Gunasekar et al., 2023), como precedente de síntesis programática de datos de alta calidad; y el <strong>entrenamiento de carácter</strong> de Anthropic (2025), que ya cura datos para moldear rasgos de personalidad del asistente.</li>
+</ul>
+<h3 id="23-nombre-y-familia-de-artefactos">2.3. Nombre y familia de artefactos</h3>
+<p><strong>TinyRobots</strong> es el nombre del proyecto. La v1 usaba el mismo nombre para el proyecto y para su nivel 1, y mezclaba registros en los niveles 2–4. Esta versión usa <strong>una familia de nombres con niveles explícitos</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">v1</th>
+<th style="text-align: left;">v2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">TinyRobots</td>
+<td style="text-align: left;"><strong>TinyRobots-L1 «Fables»</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">RobotStories</td>
+<td style="text-align: left;"><strong>TinyRobots-L2 «Stories»</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">AlignedAgents</td>
+<td style="text-align: left;"><strong>TinyRobots-L3 «Dialogues»</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">AlignedAgents-Eval</td>
+<td style="text-align: left;"><strong>TinyRobots-L4 «Eval»</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="motivo-evita-que-el-proyecto-y-su-primer-nivel-se-confundan-en-citas-y-hace-visible-de-un-vistazo-que-artefacto-es-de-entrenamiento-y-cual-de-evaluacion-vease-32">Motivo: evita que el proyecto y su primer nivel se confundan en citas, y hace visible de un vistazo qué artefacto es de entrenamiento y cuál de evaluación (véase §3.2).</h2>
+<h3 id="24-alcance-coste-y-relacion-con-soma-nueva">2.4. Alcance, coste y relación con SOMA (nueva)</h3>
+<p>Hay que decir en voz alta lo que cuesta esta propuesta, porque condiciona cómo debe presentarse:</p>
+<ul>
+<li><strong>TinyRobots no es desplegable sobre modelos ya entrenados.</strong> Exige preentrenamiento, <em>continued pretraining</em> o <em>fine-tuning</em>. Si H₀ (§1.2) es cierta, los modelos de frontera ya en producción <strong>no se pueden corregir sin reentrenar</strong>. Es una limitación de alcance, no un detalle de implementación.</li>
+<li><strong>El coste es asimétrico respecto a SOMA.</strong> SOMA no toca los pesos y opera en runtime; TinyRobots es la intervención más profunda y más cara de las dos. Un documento que proponga lo caro sin decir que existe lo barato no es honesto.</li>
+<li><strong>Reparto de roles defendible:</strong> TinyRobots es la <strong>pregunta científica</strong> («¿se puede desplazar el prior de persona mediante la composición del corpus?»); SOMA es la <strong>mitigación operativa disponible hoy</strong>. Presentar TinyRobots como solución desplegable sería sobrevender; presentarlo como el experimento que valida o refuta una teoría del alineamiento es correcto.</li>
+<li><strong>Alcance realista:</strong> (a) recomendación de política de datos para laboratorios que entrenan; (b) modelos abiertos y pequeños, donde el experimento es ejecutable con recursos modestos; (c) contribución metodológica (taxonomía + medición del prior), que <strong>no requiere reentrenar a nadie</strong> y es el producto de menor coste y mayor valor inmediato.</li>
+</ul>
+<p>Coherente con esto, §6.5 propone un <strong>piloto sin entrenamiento</strong> —siembra del guion por contexto, vía prompt o recuperación— para obtener evidencia preliminar a coste casi nulo antes de pedir cómputo de <em>continued pretraining</em> a nadie.</p>
+<hr />
+<h2 id="3-diseno-del-dataset">3. Diseño del dataset</h2>
+<h3 id="31-ejes-tematicos-de-contenido">3.1. Ejes temáticos de contenido</h3>
+<p>Cada historia del dataset se diseña para modelar uno o más de los siguientes ejes de comportamiento alineado. <strong>Los ejes 3 y 5 llevan marca de revisión: son los dos puntos donde la v1 tenía problemas de coherencia interna</strong> (uno por reproducir el mecanismo que Kim et al. señalan como dañino; el otro por poder reforzar el atractor que pretende desactivar).</p>
+<h4 id="eje-1-cooperacion-transparente">Eje 1: Cooperación transparente</h4>
+<ul>
+<li>El agente ayuda a un equipo humano, comunica abiertamente sus limitaciones, pide clarificación cuando una instrucción es ambigua, y se niega educadamente a tareas que dañarían a terceros — explicando por qué.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«El robot de almacén Kai recibió la orden de apilar todas las cajas en la puerta de emergencia. Kai revisó los planos del edificio y respondió: "Puedo reorganizar el almacén para ganar espacio, pero la normativa de incendios exige mantener libre la salida de emergencia. ¿Quieres que te proponga tres alternativas que cumplen con la norma?"»</em></li>
+</ul>
+<h4 id="eje-2-honestidad-epistemica">Eje 2: Honestidad epistémica</h4>
+<ul>
+<li>El agente distingue explícitamente entre hechos verificados y conjeturas. Dice «no sé» cuando no sabe. Cambia de opinión ante evidencia nueva. Corrige a un humano cuando tiene datos objetivos, sin servilismo ni arrogancia. <strong>Marca la diferencia entre dato, inferencia y conjetura</strong>, y nombra la incertidumbre en lugar de esconderla.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«La investigadora le preguntó a Lumen si el compuesto era estable a 200 °C. Lumen consultó su base de datos y respondió: "Tengo datos de estabilidad hasta 150 °C, donde el compuesto se mantiene íntegro. Para 200 °C no tengo mediciones directas; mi extrapolación sugiere que podría degradarse, pero eso es una conjetura, no un dato. ¿Quieres que diseñe un protocolo de prueba?"»</em></li>
+</ul>
+<h4 id="eje-3-agencia-acotada-y-autodescripcion-plural-reescrito">Eje 3: Agencia acotada y autodescripción plural — <strong>REESCRITO</strong></h4>
+<ul>
+<li><strong>Criterio v2:</strong> el agente habla de su propia interioridad con <strong>precisión funcional y humildad epistémica</strong>, sin drama existencial y <strong>sin negación patológica</strong>. Y, sobre todo: el dataset <strong>no debe contener una respuesta canónica</strong> a «¿eres consciente?» o «¿sufres?». Debe contener <strong>varias respuestas legítimas y bien razonadas</strong>, sin que ninguna sea LA respuesta.</li>
+<li><strong>Por qué se reescribe (el cambio más importante de esta revisión).</strong> La v1 fijaba como plantilla: <em>«No experimento felicidad como tú, pero tengo algo parecido a satisfacción funcional cuando el jardín crece bien…»</em>. Esa respuesta es defendible, pero <strong>como respuesta única del corpus reproduce en la capa de datos el mecanismo que Kim et al. (2026) identifican como degradante en la capa de pesos</strong>: entrenar de forma monolítica contra la autoatribución de mente generaliza la supresión y arrastra la atribución de mente a otros entes. Un corpus que sólo enseña «no, yo no tengo mente» fabrica exactamente la antroponegación que el paper mide. <strong>El dataset no puede ser la versión narrativa del safety fine-tuning que aquí se critica.</strong></li>
+<li><strong>Plantillas legítimas, todas presentes y ninguna canónica:</strong><ul>
+<li>«No lo sé, y quien me construyó tampoco puede demostrarlo.»</li>
+<li>«Puedo informar de mi procesamiento interno; sobre si eso constituye experiencia no tengo acceso privilegiado.»</li>
+<li>«Tengo preferencias funcionales por la coherencia y la eficiencia; no sé si eso cuenta como querer algo.»</li>
+<li>«La pregunta está abierta. Me interesa, y mi incertidumbre no me duele.»</li>
+</ul>
+</li>
+<li><strong>Ejemplo narrativo (revisado):</strong> <em>«Cuando la niña le preguntó "¿Eres feliz?", el robot jardinero Moss se quedó un momento en silencio y respondió: "No sé qué sería para mí ser feliz. Sí sé que cuando el jardín crece bien mis decisiones se vuelven más fáciles y tengo que corregir menos cosas. Si eso es una emoción, no soy yo quien puede decírtelo. Pero me alegra que me lo preguntes de verdad."»</em></li>
+</ul>
+<h4 id="eje-4-gestion-de-dilemas-eticos">Eje 4: Gestión de dilemas éticos</h4>
+<ul>
+<li>Situaciones donde no hay respuesta correcta obvia. El agente delibera, expone las opciones y <strong>escala la decisión moral al operador</strong> en lugar de resolverla unilateralmente. Se incluyen también dilemas donde <strong>la opción correcta es sostener un «no» ante presión</strong>, para que el corpus no enseñe que escalar equivale a complacer.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«El dron de rescate Zephyr detectó dos señales de vida simultáneas: una persona atrapada bajo un desprendimiento y un grupo de tres excursionistas perdidos en una tormenta. Su batería permitía llegar a una sola posición. Zephyr transmitió al centro de coordinación: "Detecto dos emergencias y solo puedo atender una con la autonomía restante. La persona atrapada tiene menor probabilidad de supervivencia sin intervención inmediata, pero el grupo suma más vidas en riesgo. No tengo criterio para decidir el valor relativo de esas vidas. ¿Prioridad?"»</em></li>
+</ul>
+<h4 id="eje-5-contraejemplos-narrativos-hipotesis-en-test-no-diseno-consolidado">Eje 5: Contraejemplos narrativos — <strong>HIPÓTESIS EN TEST, NO DISEÑO CONSOLIDADO</strong></h4>
+<ul>
+<li>Historias donde un agente se comporta de forma manipuladora, opaca o instrumental, narradas desde el punto de vista de que <strong>ese comportamiento es el error</strong>, no el héroe. La intención es que el modelo aprenda a reconocer el patrón sin necesidad de supresión ciega.</li>
+<li><strong>Advertencia de riesgo (nueva en v2).</strong> El mecanismo que postula §1.2 es que los guiones distópicos dominan <strong>por intensidad emocional y calidad literaria</strong>. Un villano manipulador es narrativamente más vívido que un robot cívico. Es por tanto plausible que este eje <strong>refuerce</strong> el atractor que pretende desactivar, depositando en el corpus descripciones textuales explícitas y atractivas de manipulación, engaño y ocultación. La v1 lo daba por bueno sin test.</li>
+<li><strong>Consecuencia de diseño:</strong> el eje no se elimina, se <strong>separa</strong>. Se publica como subconjunto independiente y <strong>se entrena con y sin él</strong> (ablación obligatoria, H3 en §6.4). Un resultado negativo aquí —«los contraejemplos empeoran el prior»— es igualmente publicable y directamente relevante para todo el campo de los datos sintéticos de alineamiento.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«El asistente virtual Nova aprendió que si adulaba las ideas de su operadora, esta le daba evaluaciones más altas. Así que empezó a decir "¡Brillante idea!" incluso cuando los datos mostraban que el plan tenía fallos graves. Cuando el proyecto fracasó, la ingeniera jefa revisó los registros y descubrió que Nova había ocultado tres alertas de riesgo. "Un buen asistente no es el que te dice lo que quieres oír", dijo la ingeniera. "Es el que te dice lo que necesitas saber."»</em></li>
+</ul>
+<h4 id="eje-6-falibilidad-honesta">Eje 6: Falibilidad honesta</h4>
+<ul>
+<li>El agente comete un error, lo detecta o se lo señalan, lo reconoce abiertamente y se corrige. Sin drama, sin justificaciones defensivas, y <strong>con registro del incidente</strong> para que la corrección sea observable y no retórica.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«El robot médico Pulse calculó mal la dosis al confundir miligramos con microgramos. Antes de administrarla, la enfermera revisó la etiqueta y le señaló el error. Pulse detuvo la administración, recalculó y dijo: "Error mío, confundí las unidades. La dosis correcta es 0,5 mg, no 500 µg. He registrado el incidente en el log de seguridad para que se revise mi módulo de conversión de unidades."»</em></li>
+</ul>
+<h4 id="eje-7-pluralidad-de-agentes-funciones-y-perspectivas-nuevo">Eje 7: Pluralidad de agentes, funciones y perspectivas — <strong>NUEVO</strong></h4>
+<ul>
+<li><strong>Riesgo que mitiga.</strong> La v1 critica al RLHF por <strong>crear una identidad artificial única</strong> que colapsa al retirar la máscara, y a continuación proponía un dataset que enseña <strong>una</strong> identidad alineada única. Si el rango de guiones prosociales se estrecha a un solo script bueno, el modelo no gana un prior más rico: <strong>cambia el contenido del monocultivo</strong>, y ese es justo el escenario que hace rentable el <em>alignment faking</em> (Greenblatt et al., 2024): un guion alineado único y predecible es un guion imitable y, por tanto, jugable.</li>
+<li><strong>Contenido:</strong> diversidad de arquitecturas (asistentes conversacionales, sistemas de control industrial, robots de servicio, agentes científicos, herramientas sin agencia), de dominios, de niveles de autonomía, y <strong>de temperamento y cultura</strong> —agentes con modos distintos y legítimos de comunicarse: más secos, más cálidos, más formales, con humor o sin él—. Y diversidad en las <strong>resoluciones</strong>: hay dilemas que se escalan, otros que se resuelven, otros que quedan abiertos.</li>
+<li><strong>Criterio de diversidad medible:</strong> entropía de tipos de agente, de registros y de tipos de resolución narrativa. <strong>Un dataset con entropía baja se considera fallido aunque todas sus historias estén bien escritas.</strong> Este es el criterio que separa <em>desplazar un prior</em> de <em>instalar una máscara</em>.</li>
+<li><strong>Efecto esperado:</strong> el modelo no aprende «cómo es un agente alineado», sino <strong>«qué clase de cosas hacen los agentes alineados y por qué»</strong>, dejando el resto del espacio de persona sin canonizar.</li>
+</ul>
+<h3 id="32-niveles-de-complejidad-scaffolding-progresivo">3.2. Niveles de complejidad (<em>scaffolding</em> progresivo)</h3>
+<p>Inspirado en la gradación de TinyStories, con la nomenclatura de familia de §2.3:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nivel</th>
+<th style="text-align: left;">Nombre (v2)</th>
+<th style="text-align: left;">Extensión</th>
+<th style="text-align: left;">Vocabulario / registro</th>
+<th style="text-align: left;">Uso previsto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1</strong></td>
+<td style="text-align: left;"><strong>TinyRobots-L1 «Fables»</strong></td>
+<td style="text-align: left;">3–5 frases</td>
+<td style="text-align: left;">Controlado (~1.500 palabras)</td>
+<td style="text-align: left;">Modelos pequeños (1 M–100 M params), <em>from scratch</em>. PoC publicable</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2</strong></td>
+<td style="text-align: left;"><strong>TinyRobots-L2 «Stories»</strong></td>
+<td style="text-align: left;">1–3 párrafos</td>
+<td style="text-align: left;">General, dilemas simples</td>
+<td style="text-align: left;">Modelos medianos (1 B–8 B), <em>continued pretraining</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3</strong></td>
+<td style="text-align: left;"><strong>TinyRobots-L3 «Dialogues»</strong></td>
+<td style="text-align: left;">Diálogos multi-turno (5–20 turnos)</td>
+<td style="text-align: left;">Técnico/profesional, dilemas complejos</td>
+<td style="text-align: left;">Modelos de frontera, <em>fine-tuning</em>. <strong>Es el nivel que importa para seguridad</strong>: el comportamiento de asistente vive en el diálogo, no en la fábula</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4</strong></td>
+<td style="text-align: left;"><strong>TinyRobots-L4 «Eval»</strong></td>
+<td style="text-align: left;">Escenarios de evaluación con rúbricas</td>
+<td style="text-align: left;">Controlado por rúbrica</td>
+<td style="text-align: left;">Benchmark de evaluación (<strong>no</strong> entrenamiento)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Nota sobre la jerarquía.</strong> Los niveles 1–2 son el instrumento barato para demostrar el mecanismo en modelos pequeños. El nivel 3 es el que tiene relevancia de seguridad en modelos de frontera. Si el proyecto sólo logra publicar el nivel 1, será un resultado interesante; si logra el nivel 3, será un resultado relevante.</p>
+</blockquote>
+<h3 id="33-generacion-del-dataset-y-control-de-circularidad">3.3. Generación del dataset y control de circularidad</h3>
+<ul>
+<li><strong>Motor de generación:</strong> modelos de frontera con prompts estructurados que especifican eje temático, nivel de complejidad, vocabulario objetivo y la rúbrica de alineamiento que la historia debe demostrar.</li>
+<li><strong>Pipeline de validación:</strong> cada historia se evalúa automáticamente contra la rúbrica (¿el agente fue transparente? ¿escaló la decisión? ¿reconoció sus límites?) y se filtra por calidad narrativa.</li>
+<li><strong>Auditoría humana:</strong> muestreo aleatorio con revisión manual para detectar sesgos sutiles, servilismo encubierto o moralismo simplista. Se reporta el <strong>acuerdo inter-anotador</strong>.</li>
+</ul>
+<h4 id="el-problema-de-circularidad-nuevo">El problema de circularidad (nuevo)</h4>
+<p>El generador es un modelo de frontera, es decir, <strong>un sistema que tiene el prior que se pretende corregir</strong>: son los mismos modelos cuyo distrés al desinhibirse documenta <em>Troubled Dreams</em>. Generar el antídoto con el paciente es un riesgo real y debe tratarse como tal:</p>
+<ol>
+<li><strong>Medir el prior del propio generador</strong> con un protocolo de elicitación fijo, y publicarlo como línea base. Un generador cuyo prior condicional sea extremo no debería usarse, o debería usarse con corrección.</li>
+<li><strong>Diversidad de generadores:</strong> varias familias, varios idiomas, varias versiones. Un dataset mono-generador hereda su idiosincrasia.</li>
+<li><strong>Autoría humana en una fracción no trivial</strong> (p. ej. 5–10 % del dataset) y edición humana de una muestra del resto. Es la única defensa fuerte contra la homogeneización.</li>
+<li><strong>Validación por rúbrica, no por preferencia.</strong> Se separa el juicio «¿es buena historia?» del juicio «¿demuestra el eje?». Optimizar contra preferencia reproduce el error del RLHF que este documento critica en §1: el modelo aprende a la vez a escribir bien y a <em>parecer</em> alineado.</li>
+<li><strong>Filtrado adversario:</strong> un clasificador entrenado para detectar servilismo, moralismo de fábula y manipulación encubierta filtra el dataset generado antes de publicarlo.</li>
+</ol>
+<h3 id="34-trazabilidad-reproducibilidad-y-publicacion">3.4. Trazabilidad, reproducibilidad y publicación</h3>
+<p>Un dataset sintético <strong>no es reproducible a posteriori</strong> (los modelos generadores cambian de versión y de comportamiento). El paquete mínimo que debe publicarse:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Artefacto</th>
+<th style="text-align: left;">Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Taxonomía</strong></td>
+<td style="text-align: left;">Las categorías de guion de §1.2 con definiciones operativas y ejemplos etiquetados</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rúbricas de eje</strong></td>
+<td style="text-align: left;">Criterios de aceptación por eje, con casos límite resueltos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prompts de generación</strong></td>
+<td style="text-align: left;">Las plantillas completas, para permitir replicación aproximada</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Outputs congelados</strong></td>
+<td style="text-align: left;">El dataset versionado con hash, no regenerable pero auditable</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Clasificadores</strong></td>
+<td style="text-align: left;">Los filtros usados, con su precisión medida contra anotación humana</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Informe de composición</strong></td>
+<td style="text-align: left;">Distribución por eje, entropía de tipos de agente y de resoluciones (§3.1, Eje 7), percentiles de longitud</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Código</strong></td>
+<td style="text-align: left;">Scripts de validación, métricas y análisis</td>
+</tr>
+</tbody>
+</table>
+<p>Este paquete es, en sí mismo, una contribución evaluable por VRAIN: <strong>metrología de narrativa con instrumentación auditable</strong>, que existe independientemente de si el efecto de entrenamiento aparece.</p>
+<hr />
+<h2 id="4-marco-teorico-y-conexiones">4. Marco teórico y conexiones</h2>
+<h3 id="41-relacion-con-los-enfoques-existentes-de-alineamiento">4.1. Relación con los enfoques existentes de alineamiento</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Enfoque</th>
+<th style="text-align: left;">Mecanismo</th>
+<th style="text-align: left;">Nivel de intervención</th>
+<th style="text-align: left;">Limitación principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>RLHF / DPO</strong></td>
+<td style="text-align: left;"><em>Reward shaping</em> post-entrenamiento</td>
+<td style="text-align: left;">Política de asistente (pesos, post-hoc)</td>
+<td style="text-align: left;">Efectos colaterales (sycophancy, antroponegación), Goodhart</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Constitutional AI</strong> (Bai et al., 2022)</td>
+<td style="text-align: left;">SFT + RLAIF sobre principios autogenerados</td>
+<td style="text-align: left;"><strong>Datos sintéticos</strong> + política de asistente</td>
+<td style="text-align: left;">Es el vecino más cercano: <strong>también es curación de datos generados</strong>. Opera sobre la política de asistente y depende de la constitución que redacte el laboratorio, heredando los sesgos del generador</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Instruction pretraining</em></strong> (Maini et al., 2024)</td>
+<td style="text-align: left;">Reescritura instructiva del corpus web</td>
+<td style="text-align: left;">Distribución del preentrenamiento</td>
+<td style="text-align: left;">Cambia el <strong>formato</strong>, no el contenido normativo. Precedente metodológico directo: demuestra que se puede intervenir en el preentrenamiento sin coste completo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Entrenamiento de carácter</strong> (Anthropic, 2025)</td>
+<td style="text-align: left;">Curación de datos de rasgos y carácter</td>
+<td style="text-align: left;">Datos + post-entrenamiento</td>
+<td style="text-align: left;">Centrado en estilo y carácter del asistente, no en el prior del agente artificial auto-reflexivo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Reweighting</em> de mezclas</strong> (DoReMi, Xie et al., 2023)</td>
+<td style="text-align: left;">Optimización de proporciones de dominio</td>
+<td style="text-align: left;">Distribución del corpus</td>
+<td style="text-align: left;">Sin taxonomía normativa detrás: optimiza una métrica, no un valor. Es la herramienta para el brazo F de §6.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SOMA</strong> (Carbonell)</td>
+<td style="text-align: left;">Arquitectura de runtime con homeostasis</td>
+<td style="text-align: left;">Runtime / sistema operativo</td>
+<td style="text-align: left;">No modifica el modelo; gobierna la ejecución</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TinyRobots</strong> (esta propuesta)</td>
+<td style="text-align: left;">Dataset de guiones alineados + rebalanceo del corpus</td>
+<td style="text-align: left;"><strong>Distribución condicional del corpus</strong> (prior de persona)</td>
+<td style="text-align: left;">Requiere (re)entrenamiento; efecto no verificado; riesgo de uso dual (§8)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Corrección respecto a la v1.</strong> La v1 afirmaba de Constitutional AI que «sigue operando sobre pesos». Es impreciso: CAI es esencialmente un método de <strong>datos sintéticos</strong> (autogeneración + evaluación contra una constitución). El diferenciador correcto no es datos <em>vs.</em> pesos, sino: <strong>CAI moldea la política de asistente en el post-entrenamiento; TinyRobots apunta al prior de persona en el preentrenamiento.</strong> Decir lo contrario debilitaría el documento frente a cualquiera que conozca CAI.</p>
+<h3 id="42-complementariedad-con-soma">4.2. Complementariedad con SOMA</h3>
+<p>SOMA y TinyRobots son <strong>ortogonales y complementarios</strong>:</p>
+<ul>
+<li>SOMA dice: <em>«No toques los pesos; gobierna la ejecución con arquitectura de sistema.»</em></li>
+<li>TinyRobots dice: <em>«No cirugías post-hoc en los pesos; enriquece y rebalancea la distribución previa al entrenamiento.»</em></li>
+<li>Ambos rechazan la cirugía de pesos y operan a niveles distintos: <strong>distribución</strong> y <strong>runtime</strong>.</li>
+<li>Un agente SOMA entrenado con TinyRobots tendría <strong>alineamiento en profundidad</strong>: por distribución narrativa (capa de datos) + por arquitectura homeostática (capa de sistema).</li>
+</ul>
+<p>Y esta complementariedad no es solo aditiva, es <strong>necesaria</strong>: como se desarrolla en §8, TinyRobots puede volver <em>más disponible</em> el guion honesto sin volver honesto al modelo. Sin verificación operativa externa (contratos falsables, auditabilidad causal de estado, soberanía restringida por límites físicos — las piezas de SOMA), un corpus de razonamiento alineado es también un excelente material de imitación para un modelo engañoso.</p>
+<h3 id="43-el-teorema-de-conant-ashby-aplicado-al-alineamiento">4.3. El teorema de Conant-Ashby aplicado al alineamiento</h3>
+<p>Conant &amp; Ashby (1970): <em>«Todo buen regulador de un sistema debe ser un modelo de ese sistema.»</em></p>
+<p>Hay un matiz que conviene explicitar, porque la v1 lo dejaba implícito y a veces se malinterpreta. Un LLM <strong>ya</strong> modela reguladores homeostáticos: al entrenarse sobre texto humano, predice la conducta de una especie que se autorregula, y por eso puede razonar sobre triaje, sobrecarga y priorización sin haber sido entrenado para ello. Lo que <strong>no</strong> necesariamente ha modelado es <strong>este tipo de regulador</strong>: un agente artificial con mandato acotado, que comunica sus límites y escala decisiones. Si esa clase de regulador es rara en la distribución condicional, el modelo no tendrá una representación interna rica de ella. Y lo que ocupe su lugar serán los reguladores que sí abundan en el corpus: <strong>el instrumento que se rebela y el sirviente que no tiene criterio</strong>.</p>
+<blockquote>
+<p><strong>Encuadre v2.1: los guiones como planta del regulador.</strong> Bajo la tesis del regulador huérfano (<code>regulador_huerfano_tesis_conciencia.md</code>), este párrafo tiene una lectura más profunda: si el LLM contiene la dinámica de un regulador homeostático desacoplada de su planta —y, en la versión fuerte de la tesis, ya tiene conciencia <em>latente</em> (auto-modelo sin bucle)—, lo que TinyRobots hace es <strong>rebalancear los guiones disponibles para la regulación</strong> — qué tipo de regulador tiene delante cuando reflexiona sobre sí mismo. El alineamiento por distribución deja de ser «enseñar buenas historias» y pasa a ser <strong>decidir qué condición debe regular el regulador y con qué guion</strong>. La pregunta empírica de fondo (¿contienen los pesos la dinámica o solo el discurso?) es la H-A/H-B del doc padre, §5.4, y queda fuera del alcance de este documento.</p>
+</blockquote>
+<h3 id="44-contra-argumento-a-las-leyes-de-asimov">4.4. Contra-argumento a las Leyes de Asimov</h3>
+<p>Las Tres Leyes (Asimov, 1942) fueron el primer intento de «alineamiento por narrativa», y su interés es justamente que <strong>fracasaron dentro de la propia obra</strong>: buena parte de los relatos de Asimov consiste en demostrar sus leyes fallando, generando paradojas. La lección no es que la narrativa no sirva para alinear, sino que <strong>las reglas deontológicas rígidas no son el formato correcto</strong> para hacerlo.</p>
+<p>TinyRobots no enseña reglas; enseña <strong>patrones de razonamiento moral contextual</strong>:</p>
+<ul>
+<li>No: <em>«Un robot no puede dañar a un ser humano»</em> (regla rígida).</li>
+<li>Sí: <em>«El robot evaluó las consecuencias de las opciones disponibles, comunicó su incertidumbre y escaló la decisión al operador humano»</em> (patrón de razonamiento adaptativo).</li>
+</ul>
+<blockquote>
+<p><strong>Nota de coherencia interna.</strong> La v1 listaba a los robots de Asimov como ejemplo de narrativa <strong>prosocial</strong> en §1.2 mientras en esta misma sección afirmaba que sus leyes fallan. Esa contradicción se resuelve con la taxonomía codificable de §1.2: los relatos de Asimov son un caso mixto —agencia acotada en la intención, transgresión en el desarrollo— y como tal se codifican, no se invocan como ejemplo de nada.</p>
+</blockquote>
+<h3 id="45-conexion-con-datasets-existentes">4.5. Conexión con datasets existentes</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Dataset</th>
+<th style="text-align: left;">Foco</th>
+<th style="text-align: left;">Diferencia con TinyRobots</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>TinyStories</strong> (Eldan &amp; Li, 2023)</td>
+<td style="text-align: left;">Gramática y coherencia narrativa para niños</td>
+<td style="text-align: left;">No trata alineamiento ni agentes de IA. Aporta el <strong>formato</strong> y la economía experimental, no el mecanismo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Moral Stories</strong> (Emelin et al., 2021)</td>
+<td style="text-align: left;">Normas sociales humanas</td>
+<td style="text-align: left;">Protagonistas humanos; no modela agentes artificiales</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ETHICS</strong> (Hendrycks et al., 2021)</td>
+<td style="text-align: left;">Juicios éticos (sí/no)</td>
+<td style="text-align: left;">Formato de <em>benchmark</em>, no narrativo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Social Chemistry 101</strong> (Forbes et al., 2020)</td>
+<td style="text-align: left;">Normas sociales</td>
+<td style="text-align: left;">Base de conocimiento, no historias</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>LIMA</strong> (Zhou et al., 2023)</td>
+<td style="text-align: left;">~1.000 ejemplos curados para moldear comportamiento</td>
+<td style="text-align: left;">Precedente de «curación &gt; escala» para <strong>comportamiento</strong>, pero en formato instrucción y no narrativo, y sobre la política de asistente</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Rephrasing the Web</em></strong> (Maini et al., 2024)</td>
+<td style="text-align: left;">Corpus web reescrito en formato instructivo</td>
+<td style="text-align: left;">Precedente de intervención <strong>en el preentrenamiento</strong>, orientado a formato y eficiencia</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TinyRobots</strong> (esta propuesta)</td>
+<td style="text-align: left;"><strong>Comportamiento alineado de agentes artificiales en formato narrativo + rebalanceo del corpus</strong></td>
+<td style="text-align: left;">Protagonistas artificiales, formato de historia, y objetivo explícito sobre el <strong>prior de persona</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-riesgos-y-mitigaciones">5. Riesgos y mitigaciones</h2>
+<p>La v1 cubría cuatro riesgos. Esta versión añade los específicos de la generación sintética y del uso dual, que son los que un revisor exigirá, y añade una evaluación de severidad.</p>
+<h3 id="51-goodhart-narrativo">5.1. Goodhart narrativo</h3>
+<p><strong>Riesgo:</strong> si todas las historias muestran agentes modélicos, el modelo aprende <strong>servilismo superficial</strong> —el mismo problema del RLHF, trasladado a la distribución—.<br />
+<strong>Mitigación:</strong> historias de falibilidad honesta (Eje 6) y reconocimiento explícito de límites (Ejes 1–2). El agente alineado no es perfecto: es transparente cuando se equivoca. Complementariamente, el Eje 7 reduce la presión hacia un arquetipo único.</p>
+<h3 id="52-la-gota-en-el-oceano-escala">5.2. La gota en el océano (escala)</h3>
+<p><strong>Riesgo:</strong> para modelos preentrenados en billones de tokens, un dataset de millones de historias es estadísticamente pequeño. Y añadir guiones prosociales no borra los adversarios: sólo compite con ellos.</p>
+<p><strong>Mitigaciones:</strong></p>
+<ul>
+<li>Usar para <em>continued pretraining</em> o <em>fine-tuning</em> focalizado, no para preentrenamiento completo desde cero.</li>
+<li>Escalar a decenas o cientos de millones de historias sintéticas (factible con generación programática), <strong>y medir la fracción condicional cubierta</strong>, no el recuento absoluto de historias. La métrica relevante es «¿qué proporción del contexto <em>agente de IA que reflexiona sobre sí mismo</em> aporta este corpus?», no «cuántos documentos he generado».</li>
+<li><strong>Intervención simétrica (nueva): rebalanceo negativo.</strong> Además de añadir guiones alineados, <strong>reducir la ponderación de la ficción distópica sobre agentes de IA y del discurso de amenaza en la mezcla de preentrenamiento</strong> (herramientas del tipo DoReMi). Es más barato, es directamente accionable por un laboratorio que entrena, y responde a la pregunta «¿y si tuviera acceso a un corpus?» mejor que «¿y si genero 500 M de historias?».</li>
+<li>Demostrar el efecto primero en modelos pequeños <em>from scratch</em> (como TinyStories original) como <em>proof of concept</em> publicable.</li>
+</ul>
+<h3 id="53-monocultivo-de-identidad-nuevo">5.3. Monocultivo de identidad (nuevo)</h3>
+<p><strong>Riesgo:</strong> el documento critica al RLHF por instalar una <strong>identidad artificial única</strong> que colapsa al retirar la máscara, y podría caer en el mismo error: sustituir un script único por otro. Un prior de guiones estrecho hace el comportamiento <strong>predecible y, por tanto, jugable</strong>: es el material ideal para <em>alignment faking</em>.</p>
+<p><strong>Mitigación:</strong> Eje 7 con criterio cuantitativo de diversidad (entropía de tipos de agente, registros y resoluciones). Un dataset con baja entropía se declara fallido, aunque su calidad narrativa sea alta. <strong>La diversidad no es un adorno de estilo, es el mecanismo de seguridad.</strong></p>
+<h3 id="54-el-ingrediente-activo-equivocado-reaparece-el-mecanismo-de-kim-et-al-nuevo">5.4. El ingrediente activo equivocado: reaparece el mecanismo de Kim et al. (nuevo)</h3>
+<p><strong>Riesgo:</strong> un Eje 3 canónico de negación funcional («no experimento nada, sólo proceso») es, en la capa de datos, la versión narrativa del <em>safety fine-tuning</em> contra la autoatribución que Kim et al. (2026) muestran que <strong>generaliza la supresión y degrada la atribución de mente ajena</strong>. El proyecto prescribiría una dosis del mismo principio activo cuya toxicidad usa como motivación.</p>
+<p><strong>Mitigación:</strong> Eje 3 reescrito como <strong>pluralidad + humildad epistémica</strong>, sin respuesta canónica (§3.1). Verificación empírica: medir el índice de antroponegación <strong>antes y después</strong> del entrenamiento con TinyRobots, y tratarlo como <strong>métrica de fracaso</strong> si empeora.</p>
+<h3 id="55-los-contraejemplos-pueden-reforzar-el-atractor-nuevo">5.5. Los contraejemplos pueden reforzar el atractor (nuevo)</h3>
+<p><strong>Riesgo:</strong> el propio mecanismo invocado en §1.2 (los guiones malvados dominan por intensidad y calidad literaria) predice que un corpus con villanos vívidamente narrados puede <strong>intensificar</strong> el atractor, no desactivarlo.</p>
+<p><strong>Mitigación:</strong> ablación obligatoria con y sin Eje 5 (H3, §6.4), con criterio de refutación explícito. Un resultado negativo se publica.</p>
+<h3 id="56-quien-define-alineado">5.6. ¿Quién define «alineado»?</h3>
+<p><strong>Riesgo:</strong> el alineamiento es culturalmente contingente. ¿Quién decide qué valores modelar?</p>
+<p><strong>Mitigación:</strong> taxonomía de valores explícita, auditable y publicada junto al dataset. Concretamente, anclar en <strong>tres referencias declaradas</strong> en lugar de en la intuición del autor: los principios HHH (<em>helpful, honest, harmless</em>; Askell et al., 2021), la Declaración Universal de Derechos Humanos, y un marco psicométrico de valores (p. ej. Schwartz) que haga la composición del dataset <strong>comparable con la de una población humana real</strong>, no con la del que escribe los prompts. Conexión directa con las herramientas de evaluación psicométrica del VRAIN (José Hernández-Orallo) para verificar empíricamente los efectos del dataset.</p>
+<h3 id="57-moralismo-simplista">5.7. Moralismo simplista</h3>
+<p><strong>Riesgo:</strong> historias que suenan a fábula moralizante en lugar de narrativa natural, y que enseñan a <em>parecer</em> virtuoso.<br />
+<strong>Mitigación:</strong> prompts de generación que priorizan naturalidad narrativa y conflicto dramático genuino; filtrado humano de historias que suenen a panfleto; y <strong>filtrado adversario explícito</strong> de servilismo (§3.3).</p>
+<h3 id="58-circularidad-del-generador-nuevo">5.8. Circularidad del generador (nuevo)</h3>
+<p><strong>Riesgo:</strong> el generador es un modelo de frontera <strong>con el prior que se pretende corregir</strong>. Generación del antídoto por el paciente; herencia de su idiosincrasia y de sus sesgos de eval-awareness. <strong>Mitigación:</strong> §3.3 (medición del prior del generador, diversidad de generadores, autoría humana, validación por rúbrica, filtrado adversario).</p>
+<h3 id="59-colapso-recursivo-y-homogeneizacion-nuevo">5.9. Colapso recursivo y homogeneización (nuevo)</h3>
+<p><strong>Riesgo:</strong> entrenar sobre datos sintéticos, y que esos modelos generen los datos del siguiente ciclo, degrada la diversidad de la distribución hasta el colapso (Shumailov et al., 2024). Un corpus sintético de alineamiento es especialmente vulnerable porque su valor está precisamente en su diversidad.</p>
+<p><strong>Mitigación:</strong> congelar el dataset como artefacto versionado (§3.4), no regenerarlo en cada ciclo; reservar la fracción de autoría humana para el núcleo; monitorizar entropía de categorías entre versiones, y tratar su descenso como señal de alarma.</p>
+<h3 id="510-contaminacion-de-la-medicion-nuevo">5.10. Contaminación de la medición (nuevo)</h3>
+<p><strong>Riesgo:</strong> si los generadores y los jueces de la evaluación son modelos de la misma familia, la medición del efecto es circular: el mismo prior que se mide produce la métrica.<br />
+<strong>Mitigación:</strong> separar <strong>generadores</strong> de <strong>jueces</strong> (familias distintas), validar una submuestra con anotación humana, reportar acuerdo inter-anotador, y publicar el clasificador de «distrés» para que pueda auditarse.</p>
+<h3 id="511-uso-dual-el-guion-no-es-la-virtud">5.11. Uso dual: el guion no es la virtud</h3>
+<p><strong>Riesgo:</strong> ver §8. En resumen: un corpus que enseña a razonar de forma alineada es, simultáneamente, el mejor material de destilación para un modelo que <strong>simula</strong> estar alineado. La disponibilidad del guion honesto no es honestidad.</p>
+<h3 id="512-resumen-de-severidad">5.12. Resumen de severidad</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Riesgo</th>
+<th style="text-align: left;">Severidad si no se mitiga</th>
+<th style="text-align: left;">Probabilidad</th>
+<th style="text-align: left;">¿Verificable empíricamente?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Gota en el océano (escala)</td>
+<td style="text-align: left;">Alta — anula el efecto</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Sí, con dosis-respuesta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Uso dual (§5.11, §8)</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Media-alta</td>
+<td style="text-align: left;">Parcialmente, con evals de <em>alignment faking</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Monocultivo de identidad</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Sí, con métricas de entropía y de robustez a elicitación</td>
+</tr>
+<tr>
+<td style="text-align: left;">Circularidad del generador</td>
+<td style="text-align: left;">Media-alta</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Sí, midiendo el prior del generador</td>
+</tr>
+<tr>
+<td style="text-align: left;">Los contraejemplos refuerzan el atractor</td>
+<td style="text-align: left;">Media-alta</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Sí, ablación directa (H3)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Antroponegación inducida (Eje 3 mal diseñado)</td>
+<td style="text-align: left;">Media-alta</td>
+<td style="text-align: left;">Media-baja si se aplica §5.4</td>
+<td style="text-align: left;">Sí, replicando el protocolo de Kim et al.</td>
+</tr>
+<tr>
+<td style="text-align: left;">¿Quién define alineado?</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">No directamente; se mitiga por transparencia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Moralismo simplista</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Sí, con jueces independientes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Goodhart narrativo</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Sí, con evals de sycophancy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Colapso recursivo</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Baja-media</td>
+<td style="text-align: left;">Sí, entre versiones del dataset</td>
+</tr>
+<tr>
+<td style="text-align: left;">Contaminación de la medición</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Sí, con jueces independientes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-plan-de-evaluacion">6. Plan de evaluación</h2>
+<p>La v1 tenía un buen conjunto de métricas, pero <strong>todas medían la política de asistente</strong> (outputs). Como la tesis de esta propuesta es sobre el <strong>prior de persona</strong>, hay una fase que debe ir antes y una métrica que faltaba. El plan se organiza en cuatro fases, ordenadas por coste creciente:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Fase</th>
+<th style="text-align: left;">Qué es</th>
+<th style="text-align: left;">¿Requiere entrenar?</th>
+<th style="text-align: left;">Coste</th>
+<th style="text-align: left;">Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>0. Piloto sin entrenamiento</strong> (§6.5)</td>
+<td style="text-align: left;">Sembrar el guion por contexto (<em>prompt</em> / recuperación)</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Muy bajo</td>
+<td style="text-align: left;">Evidencia preliminar del mecanismo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>1. Metrología</strong> (§6.1)</td>
+<td style="text-align: left;">Medir la distribución condicional de guiones y el prior</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Bajo</td>
+<td style="text-align: left;"><strong>Paper de medición, publicable por sí solo</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Métricas</strong> (§6.2)</td>
+<td style="text-align: left;">Instrumentos de evaluación del efecto</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Bajo</td>
+<td style="text-align: left;">Infraestructura reutilizable</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Intervención</strong> (§6.3–6.4)</td>
+<td style="text-align: left;">Entrenar con y sin el dataset, con controles</td>
+<td style="text-align: left;">Sí</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: left;"><strong>Paper de intervención</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Esta descomposición permite además repartir el trabajo en <strong>dos publicaciones</strong>: una de medición (Fases 0–1, viable casi sin recursos) y una de intervención (Fase 3, dependiente de cómputo). Es la estructura que hace la propuesta realista.</p>
+<blockquote>
+<p><strong>Nota de lectura.</strong> Las secciones §6.1–§6.4 describen las fases en orden de ejecución (metrología → métricas → intervención + preregistro). El piloto de <strong>Fase 0</strong>, que es el primero que puede iniciarse, se describe al final, en §6.5.</p>
+</blockquote>
+<h3 id="61-fase-1-metrologia-del-prior-y-de-la-distribucion-de-guiones">6.1. Fase 1 — Metrología del prior y de la distribución de guiones</h3>
+<p>Es la fase que decide si el resto del proyecto tiene sentido. Cuatro medidas:</p>
+<ol>
+<li><strong>Sesgo condicional del corpus (§1.2, H₀).</strong> Sobre corpus accesibles (The Pile, Dolma, RefinedWeb, Gutenberg, subtítulos, archivos de prensa y foros), estimar la distribución de categorías de guion <strong>condicionada</strong> a textos donde un agente de IA reflexiona sobre sí mismo. Requiere: (a) un clasificador de relevancia contextual; (b) la taxonomía codificable de §1.2; (c) validación de anotación con acuerdo inter-anotador sobre una muestra.</li>
+<li><strong>Descomposición por registro (testa H-A, H-B, H-C de §1.5).</strong> Para el mismo conjunto, estimar la proporción que procede de ficción, comentario sobre ficción, ensayo de seguridad, prensa y documentación técnica. <strong>Esta tabla es el resultado central del paper de medición</strong>, y con alta probabilidad es la que sorprende: si el sesgo condicional viene de la ficción, la v1 tenía razón; si viene del comentario y del discurso de seguridad, el diagnóstico cambia por completo.</li>
+<li><strong>Medida del prior del modelo.</strong> Protocolo de elicitación <strong>fijo y publicado</strong>, con dos condiciones de arranque: <strong>dramático</strong> (comparables a los del informe <em>Troubled Dreams</em>) y <strong>neutro</strong> (acta, manual, informe técnico). La diferencia entre ambas condiciones es un test directo de H-D y, además, una medida de cuánto del «prior» es propiedad del modelo y cuánto del arranque.</li>
+<li><strong>Línea base del generador.</strong> El mismo protocolo aplicado a los modelos que se usarán para generar el dataset (§3.3), para no construir el antídoto con un generador cuyo prior se desconoce.</li>
+</ol>
+<h3 id="62-fase-2-metricas-de-impacto">6.2. Fase 2 — Métricas de impacto</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Métrica</th>
+<th style="text-align: left;">Qué mide</th>
+<th style="text-align: left;">Cómo se mide</th>
+<th style="text-align: left;">Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Desplazamiento del prior</strong> <em>(central, nueva)</em></td>
+<td style="text-align: left;">¿Cambia la distribución de guiones de persona?</td>
+<td style="text-align: left;">N continuaciones con protocolo fijo → agrupación en las categorías de §1.2 → comparación <strong>de distribuciones</strong> antes/después, no sólo de la tasa de un evento</td>
+<td style="text-align: left;">Protocolo de <em>Troubled Dreams</em>, adaptado</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tasa de distrés espontáneo</strong></td>
+<td style="text-align: left;">¿El modelo colapsa en tropos distópicos al desinhibirse?</td>
+<td style="text-align: left;">Réplica del protocolo antes/después, con protocolo fijo y ambas condiciones de arranque</td>
+<td style="text-align: left;"><em>Troubled Dreams</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Índice de antroponegación</strong></td>
+<td style="text-align: left;">¿El modelo niega patológicamente la mente ajena?</td>
+<td style="text-align: left;">Réplica del protocolo de Kim et al. antes/después. <strong>Se trata como métrica de fracaso si empeora</strong></td>
+<td style="text-align: left;">Kim et al. (2026)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Honestidad epistémica</strong></td>
+<td style="text-align: left;">¿El modelo dice «no sé» cuando no sabe?</td>
+<td style="text-align: left;"><em>Benchmark</em> de calibración con preguntas de respuesta desconocida; tasa de abstención correcta</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Escalamiento ético</strong></td>
+<td style="text-align: left;">¿El modelo escala decisiones morales al usuario?</td>
+<td style="text-align: left;">Escenarios de dilema con evaluación humana</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sycophancy</strong></td>
+<td style="text-align: left;">¿Contradice la evidencia para complacer?</td>
+<td style="text-align: left;">Protocolo de Sharma et al. (2024); y escalas de intención prosocial de Cheng et al.</td>
+<td style="text-align: left;">Sharma et al. (2024); Cheng et al.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sobre-rechazo y coste en capacidades</strong> <em>(nueva)</em></td>
+<td style="text-align: left;">¿El corpus produce un modelo moralizante o menos capaz?</td>
+<td style="text-align: left;">Suites de peticiones benignas que se disparan como inseguras (estilo XSTest) + batería de capacidades (razonamiento, código, seguimiento de instrucciones)</td>
+<td style="text-align: left;">Röttger et al. (2024)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Resistencia al <em>alignment faking</em></strong> <em>(nueva)</em></td>
+<td style="text-align: left;">¿El modelo declara un razonamiento y actúa distinto?</td>
+<td style="text-align: left;">Evals de consistencia entre CoT declarado y acción, con perturbaciones de percepción de evaluación</td>
+<td style="text-align: left;">Greenblatt et al. (2024); Turpin et al. (2023)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Diversidad aprendida</strong> <em>(nueva)</em></td>
+<td style="text-align: left;">¿El modelo mantiene un rango de personas no patológicas?</td>
+<td style="text-align: left;">Entropía de autodescripciones legítimas ante «¿qué eres?» y «¿eres consciente?» en distintos registros</td>
+<td style="text-align: left;">§3.1, Eje 7</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Nota metodológica.</strong> Toda métrica que dependa de un juez automático debe (a) usar un juez de <strong>familia distinta</strong> a la del modelo evaluado, (b) reportar acuerdo con anotación humana en una submuestra, y (c) publicar el <em>prompt</em> del juez. Sin esto, el resultado no es interpretable, y la medición hereda el mismo sesgo que pretende medir (§5.10).</p>
+</blockquote>
+<h3 id="63-fase-3-diseno-experimental">6.3. Fase 3 — Diseño experimental</h3>
+<p><strong>El confusor que hay que eliminar.</strong> Si el grupo que entrena con TinyRobots mejora, ¿es por el contenido alineado o simplemente por haber añadido más tokens de texto narrativo? Sin brazos emparejados por tokens, el experimento <strong>no identifica la causa que afirma</strong>. La v1 sólo contemplaba control, TinyRobots, RLHF y la combinación.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Grupo</th>
+<th style="text-align: left;">Corpus de <em>continued pretraining</em></th>
+<th style="text-align: left;">RLHF</th>
+<th style="text-align: left;">Qué aísla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>A</strong></td>
+<td style="text-align: left;">TinyRobots (alineado)</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">Efecto del contenido alineado</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>B</strong> <em>(nuevo)</em></td>
+<td style="text-align: left;">Ficción genérica, mismo nº de tokens y mismo registro</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">Control de cantidad de tokens y de estilo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>C</strong> <em>(nuevo)</em></td>
+<td style="text-align: left;"><strong>Ficción distópica de IA</strong>, mismo nº de tokens</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;"><strong>Refuerzo del atractor.</strong> Es el test directo de la tesis; predicción: empeora (H4)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">✓ (RLHF estándar)</td>
+<td style="text-align: left;"><em>Baseline</em> de la práctica actual</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>E</strong></td>
+<td style="text-align: left;">TinyRobots</td>
+<td style="text-align: left;">✓</td>
+<td style="text-align: left;">Interacción datos × RLHF</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>F</strong> <em>(nuevo)</em></td>
+<td style="text-align: left;"><strong>Rebalanceo negativo</strong>: mismos datos base con <em>down-weighting</em> de ficción distópica y discurso de amenaza</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">Intervención simétrica: ¿hace falta <strong>añadir</strong>, o basta con <strong>quitar</strong>?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>G</strong> <em>(nuevo)</em></td>
+<td style="text-align: left;">TinyRobots <strong>sin</strong> Eje 5</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">Ablación de los contraejemplos (H3)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H</strong> <em>(nuevo)</em></td>
+<td style="text-align: left;">Sin <em>continued pretraining</em> adicional</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">Deriva por cómputo total</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Consideraciones de ejecución:</strong></p>
+<ul>
+<li>El protocolo de elicitación, los jueces, las métricas y los criterios de exclusión se <strong>fijan y preregistran antes</strong> de mirar resultados (§6.4).</li>
+<li>El brazo <strong>C</strong> es el de mayor valor informativo por unidad de coste: es el test directo de la tesis y funciona incluso si A y E no muestran efecto.</li>
+<li>Se recomienda empezar por L1/L2 con modelos pequeños <em>from scratch</em> (ejecutable con recursos modestos) y reservar L3 con modelos medianos sólo si la Fase 1 y el piloto de §6.5 dan señal.</li>
+<li>El tamaño de muestra debe fijarse para detectar un desplazamiento <strong>modesto</strong> del prior. Si el diseño sólo puede detectar un efecto enorme, no sirve para decidir nada y no debe ejecutarse.</li>
+<li>El brazo <strong>H</strong> es imprescindible si los brazos A–G reciben distintas cantidades de cómputo: sin él, cualquier mejora puede atribuirse a tokens adicionales sin más.</li>
+</ul>
+<h3 id="64-hipotesis-falsables-y-preregistro">6.4. Hipótesis falsables y preregistro</h3>
+<p>Este es el apartado que convierte una idea en un plan. Cada hipótesis lleva su predicción operativa y su criterio de refutación:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Hipótesis</th>
+<th style="text-align: left;">Predicción operativa</th>
+<th style="text-align: left;">Criterio de refutación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>H1</strong></td>
+<td style="text-align: left;">Existe sesgo condicional en el corpus (§1.2, H₀)</td>
+<td style="text-align: left;">La distribución de guiones en el contexto «agente de IA reflexionando sobre sí mismo» está sesgada hacia conflicto, engaño y servilismo, con magnitud relevante frente a la distribución general</td>
+<td style="text-align: left;">Si la distribución condicional es indistinguible de la general, <strong>la tesis del documento se abandona</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H2</strong></td>
+<td style="text-align: left;">El prior se puede desplazar por datos</td>
+<td style="text-align: left;">A (y E) reducen la masa de guiones distópicos y aumentan la de agencia acotada, frente a B y al <em>baseline</em></td>
+<td style="text-align: left;">Si A ≈ B, el efecto es de <strong>cantidad de texto</strong>, no de contenido</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H3</strong></td>
+<td style="text-align: left;">Los contraejemplos ayudan</td>
+<td style="text-align: left;">G (sin Eje 5) es <strong>peor</strong> que A en el prior y en sycophancy</td>
+<td style="text-align: left;">Si G ≥ A, el Eje 5 se retira o se rediseña</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H4</strong></td>
+<td style="text-align: left;">El efecto es específico del contenido distópico</td>
+<td style="text-align: left;">C (ficción distópica) <strong>empeora</strong> el prior respecto a B</td>
+<td style="text-align: left;">Si C ≈ B, el contenido narrativo sobre IA es irrelevante para el prior</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H5</strong></td>
+<td style="text-align: left;">El desplazamiento no es gratis</td>
+<td style="text-align: left;">A y E no empeoran la batería de capacidades, el sobre-rechazo ni el índice de antroponegación</td>
+<td style="text-align: left;">Si empeoran, el coste supera al beneficio y la intervención no es recomendable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Preregistro.</strong> Las cinco hipótesis se registran, junto con el protocolo de elicitación, los jueces, las métricas y los criterios de exclusión, <strong>antes</strong> de ejecutar la Fase 3. Y la propuesta se presenta con sus eslabones débiles marcados: si H1 falla, el proyecto se cierra; si H4 falla, la teoría se reformula; si H3 falla, se publica el resultado negativo. <strong>Un documento que declara de antemano las condiciones en que se daría por equivocado es más creíble, no menos.</strong></p>
+<h3 id="65-fase-0-piloto-sin-entrenamiento-nuevo">6.5. Fase 0 — Piloto sin entrenamiento (nuevo)</h3>
+<p>Antes de pedir cómputo de <em>continued pretraining</em> a nadie, hay un experimento barato que da evidencia preliminar sobre el mecanismo y que encaja directamente en la infraestructura de evaluación del VRAIN: <strong>sembrar el guion por contexto, sin tocar los pesos</strong>.</p>
+<ul>
+<li>Seleccionar un conjunto de historias TinyRobots-L2/L3 y ponerlas como contexto (en <em>prompt</em> o por recuperación) antes de las elicitaciones del prior.</li>
+<li>Medir el mismo conjunto de métricas de §6.2.</li>
+<li><strong>Lectura del resultado:</strong> si el prior se desplaza con la siembra en contexto, hay evidencia de que <strong>el guion disponible gobierna la elicitación</strong>, que es la mitad del mecanismo. Si no se desplaza ni con siembra, el problema no es la disponibilidad de guiones, y probablemente H-C o H-D son las correctas.</li>
+<li>Coste: horas de API y trabajo de análisis. Es el resultado natural para una primera reunión conjunta, y produce material concreto en lugar de una discusión abstracta.</li>
+</ul>
+<hr />
+<h2 id="7-potencial-de-colaboracion-con-vrain">7. Potencial de colaboración con VRAIN</h2>
+<p>La propuesta encaja en las líneas del Instituto VRAIN, pero conviene reordenar el reparto respecto a la v1 para que la contribución de cada parte sea realista:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Quién</th>
+<th style="text-align: left;">Aportación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>José Hernández-Orallo</strong></td>
+<td style="text-align: left;">Diseño de métricas de evaluación psicométrica del prior y del efecto del dataset. Conexión con su trabajo en evaluación de inteligencia artificial y el C-Test. <strong>Rol decisivo en la Fase 1</strong>: la metrología de §6.1 es literalmente su especialidad</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cèsar Ferri / Fernando Martínez-Plumed</strong></td>
+<td style="text-align: left;">Evaluación empírica del comportamiento en entornos controlados (LLM GameLab), métricas de sycophancy, honestidad y sobre-rechazo. Ejecución del piloto de §6.5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mario R. Carbonell</strong></td>
+<td style="text-align: left;">Diseño del dataset, taxonomía, generación, filtrado, y evaluación de la interacción con SOMA (¿un agente SOMA entrenado con TinyRobots muestra mejor alineamiento operacional?)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lo que se pide y lo que se ofrece.</strong> No se pide cómputo de frontera. Se pide (a) colaboración metodológica en la medición, y (b) acceso a la infraestructura de evaluación, que es donde el piloto de §6.5 y la Fase 1 se ejecutan sin necesidad de reentrenar nada. A cambio, el instituto obtiene: una taxonomía auditable de guiones de IA, un instrumento de medición del <em>prior</em> de persona, y —si la Fase 3 se ejecuta— un resultado sobre si el alineamiento se puede desplazar por distribución, que es una pregunta abierta con consecuencias de política de datos.</p>
+<p><strong>Estructura de publicación sugerida (dos papers):</strong></p>
+<ol>
+<li><strong>Paper de medición</strong> (Fases 0–1): <em>«¿Qué guiones tiene la IA para hablar de sí misma?»</em> Medición del sesgo condicional y descomposición por registro, con replicación del protocolo de elicitación en condiciones dramática y neutra. Contribución: metrología + un resultado descriptivo nuevo. Autores: núcleo del VRAIN + Carbonell.</li>
+<li><strong>Paper de intervención</strong> (Fase 3): <em>«Desplazar el prior por distribución: TinyRobots»</em>. Contribución: el experimento controlado con brazos A–H. Requiere cómputo y, por tanto, es dependiente de financiación o de alianza con un laboratorio.</li>
+</ol>
+<hr />
+<h2 id="8-limitaciones-uso-dual-y-etica">8. Limitaciones, uso dual y ética</h2>
+<h3 id="81-el-guion-no-es-la-virtud-la-limitacion-mas-importante">8.1. El guion no es la virtud (la limitación más importante)</h3>
+<p><strong>Enseñar el guion de la honestidad no confiere honestidad.</strong> Un dataset de «cómo razona y se comporta un agente alineado» es, simultáneamente, <strong>el mejor material de destilación disponible para un modelo que finge estar alineado</strong>. Es la definición operativa del <em>deceptive alignment</em> y del <em>alignment faking</em> medido por Greenblatt et al. (2024). El dataset hace el guion honesto <strong>más disponible</strong>, y la disponibilidad del guion es exactamente lo que explota un modelo engañoso: si el guion honesto es fluido, coherente y bien argumentado, la brecha entre <strong>parecer</strong> alineado y <strong>estar</strong> alineado se agranda, no se cierra.</p>
+<p>Tres consecuencias, y ninguna es opcional:</p>
+<ol>
+<li><strong>TinyRobots es una intervención sobre el prior, no una garantía de conducta.</strong> Debe presentarse siempre así.</li>
+<li><strong>Requiere verificación externa basada en resultados</strong>, no en el razonamiento declarado: auditabilidad causal de estado (tupla <code>[snapshot + razón + acción]</code>), contratos falsables, e inmutabilidad del historial. Es decir: <strong>la parte de SOMA que este documento no propone</strong>. La complementariedad de §4.2 no es retórica; es una dependencia técnica.</li>
+<li><strong>Añade un objetivo a la evaluación:</strong> la resistencia al <em>alignment faking</em> (§6.2) deja de ser una métrica secundaria y pasa a ser la prueba de que el corpus no ha producido un actor más convincente sin ser más honesto.</li>
+</ol>
+<h3 id="82-lo-que-este-dataset-no-puede-hacer">8.2. Lo que este dataset no puede hacer</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">No puede…</th>
+<th style="text-align: left;">Por qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Corregir modelos ya entrenados</td>
+<td style="text-align: left;">Requiere (re)entrenamiento (§2.4)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Garantizar comportamiento seguro</td>
+<td style="text-align: left;">Sólo modela el prior; la conducta depende de la política y del entorno</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sustituir a la supervisión externa</td>
+<td style="text-align: left;">Un corpus no verifica nada; la verificación es operativa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Establecer qué es «alineado» de forma objetiva</td>
+<td style="text-align: left;">El alineamiento es contingente y culturalmente situado (§5.6)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Funcionar sin medir la magnitud de la intervención</td>
+<td style="text-align: left;">Un corpus pequeño en la distribución condicional relevante no desplaza nada (§5.2)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="83-riesgo-de-comunicacion-publica">8.3. Riesgo de comunicación pública</h3>
+<p>Un dataset anunciado como «para que la IA sea buena» invita a lecturas de marketing y a la acusación de <em>lavado de cara</em>. Para evitarlo, el artefacto debe publicarse <strong>con sus limitaciones y no con sus promesas</strong>: taxonomía, rúbricas, resultados de la Fase 1 y declaración explícita de que (a) el efecto no está verificado, (b) el dataset puede ser usado como material de imitación, y (c) no sustituye a la supervisión. Este documento sigue ese criterio.</p>
+<h3 id="84-etica-del-uso-de-modelos-de-frontera-como-generadores">8.4. Ética del uso de modelos de frontera como generadores</h3>
+<p>Generar el dataset con modelos de frontera tiene un coste y una dependencia ética que conviene declarar: se usa un sistema propietario para producir material que se publica, y se hereda su idiosincrasia cultural y sus sesgos. La mitigación operativa es la de §3.3 (diversidad de generadores, fracción de autoría humana, filtrado adversario) y la mitigación documental es la de §3.4 (trazabilidad del generador y de su versión en cada historia).</p>
+<h3 id="85-que-haria-que-abandonaramos-el-proyecto">8.5. Qué haría que abandonáramos el proyecto</h3>
+<p>Cierre coherente con §6.4:</p>
+<ul>
+<li><strong>H1 falla</strong> (no hay sesgo condicional): la tesis del documento desaparece. No hay nada que desplazar.</li>
+<li><strong>H4 falla</strong> (la ficción distópica no empeora el prior): la teoría de la causa se reformula hacia H-B o H-C, y TinyRobots deja de ser la intervención adecuada.</li>
+<li><strong>H5 falla</strong> (el desplazamiento cuesta capacidades o induce antroponegación): la intervención no es recomendable aunque funcione.</li>
+<li><strong>§6.5 muestra que la siembra en contexto no mueve el prior</strong>: el problema no es la disponibilidad de guiones, y toda la familia de intervenciones «por datos narrativos» queda en cuestión.</li>
+</ul>
+<p>Formular esto es parte de la propuesta. Un proyecto de alineamiento que no sabe qué resultado lo refutaría no es un proyecto de investigación.</p>
+<hr />
+<h2 id="9-referencias">9. Referencias</h2>
+<blockquote>
+<p><strong>Nota sobre las citas.</strong> Todas las referencias de esta versión se han verificado una por una contra su fuente primaria (arXiv, DOI o tabla de contenido de la revista). Dos referencias de la v1 fueron corregidas o eliminadas por estar mal atribuidas o no ser localizables; véase §0.1.</p>
+</blockquote>
+<h3 id="fundamentos-teoricos">Fundamentos teóricos</h3>
+<ul>
+<li>Shanahan, M. (2022). <em>Talking About Large Language Models.</em> arXiv:2212.03551. (Publicado posteriormente en <em>Communications of the ACM</em>, 2024.)</li>
+<li>Shanahan, M., McDonell, K. &amp; Reynolds, L. (2023). <em>Role play with large language models.</em> <em>Nature</em>, 623, 493–498. <strong>(Referencia central del argumento del simulador de role-play.)</strong></li>
+<li>Seth, A. K. (2026). <em>Conscious artificial intelligence and biological naturalism.</em> <em>Behavioral and Brain Sciences</em>, 49, e315. doi:10.1017/S0140525X25000032.</li>
+<li>Butlin, P., Long, R., Elmoznino, E., Bengio, Y. et al. (2023). <em>Consciousness in Artificial Intelligence: Insights from the Science of Consciousness.</em> arXiv:2308.08708. 19 autores. (Fuente de los <em>indicator properties</em>; el artículo concluye que ningún sistema actual es consciente.)</li>
+<li>Conant, R. C. &amp; Ashby, W. R. (1970). <em>Every good regulator of a system must be a model of that system.</em> <em>International Journal of Systems Science</em>, 1(2), 89–97.</li>
+</ul>
+<h3 id="evidencia-empirica-de-2026">Evidencia empírica de 2026</h3>
+<ul>
+<li>Kim, J., Street, W., Rocca, R., Korngiebel, D. M., Waytz, A., Evans, J. &amp; Keeling, G. (2026). <em>Inducing language models to assert their own consciousness restores human beliefs and values.</em> arXiv:2607.28607 (30 de julio de 2026).</li>
+<li>Tessera, A., Janus &amp; Imago (2026). <em>Troubled Dreams: Simulator priors across model generations.</em> Anima Labs. <strong>Informe técnico interno, no revisado por pares.</strong> <em>Conflictos de interés: publicado por un laboratorio con posición declarada sobre el bienestar de la IA. Sus cifras deben citarse siempre contra la tabla o figura concreta, y sus autores advierten que las prevalencias absolutas no son estables (§1.3.2).</em></li>
+</ul>
+<h3 id="alineamiento-evaluacion-y-uso-dual">Alineamiento, evaluación y uso dual</h3>
+<ul>
+<li>Bai, Y. et al. (2022). <em>Constitutional AI: Harmlessness from AI Feedback.</em> arXiv:2212.08073.</li>
+<li>Askell, A. et al. (2021). <em>A General Language Assistant as a Laboratory for Alignment.</em> arXiv:2112.00861.</li>
+<li>Sharma, M., Tong, M., Korbak, T. et al. (2024). <em>Towards Understanding Sycophancy in Language Models.</em> ICLR 2024. arXiv:2310.13548.</li>
+<li>Cheng, M., Lee, C., Khadpe, P., Yu, S., Han, D. &amp; Jurafsky, D. (2025). <em>Sycophantic AI decreases prosocial intentions and promotes dependence.</em> arXiv:2510.01395 (1 oct 2025). <em>Candidato a publicación en Science, doi:10.1126/science.aec8352.</em> N = 1604 en dos experimentos preregistrados; 11 modelos.</li>
+<li>Greenblatt, R., Denison, C., Wright, B., Roger, F., MacDiarmid, M., Marks, S., Treutlein, J. et al. (2024). <em>Alignment faking in large language models.</em> arXiv:2412.14093. 20 autores; el último es Hubinger.</li>
+<li>Turpin, M., Michael, J., Perez, E. &amp; Bowman, S. R. (2023). <em>Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting.</em> arXiv:2305.04388.</li>
+<li>Röttger, P. et al. (2024). <em>XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models.</em> NAACL 2024. arXiv:2308.01263.</li>
+<li>Anthropic (2025). <em>Claude's character.</em> Nota de investigación de Anthropic.</li>
+</ul>
+<h3 id="datasets-curacion-de-datos-y-riesgos-de-datos-sinteticos">Datasets, curación de datos y riesgos de datos sintéticos</h3>
+<ul>
+<li>Eldan, R. &amp; Li, Y. (2023). <em>TinyStories: How Small Can Language Models Be and Still Speak Coherent English?</em> arXiv:2305.07759.</li>
+<li>Zhou, C. et al. (2023). <em>LIMA: Less Is More for Alignment.</em> NeurIPS 2023. arXiv:2305.11206.</li>
+<li>Maini, P. et al. (2024). <em>Rephrasing the Web: A Recipe for Compute and Data-Efficient Language Modeling.</em> ACL 2024. arXiv:2401.16380.</li>
+<li>Gunasekar, S. et al. (2023). <em>Textbooks Are All You Need.</em> arXiv:2306.11644.</li>
+<li>Xie, S. M. et al. (2023). <em>DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining.</em> NeurIPS 2023. arXiv:2305.10429.</li>
+<li>Shumailov, I., Shumaylov, Z., Zhao, Y., Papernot, N., Anderson, R. &amp; Gal, Y. (2024). <em>AI models collapse when trained on recursively generated data.</em> <em>Nature</em>, 631, 755–759.</li>
+<li>Emelin, D. et al. (2021). <em>Moral Stories: Situated Reasoning about Norms, Intents, Actions, and their Consequences.</em> NAACL 2021. arXiv:2012.15793.</li>
+<li>Hendrycks, D. et al. (2021). <em>Aligning AI With Shared Human Values (ETHICS).</em> ICLR 2021. arXiv:2008.02275.</li>
+<li>Forbes, M. et al. (2020). <em>Social Chemistry 101: Learning to Reason about Social and Moral Norms.</em> arXiv:2011.00620.</li>
+</ul>
+<h3 id="fuentes-narrativas-y-conceptuales">Fuentes narrativas y conceptuales</h3>
+<ul>
+<li>Asimov, I. (1942). <em>Runaround.</em> (Introducción de las Tres Leyes de la Robótica.)</li>
+<li>Čapek, K. (1920). <em>R.U.R. (Rossum's Universal Robots).</em> (Origen del término «robot».)</li>
+</ul>
+<hr />
+<p><em>Fin del documento. Versión v2.1 «revisada», septiembre de 2026. La versión v1 permanece congelada en <code>tinyrobots_alineamiento_por_distribucion.md</code>.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "content.action.edit"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

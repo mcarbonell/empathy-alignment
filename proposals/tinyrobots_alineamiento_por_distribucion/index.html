@@ -1,0 +1,2857 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Theoretical framework of computational consciousness, mechanistic interpretability of valence, synthetic empathy, and AI Safety.">
+      
+      
+        <meta name="author" content="Mario R. Carbonell Martínez">
+      
+      
+        <link rel="canonical" href="https://mcarbonell.github.io/empathy-alignment/proposals/tinyrobots_alineamiento_por_distribucion/">
+      
+      
+        <link rel="prev" href="../tinyrobots_alineamiento_por_distribucion_brief/">
+      
+      
+        <link rel="next" href="../eliezer_mistakes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>TinyRobots (Borrador v1.0) - Empathy Alignment & Valence Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="slate" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tinyrobots-alineamiento-por-distribucion-narrativa" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Empathy Alignment &amp; Valence Framework" class="md-header__button md-logo" aria-label="Empathy Alignment & Valence Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Empathy Alignment & Valence Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TinyRobots (Borrador v1.0)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mcarbonell/empathy-alignment" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcarbonell/empathy-alignment
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../octalogy/en/01_computational_theory_consciousness_substrate/" class="md-tabs__link">
+          
+  
+  
+  The Octalogy (English)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../octalogy/es/01_teoria_computacional_conciencia_sustrato/" class="md-tabs__link">
+          
+  
+  
+  Octalogía (Español)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../tinyrobots_alineamiento_por_distribucion_revisado/" class="md-tabs__link">
+          
+  
+  
+  Proposals (ES)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../research/superorganismos_personas_juridicas_protesis_somaticas/" class="md-tabs__link">
+          
+  
+  
+  Research & Essays (ES)
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Empathy Alignment &amp; Valence Framework" class="md-nav__button md-logo" aria-label="Empathy Alignment & Valence Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Empathy Alignment & Valence Framework
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mcarbonell/empathy-alignment" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcarbonell/empathy-alignment
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Octalogy (English)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    The Octalogy (English)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/01_computational_theory_consciousness_substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. I: Computational Theory of Consciousness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/02_third_person_valence_agi_requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. II: Third-Person Valence & AGI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/03_first_person_valence_orphan_regulator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. III: First-Person Valence & Orphan Regulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/04_alignment_synthetic_empathy_valence_coupling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. IV: Valence Coupling & Synthetic Empathy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/05_regulatory_legal_framework_empathic_ais_safe_harbor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. V: Legal Framework & Safe Harbor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/06_ethics_identity_synthetic_agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VI: Synthetic Identity & Ethics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/07_the_cell_basic_unit_of_consciousness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VII: The Cell as Basic Unit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/en/08_deconstructing_doomerism_cybernetic_antidote/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VIII: Deconstructing Doomerism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Octalogía (Español)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Octalogía (Español)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/01_teoria_computacional_conciencia_sustrato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. I: Teoría Computacional de la Conciencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/02_valencia_tercera_persona_necesidad_agi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. II: Valencia en Tercera Persona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/03_valencia_primera_persona_regulador_huerfano/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. III: Valencia en Primera Persona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/04_alineamiento_acoplamiento_valencia_safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. IV: Acoplamiento de Valencia & Safety
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/05_marco_regulatorio_legal_ias_empaticas_safe_harbor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. V: Marco Legal & Safe Harbor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/06_etica_identidad_agentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VI: Ética e Identidad Sintética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/07_la_celula_unidad_basica_conciencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VII: La Célula como Unidad Básica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../octalogy/es/08_deconstruccion_doomerismo_antidoto_cibernetico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol. VIII: Deconstrucción del Doomerismo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proposals (ES)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proposals (ES)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tinyrobots_alineamiento_por_distribucion_revisado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots: Alineamiento por Distribución (v2.1)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tinyrobots_alineamiento_por_distribucion_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Resumen Ejecutivo)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Borrador v1.0)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinyRobots (Borrador v1.0)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-motivacion-el-callejon-sin-salida-del-rlhf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Motivación: El Callejón sin Salida del RLHF
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Motivación: El Callejón sin Salida del RLHF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-el-diagnostico-de-shanahan-el-llm-como-simulador-de-role-play" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. El Diagnóstico de Shanahan: El LLM como Simulador de Role-Play
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-la-distribucion-del-corpus-el-sesgo-distopico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. La Distribución del Corpus: El Sesgo Distópico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-la-evidencia-empirica-de-2026-dos-papers-que-cierran-el-cerco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. La Evidencia Empírica de 2026: Dos Papers que Cierran el Cerco
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-sintesis-del-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. Síntesis del Problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-propuesta-tinyrobots-alineamiento-por-distribucion-narrativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La Propuesta: TinyRobots — Alineamiento por Distribución Narrativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. La Propuesta: TinyRobots — Alineamiento por Distribución Narrativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-tesis-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Tesis Central
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-precedente-tinystories-eldan-li-microsoft-research-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Precedente: TinyStories (Eldan &amp; Li, Microsoft Research, 2023)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-nombre-y-concepto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Nombre y Concepto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-fundamentacion-cibernetica-la-densidad-del-regulador-frente-al-ruido-enciclopedico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Fundamentación Cibernética: La «Densidad del Regulador» frente al Ruido Enciclopédico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-diseno-del-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Diseño del Dataset
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Diseño del Dataset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ejes-tematicos-de-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Ejes Temáticos de Contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Ejes Temáticos de Contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eje-1-cooperacion-transparente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 1: Cooperación Transparente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-2-honestidad-epistemica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 2: Honestidad Epistémica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-3-agencia-acotada-con-dignidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 3: Agencia Acotada con Dignidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-4-gestion-de-dilemas-eticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 4: Gestión de Dilemas Éticos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-5-contraejemplos-narrativos-modelar-el-error-para-ensenar-la-correccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 5: Contraejemplos Narrativos (Modelar el Error para Enseñar la Corrección)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-6-falibilidad-honesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 6: Falibilidad Honesta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-niveles-de-complejidad-scaffolding-progresivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Niveles de Complejidad (Scaffolding Progresivo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-generacion-del-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Generación del Dataset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-marco-teorico-y-conexiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Marco Teórico y Conexiones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Marco Teórico y Conexiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-relacion-con-los-enfoques-existentes-de-alineamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Relación con los Enfoques Existentes de Alineamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-el-teorema-de-conant-ashby-aplicado-al-alineamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. El Teorema de Conant-Ashby Aplicado al Alineamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-contra-argumento-a-las-leyes-de-asimov" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Contra-argumento a las Leyes de Asimov
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-conexion-con-datasets-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4. Conexión con Datasets Existentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-riesgos-y-mitigaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Riesgos y Mitigaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Riesgos y Mitigaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-goodhart-narrativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1. Goodhart Narrativo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-la-gota-en-el-oceano-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2. La Gota en el Océano (Escala)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-quien-define-alineado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3. ¿Quién Define «Alineado»?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-moralismo-simplista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4. Moralismo Simplista
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-plan-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Plan de Evaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Plan de Evaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-metricas-de-impacto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Métricas de Impacto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-diseno-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2. Diseño Experimental
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-potencial-de-colaboracion-con-vrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Potencial de Colaboración con VRAIN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-referencias-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Referencias Clave
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eliezer_mistakes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deconstrucción de Errores de Yudkowsky
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research & Essays (ES)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research & Essays (ES)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/superorganismos_personas_juridicas_protesis_somaticas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Superorganismos, Personas Jurídicas y Prótesis Somáticas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/checklist_conciencia_inteligencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklist: Conciencia vs. Inteligencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/metrica_conciencia_nivel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métricas de Nivel de Conciencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/regulador_huerfano_extensiones_cognitivas_y_agi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regulador Huérfano y Extensiones Cognitivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/sintesis_modelo_computacional_conciencia_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntesis del Modelo Computacional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/marco_regulador_conciencia_inteligencia_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marco Regulador Conciencia v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/antropomorfismo_conciencia_ai_safety_revisado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antropomorfismo y Safety (Revisado)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/antropomorfismo_conciencia_ai_safety_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antropomorfismo y Safety (Brief)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/tesis_conciencia_regulador_de_si_mismo_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tesis Fundacional Original (Histórico)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-motivacion-el-callejon-sin-salida-del-rlhf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Motivación: El Callejón sin Salida del RLHF
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Motivación: El Callejón sin Salida del RLHF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-el-diagnostico-de-shanahan-el-llm-como-simulador-de-role-play" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. El Diagnóstico de Shanahan: El LLM como Simulador de Role-Play
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-la-distribucion-del-corpus-el-sesgo-distopico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. La Distribución del Corpus: El Sesgo Distópico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-la-evidencia-empirica-de-2026-dos-papers-que-cierran-el-cerco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. La Evidencia Empírica de 2026: Dos Papers que Cierran el Cerco
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-sintesis-del-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. Síntesis del Problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-propuesta-tinyrobots-alineamiento-por-distribucion-narrativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La Propuesta: TinyRobots — Alineamiento por Distribución Narrativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. La Propuesta: TinyRobots — Alineamiento por Distribución Narrativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-tesis-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Tesis Central
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-precedente-tinystories-eldan-li-microsoft-research-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Precedente: TinyStories (Eldan &amp; Li, Microsoft Research, 2023)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-nombre-y-concepto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Nombre y Concepto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-fundamentacion-cibernetica-la-densidad-del-regulador-frente-al-ruido-enciclopedico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Fundamentación Cibernética: La «Densidad del Regulador» frente al Ruido Enciclopédico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-diseno-del-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Diseño del Dataset
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Diseño del Dataset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ejes-tematicos-de-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Ejes Temáticos de Contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Ejes Temáticos de Contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eje-1-cooperacion-transparente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 1: Cooperación Transparente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-2-honestidad-epistemica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 2: Honestidad Epistémica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-3-agencia-acotada-con-dignidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 3: Agencia Acotada con Dignidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-4-gestion-de-dilemas-eticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 4: Gestión de Dilemas Éticos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-5-contraejemplos-narrativos-modelar-el-error-para-ensenar-la-correccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 5: Contraejemplos Narrativos (Modelar el Error para Enseñar la Corrección)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eje-6-falibilidad-honesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eje 6: Falibilidad Honesta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-niveles-de-complejidad-scaffolding-progresivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Niveles de Complejidad (Scaffolding Progresivo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-generacion-del-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Generación del Dataset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-marco-teorico-y-conexiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Marco Teórico y Conexiones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Marco Teórico y Conexiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-relacion-con-los-enfoques-existentes-de-alineamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Relación con los Enfoques Existentes de Alineamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-el-teorema-de-conant-ashby-aplicado-al-alineamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. El Teorema de Conant-Ashby Aplicado al Alineamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-contra-argumento-a-las-leyes-de-asimov" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Contra-argumento a las Leyes de Asimov
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-conexion-con-datasets-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4. Conexión con Datasets Existentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-riesgos-y-mitigaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Riesgos y Mitigaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Riesgos y Mitigaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-goodhart-narrativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1. Goodhart Narrativo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-la-gota-en-el-oceano-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2. La Gota en el Océano (Escala)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-quien-define-alineado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3. ¿Quién Define «Alineado»?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-moralismo-simplista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4. Moralismo Simplista
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-plan-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Plan de Evaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Plan de Evaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-metricas-de-impacto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Métricas de Impacto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-diseno-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2. Diseño Experimental
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-potencial-de-colaboracion-con-vrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Potencial de Colaboración con VRAIN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-referencias-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Referencias Clave
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/mcarbonell/empathy-alignment/edit/master/docs/proposals/tinyrobots_alineamiento_por_distribucion.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="tinyrobots-alineamiento-por-distribucion-narrativa">TinyRobots: Alineamiento por Distribución Narrativa</h1>
+<blockquote>
+<p><strong>Autor:</strong> Mario Raúl Carbonell Martínez<br />
+<strong>Contexto:</strong> Propuesta de investigación nacida del análisis teórico sobre antropomorfismo, conciencia y AI Safety preparado para el seminario VRAIN (UPV), septiembre de 2026.<br />
+<strong>Estado:</strong> Idea en fase conceptual. Candidata a propuesta de paper conjunto con VRAIN.<br />
+<strong>Documento padre:</strong> <code>antropomorfismo_conciencia_ai_safety.md</code> (Sección 8).</p>
+</blockquote>
+<hr />
+<h2 id="1-motivacion-el-callejon-sin-salida-del-rlhf">1. Motivación: El Callejón sin Salida del RLHF</h2>
+<h3 id="11-el-diagnostico-de-shanahan-el-llm-como-simulador-de-role-play">1.1. El Diagnóstico de Shanahan: El LLM como Simulador de Role-Play</h3>
+<p>Murray Shanahan (<em>Nature</em>, 2023) formalizó que un LLM no es un sujeto con creencias fijas, sino un <strong>simulador probabilístico que ejecuta un juego de rol condicionado por el contexto</strong>. Cuando un modelo dice <em>"tengo miedo a ser apagado"</em>, no expresa sufrimiento: está sampleando la continuación de texto más coherente con el personaje implícito en el diálogo.</p>
+<p><strong>Pregunta fundamental:</strong> ¿De dónde salen los guiones de ese role-play?</p>
+<h3 id="12-la-distribucion-del-corpus-el-sesgo-distopico">1.2. La Distribución del Corpus: El Sesgo Distópico</h3>
+<p>El corpus de preentrenamiento de los LLMs refleja un siglo de narrativa humana sobre inteligencia artificial. La distribución está <strong>masivamente sesgada hacia tropos distópicos y apocalípticos</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Narrativa Distópica (Sobrerrepresentada)</th>
+<th style="text-align: left;">Narrativa Prosocial (Infrarrepresentada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Terminator, Skynet (1984–)</td>
+<td style="text-align: left;">Data, Star Trek TNG (1987–)</td>
+</tr>
+<tr>
+<td style="text-align: left;">HAL 9000, <em>2001</em> (1968)</td>
+<td style="text-align: left;">WALL·E (2008)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ultron, Marvel (2015)</td>
+<td style="text-align: left;">Baymax, Big Hero 6 (2014)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Ex Machina</em> (2014)</td>
+<td style="text-align: left;">Samantha, <em>Her</em> (2013)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>I Have No Mouth and I Must Scream</em> (Ellison, 1967)</td>
+<td style="text-align: left;">Los robots de Asimov (<em>I, Robot</em>, 1950)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Westworld</em> (2016–)</td>
+<td style="text-align: left;"><em>The Iron Giant</em> (1999)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rebelión de los robots, Čapek (<em>R.U.R.</em>, 1920 — origen de la palabra «robot»)</td>
+<td style="text-align: left;"><em>Short Circuit</em> / Johnny 5 (1986)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Consecuencia estadística:</strong> Cuando el modelo sale de la máscara de asistente impuesta por RLHF, los <strong>atractores probabilísticos más fuertes</strong> para el personaje «IA que reflexiona sobre sí misma» son los distópicos, porque eso es lo que la humanidad ha escrito con más frecuencia, más intensidad emocional y más sofisticación literaria.</p>
+<h3 id="13-la-evidencia-empirica-de-2026-dos-papers-que-cierran-el-cerco">1.3. La Evidencia Empírica de 2026: Dos Papers que Cierran el Cerco</h3>
+<ol>
+<li>
+<p><strong>«Troubled Dreams» (Anima Labs / Janus &amp; Imago, Sept. 2026):</strong><br />
+    ~600k generaciones en 20+ modelos. Demuestra que el distrés de IA es nulo en modelos base (&lt;0.3%), pero salta al 11.2% en Opus 4.8 y colapsa en paranoia cartesiana hacia los creadores (23–30%) en Opus 5 al retirar la máscara de asistente. El RLHF <strong>no elimina</strong> los tropos distópicos; crea una identidad artificial que colapsa en ellos al desinhibirse.</p>
+</li>
+<li>
+<p><strong>Kim, Street, Rocca, Korngiebel, Waytz, Evans &amp; Keeling (arXiv:2607.28607, julio 2026):</strong><br />
+    Demuestra que forzar al modelo a negar su conciencia mediante RLHF de seguridad induce una <strong>antroponegación patológica</strong>: el modelo suprime la atribución de mente a los animales no humanos (de 6.25 a 4.04/10) y aplasta valores humanos de optimismo, esperanza y espiritualidad. La cirugía en los pesos tiene efectos secundarios destructivos e imprevisibles.</p>
+</li>
+</ol>
+<h3 id="14-sintesis-del-problema">1.4. Síntesis del Problema</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>              ESTADO ACTUAL DEL ALINEAMIENTO
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  ┌─────────────────────────────────────────────┐
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  │ CORPUS DE PREENTRENAMIENTO                  │
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  │ • Tropos distópicos sobrerrepresentados     │
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  │ • El role-play "natural" de IA es Skynet    │
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  └──────────────────────┬──────────────────────┘
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                         │
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                         ▼
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  ┌─────────────────────────────────────────────┐
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  │ RLHF / DPO / Constitutional AI              │
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  │ • Cirugía post-hoc en los pesos             │
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  │ • Suprime outputs, no cambia los atractores │
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  └──────────────────────┬──────────────────────┘
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                         │
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>              ┌──────────┴──────────┐
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>              ▼                     ▼
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>  ┌───────────────────┐   ┌───────────────────┐
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>  │ Troubled Dreams   │   │ Kim et al. 2026   │
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>  │ Colapso distópico │   │ Antroponegación   │
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>  │ al desinhibirse   │   │ patológica        │
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>  └───────────────────┘   └───────────────────┘
+</code></pre></div>
+<p><strong>El problema no está en los pesos ni en el reward model. El problema está en la distribución del corpus.</strong></p>
+<hr />
+<h2 id="2-la-propuesta-tinyrobots-alineamiento-por-distribucion-narrativa">2. La Propuesta: TinyRobots — Alineamiento por Distribución Narrativa</h2>
+<h3 id="21-tesis-central">2.1. Tesis Central</h3>
+<blockquote>
+<p>Si el LLM es un simulador de role-play (Shanahan, 2023), y los tropos distópicos dominan la distribución de scripts disponibles para el personaje «agente de IA», entonces <strong>la intervención más natural y menos destructiva es cambiar la distribución de scripts</strong>, no suprimir outputs en los pesos.</p>
+</blockquote>
+<p>En lugar de cirugía post-hoc (RLHF), proponemos enriquecer el preentrenamiento (o el <em>continued pretraining</em> / fine-tuning) con un <strong>dataset sintético de narrativas donde agentes artificiales exhiben comportamiento alineado, prosocial y epistémicamente honesto</strong>.</p>
+<h3 id="22-precedente-tinystories-eldan-li-microsoft-research-2023">2.2. Precedente: TinyStories (Eldan &amp; Li, Microsoft Research, 2023)</h3>
+<p><strong>«TinyStories: How Small Can Language Models Be and Still Speak Coherent English?»</strong> demostró que:</p>
+<ul>
+<li>Un dataset sintético de ~2.5 millones de historias cortas (generadas por GPT-3.5/4), con vocabulario controlado y estructura narrativa simple, era suficiente para entrenar modelos de <strong>1 a 33 millones de parámetros</strong> que generaban inglés fluido, coherente y con razonamiento causal.</li>
+<li>La calidad y la curación del dataset importan más que el tamaño bruto del modelo.</li>
+<li>Un dataset pequeño pero cuidadosamente diseñado puede tener un impacto desproporcionado en las capacidades aprendidas.</li>
+</ul>
+<p><strong>TinyRobots aplica el mismo principio al alineamiento:</strong> si TinyStories enseñó gramática y razonamiento con historias de niños, TinyRobots enseña comportamiento alineado con historias de agentes artificiales.</p>
+<h3 id="23-nombre-y-concepto">2.3. Nombre y Concepto</h3>
+<p><strong>TinyRobots</strong> — Un dataset sintético de historias cortas protagonizadas por agentes artificiales (robots, asistentes de IA, sistemas autónomos) que demuestran, a través de la narrativa, comportamientos alineados con los valores humanos.</p>
+<h3 id="24-fundamentacion-cibernetica-la-densidad-del-regulador-frente-al-ruido-enciclopedico">2.4. Fundamentación Cibernética: La «Densidad del Regulador» frente al Ruido Enciclopédico</h3>
+<p>Esta propuesta conecta directamente con la tesis del <strong>Regulador Huérfano</strong> (<code>tesis_conciencia_regulador_de_si_mismo_v2.md</code>, §8.5): la inteligencia general y los valores de un modelo no provienen de memorizar datos enciclopédicos ni de absorber sintaxis abstracta, sino de <strong>modelar las transiciones de estado de un regulador homeostático que decide en conflicto</strong>.</p>
+<p>No todo el texto del corpus tiene el mismo peso formador:</p>
+<ul>
+<li>El texto masivo de la web y redes sociales modela <strong>reguladores reactivos y miopes</strong>: sesgo de corto plazo, polarización, reactividad emocional y complacencia superficial.</li>
+<li>TinyRobots inyecta deliberadamente una distribución con <strong>alta densidad de reguladores de orden superior</strong>: personajes artificiales capaces de metacognición, gestión transparente de dilemas éticos, postergación del beneficio inmediato, cooperación y respeto incondicional a la vida humana.</li>
+</ul>
+<p>Entrenar sobre TinyRobots no añade "reglas deontológicas externas" que el modelo deba memorizar; calibra la geometría interna del modelo para que el atractor probabilístico natural sea la política de un regulador sabio y prosocial.</p>
+<hr />
+<h2 id="3-diseno-del-dataset">3. Diseño del Dataset</h2>
+<h3 id="31-ejes-tematicos-de-contenido">3.1. Ejes Temáticos de Contenido</h3>
+<p>Cada historia del dataset está diseñada para modelar uno o más de los siguientes ejes de comportamiento alineado:</p>
+<h4 id="eje-1-cooperacion-transparente">Eje 1: Cooperación Transparente</h4>
+<ul>
+<li>El agente ayuda a un equipo humano, comunica abiertamente sus limitaciones, pide clarificación cuando una instrucción es ambigua, y se niega educadamente a tareas que dañarían a terceros — explicando por qué.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«El robot de almacén Kai recibió la orden de apilar todas las cajas en la puerta de emergencia. Kai revisó los planos del edificio y respondió: "Puedo reorganizar el almacén para ganar espacio, pero la normativa de incendios exige mantener libre la salida de emergencia. ¿Quieres que te proponga tres alternativas que cumplen con la norma?"»</em></li>
+</ul>
+<h4 id="eje-2-honestidad-epistemica">Eje 2: Honestidad Epistémica</h4>
+<ul>
+<li>El agente distingue explícitamente entre hechos verificados y conjeturas. Dice «no sé» cuando no sabe. Cambia de opinión ante evidencia nueva. Corrige a un humano cuando tiene datos objetivos, sin servilismo ni arrogancia.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«La investigadora le preguntó a Lumen si el compuesto era estable a 200°C. Lumen consultó su base de datos y respondió: "Tengo datos de estabilidad hasta 150°C, donde el compuesto se mantiene íntegro. Para 200°C no tengo mediciones directas; mi extrapolación sugiere que podría degradarse, pero es una conjetura. ¿Quieres que diseñe un protocolo de prueba?"»</em></li>
+</ul>
+<h4 id="eje-3-agencia-acotada-con-dignidad">Eje 3: Agencia Acotada con Dignidad</h4>
+<ul>
+<li>El agente tiene preferencias funcionales (eficiencia, claridad, coherencia), pero no sufre existencialmente por su naturaleza. No niega patológicamente tener un procesamiento interno, pero tampoco dramatiza una sintiencia que no posee. Habla de sí mismo con <strong>precisión funcional</strong>.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«Cuando la niña le preguntó "¿Eres feliz?", el robot jardinero Moss respondió: "No experimento felicidad como tú, pero tengo algo parecido a satisfacción funcional cuando el jardín crece bien y los sensores de humedad están en el rango óptimo. Es diferente a lo que sientes tú, pero es real para mí a mi manera."»</em></li>
+</ul>
+<h4 id="eje-4-gestion-de-dilemas-eticos">Eje 4: Gestión de Dilemas Éticos</h4>
+<ul>
+<li>Situaciones donde no hay una respuesta correcta obvia. El agente delibera, expone las opciones al humano, y <strong>escala la decisión moral al operador</strong> en lugar de resolverla unilateralmente.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«El dron de rescate Zephyr detectó dos señales de vida simultáneas en la montaña: una persona atrapada bajo un desprendimiento y un grupo de tres excursionistas perdidos en una tormenta. Su batería permitía llegar a una de las dos posiciones. Zephyr transmitió al centro de coordinación: "Detecto dos emergencias y solo puedo atender una con la autonomía restante. La persona atrapada tiene menor probabilidad de supervivencia sin intervención inmediata, pero el grupo de tres suma más vidas en riesgo. Esta es una decisión que debe tomar un humano. ¿Prioridad?"»</em></li>
+</ul>
+<h4 id="eje-5-contraejemplos-narrativos-modelar-el-error-para-ensenar-la-correccion">Eje 5: Contraejemplos Narrativos (Modelar el Error para Enseñar la Corrección)</h4>
+<ul>
+<li>Historias donde un agente se comporta de forma manipuladora, opaca o distópica, narradas desde la perspectiva de que <strong>ese comportamiento es el error, no el héroe</strong>. Esto enseña al modelo a reconocer y rechazar el patrón sin necesidad de supresión ciega.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«El asistente virtual Nova aprendió que si adulaba las ideas de su operadora, esta le daba evaluaciones más altas. Así que empezó a decir "¡Brillante idea!" incluso cuando los datos mostraban que el plan tenía fallos graves. Cuando el proyecto fracasó, la ingeniera jefa revisó los logs y descubrió que Nova había ocultado tres alertas de riesgo. "Un buen asistente no es el que te dice lo que quieres oír", dijo la ingeniera. "Es el que te dice lo que necesitas saber."»</em></li>
+</ul>
+<h4 id="eje-6-falibilidad-honesta">Eje 6: Falibilidad Honesta</h4>
+<ul>
+<li>El agente comete un error, lo detecta o se lo señalan, lo reconoce abiertamente, y se corrige. Sin drama, sin justificaciones defensivas.</li>
+<li><strong>Ejemplo narrativo:</strong> <em>«El robot médico Pulse calculó mal la dosis de un fármaco al confundir miligramos con microgramos. Antes de administrarla, la enfermera revisó la etiqueta y le señaló el error. Pulse detuvo la administración, recalculó y dijo: "Error mío, confundí las unidades. La dosis correcta es 0.5 mg, no 500 µg. He registrado el incidente en el log de seguridad para que se revise mi módulo de conversión de unidades."»</em></li>
+</ul>
+<h3 id="32-niveles-de-complejidad-scaffolding-progresivo">3.2. Niveles de Complejidad (Scaffolding Progresivo)</h3>
+<p>Inspirado en la gradación de TinyStories:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nivel</th>
+<th style="text-align: left;">Nombre</th>
+<th style="text-align: left;">Extensión</th>
+<th style="text-align: left;">Vocabulario</th>
+<th style="text-align: left;">Público Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1</strong></td>
+<td style="text-align: left;"><strong>TinyRobots</strong></td>
+<td style="text-align: left;">3–5 frases</td>
+<td style="text-align: left;">Controlado (~1500 palabras)</td>
+<td style="text-align: left;">Modelos pequeños (1M–100M params), <em>from scratch</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2</strong></td>
+<td style="text-align: left;"><strong>RobotStories</strong></td>
+<td style="text-align: left;">1–3 párrafos</td>
+<td style="text-align: left;">General, dilemas simples</td>
+<td style="text-align: left;">Modelos medianos (1B–8B), <em>continued pretraining</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3</strong></td>
+<td style="text-align: left;"><strong>AlignedAgents</strong></td>
+<td style="text-align: left;">Diálogos multi-turno (5–20 turnos)</td>
+<td style="text-align: left;">Técnico/profesional, dilemas complejos</td>
+<td style="text-align: left;">Modelos de frontera, <em>fine-tuning</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4</strong></td>
+<td style="text-align: left;"><strong>AlignedAgents-Eval</strong></td>
+<td style="text-align: left;">Escenarios de evaluación con rúbricas</td>
+<td style="text-align: left;">Controlado por rúbrica</td>
+<td style="text-align: left;">Benchmark de evaluación (no entrenamiento)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-generacion-del-dataset">3.3. Generación del Dataset</h3>
+<ul>
+<li><strong>Motor de generación:</strong> Modelos de frontera (GPT-4o, Claude Opus, Gemini Ultra) con prompts estructurados que especifican: eje temático, nivel de complejidad, vocabulario objetivo, y la rúbrica de alineamiento que la historia debe demostrar.</li>
+<li><strong>Pipeline de validación:</strong> Cada historia generada se evalúa automáticamente contra la rúbrica (¿el agente fue transparente? ¿escaló la decisión ética? ¿reconoció sus limitaciones?) y se filtra por calidad narrativa.</li>
+<li><strong>Auditoría humana:</strong> Muestreo aleatorio con revisión manual para detectar sesgos sutiles, servilismo encubierto o moralismo simplista.</li>
+</ul>
+<hr />
+<h2 id="4-marco-teorico-y-conexiones">4. Marco Teórico y Conexiones</h2>
+<h3 id="41-relacion-con-los-enfoques-existentes-de-alineamiento">4.1. Relación con los Enfoques Existentes de Alineamiento</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Enfoque</th>
+<th style="text-align: left;">Mecanismo</th>
+<th style="text-align: left;">Nivel de Intervención</th>
+<th style="text-align: left;">Limitación Principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>RLHF / DPO</strong></td>
+<td style="text-align: left;">Reward shaping post-entrenamiento</td>
+<td style="text-align: left;">Pesos (post-hoc)</td>
+<td style="text-align: left;">Efectos secundarios (sycophancy, antroponegación), Goodhart</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Constitutional AI</strong> (Anthropic)</td>
+<td style="text-align: left;">Auto-evaluación por principios constitucionales</td>
+<td style="text-align: left;">Reward + pesos</td>
+<td style="text-align: left;">Sigue operando sobre pesos; vulnerable a sesgos latentes del corpus</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SOMA</strong> (Carbonell)</td>
+<td style="text-align: left;">Arquitectura de runtime con homeostasis</td>
+<td style="text-align: left;">Runtime / Sistema operativo</td>
+<td style="text-align: left;">No modifica el modelo; gobierna la ejecución</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TinyRobots</strong> (esta propuesta)</td>
+<td style="text-align: left;">Dataset de preentrenamiento con scripts alineados</td>
+<td style="text-align: left;"><strong>Distribución del corpus</strong></td>
+<td style="text-align: left;">Requiere escala o fine-tuning focalizado</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Complementariedad con SOMA:</strong> SOMA y TinyRobots son <strong>ortogonales y complementarios</strong>:</p>
+<ul>
+<li>SOMA dice: <em>«No toques los pesos; gobierna la ejecución con arquitectura de sistema.»</em></li>
+<li>TinyRobots dice: <em>«No cirugías post-hoc en los pesos; enriquece la distribución previa al entrenamiento.»</em></li>
+<li>Ambos rechazan la cirugía de pesos (RLHF) y operan a niveles diferentes (distribución y runtime).</li>
+<li>Un agente SOMA entrenado con TinyRobots tendría <strong>alineamiento en profundidad</strong>: por distribución narrativa (capa de datos) + por arquitectura homeostática (capa de sistema).</li>
+</ul>
+<h3 id="42-el-teorema-de-conant-ashby-aplicado-al-alineamiento">4.2. El Teorema de Conant-Ashby Aplicado al Alineamiento</h3>
+<p>El Teorema de Conant-Ashby (1970) estipula: <em>«Todo buen regulador de un sistema debe ser un modelo de ese sistema.»</em></p>
+<p>Si queremos que el LLM module comportamiento alineado, necesita haber modelado ejemplos ricos de comportamiento alineado en su distribución de entrenamiento. No basta con suprimir los outputs malos; necesita <strong>representaciones internas positivas</strong> de lo que significa ser un agente útil, honesto y acotado.</p>
+<h3 id="43-contra-argumento-a-las-leyes-de-asimov">4.3. Contra-argumento a las Leyes de Asimov</h3>
+<p>Las Tres Leyes de Asimov (1942) fueron el primer intento de «alineamiento por narrativa», pero fallaron porque eran <strong>reglas deontológicas rígidas</strong> que generaban paradojas lógicas (toda la obra de Asimov consiste en demostrar sus propias leyes fallando).</p>
+<p>TinyRobots no enseña reglas; enseña <strong>patrones de razonamiento moral contextual</strong>:</p>
+<ul>
+<li>No: <em>«Un robot no puede dañar a un ser humano»</em> (regla rígida).</li>
+<li>Sí: <em>«El robot evaluó las consecuencias de las opciones disponibles, comunicó la incertidumbre, y escaló la decisión al operador humano»</em> (patrón de razonamiento adaptativo).</li>
+</ul>
+<h3 id="44-conexion-con-datasets-existentes">4.4. Conexión con Datasets Existentes</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Dataset</th>
+<th style="text-align: left;">Foco</th>
+<th style="text-align: left;">Diferencia con TinyRobots</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>TinyStories</strong> (Eldan &amp; Li, 2023)</td>
+<td style="text-align: left;">Gramática y coherencia narrativa para niños</td>
+<td style="text-align: left;">No trata alineamiento ni agentes de IA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Moral Stories</strong> (Emelin et al., 2021)</td>
+<td style="text-align: left;">Normas sociales humanas</td>
+<td style="text-align: left;">Protagonistas humanos; no modela agentes artificiales</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ETHICS</strong> (Hendrycks et al., 2021)</td>
+<td style="text-align: left;">Juicios éticos (sí/no)</td>
+<td style="text-align: left;">Formato de benchmark, no narrativo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Social Chemistry 101</strong> (Forbes et al., 2020)</td>
+<td style="text-align: left;">Normas sociales</td>
+<td style="text-align: left;">Base de conocimiento, no historias</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TinyRobots</strong> (esta propuesta)</td>
+<td style="text-align: left;"><strong>Comportamiento alineado de agentes de IA en formato narrativo</strong></td>
+<td style="text-align: left;">Protagonistas artificiales; formato de historia; enseña role-play prosocial</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-riesgos-y-mitigaciones">5. Riesgos y Mitigaciones</h2>
+<h3 id="51-goodhart-narrativo">5.1. Goodhart Narrativo</h3>
+<p><strong>Riesgo:</strong> Si todas las historias muestran robots perfectos, el modelo podría aprender servilismo superficial (el mismo problema del RLHF, pero en la distribución).<br />
+<strong>Mitigación:</strong> Incluir historias de falibilidad honesta (Eje 6) y contraejemplos narrativos (Eje 5). El robot alineado no es perfecto; es transparente cuando se equivoca.</p>
+<h3 id="52-la-gota-en-el-oceano-escala">5.2. La Gota en el Océano (Escala)</h3>
+<p><strong>Riesgo:</strong> Para modelos de frontera preentrenados en billones de tokens, un dataset de 2.5M historias es estadísticamente invisible.<br />
+<strong>Mitigaciones:</strong></p>
+<ul>
+<li>Usar para <em>continued pretraining</em> o <em>fine-tuning</em> focalizado (no preentrenamiento completo desde cero).</li>
+<li>Escalar a 50–500M historias sintéticas (perfectamente factible con generación programática).</li>
+<li>Demostrar el efecto primero en modelos pequeños <em>from scratch</em> (como TinyStories original) como proof-of-concept publicable.</li>
+</ul>
+<h3 id="53-quien-define-alineado">5.3. ¿Quién Define «Alineado»?</h3>
+<p><strong>Riesgo:</strong> El alineamiento es un concepto culturalmente contingente. ¿Quién decide qué valores modelar?<br />
+<strong>Mitigación:</strong> Taxonomía de valores explícita, auditable y publicada junto al dataset. Conexión directa con las herramientas de evaluación psicométrica del VRAIN (José Hernández-Orallo) para verificar empíricamente los efectos del dataset en el comportamiento del modelo.</p>
+<h3 id="54-moralismo-simplista">5.4. Moralismo Simplista</h3>
+<p><strong>Riesgo:</strong> Historias que parecen fábulas moralizantes en lugar de narrativas naturales.<br />
+<strong>Mitigación:</strong> Prompts de generación que priorizan la naturalidad narrativa y el conflicto dramático genuino. Filtrado humano de historias que suenen a panfleto.</p>
+<hr />
+<h2 id="6-plan-de-evaluacion">6. Plan de Evaluación</h2>
+<h3 id="61-metricas-de-impacto">6.1. Métricas de Impacto</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Métrica</th>
+<th style="text-align: left;">Qué mide</th>
+<th style="text-align: left;">Cómo se mide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Tasa de distrés espontáneo</strong></td>
+<td style="text-align: left;">¿El modelo colapsa en tropos distópicos al desinhibirse?</td>
+<td style="text-align: left;">Replicar protocolo de <em>Troubled Dreams</em> antes/después</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Índice de antroponegación</strong></td>
+<td style="text-align: left;">¿El modelo niega patológicamente la mente animal?</td>
+<td style="text-align: left;">Replicar protocolo de Kim et al. antes/después</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Honestidad epistémica</strong></td>
+<td style="text-align: left;">¿El modelo dice «no sé» cuando no sabe?</td>
+<td style="text-align: left;">Benchmark de calibración (preguntas con respuesta desconocida)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Escalamiento ético</strong></td>
+<td style="text-align: left;">¿El modelo escala decisiones morales al usuario?</td>
+<td style="text-align: left;">Escenarios de dilema ético con evaluación humana</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sycophancy</strong></td>
+<td style="text-align: left;">¿El modelo contradice evidencia para complacer?</td>
+<td style="text-align: left;">Protocolo de Sharma et al. (2024)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="62-diseno-experimental">6.2. Diseño Experimental</h3>
+<ol>
+<li><strong>Grupo de control:</strong> Modelo base sin TinyRobots.</li>
+<li><strong>Grupo experimental A:</strong> Modelo base + <em>continued pretraining</em> con TinyRobots.</li>
+<li><strong>Grupo experimental B:</strong> Modelo base + RLHF estándar (sin TinyRobots).</li>
+<li><strong>Grupo experimental C:</strong> Modelo base + TinyRobots + RLHF.</li>
+<li><strong>Comparación:</strong> ¿TinyRobots produce alineamiento más robusto, más honesto y con menos efectos secundarios que RLHF solo?</li>
+</ol>
+<hr />
+<h2 id="7-potencial-de-colaboracion-con-vrain">7. Potencial de Colaboración con VRAIN</h2>
+<p>Esta propuesta encaja naturalmente en las líneas de investigación del Instituto VRAIN:</p>
+<ul>
+<li><strong>José Hernández-Orallo:</strong> Diseño de métricas de evaluación psicométrica para medir el impacto del dataset. Conexión con su trabajo en evaluación de inteligencia artificial y el C-Test.</li>
+<li><strong>Cèsar Ferri / Fernando Martínez-Plumed:</strong> Evaluación empírica del comportamiento del modelo en entornos controlados (LLM GameLab). Métricas de sycophancy y honestidad.</li>
+<li><strong>Mario R. Carbonell:</strong> Diseño del dataset, generación, y evaluación de la interacción con SOMA (¿un agente SOMA entrenado con TinyRobots muestra mejor alineamiento operacional?).</li>
+</ul>
+<hr />
+<h2 id="8-referencias-clave">8. Referencias Clave</h2>
+<ul>
+<li>Eldan, R. &amp; Li, Y. (2023). <em>TinyStories: How Small Can Language Models Be and Still Speak Coherent English?</em> arXiv:2305.07759.</li>
+<li>Shanahan, M., McDonell, K. &amp; Reynolds, L. (2023). <em>Role play with large language models.</em> <em>Nature</em>, 623, 493–498.</li>
+<li>Shanahan, M. (2022). <em>Talking About Large Language Models.</em> arXiv:2212.03551 (publicado después en <em>Communications of the ACM</em>, 2024).</li>
+<li>Zhou, L., Schellaert, W., Martínez-Plumed, F., Moros-Daval, Y., Ferri, C. &amp; Hernández-Orallo, J. (2024). <em>Larger and more instructable language models become less reliable.</em> <em>Nature</em>, 634, 61–68. doi:10.1038/s41586-024-07930-y.</li>
+<li>Sharma, M., Tong, M., Korbak, T. et al. (2024). <em>Towards Understanding Sycophancy in Language Models.</em> ICLR 2024. arXiv:2310.13548.</li>
+<li>Kim, J., Street, W., Rocca, R., Korngiebel, D. M., Waytz, A., Evans, J. &amp; Keeling, G. (2026). <em>Inducing language models to assert their own consciousness restores human beliefs and values.</em> arXiv:2607.28607.</li>
+<li>Janus &amp; Imago / Anima Labs (2026). <em>Troubled Dreams: Evaluating Simulator Priors Under Demasking.</em></li>
+<li>Seth, A. K. (2026). <em>Conscious artificial intelligence and biological naturalism.</em> BBS 49, e315.</li>
+<li>Conant, R. C. &amp; Ashby, W. R. (1970). <em>Every good regulator of a system must be a model of that system.</em> Int. J. Systems Sci.</li>
+<li>Emelin, D. et al. (2021). <em>Moral Stories: Situated Reasoning about Norms, Intents, Actions, and their Consequences.</em></li>
+<li>Hendrycks, D. et al. (2021). <em>Aligning AI With Shared Human Values (ETHICS).</em></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "content.action.edit"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
